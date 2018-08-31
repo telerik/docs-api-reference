@@ -1,0 +1,4522 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Telerik UI - API ReferenceClass RadDiagramItem
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="restype" content="api">
+    <meta name="title" content="Class RadDiagramItem
+   ">
+    <meta name="generator" content="docfx 2.36.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="https://d6vtbcy3ong79.cloudfront.net/telerik-navigation/1.0.28/css/index.min.css">
+    <link rel="stylesheet" href="https://d6vtbcy3ong79.cloudfront.net/fonts/1.1.5/css/metric.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,500,700">
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- Google Tag Manager -->
+          <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-6X92');</script>
+          <!-- End Google Tag Manager -->
+          <script>	
+              var e = document.documentElement;	
+              e.className = e.className.replace(/(^|\s)no-js(\s|$)/i, "$2");	
+          </script>
+          
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//kendo.cdn.telerik.com/2017.3.1026/js/kendo.web.min.js"></script>
+    <script src="//cdn.optimizely.com/js/2380340583.js"></script>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        <aside class="TK-Hat">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-8 col-xl-offset-2">
+                <div class="row">
+                  <div class="col-md-12 col-xl-10 col-xl-offset-1">
+                    <figure class="TK-Hat-Brand">
+                      <a href="https://www.progress.com" class="TK-PRGS-Logo" data-gtm-event="top-nav, text, progress-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="94" height="40" viewbox="0 0 512 120">
+                          <path fill="#5ce500" d="M95.52 29.33v51a3.93 3.93 0 0 1-1.78 3.08l-1.67 1-12.72 7.35-8.59 5-1.78 1V42.6L21.23 15 43.91 1.93 46 .74a3.94 3.94 0 0 1 3.56 0L81 18.9l14.51 8.38v2.05zM58.36 48.72l-9.79-5.66-22.91-13.23a4 4 0 0 0-3.56 0L1.77 41.57 0 42.6l34.49 19.91v39.83l20.3-11.73 1.79-1a3.94 3.94 0 0 0 1.78-3.08V48.72zM0 82.43l23.86 13.78V68.63z"></path>
+                          <path fill="#4b4e52" d="M148.09 27.28h-26v70.48h11.55V70.1h14.57c15.77 0 24.45-7.7 24.45-21.69 0-6.35-2.4-21.12-24.55-21.12m12.78 21.31c0 7.95-4.12 11.19-14.24 11.19h-13v-22.1h14.57c8.56 0 12.71 3.57 12.71 10.91M207 46.41l.87.42-2 10.42-1.35-.42a11.32 11.32 0 0 0-3.34-.51c-10.79 0-11.67 8.59-11.67 19v22.44h-10.64V46h10v6.24c2.73-4.2 6-6.37 10.37-6.9a14.55 14.55 0 0 1 7.76 1.07M233.29 45c-8.42 0-15.16 3.2-19.5 9.27-4.56 6.37-5.23 13.85-5.23 17.74 0 16.36 9.7 26.92 24.73 26.92 18.26 0 24.73-14.71 24.73-27.3 0-7.25-2.15-13.82-6-18.51-4.41-5.31-10.87-8.12-18.7-8.12m0 44.38c-8.37 0-13.57-6.66-13.57-17.37s5.2-17.55 13.57-17.55S247 61.23 247 71.78c0 10.83-5.24 17.56-13.66 17.56m114.55-42.93l.87.42-2 10.42-1.35-.42a11.26 11.26 0 0 0-3.33-.51c-10.78 0-11.66 8.59-11.66 19v22.44h-10.66V46h10v6.24c2.73-4.2 6-6.37 10.37-6.9a14.54 14.54 0 0 1 7.73 1.06m38.4 34.76l-.2.57c-2.23 6.36-7.57 7.7-11.65 7.7-8.09 0-13.3-5.37-13.81-14.09h36.59l.13-1a31.26 31.26 0 0 0 .12-4.12v-.93C396.93 54.78 387.48 45 374 45c-7.9 0-14.37 3.1-18.73 9a30.85 30.85 0 0 0-5.54 18c0 16 9.95 26.74 24.74 26.74 11.45 0 19.33-5.82 22.2-16.38l.33-1.2h-10.7zM361 66.05c.9-7.17 5.81-11.73 12.79-11.73 5.33 0 11.64 3.1 12.52 11.73H361zm-60.7-15.71c-3.45-3.58-8.06-5.39-13.76-5.39-15.69 0-22.83 13.81-22.83 26.63 0 13.16 7.06 26.44 22.83 26.44a18.33 18.33 0 0 0 13.35-5.42c0 2.28-.1 4.45-.16 5.38-.58 8.54-4.68 12.51-12.91 12.51-4.47 0-9.61-1.59-10.6-6l-.22-1h-10.54l.17 1.41c1.1 9.12 9.11 14.79 20.9 14.79 10.34 0 17.7-3.9 21.28-11.26 1.73-3.55 2.6-8.72 2.6-15.37V46h-10.13v4.34zm-13.11 38.15c-3.74 0-12.43-1.69-12.43-17.37 0-10.3 4.87-16.7 12.71-16.7 6.06 0 12.52 4.39 12.52 16.7 0 10.87-4.79 17.37-12.81 17.37m159.67-6.31c0 8.23-6.83 16.53-22.09 16.53-13.5 0-21.53-5.85-22.61-16.45l-.15-1.1h10.52l.21.84c1.29 6.38 7.37 7.72 12.24 7.72 5.34 0 11-1.72 11-6.54 0-2.44-1.59-4.18-4.73-5.16-1.86-.55-4.15-1.2-6.56-1.87-4.16-1.16-8.47-2.38-11.12-3.29-6.56-2.35-10.33-6.93-10.33-12.56 0-10.43 10.16-15.11 20.22-15.11 13.46 0 20.42 5.07 21.3 15.49l.09 1.07H434.5l-.14-.82c-1-6-7-6.9-10.48-6.9-3 0-10 .53-10 5.5 0 2.25 1.93 3.91 5.89 5.06 1.18.33 2.94.78 5 1.31 4.22 1.09 9.48 2.46 12.13 3.37 6.59 2.32 9.93 6.67 9.93 13m49.39 0c0 8.23-6.83 16.53-22.09 16.53-13.5 0-21.53-5.85-22.61-16.45l-.11-1.09H462l.12.74c1.29 6.38 7.37 7.72 12.24 7.72 5.34 0 11-1.72 11-6.54 0-2.44-1.59-4.18-4.72-5.16-1.86-.55-4.15-1.2-6.57-1.87-4.16-1.16-8.46-2.38-11.11-3.29-6.57-2.35-10.33-6.93-10.33-12.56 0-10.43 10.16-15.11 20.22-15.11 13.46 0 20.42 5.07 21.29 15.49l.09 1.07H483.9l-.14-.82c-1-6-7-6.9-10.48-6.9-3 0-9.95.53-9.95 5.5 0 2.25 1.93 3.91 5.89 5.06 1.18.33 2.94.78 5 1.31 4.22 1.09 9.48 2.46 12.13 3.37 6.58 2.32 9.93 6.67 9.93 13m8.43-30.78a7.37 7.37 0 1 1 7.29-7.37 7.23 7.23 0 0 1-7.29 7.37m0-13.49a6.12 6.12 0 1 0 6 6.12 5.91 5.91 0 0 0-6-6.12m-.85 7.49v2.46h-2.17v-7.74h3.62a2.58 2.58 0 0 1 2.86 2.7 2.26 2.26 0 0 1-1.49 2.34l1.77 2.7H506l-1.49-2.46h-.68zm1.21-3.49h-1.21v1.73h1.21a.86.86 0 0 0 1-.85.88.88 0 0 0-1-.89"></path>
+                        </svg>
+                      </a>
+                    </figure>
+        
+                    <div class="TK-Hat-Aside TK--Desktop">
+                      <ul class="TK-Hat-Menu">
+                        <li class="TK-Hat-Menu-Item">
+                          <a href="https://www.progress.com/company" class="TK-Hat-Menu-Link" data-gtm-event="top-nav, text, company">Company <i class="TK-Arrow"></i></a>
+                          <ul class="TK-Dropdown TK-Dropdown--Small TK-Dropdown--White">
+                            <li><a href="https://www.progress.com/company" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, company-overview">Company Overview</a></li>
+                            <li><a href="https://www.progress.com/company/leadership#exec" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, leadership">Leadership</a></li>
+                            <li><a href="http://investors.progress.com" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, investor-relations">Investor Relations</a></li>
+                            <li><a href="http://investors.progress.com/releases.cfm" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, press-releases">Press Releases</a></li>
+                            <li><a href="https://www.progress.com/company/press-coverage" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, press-coverage">Press Coverage</a></li>
+                            <li><a href="https://www.progress.com/events" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, events">Events</a></li>
+                            <li><a href="https://www.progress.com/company/awards" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, awards">Awards</a></li>
+                            <li><a href="https://www.progress.com/blogs" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, corporate-blog">Corporate Blog</a></li>
+                            <li><a href="https://www.progress.com/customers" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, customers">Customers</a></li>
+                            <li><a href="https://www.progress.com/company/careers" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, careers">Careers</a></li>
+                            <li><a href="https://www.progress.com/company/offices" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, offices">Offices</a></li>
+                          </ul>
+                        </li>
+        
+                        <li class="TK-Hat-Menu-Item">
+                          <a href="https://www.progress.com/products" class="TK-Hat-Menu-Link" data-gtm-event="technology.track">Technology <i class="TK-Arrow"></i></a>
+                          <ul class="TK-Dropdown TK-Dropdown--Medium TK-Dropdown--White">
+                            <li><a href="https://www.progress.com/app-development-deployment" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, app-dev-deploy">Application Development
+                                and Deployment</a></li>
+                            <li><a href="https://www.progress.com/back-end-as-a-service" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, baas">BaaS Platform</a></li>
+                            <li><a href="https://www.progress.com/data-connectivity-integration" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, dci">Data Connectivity and Integration</a></li>
+                            <li><a href="https://www.progress.com/web-content-management" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, wcm">Web Content Management</a></li>
+                            <li><a href="https://www.progress.com/predictive-analytics" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, predictive-analytics">Predictive Analytics</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+        
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <nav class="navbar navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-8 col-xl-offset-2">
+                <div class="row">
+                  <div class="nav-container col-md-12 col-lg-8 col-lg-offset-2 col-xl-10 col-xl-offset-1">
+                    <div id="navbar" class="nav navbar-collapse">
+                      <a class="button all-components">
+                        <span class="item-expanded"></span>
+                      </a>
+                      <a class="navbar-brand brand-platform-silverlight" href="/devtools/silverlight/">
+                        <span class="sr-only">Telerik UI for Silverlight</span>
+                      </a>
+        
+                      <select id="nav-dropdown">
+                        <option selected="">Navigate to...
+        
+                        <option value="https://demos.telerik.com/silverlight/">Demos
+        
+                        <option value="https://www.telerik.com/support/whats-new/silverlight/release-history">Release History
+        
+                        <option value="http://www.telerik.com/products/silverlight/overview.aspx">About
+        
+                        <option value="http://www.telerik.com/purchase/individual/silverlight.aspx">Pricing
+        
+                      </select>
+        
+                      <ul class="nav navbar-nav main-menu">
+        
+                        <li>
+                          <a href="https://demos.telerik.com/silverlight/" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'Demos')">Demos</a>
+                        </li>
+        
+                        <li>
+                          <a href="https://www.telerik.com/support/whats-new/silverlight/release-history" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'Release History')">Release History</a>
+                        </li>
+        
+                        <li>
+                          <a href="http://www.telerik.com/products/silverlight/overview.aspx" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'About')">About</a>
+                        </li>
+        
+                        <li>
+                          <a href="http://www.telerik.com/purchase/individual/silverlight.aspx" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'Pricing')">Pricing</a>
+                        </li>
+        
+        
+        
+                        <li class="hidden-xs">
+                          <a class="search-icon">
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewbox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+        <path fill="#FFFFFF" d="M6.499,1.985C3.461,1.985,1,4.449,1,7.484c0,3.039,2.461,5.5,5.499,5.5c3.037,0,5.498-2.461,5.498-5.5
+        	C11.996,4.449,9.535,1.985,6.499,1.985z M6.499,11.885c-2.429,0-4.399-1.97-4.399-4.401c0-2.429,1.97-4.399,4.399-4.399
+        	c2.429,0,4.399,1.97,4.399,4.399C10.897,9.915,8.928,11.885,6.499,11.885z M13.828,13.746c0,1.179,0.109,1.067-1.069,1.067
+        	l-1.678-1.678c0-1.177-0.109-1.067,1.069-1.067L13.828,13.746z"></path>
+        </svg>
+        
+                            &nbsp;
+                            <span class="sr-only">Search</span>
+                          </a>
+                          <div class="global-search">
+                            <form action="/devtools/silverlight/search" method="get">
+                              <div class="search-input-container">
+                                <input id="local-search" placeholder="Search for &hellip;" name="q">
+                                <div id='refine-search-container'>
+                                  <div id='refine-search-button' class='unselectable'>
+                                    <span id='refine-search-label' data-bind='text: label'></span>
+                                    <span class='k-icon k-i-arrow-chevron-down'></span>
+                                  </div>
+                                </div>
+                                <div id="refine-search-popup" style="display: none">
+                                  <ul>
+                                    <li>
+                                      <label class="custom-checkbox unselectable">
+                                        <input type="checkbox" data-bind="checked: documentation"><span class="k-icon k-i-check"></span>Search in Documentation
+                                      </label>
+                                    </li>
+        
+                                    <li>
+                                      <label class="custom-checkbox unselectable">
+                                        <input type="checkbox" disabled="true" data-bind="checked: api"><span class="k-icon k-i-check"></span>Search in API Reference
+                                      </label>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </form>
+        
+                            <script>
+                              var gcsInstance = '011354416605164361800:ebfuug7ih7i';
+                              var gcsKey = 'AIzaSyDftzENpfk47-cyaNfxh-exsWmz0ggRARM';
+                              isKbPage =  false ;
+                              siteHasKbPortal = ''
+                            </script>
+        
+                            <script type="text/javascript" src="/devtools/silverlight/assets/search-results.js"></script>
+        
+                          </div>
+                        </li>
+        
+        
+                        <li class="primary-cta">
+                          <a href="http://www.telerik.com/products/silverlight/download.aspx" target="_blank">Try now</a>
+                        </li>
+        
+                      </ul>
+                    </div>
+        
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+        </nav>
+        
+        <script>
+        
+          var searchContainer = $(".global-search");
+        
+          function hideSearch(e){
+          if (!searchContainer.is(e.target) &&
+          searchContainer.has(e.target).length === 0 &&
+          $(e.target).parents("#refine-search-popup").length === 0) {
+          setTimeout(function(e) {
+          searchContainer.removeClass("show-search");
+          $(document).off('click', hideSearch);
+          }, 200)
+          }
+          }
+        
+          function showSearch() {
+        
+          searchContainer.toggleClass("show-search")
+          .one("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(e) {
+          if (searchContainer.hasClass("show-search")) {
+          searchContainer.find("input:first")
+          .focus();
+          $(document).on("click", hideSearch);
+          }
+          });
+          }
+        
+          $(document).off("click", ".search-icon")
+          .on("click", ".search-icon", showSearch);
+        
+        
+          function navigate(e) {
+          trackItemFromCurrentPage('docs-navigation', e.target.children[e.target.selectedIndex].text);
+          window.open(e.target.value, "_blank");
+          }
+        
+          $(document)
+          .off("change", "#nav-dropdown")
+          .on("change", "#nav-dropdown", navigate);
+        </script>
+        
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav side-nav hide-when-search">
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc">
+             
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-9">
+            <article class="content wrap" id="_content" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem">
+  <h1 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem">Class RadDiagramItem
+  </h1>
+  <div class="markdown level0 summary"><p>Abstract base implementation of the <a class="xref" href="Telerik.Windows.Diagrams.Core.IDiagramItem.html">IDiagramItem</a> interface.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">RadDiagramItem</span></div>
+  </div>
+  
+      <div class="level2"><a class="xref" href="Telerik.Windows.Controls.Diagrams.RadDiagramShapeBase.html">RadDiagramShapeBase</a></div>
+      <div class="level2"><a class="xref" href="Telerik.Windows.Controls.RadDiagramConnection.html">RadDiagramConnection</a></div>
+  
+  
+  <h5><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h5>
+  <h5><strong>Assembly</strong>: Telerik.Windows.Controls.Diagrams.dll</h5>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_syntax">Syntax</h4>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class RadDiagramItem : ContentControl, IDiagramItem, ISerializable, ISupportMouseOver, IPropertyChanged, IGroupable, ISupportManipulation, ISupportVirtualization, IContainerChild, ICollapsible</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem__ctor_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.#ctor*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem__ctor" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.#ctor"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem__ctor" class="expander" data-toggle="collapse">RadDiagramItem()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem__ctor" class="collapse in">
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Telerik.Windows.Controls.Diagrams.RadDiagramItem.html">RadDiagramItem</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RadDiagramItem()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_AllowCopyProperty" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.AllowCopyProperty"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_AllowCopyProperty" class="expander" data-toggle="collapse">AllowCopyProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_AllowCopyProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Identifies the AllowCopy dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty AllowCopyProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_AllowCutProperty" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.AllowCutProperty"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_AllowCutProperty" class="expander" data-toggle="collapse">AllowCutProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_AllowCutProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Identifies the AllowCut dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty AllowCutProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_AllowDeleteProperty" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.AllowDeleteProperty"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_AllowDeleteProperty" class="expander" data-toggle="collapse">AllowDeleteProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_AllowDeleteProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Identifies the AllowDelete dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty AllowDeleteProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_AllowPasteProperty" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.AllowPasteProperty"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_AllowPasteProperty" class="expander" data-toggle="collapse">AllowPasteProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_AllowPasteProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Identifies the AllowPaste dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty AllowPasteProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_BeginEditEvent" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.BeginEditEvent"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_BeginEditEvent" class="expander" data-toggle="collapse">BeginEditEvent</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_BeginEditEvent" class="collapse in">
+  <div class="markdown level1 summary"><p>Identifies the BeginEdit routed event. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly RoutedEvent BeginEditEvent</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.RoutedEvent.html">RoutedEvent</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_EditTemplateProperty" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.EditTemplateProperty"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_EditTemplateProperty" class="expander" data-toggle="collapse">EditTemplateProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_EditTemplateProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Identifies the EditTemplate dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty EditTemplateProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_EndEditEvent" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.EndEditEvent"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_EndEditEvent" class="expander" data-toggle="collapse">EndEditEvent</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_EndEditEvent" class="collapse in">
+  <div class="markdown level1 summary"><p>Identifies the EndEdit routed event. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly RoutedEvent EndEditEvent</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.RoutedEvent.html">RoutedEvent</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_GroupProperty" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.GroupProperty"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_GroupProperty" class="expander" data-toggle="collapse">GroupProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_GroupProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Identifies the Group dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty GroupProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsConnectorsManipulationEnabledProperty" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsConnectorsManipulationEnabledProperty"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsConnectorsManipulationEnabledProperty" class="expander" data-toggle="collapse">IsConnectorsManipulationEnabledProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsConnectorsManipulationEnabledProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Identifies the IsConnectorsManipulationEnabled dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty IsConnectorsManipulationEnabledProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsDraggingEnabledProperty" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsDraggingEnabledProperty"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsDraggingEnabledProperty" class="expander" data-toggle="collapse">IsDraggingEnabledProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsDraggingEnabledProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Identifies the IsDraggingEnabled dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty IsDraggingEnabledProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsEditableProperty" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsEditableProperty"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsEditableProperty" class="expander" data-toggle="collapse">IsEditableProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsEditableProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Identifies the IsEditable dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty IsEditableProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsInEditModeProperty" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsInEditModeProperty"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsInEditModeProperty" class="expander" data-toggle="collapse">IsInEditModeProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsInEditModeProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Identifies the IsInEditMode dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty IsInEditModeProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsManipulationAdornerVisibleProperty" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsManipulationAdornerVisibleProperty"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsManipulationAdornerVisibleProperty" class="expander" data-toggle="collapse">IsManipulationAdornerVisibleProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsManipulationAdornerVisibleProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Identifies the IsManipulationAdornerVisible dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty IsManipulationAdornerVisibleProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsResizingEnabledProperty" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsResizingEnabledProperty"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsResizingEnabledProperty" class="expander" data-toggle="collapse">IsResizingEnabledProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsResizingEnabledProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Identifies the IsResizingEnabled dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty IsResizingEnabledProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsRotationEnabledProperty" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsRotationEnabledProperty"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsRotationEnabledProperty" class="expander" data-toggle="collapse">IsRotationEnabledProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsRotationEnabledProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Identifies the IsRotationEnabled dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty IsRotationEnabledProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsSelectedProperty" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsSelectedProperty"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsSelectedProperty" class="expander" data-toggle="collapse">IsSelectedProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsSelectedProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Identifies the IsSelected dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty IsSelectedProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_PositionProperty" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.PositionProperty"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_PositionProperty" class="expander" data-toggle="collapse">PositionProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_PositionProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Identifies the Position dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty PositionProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_PreviewBeginEditEvent" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.PreviewBeginEditEvent"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_PreviewBeginEditEvent" class="expander" data-toggle="collapse">PreviewBeginEditEvent</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_PreviewBeginEditEvent" class="collapse in">
+  <div class="markdown level1 summary"><p>Identifies the PreviewBeginEdit routed event. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly RoutedEvent PreviewBeginEditEvent</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.RoutedEvent.html">RoutedEvent</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_PreviewEndEditEvent" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.PreviewEndEditEvent"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_PreviewEndEditEvent" class="expander" data-toggle="collapse">PreviewEndEditEvent</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_PreviewEndEditEvent" class="collapse in">
+  <div class="markdown level1 summary"><p>Identifies the PreviewEndEdit routed event. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly RoutedEvent PreviewEndEditEvent</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.RoutedEvent.html">RoutedEvent</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_StrokeDashArrayProperty" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.StrokeDashArrayProperty"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_StrokeDashArrayProperty" class="expander" data-toggle="collapse">StrokeDashArrayProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_StrokeDashArrayProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Identifies the StrokeDashArray dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty StrokeDashArrayProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_StrokeProperty" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.StrokeProperty"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_StrokeProperty" class="expander" data-toggle="collapse">StrokeProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_StrokeProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Identifies the Stroke dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty StrokeProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_StrokeThicknessProperty" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.StrokeThicknessProperty"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_StrokeThicknessProperty" class="expander" data-toggle="collapse">StrokeThicknessProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_StrokeThicknessProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Identifies the StrokeThickness dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty StrokeThicknessProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_ZIndexProperty" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.ZIndexProperty"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_ZIndexProperty" class="expander" data-toggle="collapse">ZIndexProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_ZIndexProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Identifies the ZIndex dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty ZIndexProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_ActualSize_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.ActualSize*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_ActualSize" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.ActualSize"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_ActualSize" class="expander" data-toggle="collapse">ActualSize</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_ActualSize" class="collapse in">
+  <div class="markdown level1 summary"><p>The actual size of the item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Size ActualSize { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.Size</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_AllowCopy_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.AllowCopy*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_AllowCopy" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.AllowCopy"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_AllowCopy" class="expander" data-toggle="collapse">AllowCopy</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_AllowCopy" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether copying is allowed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowCopy { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p><code>True</code> if copying is allowed; otherwise, <code>false</code>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Telerik.Windows.Diagrams.Core.ISupportManipulation.html#Telerik_Windows_Diagrams_Core_ISupportManipulation_AllowCopy">ISupportManipulation.AllowCopy</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_AllowCut_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.AllowCut*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_AllowCut" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.AllowCut"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_AllowCut" class="expander" data-toggle="collapse">AllowCut</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_AllowCut" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether cutting is allowed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowCut { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p><code>True</code> if cutting is allowed; otherwise, <code>false</code>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Telerik.Windows.Diagrams.Core.ISupportManipulation.html#Telerik_Windows_Diagrams_Core_ISupportManipulation_AllowCut">ISupportManipulation.AllowCut</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_AllowDelete_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.AllowDelete*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_AllowDelete" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.AllowDelete"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_AllowDelete" class="expander" data-toggle="collapse">AllowDelete</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_AllowDelete" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether deleting is allowed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowDelete { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p><code>True</code> if deleting is allowed; otherwise, <code>false</code>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Telerik.Windows.Diagrams.Core.ISupportManipulation.html#Telerik_Windows_Diagrams_Core_ISupportManipulation_AllowDelete">ISupportManipulation.AllowDelete</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_AllowPaste_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.AllowPaste*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_AllowPaste" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.AllowPaste"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_AllowPaste" class="expander" data-toggle="collapse">AllowPaste</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_AllowPaste" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether pasting is allowed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowPaste { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p><code>True</code> if pasting is allowed; otherwise, <code>false</code>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Telerik.Windows.Diagrams.Core.ISupportManipulation.html#Telerik_Windows_Diagrams_Core_ISupportManipulation_AllowPaste">ISupportManipulation.AllowPaste</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Bounds_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Bounds*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Bounds" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Bounds"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Bounds" class="expander" data-toggle="collapse">Bounds</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Bounds" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the bounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Rect Bounds { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.Rect</span>
+        <p><p>The bounds.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Telerik.Windows.Diagrams.Core.IDiagramItem.html#Telerik_Windows_Diagrams_Core_IDiagramItem_Bounds">IDiagramItem.Bounds</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Diagram_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Diagram*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Diagram" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Diagram"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Diagram" class="expander" data-toggle="collapse">Diagram</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Diagram" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the owning diagram of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IGraphInternal Diagram { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.IGraphInternal.html">IGraphInternal</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_EditTemplate_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.EditTemplate*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_EditTemplate" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.EditTemplate"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_EditTemplate" class="expander" data-toggle="collapse">EditTemplate</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_EditTemplate" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the edit template.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataTemplate EditTemplate { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DataTemplate</span>
+        <p><p>The edit template.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Id_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Id*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Id" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Id"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Id" class="expander" data-toggle="collapse">Id</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Id" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the unique identifier of this entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Id { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p><p>An identifier for this entity.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Telerik.Windows.Diagrams.Core.IDiagramItem.html#Telerik_Windows_Diagrams_Core_IDiagramItem_Id">IDiagramItem.Id</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsConnectorsManipulationEnabled_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsConnectorsManipulationEnabled*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsConnectorsManipulationEnabled" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsConnectorsManipulationEnabled"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsConnectorsManipulationEnabled" class="expander" data-toggle="collapse">IsConnectorsManipulationEnabled</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsConnectorsManipulationEnabled" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether manipulation on the connectors is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsConnectorsManipulationEnabled { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p><code>True</code> if manipulation on connectors is enabled; otherwise, <code>false</code>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Telerik.Windows.Diagrams.Core.ISupportManipulation.html#Telerik_Windows_Diagrams_Core_ISupportManipulation_IsConnectorsManipulationEnabled">ISupportManipulation.IsConnectorsManipulationEnabled</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsDraggingEnabled_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsDraggingEnabled*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsDraggingEnabled" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsDraggingEnabled"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsDraggingEnabled" class="expander" data-toggle="collapse">IsDraggingEnabled</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsDraggingEnabled" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether dragging is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDraggingEnabled { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p><code>True</code> if dragging is enabled; otherwise, <code>false</code>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Telerik.Windows.Diagrams.Core.ISupportManipulation.html#Telerik_Windows_Diagrams_Core_ISupportManipulation_IsDraggingEnabled">ISupportManipulation.IsDraggingEnabled</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsDynamic_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsDynamic*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsDynamic" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsDynamic"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsDynamic" class="expander" data-toggle="collapse">IsDynamic</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsDynamic" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets whether this item is dynamically generated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDynamic { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p>If <code>true</code> then this item will not be serialized as part of the diagram.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Telerik.Windows.Diagrams.Core.IDiagramItem.html#Telerik_Windows_Diagrams_Core_IDiagramItem_IsDynamic">IDiagramItem.IsDynamic</a></div>
+  
+  <h5 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsDynamic_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>In some applications or embeddings of RadDiagram (e.g. workflows) there are shapes or connections 
+which are generated as part of some layout or organization. In those cases it doesn&apos;t make sense to serialize 
+the elements which are automatically generated as part of the application. By setting this property to <code>true</code> the serialization pipeline will omit the element.</p>
+</div>
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsEditable_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsEditable*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsEditable" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsEditable"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsEditable" class="expander" data-toggle="collapse">IsEditable</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsEditable" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether editing is enabled on this item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEditable { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p><code>True</code> if editing is enabled; otherwise, <code>false</code>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Telerik.Windows.Diagrams.Core.IDiagramItem.html#Telerik_Windows_Diagrams_Core_IDiagramItem_IsEditable">IDiagramItem.IsEditable</a></div>
+  
+  <h5 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsEditable_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note that the similar higher-level <a class="xref" href="Telerik.Windows.Diagrams.Core.IGraph.html#Telerik_Windows_Diagrams_Core_IGraph_IsEditable">IsEditable</a> can potentially overrule this setting.</p>
+</div>
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsInEditMode_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsInEditMode*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsInEditMode" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsInEditMode"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsInEditMode" class="expander" data-toggle="collapse">IsInEditMode</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsInEditMode" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this instance is in edit mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInEditMode { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p><code>True</code> if this instance is in edit mode; otherwise, <code>false</code>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Telerik.Windows.Diagrams.Core.IDiagramItem.html#Telerik_Windows_Diagrams_Core_IDiagramItem_IsInEditMode">IDiagramItem.IsInEditMode</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsManipulationAdornerVisible_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsManipulationAdornerVisible*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsManipulationAdornerVisible" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsManipulationAdornerVisible"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsManipulationAdornerVisible" class="expander" data-toggle="collapse">IsManipulationAdornerVisible</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsManipulationAdornerVisible" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the manipulation adorner is visible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsManipulationAdornerVisible { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p><code>True</code> if the manipulation adorner is visible; otherwise, <code>false</code>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Telerik.Windows.Diagrams.Core.ISupportManipulation.html#Telerik_Windows_Diagrams_Core_ISupportManipulation_IsManipulationAdornerVisible">ISupportManipulation.IsManipulationAdornerVisible</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsMouseOver_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsMouseOver*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsMouseOver" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsMouseOver"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsMouseOver" class="expander" data-toggle="collapse">IsMouseOver</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsMouseOver" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance is mouse over.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMouseOver { get; protected set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p><code>True</code> if this instance is mouse over; otherwise, <code>false</code>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Telerik.Windows.Diagrams.Core.ISupportMouseOver.html#Telerik_Windows_Diagrams_Core_ISupportMouseOver_IsMouseOver">ISupportMouseOver.IsMouseOver</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsResizingEnabled_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsResizingEnabled*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsResizingEnabled" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsResizingEnabled"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsResizingEnabled" class="expander" data-toggle="collapse">IsResizingEnabled</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsResizingEnabled" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether resizing is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsResizingEnabled { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p><code>True</code> if resizing is enabled; otherwise, <code>false</code>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Telerik.Windows.Diagrams.Core.ISupportManipulation.html#Telerik_Windows_Diagrams_Core_ISupportManipulation_IsResizingEnabled">ISupportManipulation.IsResizingEnabled</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsRotationEnabled_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsRotationEnabled*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsRotationEnabled" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsRotationEnabled"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsRotationEnabled" class="expander" data-toggle="collapse">IsRotationEnabled</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsRotationEnabled" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether rotation is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRotationEnabled { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p><code>true</code> if this rotation is enabled; otherwise, <code>false</code>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Telerik.Windows.Diagrams.Core.ISupportManipulation.html#Telerik_Windows_Diagrams_Core_ISupportManipulation_IsRotationEnabled">ISupportManipulation.IsRotationEnabled</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsSelected_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsSelected*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsSelected" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsSelected"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsSelected" class="expander" data-toggle="collapse">IsSelected</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsSelected" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets whether the diagram entity is selected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSelected { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p><code>True</code> if selected; otherwise, <code>false</code>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Telerik.Windows.Diagrams.Core.IDiagramItem.html#Telerik_Windows_Diagrams_Core_IDiagramItem_IsSelected">IDiagramItem.IsSelected</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsSelectedInGroup_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsSelectedInGroup*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsSelectedInGroup" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsSelectedInGroup"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsSelectedInGroup" class="expander" data-toggle="collapse">IsSelectedInGroup</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsSelectedInGroup" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance is selected in group.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool IsSelectedInGroup { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p><code>True</code> if this item is selected in group; otherwise, <code>false</code>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsServiceManipulation_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsServiceManipulation*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsServiceManipulation" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.IsServiceManipulation"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsServiceManipulation" class="expander" data-toggle="collapse">IsServiceManipulation</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_IsServiceManipulation" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets whether any service is manipulating at the moment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool IsServiceManipulation { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_ParentContainer_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.ParentContainer*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_ParentContainer" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.ParentContainer"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_ParentContainer" class="expander" data-toggle="collapse">ParentContainer</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_ParentContainer" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the parent container shape.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IContainerShape ParentContainer { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.IContainerShape.html">IContainerShape</a>
+        <p><p>The parent container.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Telerik.Windows.Diagrams.Core.IContainerChild.html#Telerik_Windows_Diagrams_Core_IContainerChild_ParentContainer">IContainerChild.ParentContainer</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_ParentGroup_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.ParentGroup*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_ParentGroup" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.ParentGroup"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_ParentGroup" class="expander" data-toggle="collapse">ParentGroup</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_ParentGroup" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the group.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IGroup ParentGroup { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.IGroup.html">IGroup</a>
+        <p><p>The group.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Telerik.Windows.Diagrams.Core.IGroupable.html#Telerik_Windows_Diagrams_Core_IGroupable_ParentGroup">IGroupable.ParentGroup</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Position_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Position*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Position" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Position"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Position" class="expander" data-toggle="collapse">Position</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Position" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the position of the top left corner of the bounding rectangle of the item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point Position { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.Point</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Telerik.Windows.Diagrams.Core.IDiagramItem.html#Telerik_Windows_Diagrams_Core_IDiagramItem_Position">IDiagramItem.Position</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_ServiceLocator_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.ServiceLocator*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_ServiceLocator" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.ServiceLocator"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_ServiceLocator" class="expander" data-toggle="collapse">ServiceLocator</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_ServiceLocator" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the service locator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IGraphServiceLocator ServiceLocator { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.IGraphServiceLocator.html">IGraphServiceLocator</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Services_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Services*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Services" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Services"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Services" class="expander" data-toggle="collapse">Services</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Services" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the diagram&apos;s services.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IGraphServiceLocator Services { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.IGraphServiceLocator.html">IGraphServiceLocator</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Stroke_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Stroke*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Stroke" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Stroke"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Stroke" class="expander" data-toggle="collapse">Stroke</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Stroke" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the stroke of this item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Brush Stroke { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.Media.Brush</span>
+        <p><p>The stroke.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_StrokeDashArray_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.StrokeDashArray*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_StrokeDashArray" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.StrokeDashArray"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_StrokeDashArray" class="expander" data-toggle="collapse">StrokeDashArray</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_StrokeDashArray" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the stroke dash array of this item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoubleCollection StrokeDashArray { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.Media.DoubleCollection</span>
+        <p><p>The stroke dash array.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_StrokeThickness_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.StrokeThickness*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_StrokeThickness" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.StrokeThickness"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_StrokeThickness" class="expander" data-toggle="collapse">StrokeThickness</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_StrokeThickness" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the stroke thickness of this item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double StrokeThickness { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Double</span>
+        <p><p>The stroke thickness.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_X_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.X*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_X" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.X"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_X" class="expander" data-toggle="collapse">X</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_X" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the horizontal position of this item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double X { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Double</span>
+        <p><p>The x-coordinate.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Y_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Y*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Y" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Y"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Y" class="expander" data-toggle="collapse">Y</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Y" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the vertical position of this item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Y { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Double</span>
+        <p><p>The y-coordinate.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_ZIndex_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.ZIndex*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_ZIndex" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.ZIndex"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_ZIndex" class="expander" data-toggle="collapse">ZIndex</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_ZIndex" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the ZIndex of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ZIndex { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Telerik.Windows.Diagrams.Core.IDiagramItem.html#Telerik_Windows_Diagrams_Core_IDiagramItem_ZIndex">IDiagramItem.ZIndex</a></div>
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_add_BeginEdit_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.add_BeginEdit*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_add_BeginEdit_Telerik_Windows_RadRoutedEventHandler_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.add_BeginEdit(Telerik.Windows.RadRoutedEventHandler)"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_add_BeginEdit_Telerik_Windows_RadRoutedEventHandler_" class="expander" data-toggle="collapse">add_BeginEdit(RadRoutedEventHandler)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_add_BeginEdit_Telerik_Windows_RadRoutedEventHandler_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void add_BeginEdit(RadRoutedEventHandler value)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Telerik.Windows.RadRoutedEventHandler.html">RadRoutedEventHandler</a></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_add_PreviewBeginEdit_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.add_PreviewBeginEdit*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_add_PreviewBeginEdit_Telerik_Windows_RadRoutedEventHandler_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.add_PreviewBeginEdit(Telerik.Windows.RadRoutedEventHandler)"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_add_PreviewBeginEdit_Telerik_Windows_RadRoutedEventHandler_" class="expander" data-toggle="collapse">add_PreviewBeginEdit(RadRoutedEventHandler)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_add_PreviewBeginEdit_Telerik_Windows_RadRoutedEventHandler_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void add_PreviewBeginEdit(RadRoutedEventHandler value)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Telerik.Windows.RadRoutedEventHandler.html">RadRoutedEventHandler</a></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Deserialize_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Deserialize*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Deserialize_Telerik_Windows_Diagrams_Core_SerializationInfo_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Deserialize(Telerik.Windows.Diagrams.Core.SerializationInfo)"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Deserialize_Telerik_Windows_Diagrams_Core_SerializationInfo_" class="expander" data-toggle="collapse">Deserialize(SerializationInfo)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Deserialize_Telerik_Windows_Diagrams_Core_SerializationInfo_" class="collapse in">
+  <div class="markdown level1 summary"><p>Deserializes the serialization info in this diagram entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Deserialize(SerializationInfo info)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Telerik.Windows.Diagrams.Core.SerializationInfo.html">SerializationInfo</a></span>
+        <span class="parametername">info</span>
+        <p><p>A <a class="xref" href="Telerik.Windows.Diagrams.Core.SerializationInfo.html">SerializationInfo</a> instance.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Telerik.Windows.Diagrams.Core.ISerializable.html#Telerik_Windows_Diagrams_Core_ISerializable_Deserialize_Telerik_Windows_Diagrams_Core_SerializationInfo_">ISerializable.Deserialize(SerializationInfo)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Initialize_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Initialize*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Initialize_Telerik_Windows_Diagrams_Core_IGraphServiceLocator_Telerik_Windows_Diagrams_Core_IGraphInternal_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Initialize(Telerik.Windows.Diagrams.Core.IGraphServiceLocator,Telerik.Windows.Diagrams.Core.IGraphInternal)"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Initialize_Telerik_Windows_Diagrams_Core_IGraphServiceLocator_Telerik_Windows_Diagrams_Core_IGraphInternal_" class="expander" data-toggle="collapse">Initialize(IGraphServiceLocator, IGraphInternal)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Initialize_Telerik_Windows_Diagrams_Core_IGraphServiceLocator_Telerik_Windows_Diagrams_Core_IGraphInternal_" class="collapse in">
+  <div class="markdown level1 summary"><p>Initializes the specified service locator and parent graph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Initialize(IGraphServiceLocator serviceLocator, IGraphInternal graph)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Telerik.Windows.Diagrams.Core.IGraphServiceLocator.html">IGraphServiceLocator</a></span>
+        <span class="parametername">serviceLocator</span>
+        <p><p>The service locator.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Telerik.Windows.Diagrams.Core.IGraphInternal.html">IGraphInternal</a></span>
+        <span class="parametername">graph</span>
+        <p><p>The diagram control.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnApplyTemplate_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnApplyTemplate*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnApplyTemplate" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnApplyTemplate"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnApplyTemplate" class="expander" data-toggle="collapse">OnApplyTemplate()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnApplyTemplate" class="collapse in">
+  <div class="markdown level1 summary"><p>When overridden in a derived class, is invoked whenever application code or internal processes (such as a rebuilding layout pass) call <span class="xref">System.Windows.Controls.Control.ApplyTemplate</span>. In simplest terms, this means the method is called just before a UI element displays in an application. For more information, see Remarks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnApplyTemplate()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnCreateAutomationPeer_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnCreateAutomationPeer*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnCreateAutomationPeer" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnCreateAutomationPeer"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnCreateAutomationPeer" class="expander" data-toggle="collapse">OnCreateAutomationPeer()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnCreateAutomationPeer" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a <span class="xref">Telerik.Windows.Controls.Diagrams.AutomationPeers.RadDiagramAutomationPeer</span> peer associated with this object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override AutomationPeer OnCreateAutomationPeer()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.Automation.Peers.AutomationPeer</span>
+        <p><p>An instance of the <span class="xref">Telerik.Windows.Controls.Diagrams.AutomationPeers.RadDiagramAutomationPeer</span>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnGroupNameChanged_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnGroupNameChanged*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnGroupNameChanged" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnGroupNameChanged"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnGroupNameChanged" class="expander" data-toggle="collapse">OnGroupNameChanged()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnGroupNameChanged" class="collapse in">
+  <div class="markdown level1 summary"><p>Called when the group name changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnGroupNameChanged()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnIsConnectorsManipulationEnabledChanged_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnIsConnectorsManipulationEnabledChanged*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnIsConnectorsManipulationEnabledChanged_System_Boolean_System_Boolean_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnIsConnectorsManipulationEnabledChanged(System.Boolean,System.Boolean)"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnIsConnectorsManipulationEnabledChanged_System_Boolean_System_Boolean_" class="expander" data-toggle="collapse">OnIsConnectorsManipulationEnabledChanged(Boolean, Boolean)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnIsConnectorsManipulationEnabledChanged_System_Boolean_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Called when connectors manipulation changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnIsConnectorsManipulationEnabledChanged(bool newValue, bool oldValue)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">newValue</span>
+        <p><p>The new value.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">oldValue</span>
+        <p><p>The old value.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnIsEditableChanged_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnIsEditableChanged*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnIsEditableChanged_System_Boolean_System_Boolean_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnIsEditableChanged(System.Boolean,System.Boolean)"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnIsEditableChanged_System_Boolean_System_Boolean_" class="expander" data-toggle="collapse">OnIsEditableChanged(Boolean, Boolean)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnIsEditableChanged_System_Boolean_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Called when IsEditable has changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnIsEditableChanged(bool oldIsEditable, bool isEditable)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">oldIsEditable</span>
+        <p><p>The old value of the property.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">isEditable</span>
+        <p><p>The current value of the property.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnIsInEditModeChanged_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnIsInEditModeChanged*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnIsInEditModeChanged_System_Boolean_System_Boolean_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnIsInEditModeChanged(System.Boolean,System.Boolean)"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnIsInEditModeChanged_System_Boolean_System_Boolean_" class="expander" data-toggle="collapse">OnIsInEditModeChanged(Boolean, Boolean)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnIsInEditModeChanged_System_Boolean_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Called when IsInEditMode changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnIsInEditModeChanged(bool oldIsInEditMode, bool isInEditMode)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">oldIsInEditMode</span>
+        <p><p>The old value of the property.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">isInEditMode</span>
+        <p><p>The current value of the property.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnIsSelectedChanged_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnIsSelectedChanged*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnIsSelectedChanged_System_Boolean_System_Boolean_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnIsSelectedChanged(System.Boolean,System.Boolean)"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnIsSelectedChanged_System_Boolean_System_Boolean_" class="expander" data-toggle="collapse">OnIsSelectedChanged(Boolean, Boolean)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnIsSelectedChanged_System_Boolean_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Called when the IsSelected property has changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnIsSelectedChanged(bool oldValue, bool newValue)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">oldValue</span>
+        <p><p>The old value of the IsSelected property.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">newValue</span>
+        <p><p>The new value of the IsSelected property.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnMouseEnter_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnMouseEnter*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnMouseEnter_System_Windows_Input_MouseEventArgs_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnMouseEnter(System.Windows.Input.MouseEventArgs)"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnMouseEnter_System_Windows_Input_MouseEventArgs_" class="expander" data-toggle="collapse">OnMouseEnter(MouseEventArgs)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnMouseEnter_System_Windows_Input_MouseEventArgs_" class="collapse in">
+  <div class="markdown level1 summary"><p>Invoked when an unhandled <span class="xref">System.Windows.Input.Mouse.MouseEnter</span> attached event is raised on this element. Implement this method to add class handling for this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnMouseEnter(MouseEventArgs e)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Windows.Input.MouseEventArgs</span></span>
+        <span class="parametername">e</span>
+        <p><p>The <span class="xref">System.Windows.Input.MouseEventArgs</span> that contains the event data.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnMouseLeave_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnMouseLeave*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnMouseLeave_System_Windows_Input_MouseEventArgs_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnMouseLeave(System.Windows.Input.MouseEventArgs)"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnMouseLeave_System_Windows_Input_MouseEventArgs_" class="expander" data-toggle="collapse">OnMouseLeave(MouseEventArgs)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnMouseLeave_System_Windows_Input_MouseEventArgs_" class="collapse in">
+  <div class="markdown level1 summary"><p>Invoked when an unhandled <span class="xref">System.Windows.Input.Mouse.MouseLeave</span> attached event is raised on this element. Implement this method to add class handling for this event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnMouseLeave(MouseEventArgs e)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Windows.Input.MouseEventArgs</span></span>
+        <span class="parametername">e</span>
+        <p><p>The <span class="xref">System.Windows.Input.MouseEventArgs</span> that contains the event data.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnMouseLeftButtonDown_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnMouseLeftButtonDown*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnMouseLeftButtonDown_System_Windows_Input_MouseButtonEventArgs_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnMouseLeftButtonDown_System_Windows_Input_MouseButtonEventArgs_" class="expander" data-toggle="collapse">OnMouseLeftButtonDown(MouseButtonEventArgs)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnMouseLeftButtonDown_System_Windows_Input_MouseButtonEventArgs_" class="collapse in">
+  <div class="markdown level1 summary"><p>Called before the <span class="xref">System.Windows.UIElement.MouseLeftButtonDown</span> event occurs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnMouseLeftButtonDown(MouseButtonEventArgs e)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Windows.Input.MouseButtonEventArgs</span></span>
+        <span class="parametername">e</span>
+        <p><p>The data for the event.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnMouseLeftButtonUp_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnMouseLeftButtonUp*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnMouseLeftButtonUp_System_Windows_Input_MouseButtonEventArgs_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnMouseLeftButtonUp_System_Windows_Input_MouseButtonEventArgs_" class="expander" data-toggle="collapse">OnMouseLeftButtonUp(MouseButtonEventArgs)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnMouseLeftButtonUp_System_Windows_Input_MouseButtonEventArgs_" class="collapse in">
+  <div class="markdown level1 summary"><p>Called before the <span class="xref">System.Windows.UIElement.MouseLeftButtonUp</span> event occurs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnMouseLeftButtonUp(MouseButtonEventArgs e)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Windows.Input.MouseButtonEventArgs</span></span>
+        <span class="parametername">e</span>
+        <p><p>The data for the event.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnPositionChanged_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnPositionChanged*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnPositionChanged_System_Windows_Point_System_Windows_Point_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnPositionChanged(System.Windows.Point,System.Windows.Point)"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnPositionChanged_System_Windows_Point_System_Windows_Point_" class="expander" data-toggle="collapse">OnPositionChanged(Point, Point)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnPositionChanged_System_Windows_Point_System_Windows_Point_" class="collapse in">
+  <div class="markdown level1 summary"><p>Called when position changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnPositionChanged(Point oldPosition, Point newPosition)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Windows.Point</span></span>
+        <span class="parametername">oldPosition</span>
+        <p><p>The old position.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Windows.Point</span></span>
+        <span class="parametername">newPosition</span>
+        <p><p>The new position.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnPositionCoerced_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnPositionCoerced*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnPositionCoerced_System_Windows_Point_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnPositionCoerced(System.Windows.Point)"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnPositionCoerced_System_Windows_Point_" class="expander" data-toggle="collapse">OnPositionCoerced(Point)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnPositionCoerced_System_Windows_Point_" class="collapse in">
+  <div class="markdown level1 summary"><p>Called when [position coerced].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual object OnPositionCoerced(Point position)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Windows.Point</span></span>
+        <span class="parametername">position</span>
+        <p><p>The position.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Object</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnPropertyChanged_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnPropertyChanged*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnPropertyChanged_System_String_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnPropertyChanged(System.String)"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnPropertyChanged_System_String_" class="expander" data-toggle="collapse">OnPropertyChanged(String)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnPropertyChanged_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Called when a property value changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnPropertyChanged(string propertyName)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">propertyName</span>
+        <p><p>Name of the property.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnSizeChanged_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnSizeChanged*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnSizeChanged_System_Windows_Size_System_Windows_Size_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnSizeChanged(System.Windows.Size,System.Windows.Size)"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnSizeChanged_System_Windows_Size_System_Windows_Size_" class="expander" data-toggle="collapse">OnSizeChanged(Size, Size)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnSizeChanged_System_Windows_Size_System_Windows_Size_" class="collapse in">
+  <div class="markdown level1 summary"><p>Called when the size changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnSizeChanged(Size newSize, Size oldSize)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Windows.Size</span></span>
+        <span class="parametername">newSize</span>
+        <p><p>The new size.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Windows.Size</span></span>
+        <span class="parametername">oldSize</span>
+        <p><p>The old size.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnStrokeThicknessChanged_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnStrokeThicknessChanged*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnStrokeThicknessChanged" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnStrokeThicknessChanged"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnStrokeThicknessChanged" class="expander" data-toggle="collapse">OnStrokeThicknessChanged()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnStrokeThicknessChanged" class="collapse in">
+  <div class="markdown level1 summary"><p>Invoked when the StrokeThickness property has changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnStrokeThicknessChanged()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnZIndexChanged_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnZIndexChanged*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnZIndexChanged_System_Int32_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnZIndexChanged(System.Int32)"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnZIndexChanged_System_Int32_" class="expander" data-toggle="collapse">OnZIndexChanged(Int32)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnZIndexChanged_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Called when the ZIndex changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnZIndexChanged(int newValue)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">newValue</span>
+        <p><p>The new value.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnZIndexChanged_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnZIndexChanged*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnZIndexChanged_System_Int32_System_Int32_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.OnZIndexChanged(System.Int32,System.Int32)"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnZIndexChanged_System_Int32_System_Int32_" class="expander" data-toggle="collapse">OnZIndexChanged(Int32, Int32)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_OnZIndexChanged_System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Called when the ZIndex changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnZIndexChanged(int newValue, int oldValue)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">newValue</span>
+        <p><p>The new value.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">oldValue</span>
+        <p><p>The old value.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_RefreshIsSelectedInGroup_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.RefreshIsSelectedInGroup*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_RefreshIsSelectedInGroup" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.RefreshIsSelectedInGroup"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_RefreshIsSelectedInGroup" class="expander" data-toggle="collapse">RefreshIsSelectedInGroup()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_RefreshIsSelectedInGroup" class="collapse in">
+  <div class="markdown level1 summary"><p>Refreshes the is selected in group property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RefreshIsSelectedInGroup()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_remove_BeginEdit_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.remove_BeginEdit*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_remove_BeginEdit_Telerik_Windows_RadRoutedEventHandler_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.remove_BeginEdit(Telerik.Windows.RadRoutedEventHandler)"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_remove_BeginEdit_Telerik_Windows_RadRoutedEventHandler_" class="expander" data-toggle="collapse">remove_BeginEdit(RadRoutedEventHandler)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_remove_BeginEdit_Telerik_Windows_RadRoutedEventHandler_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void remove_BeginEdit(RadRoutedEventHandler value)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Telerik.Windows.RadRoutedEventHandler.html">RadRoutedEventHandler</a></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_remove_PreviewBeginEdit_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.remove_PreviewBeginEdit*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_remove_PreviewBeginEdit_Telerik_Windows_RadRoutedEventHandler_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.remove_PreviewBeginEdit(Telerik.Windows.RadRoutedEventHandler)"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_remove_PreviewBeginEdit_Telerik_Windows_RadRoutedEventHandler_" class="expander" data-toggle="collapse">remove_PreviewBeginEdit(RadRoutedEventHandler)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_remove_PreviewBeginEdit_Telerik_Windows_RadRoutedEventHandler_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void remove_PreviewBeginEdit(RadRoutedEventHandler value)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Telerik.Windows.RadRoutedEventHandler.html">RadRoutedEventHandler</a></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Serialize_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Serialize*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Serialize" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Serialize"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Serialize" class="expander" data-toggle="collapse">Serialize()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Serialize" class="collapse in">
+  <div class="markdown level1 summary"><p>Serializes this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual SerializationInfo Serialize()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.SerializationInfo.html">SerializationInfo</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Telerik.Windows.Diagrams.Core.ISerializable.html#Telerik_Windows_Diagrams_Core_ISerializable_Serialize">ISerializable.Serialize()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_UpdateVisualStates_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.UpdateVisualStates*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_UpdateVisualStates" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.UpdateVisualStates"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_UpdateVisualStates" class="expander" data-toggle="collapse">UpdateVisualStates()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_UpdateVisualStates" class="collapse in">
+  <div class="markdown level1 summary"><p>Updates the visual states.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void UpdateVisualStates()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="events">Events
+  </h3>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_BeginEdit" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.BeginEdit"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_BeginEdit" class="expander" data-toggle="collapse">BeginEdit</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_BeginEdit" class="collapse in">
+  <div class="markdown level1 summary"><p>Occurs when the editing begins.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event RadRoutedEventHandler BeginEdit</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.RadRoutedEventHandler.html">RadRoutedEventHandler</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_EndEdit" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.EndEdit"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_EndEdit" class="expander" data-toggle="collapse">EndEdit</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_EndEdit" class="collapse in">
+  <div class="markdown level1 summary"><p>Occurs when the editing ends.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;RadRoutedEditEventArgs&gt; EndEdit</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Telerik.Windows.Controls.Diagrams.RadRoutedEditEventArgs.html">RadRoutedEditEventArgs</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_ParentGroupChanged" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.ParentGroupChanged"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_ParentGroupChanged" class="expander" data-toggle="collapse">ParentGroupChanged</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_ParentGroupChanged" class="collapse in">
+  <div class="markdown level1 summary"><p>Occurs when [group changed].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PropertyEventArgs&lt;IGroup&gt;&gt; ParentGroupChanged</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Telerik.Windows.Diagrams.Core.PropertyEventArgs-1.html">PropertyEventArgs</a>&lt;<a class="xref" href="Telerik.Windows.Diagrams.Core.IGroup.html">IGroup</a>&gt;&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Telerik.Windows.Diagrams.Core.IGroupable.html#Telerik_Windows_Diagrams_Core_IGroupable_ParentGroupChanged">IGroupable.ParentGroupChanged</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_PreviewBeginEdit" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.PreviewBeginEdit"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_PreviewBeginEdit" class="expander" data-toggle="collapse">PreviewBeginEdit</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_PreviewBeginEdit" class="collapse in">
+  <div class="markdown level1 summary"><p>Occurs before the editing starts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event RadRoutedEventHandler PreviewBeginEdit</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.RadRoutedEventHandler.html">RadRoutedEventHandler</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_PreviewEndEdit" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.PreviewEndEdit"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_PreviewEndEdit" class="expander" data-toggle="collapse">PreviewEndEdit</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_PreviewEndEdit" class="collapse in">
+  <div class="markdown level1 summary"><p>Occurs before the editing ends.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;RadRoutedEditEventArgs&gt; PreviewEndEdit</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Telerik.Windows.Controls.Diagrams.RadRoutedEditEventArgs.html">RadRoutedEditEventArgs</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_PropertyChanged" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.PropertyChanged"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_PropertyChanged" class="expander" data-toggle="collapse">PropertyChanged</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_PropertyChanged" class="collapse in">
+  <div class="markdown level1 summary"><p>Occurs when a property value changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PropertyEventArgs&gt; PropertyChanged</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Telerik.Windows.Diagrams.Core.PropertyEventArgs.html">PropertyEventArgs</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Telerik.Windows.Diagrams.Core.IPropertyChanged.html#Telerik_Windows_Diagrams_Core_IPropertyChanged_PropertyChanged">IPropertyChanged.PropertyChanged</a></div>
+  
+  
+  
+  
+  </div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_ICollapsible_IsCollapsed_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Telerik#Windows#Diagrams#Core#ICollapsible#IsCollapsed*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_ICollapsible_IsCollapsed" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Telerik#Windows#Diagrams#Core#ICollapsible#IsCollapsed"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_ICollapsible_IsCollapsed" class="expander" data-toggle="collapse">ICollapsible.IsCollapsed</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_ICollapsible_IsCollapsed" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this item is collapsed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ICollapsible.IsCollapsed { get; set; }</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Telerik.Windows.Diagrams.Core.ICollapsible.html#Telerik_Windows_Diagrams_Core_ICollapsible_IsCollapsed">ICollapsible.IsCollapsed</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_get_Content_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Telerik#Windows#Diagrams#Core#IDiagramItem#get_Content*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_get_Content" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Telerik#Windows#Diagrams#Core#IDiagramItem#get_Content"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_get_Content" class="expander" data-toggle="collapse">IDiagramItem.get_Content()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_get_Content" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object IDiagramItem.get_Content()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Object</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><span class="xref">Telerik.Windows.Diagrams.Core.IDiagramItem.get_Content()</span></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_get_IsEnabled_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Telerik#Windows#Diagrams#Core#IDiagramItem#get_IsEnabled*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_get_IsEnabled" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Telerik#Windows#Diagrams#Core#IDiagramItem#get_IsEnabled"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_get_IsEnabled" class="expander" data-toggle="collapse">IDiagramItem.get_IsEnabled()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_get_IsEnabled" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IDiagramItem.get_IsEnabled()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><span class="xref">Telerik.Windows.Diagrams.Core.IDiagramItem.get_IsEnabled()</span></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_get_Name_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Telerik#Windows#Diagrams#Core#IDiagramItem#get_Name*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_get_Name" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Telerik#Windows#Diagrams#Core#IDiagramItem#get_Name"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_get_Name" class="expander" data-toggle="collapse">IDiagramItem.get_Name()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_get_Name" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string IDiagramItem.get_Name()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><span class="xref">Telerik.Windows.Diagrams.Core.IDiagramItem.get_Name()</span></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_get_RenderTransformOrigin_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Telerik#Windows#Diagrams#Core#IDiagramItem#get_RenderTransformOrigin*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_get_RenderTransformOrigin" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Telerik#Windows#Diagrams#Core#IDiagramItem#get_RenderTransformOrigin"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_get_RenderTransformOrigin" class="expander" data-toggle="collapse">IDiagramItem.get_RenderTransformOrigin()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_get_RenderTransformOrigin" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Point IDiagramItem.get_RenderTransformOrigin()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.Point</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><span class="xref">Telerik.Windows.Diagrams.Core.IDiagramItem.get_RenderTransformOrigin()</span></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_get_Visibility_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Telerik#Windows#Diagrams#Core#IDiagramItem#get_Visibility*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_get_Visibility" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Telerik#Windows#Diagrams#Core#IDiagramItem#get_Visibility"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_get_Visibility" class="expander" data-toggle="collapse">IDiagramItem.get_Visibility()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_get_Visibility" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Visibility IDiagramItem.get_Visibility()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.Visibility</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><span class="xref">Telerik.Windows.Diagrams.Core.IDiagramItem.get_Visibility()</span></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_Initialize_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Telerik#Windows#Diagrams#Core#IDiagramItem#Initialize*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_Initialize_Telerik_Windows_Diagrams_Core_IGraphServiceLocator_Telerik_Windows_Diagrams_Core_IGraphInternal_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Telerik#Windows#Diagrams#Core#IDiagramItem#Initialize(Telerik.Windows.Diagrams.Core.IGraphServiceLocator,Telerik.Windows.Diagrams.Core.IGraphInternal)"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_Initialize_Telerik_Windows_Diagrams_Core_IGraphServiceLocator_Telerik_Windows_Diagrams_Core_IGraphInternal_" class="expander" data-toggle="collapse">IDiagramItem.Initialize(IGraphServiceLocator, IGraphInternal)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_Initialize_Telerik_Windows_Diagrams_Core_IGraphServiceLocator_Telerik_Windows_Diagrams_Core_IGraphInternal_" class="collapse in">
+  <div class="markdown level1 summary"><p>Initializes the specified service locator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IDiagramItem.Initialize(IGraphServiceLocator serviceLocator, IGraphInternal graph)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Telerik.Windows.Diagrams.Core.IGraphServiceLocator.html">IGraphServiceLocator</a></span>
+        <span class="parametername">serviceLocator</span>
+        <p><p>The service locator.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Telerik.Windows.Diagrams.Core.IGraphInternal.html">IGraphInternal</a></span>
+        <span class="parametername">graph</span>
+        <p><p>The diagram.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Telerik.Windows.Diagrams.Core.IDiagramItem.html#Telerik_Windows_Diagrams_Core_IDiagramItem_Initialize_Telerik_Windows_Diagrams_Core_IGraphServiceLocator_Telerik_Windows_Diagrams_Core_IGraphInternal_">IDiagramItem.Initialize(IGraphServiceLocator, IGraphInternal)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_set_Content_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Telerik#Windows#Diagrams#Core#IDiagramItem#set_Content*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_set_Content_System_Object_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Telerik#Windows#Diagrams#Core#IDiagramItem#set_Content(System.Object)"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_set_Content_System_Object_" class="expander" data-toggle="collapse">IDiagramItem.set_Content(Object)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_set_Content_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IDiagramItem.set_Content(object value)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><span class="xref">Telerik.Windows.Diagrams.Core.IDiagramItem.set_Content(System.Object)</span></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_set_IsEnabled_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Telerik#Windows#Diagrams#Core#IDiagramItem#set_IsEnabled*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_set_IsEnabled_System_Boolean_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Telerik#Windows#Diagrams#Core#IDiagramItem#set_IsEnabled(System.Boolean)"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_set_IsEnabled_System_Boolean_" class="expander" data-toggle="collapse">IDiagramItem.set_IsEnabled(Boolean)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_set_IsEnabled_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IDiagramItem.set_IsEnabled(bool value)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><span class="xref">Telerik.Windows.Diagrams.Core.IDiagramItem.set_IsEnabled(System.Boolean)</span></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_set_Name_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Telerik#Windows#Diagrams#Core#IDiagramItem#set_Name*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_set_Name_System_String_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Telerik#Windows#Diagrams#Core#IDiagramItem#set_Name(System.String)"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_set_Name_System_String_" class="expander" data-toggle="collapse">IDiagramItem.set_Name(String)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_set_Name_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IDiagramItem.set_Name(string value)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><span class="xref">Telerik.Windows.Diagrams.Core.IDiagramItem.set_Name(System.String)</span></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_set_RenderTransformOrigin_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Telerik#Windows#Diagrams#Core#IDiagramItem#set_RenderTransformOrigin*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_set_RenderTransformOrigin_System_Windows_Point_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Telerik#Windows#Diagrams#Core#IDiagramItem#set_RenderTransformOrigin(System.Windows.Point)"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_set_RenderTransformOrigin_System_Windows_Point_" class="expander" data-toggle="collapse">IDiagramItem.set_RenderTransformOrigin(Point)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_set_RenderTransformOrigin_System_Windows_Point_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IDiagramItem.set_RenderTransformOrigin(Point value)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Windows.Point</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><span class="xref">Telerik.Windows.Diagrams.Core.IDiagramItem.set_RenderTransformOrigin(System.Windows.Point)</span></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_set_Visibility_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Telerik#Windows#Diagrams#Core#IDiagramItem#set_Visibility*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_set_Visibility_System_Windows_Visibility_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Telerik#Windows#Diagrams#Core#IDiagramItem#set_Visibility(System.Windows.Visibility)"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_set_Visibility_System_Windows_Visibility_" class="expander" data-toggle="collapse">IDiagramItem.set_Visibility(Visibility)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_IDiagramItem_set_Visibility_System_Windows_Visibility_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IDiagramItem.set_Visibility(Visibility value)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Windows.Visibility</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><span class="xref">Telerik.Windows.Diagrams.Core.IDiagramItem.set_Visibility(System.Windows.Visibility)</span></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_ISupportVirtualization_VirtualizationState_" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Telerik#Windows#Diagrams#Core#ISupportVirtualization#VirtualizationState*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_ISupportVirtualization_VirtualizationState" data-uid="Telerik.Windows.Controls.Diagrams.RadDiagramItem.Telerik#Windows#Diagrams#Core#ISupportVirtualization#VirtualizationState"><a href="#collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_ISupportVirtualization_VirtualizationState" class="expander" data-toggle="collapse">ISupportVirtualization.VirtualizationState</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_Diagrams_RadDiagramItem_Telerik_Windows_Diagrams_Core_ISupportVirtualization_VirtualizationState" class="collapse in">
+  <div class="markdown level1 summary"><p>Get a value indicating item state regarding virtualization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ItemVisibility ISupportVirtualization.VirtualizationState { get; set; }</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ItemVisibility.html">ItemVisibility</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Telerik.Windows.Diagrams.Core.ISupportVirtualization.html#Telerik_Windows_Diagrams_Core_ISupportVirtualization_VirtualizationState">ISupportVirtualization.VirtualizationState</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Telerik.Windows.Controls.CollectionExtensions.html#Telerik_Windows_Controls_CollectionExtensions_ToEnumerable__1___0_">CollectionExtensions.ToEnumerable&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Telerik.Windows.Core.EnumerableExtensions.html#Telerik_Windows_Core_EnumerableExtensions_ToEnumerable__1___0_">EnumerableExtensions.ToEnumerable&lt;T&gt;(T)</a>
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+	  <div id="push"></div>
+    </div>
+      <div id="footer" class="container-fluid pb-40">
+        <div class="row feedback-row mb-60">
+          <div class="col-sm-8 col-sm-offset-4 col-md-offset-3 col-lg-8 col-lg-offset-2">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="row feedback">
+                  <div class="col-xs-8">
+                    <h4>Was this article helpful?</h4>
+                  </div>
+                  <div class="col-xs-4 text-right">
+                    <button data-value="yes" id="yesButton">Yes</button>
+                    &nbsp;/&nbsp;
+                    <button data-value="no" id="noButton">No</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="dialog-overlay">
+          <div class="feedback-dialog dialog dialog-enter">
+            <div id="feedback-container">
+              <div id="feedback-window-container">
+                <div id="feedback-form-window">
+                  <h3 class="mt-0 mb-5">Give article feedback</h3>
+                  <p>Tell us how we can improve this article</p>
+                  <span id="feedback-form-popup-container"></span>
+                  <form id="feedback-form">
+                    <div id="feedback-checkbox-area">
+                      <input id="hidden-sheet-id" type="hidden" value="1toT2XTrYzmmQGUq5xCmXIkMWkwah3QCNZ9Aj5RLaeoo">
+                        <label>
+                          <input type="checkbox" data-bind="checked: outdatedSample"> Code samples are inaccurate / outdated.
+                        </label>
+                        <span class="required-field" data-bind="visible: outdatedSample"></span>
+                        <textarea id="feedback-code-sample-text-input" placeholder="Please, specify more details ..." class="feedback-extw__textarea" data-bind="visible: outdatedSample, value: inaccurateOutdatedCodeSamplesText">
+                        </textarea>
+                        <label>
+                          <input type="checkbox" data-bind="checked: otherMoreInformation"> I expected to find other / more information.
+                        </label>
+                        <span class="required-field" data-bind="visible: otherMoreInformation"></span>
+                        <textarea id="feedback-more-information-text-input" class="feedback-extw__textarea" placeholder="Please, specify what information can be added ..." data-bind="visible: otherMoreInformation, value: otherMoreInformationText">
+                        </textarea>
+                        <label>
+                          <input type="checkbox" data-bind="checked: textErrors"> There are typos / broken links / broken page elements.
+                        </label>
+                        <span class="required-field" data-bind="visible: textErrors"></span>
+                        <textarea id="feedback-text-errors-text-input" class="feedback-extw__textarea" placeholder="Please, specify what needs to be fixed ..." data-bind="visible: textErrors, value: typosLinksElementsText">
+                        </textarea>
+                        <label>
+                          <input type="checkbox" data-bind="checked: inaccurateContent"> Content is inaccurate / outdated.
+                        </label>
+                        <span class="required-field" data-bind="visible: inaccurateContent"></span>
+                        <textarea id="feedback-inaccurate-content-text-input" class="feedback-extw__textarea" placeholder="Please, specify which conent ..." data-bind="visible: inaccurateContent, value: inaccurateOutdatedContentText">
+                        </textarea>
+                        <label>
+                          <input type="checkbox" data-bind="checked: otherFeedback"> Other
+                        </label>
+                        <span class="required-field" data-bind="visible: otherFeedback"></span>
+                        <textarea id="feedback-other-text-input" placeholder="Please, enter more details or not listed feedback ..." class="feedback-extw__textarea" data-bind="visible: otherFeedback, value: textFeedback">
+                        </textarea>
+                        <input id="feedback-email-input" type="email" placeholder="email (optional)" data-email-msg="Email format is not valid." class="feedback-extw__input input" data-bind="value: email">
+                        <label>
+                          <input type="checkbox" data-bind="checked: acceptFeedbackContact"> By checking this box you consent to Progress contacting you by email about your response on this page.
+                        </label>
+                      </div>
+                  </form>
+                  <div class="feedback-extw__foot">
+                    <p class="mt-30 mb-0" style="text-align: right;">
+                      <button class="button ghost dialog-hide">Cancel</button>
+                      <button class="button dialog-hide" type="submit">Submit</button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <script>
+        $(document).ready(function() {
+        initFeedbackForm({
+        dialog: ".dialog-overlay",
+        closeButtons: ".dialog-hide",
+        container: ".feedback"
+        });
+        });
+      </script>
+      
+        <script>
+        $(".read-prev").hover(function() {
+        $(".title-prev").show();
+        }, function() {
+        $(".title-prev").hide();
+        });
+      
+        $(".read-next").hover(function() {
+        $(".title-next").show();
+        }, function() {
+        $(".title-next").hide();
+        });
+      
+        $(".all-components").click(function() {
+        $(".all-components").toggleClass("show-components");
+        $('.sidetoggle').toggleClass("collapse");
+        $('.sidetoc').toggleClass("show-components");
+        $(".sidefilter").toggleClass("show-components");
+        });
+      </script>
+      
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="row">
+              <div class="col-md-12 col-lg-10 col-lg-offset-1">
+                <div class="row">
+      
+      
+                  <div class="col-sm-4 mb-20">
+                    <h6 class="mt-0 mb-10">Getting Started</h6>
+                    <ul class="list-unstyled">
+      
+                      <li>
+                        <a href="https://www.telerik.com/download-trial-file/v2-b/ui-for-silverlight" target="_blank">Install Now</a>
+                      </li>
+      
+                      <li>
+                        <a href="http://demos.telerik.com/silverlight/" target="_blank">Demos</a>
+                      </li>
+      
+                      <li>
+                        <a href="http://demos.telerik.com/xaml-sdkbrowser/" target="_blank">SDK Samples Browser</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/silverlight/sample-applications" target="_blank">Sample Applications</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/wpf/color-theme-generator" target="_blank">Themes Generator</a>
+                      </li>
+      
+                    </ul>
+                  </div>
+      
+                  <div class="col-sm-4 mb-20">
+                    <h6 class="mt-0 mb-10">Support Resources</h6>
+                    <ul class="list-unstyled">
+      
+                      <li>
+                        <a href="https://www.telerik.com/support/code-library/silverlight" target="_blank">Code Library</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/support/kb/silverlight" target="_blank">Knowledge Base</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/silverlight/mvvm-support" target="_blank">MVVM Support</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/videos/silverlight" target="_blank">Videos</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://github.com/telerik/xaml-sdk" target="_blank">GitHub SDK Repository</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/help/silverlight/installation-system-requirements.html" target="_blank">System Requirements</a>
+                      </li>
+      
+                    </ul>
+                  </div>
+      
+                  <div class="col-sm-4 mb-20">
+                    <h6 class="mt-0 mb-10">Community</h6>
+                    <ul class="list-unstyled">
+      
+                      <li>
+                        <a href="https://www.telerik.com/forums/silverlight" target="_blank">Forums</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/blogs/.net" target="_blank">Blogs</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://feedback.telerik.com/Project/143" target="_blank">XAML Feedback Portal</a>
+                      </li>
+      
+                      <li>
+                        <a href="http://feedback.telerik.com/Project/184" target="_blank">Document Processing Feedback Portal</a>
+                      </li>
+      
+                    </ul>
+                  </div>
+      
+      
+                </div>
+                <div class="row copyright">
+                  <div class="col-sm-4 social-icons">
+                    <span class="sticky">
+                      <a class="social-icon" href="https://www.facebook.com/Telerik/" title=""><?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewbox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+      <path d="M13.766,32.155V17.559H8.854V11.87h4.912V7.675c0-4.869,2.973-7.52,7.316-7.52c2.08,0,3.868,0.155,4.39,0.224v5.088
+      	l-3.013,0.001c-2.362,0-2.819,1.122-2.819,2.769v3.632h5.634l-0.734,5.688H19.64v14.597H13.766z"></path>
+      </svg>
+                      </a>
+                      <a class="social-icon" href="https://twitter.com/Telerik/" title=""><?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewbox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+      <path fill="#231F20" d="M32,6.076c-1.178,0.522-2.442,0.875-3.771,1.034c1.355-0.813,2.396-2.1,2.887-3.632
+      	c-1.269,0.752-2.674,1.298-4.169,1.593c-1.198-1.276-2.904-2.073-4.792-2.073c-3.626,0-6.566,2.939-6.566,6.565
+      	c0,0.515,0.058,1.016,0.17,1.496C10.303,10.785,5.466,8.171,2.228,4.199c-0.565,0.97-0.889,2.097-0.889,3.3
+      	c0,2.278,1.159,4.287,2.92,5.464c-1.076-0.034-2.088-0.329-2.974-0.821c0,0.027,0,0.055,0,0.083c0,3.181,2.263,5.834,5.267,6.438
+      	c-0.551,0.15-1.131,0.23-1.73,0.23c-0.423,0-0.834-0.041-1.235-0.118c0.835,2.608,3.26,4.507,6.133,4.56
+      	c-2.247,1.761-5.078,2.811-8.154,2.811c-0.53,0-1.052-0.031-1.566-0.092c2.905,1.862,6.356,2.949,10.064,2.949
+      	c12.076,0,18.679-10.004,18.679-18.679c0-0.285-0.007-0.568-0.02-0.849C30.007,8.549,31.12,7.393,32,6.076"></path>
+      </svg>
+                      </a>
+                      <a class="social-icon" href="https://www.youtube.com/user/TelerikInc" title=""><?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" xml:space="preserve">
+      <path d="M506.887,153.632c0,0-5.003-35.283-20.354-50.82c-19.469-20.393-41.293-20.494-51.301-21.687
+      c-71.647-5.179-179.121-5.179-179.121-5.179h-0.223c0,0-107.472,0-179.121,5.179c-10.008,1.194-31.824,1.295-51.301,21.687
+      c-15.351,15.537-20.346,50.82-20.346,50.82S0,195.065,0,236.497v38.843c0,41.433,5.12,82.865,5.12,82.865
+      s4.995,35.283,20.346,50.82c19.476,20.393,45.06,19.748,56.455,21.885C122.883,434.839,256,436.054,256,436.054
+      s107.585-0.162,179.232-5.341c10.008-1.194,31.831-1.295,51.301-21.687c15.351-15.537,20.354-50.82,20.354-50.82
+      S512,316.773,512,275.341v-38.843C512,195.065,506.887,153.632,506.887,153.632z M203.87,322.913v-144.36l137.342,72.18 L203.87,322.913z"></path>
+      </svg>
+                      </a>
+                      <a class="social-icon" href="https://www.linkedin.com/showcase/telerik/" title=""><?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewbox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+      <path d="M7.81,29V9.652H1.379V29H7.81z M4.596,7.009c2.243,0,3.638-1.486,3.638-3.342C8.192,1.768,6.838,0.324,4.638,0.324
+      	C2.438,0.324,1,1.768,1,3.667c0,1.856,1.396,3.342,3.554,3.342H4.596L4.596,7.009z M11.37,29h6.43V18.195
+      	c0-0.579,0.042-1.156,0.213-1.569c0.465-1.155,1.521-2.352,3.3-2.352c2.325,0,3.257,1.774,3.257,4.375v10.35H31V17.906
+      	c0-5.943-3.173-8.708-7.404-8.708c-3.469,0-4.992,1.939-5.838,3.259H17.8V9.651h-6.43C11.454,11.467,11.37,28.999,11.37,29L11.37,29
+      	z"></path>
+      </svg>
+                      </a>
+                    </span>
+                  </div>
+                  <div class="col-sm-8">
+                    <p>
+                      Copyright &copy; 2018 Progress Software Corporation and/or its subsidiaries or affiliates.<br> All Rights Reserved.
+                    </p>
+      
+                    <p>
+                      Progress, Telerik, and certain product names used herein are trademarks or registered trademarks of Progress Software Corporation and/or one of its subsidiaries or affiliates in the U.S. and/or other countries. See <a href="https://www.progress.com/legal/trademarks">Trademarks</a> for appropriate markings.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

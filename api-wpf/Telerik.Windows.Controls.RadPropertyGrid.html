@@ -1,0 +1,5024 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Telerik UI - API ReferenceClass RadPropertyGrid
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="restype" content="api">
+    <meta name="title" content="Class RadPropertyGrid
+   ">
+    <meta name="generator" content="docfx 2.36.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="https://d6vtbcy3ong79.cloudfront.net/telerik-navigation/1.0.28/css/index.min.css">
+    <link rel="stylesheet" href="https://d6vtbcy3ong79.cloudfront.net/fonts/1.1.5/css/metric.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,500,700">
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- Google Tag Manager -->
+          <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-6X92');</script>
+          <!-- End Google Tag Manager -->
+          <script>	
+              var e = document.documentElement;	
+              e.className = e.className.replace(/(^|\s)no-js(\s|$)/i, "$2");	
+          </script>
+          
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//kendo.cdn.telerik.com/2017.3.1026/js/kendo.web.min.js"></script>
+    <script src="//cdn.optimizely.com/js/2380340583.js"></script>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        <aside class="TK-Hat">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-8 col-xl-offset-2">
+                <div class="row">
+                  <div class="col-md-12 col-xl-10 col-xl-offset-1">
+                    <figure class="TK-Hat-Brand">
+                      <a href="https://www.progress.com" class="TK-PRGS-Logo" data-gtm-event="top-nav, text, progress-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="94" height="40" viewbox="0 0 512 120">
+                          <path fill="#5ce500" d="M95.52 29.33v51a3.93 3.93 0 0 1-1.78 3.08l-1.67 1-12.72 7.35-8.59 5-1.78 1V42.6L21.23 15 43.91 1.93 46 .74a3.94 3.94 0 0 1 3.56 0L81 18.9l14.51 8.38v2.05zM58.36 48.72l-9.79-5.66-22.91-13.23a4 4 0 0 0-3.56 0L1.77 41.57 0 42.6l34.49 19.91v39.83l20.3-11.73 1.79-1a3.94 3.94 0 0 0 1.78-3.08V48.72zM0 82.43l23.86 13.78V68.63z"></path>
+                          <path fill="#4b4e52" d="M148.09 27.28h-26v70.48h11.55V70.1h14.57c15.77 0 24.45-7.7 24.45-21.69 0-6.35-2.4-21.12-24.55-21.12m12.78 21.31c0 7.95-4.12 11.19-14.24 11.19h-13v-22.1h14.57c8.56 0 12.71 3.57 12.71 10.91M207 46.41l.87.42-2 10.42-1.35-.42a11.32 11.32 0 0 0-3.34-.51c-10.79 0-11.67 8.59-11.67 19v22.44h-10.64V46h10v6.24c2.73-4.2 6-6.37 10.37-6.9a14.55 14.55 0 0 1 7.76 1.07M233.29 45c-8.42 0-15.16 3.2-19.5 9.27-4.56 6.37-5.23 13.85-5.23 17.74 0 16.36 9.7 26.92 24.73 26.92 18.26 0 24.73-14.71 24.73-27.3 0-7.25-2.15-13.82-6-18.51-4.41-5.31-10.87-8.12-18.7-8.12m0 44.38c-8.37 0-13.57-6.66-13.57-17.37s5.2-17.55 13.57-17.55S247 61.23 247 71.78c0 10.83-5.24 17.56-13.66 17.56m114.55-42.93l.87.42-2 10.42-1.35-.42a11.26 11.26 0 0 0-3.33-.51c-10.78 0-11.66 8.59-11.66 19v22.44h-10.66V46h10v6.24c2.73-4.2 6-6.37 10.37-6.9a14.54 14.54 0 0 1 7.73 1.06m38.4 34.76l-.2.57c-2.23 6.36-7.57 7.7-11.65 7.7-8.09 0-13.3-5.37-13.81-14.09h36.59l.13-1a31.26 31.26 0 0 0 .12-4.12v-.93C396.93 54.78 387.48 45 374 45c-7.9 0-14.37 3.1-18.73 9a30.85 30.85 0 0 0-5.54 18c0 16 9.95 26.74 24.74 26.74 11.45 0 19.33-5.82 22.2-16.38l.33-1.2h-10.7zM361 66.05c.9-7.17 5.81-11.73 12.79-11.73 5.33 0 11.64 3.1 12.52 11.73H361zm-60.7-15.71c-3.45-3.58-8.06-5.39-13.76-5.39-15.69 0-22.83 13.81-22.83 26.63 0 13.16 7.06 26.44 22.83 26.44a18.33 18.33 0 0 0 13.35-5.42c0 2.28-.1 4.45-.16 5.38-.58 8.54-4.68 12.51-12.91 12.51-4.47 0-9.61-1.59-10.6-6l-.22-1h-10.54l.17 1.41c1.1 9.12 9.11 14.79 20.9 14.79 10.34 0 17.7-3.9 21.28-11.26 1.73-3.55 2.6-8.72 2.6-15.37V46h-10.13v4.34zm-13.11 38.15c-3.74 0-12.43-1.69-12.43-17.37 0-10.3 4.87-16.7 12.71-16.7 6.06 0 12.52 4.39 12.52 16.7 0 10.87-4.79 17.37-12.81 17.37m159.67-6.31c0 8.23-6.83 16.53-22.09 16.53-13.5 0-21.53-5.85-22.61-16.45l-.15-1.1h10.52l.21.84c1.29 6.38 7.37 7.72 12.24 7.72 5.34 0 11-1.72 11-6.54 0-2.44-1.59-4.18-4.73-5.16-1.86-.55-4.15-1.2-6.56-1.87-4.16-1.16-8.47-2.38-11.12-3.29-6.56-2.35-10.33-6.93-10.33-12.56 0-10.43 10.16-15.11 20.22-15.11 13.46 0 20.42 5.07 21.3 15.49l.09 1.07H434.5l-.14-.82c-1-6-7-6.9-10.48-6.9-3 0-10 .53-10 5.5 0 2.25 1.93 3.91 5.89 5.06 1.18.33 2.94.78 5 1.31 4.22 1.09 9.48 2.46 12.13 3.37 6.59 2.32 9.93 6.67 9.93 13m49.39 0c0 8.23-6.83 16.53-22.09 16.53-13.5 0-21.53-5.85-22.61-16.45l-.11-1.09H462l.12.74c1.29 6.38 7.37 7.72 12.24 7.72 5.34 0 11-1.72 11-6.54 0-2.44-1.59-4.18-4.72-5.16-1.86-.55-4.15-1.2-6.57-1.87-4.16-1.16-8.46-2.38-11.11-3.29-6.57-2.35-10.33-6.93-10.33-12.56 0-10.43 10.16-15.11 20.22-15.11 13.46 0 20.42 5.07 21.29 15.49l.09 1.07H483.9l-.14-.82c-1-6-7-6.9-10.48-6.9-3 0-9.95.53-9.95 5.5 0 2.25 1.93 3.91 5.89 5.06 1.18.33 2.94.78 5 1.31 4.22 1.09 9.48 2.46 12.13 3.37 6.58 2.32 9.93 6.67 9.93 13m8.43-30.78a7.37 7.37 0 1 1 7.29-7.37 7.23 7.23 0 0 1-7.29 7.37m0-13.49a6.12 6.12 0 1 0 6 6.12 5.91 5.91 0 0 0-6-6.12m-.85 7.49v2.46h-2.17v-7.74h3.62a2.58 2.58 0 0 1 2.86 2.7 2.26 2.26 0 0 1-1.49 2.34l1.77 2.7H506l-1.49-2.46h-.68zm1.21-3.49h-1.21v1.73h1.21a.86.86 0 0 0 1-.85.88.88 0 0 0-1-.89"></path>
+                        </svg>
+                      </a>
+                    </figure>
+        
+                    <div class="TK-Hat-Aside TK--Desktop">
+                      <ul class="TK-Hat-Menu">
+                        <li class="TK-Hat-Menu-Item">
+                          <a href="https://www.progress.com/company" class="TK-Hat-Menu-Link" data-gtm-event="top-nav, text, company">Company <i class="TK-Arrow"></i></a>
+                          <ul class="TK-Dropdown TK-Dropdown--Small TK-Dropdown--White">
+                            <li><a href="https://www.progress.com/company" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, company-overview">Company Overview</a></li>
+                            <li><a href="https://www.progress.com/company/leadership#exec" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, leadership">Leadership</a></li>
+                            <li><a href="http://investors.progress.com" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, investor-relations">Investor Relations</a></li>
+                            <li><a href="http://investors.progress.com/releases.cfm" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, press-releases">Press Releases</a></li>
+                            <li><a href="https://www.progress.com/company/press-coverage" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, press-coverage">Press Coverage</a></li>
+                            <li><a href="https://www.progress.com/events" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, events">Events</a></li>
+                            <li><a href="https://www.progress.com/company/awards" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, awards">Awards</a></li>
+                            <li><a href="https://www.progress.com/blogs" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, corporate-blog">Corporate Blog</a></li>
+                            <li><a href="https://www.progress.com/customers" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, customers">Customers</a></li>
+                            <li><a href="https://www.progress.com/company/careers" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, careers">Careers</a></li>
+                            <li><a href="https://www.progress.com/company/offices" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, offices">Offices</a></li>
+                          </ul>
+                        </li>
+        
+                        <li class="TK-Hat-Menu-Item">
+                          <a href="https://www.progress.com/products" class="TK-Hat-Menu-Link" data-gtm-event="technology.track">Technology <i class="TK-Arrow"></i></a>
+                          <ul class="TK-Dropdown TK-Dropdown--Medium TK-Dropdown--White">
+                            <li><a href="https://www.progress.com/app-development-deployment" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, app-dev-deploy">Application Development
+                                and Deployment</a></li>
+                            <li><a href="https://www.progress.com/back-end-as-a-service" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, baas">BaaS Platform</a></li>
+                            <li><a href="https://www.progress.com/data-connectivity-integration" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, dci">Data Connectivity and Integration</a></li>
+                            <li><a href="https://www.progress.com/web-content-management" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, wcm">Web Content Management</a></li>
+                            <li><a href="https://www.progress.com/predictive-analytics" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, predictive-analytics">Predictive Analytics</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+        
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <nav class="navbar navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-8 col-xl-offset-2">
+                <div class="row">
+                  <div class="nav-container col-md-12 col-lg-8 col-lg-offset-2 col-xl-10 col-xl-offset-1">
+                    <div id="navbar" class="nav navbar-collapse">
+                      <a class="button all-components">
+                        <span class="item-expanded"></span>
+                      </a>
+                      <a class="navbar-brand brand-platform-wpf" href="/devtools/wpf/">
+                        <span class="sr-only">Telerik UI for WPF</span>
+                      </a>
+        
+                      <select id="nav-dropdown">
+                        <option selected="">Navigate to...
+        
+                        <option value="https://demos.telerik.com/wpf/">Demos
+        
+                        <option value="https://www.telerik.com/support/whats-new/wpf/release-history">Release History
+        
+                        <option value="http://www.telerik.com/products/wpf/overview.aspx">About
+        
+                        <option value="http://www.telerik.com/purchase/individual/wpf.aspx">Pricing
+        
+                      </select>
+        
+                      <ul class="nav navbar-nav main-menu">
+        
+                        <li>
+                          <a href="https://demos.telerik.com/wpf/" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'Demos')">Demos</a>
+                        </li>
+        
+                        <li>
+                          <a href="https://www.telerik.com/support/whats-new/wpf/release-history" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'Release History')">Release History</a>
+                        </li>
+        
+                        <li>
+                          <a href="http://www.telerik.com/products/wpf/overview.aspx" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'About')">About</a>
+                        </li>
+        
+                        <li>
+                          <a href="http://www.telerik.com/purchase/individual/wpf.aspx" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'Pricing')">Pricing</a>
+                        </li>
+        
+        
+        
+                        <li class="hidden-xs">
+                          <a class="search-icon">
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewbox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+        <path fill="#FFFFFF" d="M6.499,1.985C3.461,1.985,1,4.449,1,7.484c0,3.039,2.461,5.5,5.499,5.5c3.037,0,5.498-2.461,5.498-5.5
+        	C11.996,4.449,9.535,1.985,6.499,1.985z M6.499,11.885c-2.429,0-4.399-1.97-4.399-4.401c0-2.429,1.97-4.399,4.399-4.399
+        	c2.429,0,4.399,1.97,4.399,4.399C10.897,9.915,8.928,11.885,6.499,11.885z M13.828,13.746c0,1.179,0.109,1.067-1.069,1.067
+        	l-1.678-1.678c0-1.177-0.109-1.067,1.069-1.067L13.828,13.746z"></path>
+        </svg>
+        
+                            &nbsp;
+                            <span class="sr-only">Search</span>
+                          </a>
+                          <div class="global-search">
+                            <form action="/devtools/wpf/search" method="get">
+                              <div class="search-input-container">
+                                <input id="local-search" placeholder="Search for &hellip;" name="q">
+                                <div id='refine-search-container'>
+                                  <div id='refine-search-button' class='unselectable'>
+                                    <span id='refine-search-label' data-bind='text: label'></span>
+                                    <span class='k-icon k-i-arrow-chevron-down'></span>
+                                  </div>
+                                </div>
+                                <div id="refine-search-popup" style="display: none">
+                                  <ul>
+                                    <li>
+                                      <label class="custom-checkbox unselectable">
+                                        <input type="checkbox" data-bind="checked: documentation"><span class="k-icon k-i-check"></span>Search in Documentation
+                                      </label>
+                                    </li>
+        
+                                    <li>
+                                      <label class="custom-checkbox unselectable">
+                                        <input type="checkbox" disabled="true" data-bind="checked: api"><span class="k-icon k-i-check"></span>Search in API Reference
+                                      </label>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </form>
+        
+                            <script>
+                              var gcsInstance = '011354416605164361800:ebfuug7ih7i';
+                              var gcsKey = 'AIzaSyDOW6NJLQOTngTI3AXBQaTDaWhrL2tdo_M';
+                              isKbPage =  false ;
+                              siteHasKbPortal = ''
+                            </script>
+        
+                            <script type="text/javascript" src="/devtools/wpf/assets/search-results.js"></script>
+        
+                          </div>
+                        </li>
+        
+        
+                        <li class="primary-cta">
+                          <a href="http://www.telerik.com/products/wpf/download.aspx" target="_blank">Try now</a>
+                        </li>
+        
+                      </ul>
+                    </div>
+        
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+        </nav>
+        
+        <script>
+        
+          var searchContainer = $(".global-search");
+        
+          function hideSearch(e){
+          if (!searchContainer.is(e.target) &&
+          searchContainer.has(e.target).length === 0 &&
+          $(e.target).parents("#refine-search-popup").length === 0) {
+          setTimeout(function(e) {
+          searchContainer.removeClass("show-search");
+          $(document).off('click', hideSearch);
+          }, 200)
+          }
+          }
+        
+          function showSearch() {
+        
+          searchContainer.toggleClass("show-search")
+          .one("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(e) {
+          if (searchContainer.hasClass("show-search")) {
+          searchContainer.find("input:first")
+          .focus();
+          $(document).on("click", hideSearch);
+          }
+          });
+          }
+        
+          $(document).off("click", ".search-icon")
+          .on("click", ".search-icon", showSearch);
+        
+        
+          function navigate(e) {
+          trackItemFromCurrentPage('docs-navigation', e.target.children[e.target.selectedIndex].text);
+          window.open(e.target.value, "_blank");
+          }
+        
+          $(document)
+          .off("change", "#nav-dropdown")
+          .on("change", "#nav-dropdown", navigate);
+        </script>
+        
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav side-nav hide-when-search">
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc">
+             
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-9">
+            <article class="content wrap" id="_content" data-uid="Telerik.Windows.Controls.RadPropertyGrid">
+  <h1 id="Telerik_Windows_Controls_RadPropertyGrid" data-uid="Telerik.Windows.Controls.RadPropertyGrid">Class RadPropertyGrid
+  </h1>
+  <div class="markdown level0 summary"><p>Provides infrastructure for command execution for RadPropertyGrid.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">RadPropertyGrid</span></div>
+  </div>
+  
+  
+  
+  <h5><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h5>
+  <h5><strong>Assembly</strong>: Telerik.Windows.Controls.Data.dll</h5>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_syntax">Syntax</h4>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TelerikToolboxCategory(&quot;Data&quot;)]
+public class RadPropertyGrid : Control, IThemable, IWeakEventListener&lt;NotifyCollectionChangedEventArgs&gt;, IWeakEventListener&lt;ItemChangedEventArgs&lt;PropertyDefinition&gt;&gt;</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid__ctor_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.#ctor*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid__ctor" data-uid="Telerik.Windows.Controls.RadPropertyGrid.#ctor"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid__ctor" class="expander" data-toggle="collapse">RadPropertyGrid()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid__ctor" class="collapse in">
+  <div class="markdown level1 summary"><p>Initializes a new instance of the RadPropertyGrid class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RadPropertyGrid()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_AutoGenerateBindingPathsProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.AutoGenerateBindingPathsProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_AutoGenerateBindingPathsProperty" class="expander" data-toggle="collapse">AutoGenerateBindingPathsProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_AutoGenerateBindingPathsProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the AutoGenerateBindingPaths dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty AutoGenerateBindingPathsProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_AutoGeneratePropertyDefinitionsProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.AutoGeneratePropertyDefinitionsProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_AutoGeneratePropertyDefinitionsProperty" class="expander" data-toggle="collapse">AutoGeneratePropertyDefinitionsProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_AutoGeneratePropertyDefinitionsProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the AutoGeneratePropertyDefinitions dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty AutoGeneratePropertyDefinitionsProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_BeginningEditEvent" data-uid="Telerik.Windows.Controls.RadPropertyGrid.BeginningEditEvent"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_BeginningEditEvent" class="expander" data-toggle="collapse">BeginningEditEvent</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_BeginningEditEvent" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the BeginningEdit routed event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly RoutedEvent BeginningEditEvent</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.RoutedEvent</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_CanUserResizeDescriptionPanelProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.CanUserResizeDescriptionPanelProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_CanUserResizeDescriptionPanelProperty" class="expander" data-toggle="collapse">CanUserResizeDescriptionPanelProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_CanUserResizeDescriptionPanelProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the CanUserResizeDescriptionPanel dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty CanUserResizeDescriptionPanelProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_CanUserSelectProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.CanUserSelectProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_CanUserSelectProperty" class="expander" data-toggle="collapse">CanUserSelectProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_CanUserSelectProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="Telerik.Windows.Controls.RadPropertyGrid.html#Telerik_Windows_Controls_RadPropertyGrid_CanUserSelect">CanUserSelect</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty CanUserSelectProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_CommandProviderProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.CommandProviderProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_CommandProviderProperty" class="expander" data-toggle="collapse">CommandProviderProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_CommandProviderProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the CommandProvider dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty CommandProviderProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_DescriptionPanelVisibilityProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.DescriptionPanelVisibilityProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_DescriptionPanelVisibilityProperty" class="expander" data-toggle="collapse">DescriptionPanelVisibilityProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_DescriptionPanelVisibilityProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the DescriptionPanelVisibility dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty DescriptionPanelVisibilityProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_EditEndedEvent" data-uid="Telerik.Windows.Controls.RadPropertyGrid.EditEndedEvent"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_EditEndedEvent" class="expander" data-toggle="collapse">EditEndedEvent</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_EditEndedEvent" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the EditEnded routed event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly RoutedEvent EditEndedEvent</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.RoutedEvent</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_EditModeProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.EditModeProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_EditModeProperty" class="expander" data-toggle="collapse">EditModeProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_EditModeProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the EditMode DependencyProperty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty EditModeProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_EditorTemplateSelectorProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.EditorTemplateSelectorProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_EditorTemplateSelectorProperty" class="expander" data-toggle="collapse">EditorTemplateSelectorProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_EditorTemplateSelectorProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the EditorTemplateSelector dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty EditorTemplateSelectorProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_EnableCustomFilteringProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.EnableCustomFilteringProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_EnableCustomFilteringProperty" class="expander" data-toggle="collapse">EnableCustomFilteringProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_EnableCustomFilteringProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the EnableCustomFiltering dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty EnableCustomFilteringProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_EnableDeferredFilteringProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.EnableDeferredFilteringProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_EnableDeferredFilteringProperty" class="expander" data-toggle="collapse">EnableDeferredFilteringProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_EnableDeferredFilteringProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the EnableDeferredFiltering dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty EnableDeferredFilteringProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_EnableEditorCachingProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.EnableEditorCachingProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_EnableEditorCachingProperty" class="expander" data-toggle="collapse">EnableEditorCachingProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_EnableEditorCachingProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the EnableEditorCaching dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty EnableEditorCachingProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_FieldIndicatorVisibilityProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.FieldIndicatorVisibilityProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_FieldIndicatorVisibilityProperty" class="expander" data-toggle="collapse">FieldIndicatorVisibilityProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_FieldIndicatorVisibilityProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>represents the FieldIndicatorVisibility dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty FieldIndicatorVisibilityProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_FieldStyleProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.FieldStyleProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_FieldStyleProperty" class="expander" data-toggle="collapse">FieldStyleProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_FieldStyleProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the FieldStyle dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty FieldStyleProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_GroupedEvent" data-uid="Telerik.Windows.Controls.RadPropertyGrid.GroupedEvent"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_GroupedEvent" class="expander" data-toggle="collapse">GroupedEvent</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_GroupedEvent" class="collapse in">
+  <div class="markdown level1 summary"><p>Occurs after grouping was performed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly RoutedEvent GroupedEvent</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.RoutedEvent</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_GroupStyleProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.GroupStyleProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_GroupStyleProperty" class="expander" data-toggle="collapse">GroupStyleProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_GroupStyleProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the GroupStyle dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty GroupStyleProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_GroupStyleSelectorProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.GroupStyleSelectorProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_GroupStyleSelectorProperty" class="expander" data-toggle="collapse">GroupStyleSelectorProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_GroupStyleSelectorProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="Telerik.Windows.Controls.RadPropertyGrid.html#Telerik_Windows_Controls_RadPropertyGrid_GroupStyleSelector">GroupStyleSelector</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty GroupStyleSelectorProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_IsGroupedProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.IsGroupedProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_IsGroupedProperty" class="expander" data-toggle="collapse">IsGroupedProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_IsGroupedProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the IsGrouped dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty IsGroupedProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_IsReadOnlyProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.IsReadOnlyProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_IsReadOnlyProperty" class="expander" data-toggle="collapse">IsReadOnlyProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_IsReadOnlyProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the IsReadOnly property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty IsReadOnlyProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_IsVirtualizingProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.IsVirtualizingProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_IsVirtualizingProperty" class="expander" data-toggle="collapse">IsVirtualizingProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_IsVirtualizingProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the IsVirtualizing property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty IsVirtualizingProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_ItemProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.ItemProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_ItemProperty" class="expander" data-toggle="collapse">ItemProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_ItemProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the Item dependency property. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty ItemProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_LabelColumnWidthProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.LabelColumnWidthProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_LabelColumnWidthProperty" class="expander" data-toggle="collapse">LabelColumnWidthProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_LabelColumnWidthProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the LabelColumnWidth dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty LabelColumnWidthProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_NestedPropertiesVisibilityProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.NestedPropertiesVisibilityProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_NestedPropertiesVisibilityProperty" class="expander" data-toggle="collapse">NestedPropertiesVisibilityProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_NestedPropertiesVisibilityProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the ModeProperty dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty NestedPropertiesVisibilityProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_PreparedEditorEvent" data-uid="Telerik.Windows.Controls.RadPropertyGrid.PreparedEditorEvent"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_PreparedEditorEvent" class="expander" data-toggle="collapse">PreparedEditorEvent</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_PreparedEditorEvent" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the PreparedEditor routed event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly RoutedEvent PreparedEditorEvent</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.RoutedEvent</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  <h5 id="Telerik_Windows_Controls_RadPropertyGrid_PreparedEditorEvent_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This event is fired only when the value of the EditMode property is Single.</p>
+</div>
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_PropertySetModeProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.PropertySetModeProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_PropertySetModeProperty" class="expander" data-toggle="collapse">PropertySetModeProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_PropertySetModeProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the PropertySetMode property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty PropertySetModeProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_PropertySetsValidationFunctionProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.PropertySetsValidationFunctionProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_PropertySetsValidationFunctionProperty" class="expander" data-toggle="collapse">PropertySetsValidationFunctionProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_PropertySetsValidationFunctionProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the PropertySetsValidationFunction dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty PropertySetsValidationFunctionProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_PropertySetViewModelProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.PropertySetViewModelProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_PropertySetViewModelProperty" class="expander" data-toggle="collapse">PropertySetViewModelProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_PropertySetViewModelProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the PropertySetViewModelProperty property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty PropertySetViewModelProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_ReadOnlyEditorStateProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.ReadOnlyEditorStateProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_ReadOnlyEditorStateProperty" class="expander" data-toggle="collapse">ReadOnlyEditorStateProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_ReadOnlyEditorStateProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the ReadOnlyEditorState dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty ReadOnlyEditorStateProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_RenderModeProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.RenderModeProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_RenderModeProperty" class="expander" data-toggle="collapse">RenderModeProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_RenderModeProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the RenderMode dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty RenderModeProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_SearchBoxVisibilityProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.SearchBoxVisibilityProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_SearchBoxVisibilityProperty" class="expander" data-toggle="collapse">SearchBoxVisibilityProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_SearchBoxVisibilityProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the SearchBoxVisibility dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty SearchBoxVisibilityProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_SearchInNestedPropertiesProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.SearchInNestedPropertiesProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_SearchInNestedPropertiesProperty" class="expander" data-toggle="collapse">SearchInNestedPropertiesProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_SearchInNestedPropertiesProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the SearchInNestedProperties dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty SearchInNestedPropertiesProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_SelectedPropertyDefinitionProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.SelectedPropertyDefinitionProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_SelectedPropertyDefinitionProperty" class="expander" data-toggle="collapse">SelectedPropertyDefinitionProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_SelectedPropertyDefinitionProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the SelectedPropertyDefinition dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty SelectedPropertyDefinitionProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_SelectionChangedEvent" data-uid="Telerik.Windows.Controls.RadPropertyGrid.SelectionChangedEvent"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_SelectionChangedEvent" class="expander" data-toggle="collapse">SelectionChangedEvent</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_SelectionChangedEvent" class="collapse in">
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="Telerik.Windows.Controls.RadPropertyGrid.html#Telerik_Windows_Controls_RadPropertyGrid_SelectionChanged">SelectionChanged</a> routed event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly RoutedEvent SelectionChangedEvent</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.RoutedEvent</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_SelectionModeProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.SelectionModeProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_SelectionModeProperty" class="expander" data-toggle="collapse">SelectionModeProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_SelectionModeProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Identifies the SelectionMode dependency property. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty SelectionModeProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_SortAndGroupButtonsVisibilityProperty" data-uid="Telerik.Windows.Controls.RadPropertyGrid.SortAndGroupButtonsVisibilityProperty"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_SortAndGroupButtonsVisibilityProperty" class="expander" data-toggle="collapse">SortAndGroupButtonsVisibilityProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_SortAndGroupButtonsVisibilityProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the SortAndGroupButtonsVisibility dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty SortAndGroupButtonsVisibilityProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_SortedEvent" data-uid="Telerik.Windows.Controls.RadPropertyGrid.SortedEvent"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_SortedEvent" class="expander" data-toggle="collapse">SortedEvent</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_SortedEvent" class="collapse in">
+  <div class="markdown level1 summary"><p>Occurs after sorting was performed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly RoutedEvent SortedEvent</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.RoutedEvent</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_ValidatedEvent" data-uid="Telerik.Windows.Controls.RadPropertyGrid.ValidatedEvent"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_ValidatedEvent" class="expander" data-toggle="collapse">ValidatedEvent</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_ValidatedEvent" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the Validated routed event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly RoutedEvent ValidatedEvent</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.RoutedEvent</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_ValidatingEvent" data-uid="Telerik.Windows.Controls.RadPropertyGrid.ValidatingEvent"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_ValidatingEvent" class="expander" data-toggle="collapse">ValidatingEvent</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_ValidatingEvent" class="collapse in">
+  <div class="markdown level1 summary"><p>Represents the Validating routed event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly RoutedEvent ValidatingEvent</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.RoutedEvent</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_AutoGenerateBindingPaths_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.AutoGenerateBindingPaths*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_AutoGenerateBindingPaths" data-uid="Telerik.Windows.Controls.RadPropertyGrid.AutoGenerateBindingPaths"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_AutoGenerateBindingPaths" class="expander" data-toggle="collapse">AutoGenerateBindingPaths</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_AutoGenerateBindingPaths" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether manually defined nested PropertyDefinitions, should have auto-generated paths.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AutoGenerateBindingPaths { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p><code>true</code> if [auto generate binding paths]; otherwise, <code>false</code>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_AutoGeneratePropertyDefinitions_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.AutoGeneratePropertyDefinitions*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_AutoGeneratePropertyDefinitions" data-uid="Telerik.Windows.Controls.RadPropertyGrid.AutoGeneratePropertyDefinitions"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_AutoGeneratePropertyDefinitions" class="expander" data-toggle="collapse">AutoGeneratePropertyDefinitions</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_AutoGeneratePropertyDefinitions" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether property definitions will be auto-generated. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AutoGeneratePropertyDefinitions { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_CanUserResizeDescriptionPanel_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.CanUserResizeDescriptionPanel*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_CanUserResizeDescriptionPanel" data-uid="Telerik.Windows.Controls.RadPropertyGrid.CanUserResizeDescriptionPanel"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_CanUserResizeDescriptionPanel" class="expander" data-toggle="collapse">CanUserResizeDescriptionPanel</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_CanUserResizeDescriptionPanel" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a value that indicates whether the user can adjust description panel width using the mouse.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanUserResizeDescriptionPanel { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_CanUserSelect_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.CanUserSelect*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_CanUserSelect" data-uid="Telerik.Windows.Controls.RadPropertyGrid.CanUserSelect"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_CanUserSelect" class="expander" data-toggle="collapse">CanUserSelect</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_CanUserSelect" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the user can select property definition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanUserSelect { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p><code>true</code> if user can select; otherwise, <code>false</code>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_CommandProvider_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.CommandProvider*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_CommandProvider" data-uid="Telerik.Windows.Controls.RadPropertyGrid.CommandProvider"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_CommandProvider" class="expander" data-toggle="collapse">CommandProvider</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_CommandProvider" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the command provider associated with this RadPropertyGrid instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICommandProvider CommandProvider { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Controls.ICommandProvider.html">ICommandProvider</a>
+        <p><p>The command provider.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_DescriptionPanelVisibility_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.DescriptionPanelVisibility*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_DescriptionPanelVisibility" data-uid="Telerik.Windows.Controls.RadPropertyGrid.DescriptionPanelVisibility"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_DescriptionPanelVisibility" class="expander" data-toggle="collapse">DescriptionPanelVisibility</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_DescriptionPanelVisibility" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the description panel visibility.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Visibility DescriptionPanelVisibility { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.Visibility</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_EditMode_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.EditMode*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_EditMode" data-uid="Telerik.Windows.Controls.RadPropertyGrid.EditMode"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_EditMode" class="expander" data-toggle="collapse">EditMode</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_EditMode" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the EditMode of RadPropertyGrid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PropertyGridEditMode EditMode { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Controls.Data.PropertyGrid.PropertyGridEditMode.html">PropertyGridEditMode</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_EditorTemplateSelector_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.EditorTemplateSelector*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_EditorTemplateSelector" data-uid="Telerik.Windows.Controls.RadPropertyGrid.EditorTemplateSelector"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_EditorTemplateSelector" class="expander" data-toggle="collapse">EditorTemplateSelector</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_EditorTemplateSelector" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the editor template selector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataTemplateSelector EditorTemplateSelector { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.Controls.DataTemplateSelector</span>
+        <p><p>The editor template selector.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_EnableCustomFiltering_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.EnableCustomFiltering*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_EnableCustomFiltering" data-uid="Telerik.Windows.Controls.RadPropertyGrid.EnableCustomFiltering"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_EnableCustomFiltering" class="expander" data-toggle="collapse">EnableCustomFiltering</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_EnableCustomFiltering" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether RadPropertyGrid enables custom filtering.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableCustomFiltering { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p><code>true</code> if [enable custom filtering]; otherwise, <code>false</code>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_EnableDeferredFiltering_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.EnableDeferredFiltering*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_EnableDeferredFiltering" data-uid="Telerik.Windows.Controls.RadPropertyGrid.EnableDeferredFiltering"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_EnableDeferredFiltering" class="expander" data-toggle="collapse">EnableDeferredFiltering</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_EnableDeferredFiltering" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether RadPropertyGrid enables deferred filtering.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableDeferredFiltering { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p><code>true</code> if [enable deferred filtering]; otherwise, <code>false</code>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_EnableEditorCaching_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.EnableEditorCaching*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_EnableEditorCaching" data-uid="Telerik.Windows.Controls.RadPropertyGrid.EnableEditorCaching"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_EnableEditorCaching" class="expander" data-toggle="collapse">EnableEditorCaching</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_EnableEditorCaching" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether RadPropertyGrid uses editor caching.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableEditorCaching { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p><code>true</code> if [enable editor caching]; otherwise, <code>false</code>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_FieldIndicatorVisibility_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.FieldIndicatorVisibility*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_FieldIndicatorVisibility" data-uid="Telerik.Windows.Controls.RadPropertyGrid.FieldIndicatorVisibility"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_FieldIndicatorVisibility" class="expander" data-toggle="collapse">FieldIndicatorVisibility</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_FieldIndicatorVisibility" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the field indicator visibility.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Visibility FieldIndicatorVisibility { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.Visibility</span>
+        <p><p>The field indicator visibility.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_FieldStyle_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.FieldStyle*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_FieldStyle" data-uid="Telerik.Windows.Controls.RadPropertyGrid.FieldStyle"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_FieldStyle" class="expander" data-toggle="collapse">FieldStyle</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_FieldStyle" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a Style for all PropertyGridFields in the scope of a RadPropertyGrid instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Style FieldStyle { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.Style</span>
+        <p><p>The field style.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_GroupDefinitions_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.GroupDefinitions*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_GroupDefinitions" data-uid="Telerik.Windows.Controls.RadPropertyGrid.GroupDefinitions"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_GroupDefinitions" class="expander" data-toggle="collapse">GroupDefinitions</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_GroupDefinitions" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a collection of GroupDefinition objects used to group the property grid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GroupDefinitionsCollection GroupDefinitions { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Controls.Data.PropertyGrid.GroupDefinitionsCollection.html">GroupDefinitionsCollection</a>
+        <p><p>The group definition.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  <h5 id="Telerik_Windows_Controls_RadPropertyGrid_GroupDefinitions_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>GroupDefinitions collection will be filled only when RenderMode=&quot;Flat&quot;.</p>
+</div>
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_GroupStyle_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.GroupStyle*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_GroupStyle" data-uid="Telerik.Windows.Controls.RadPropertyGrid.GroupStyle"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_GroupStyle" class="expander" data-toggle="collapse">GroupStyle</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_GroupStyle" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the style for GroupDefinition button.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Style GroupStyle { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.Style</span>
+        <p><p>The GroupStyle.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_GroupStyleSelector_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.GroupStyleSelector*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_GroupStyleSelector" data-uid="Telerik.Windows.Controls.RadPropertyGrid.GroupStyleSelector"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_GroupStyleSelector" class="expander" data-toggle="collapse">GroupStyleSelector</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_GroupStyleSelector" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the style selector for RadPropertyGrid group.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StyleSelector GroupStyleSelector { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.Controls.StyleSelector</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_IsGrouped_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.IsGrouped*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_IsGrouped" data-uid="Telerik.Windows.Controls.RadPropertyGrid.IsGrouped"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_IsGrouped" class="expander" data-toggle="collapse">IsGrouped</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_IsGrouped" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this instance is grouped.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGrouped { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_IsReadOnly_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.IsReadOnly*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_IsReadOnly" data-uid="Telerik.Windows.Controls.RadPropertyGrid.IsReadOnly"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_IsReadOnly" class="expander" data-toggle="collapse">IsReadOnly</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_IsReadOnly" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this instance is read only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadOnly { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p><code>true</code> if this instance is read only; otherwise, <code>false</code>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_IsVirtualizing_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.IsVirtualizing*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_IsVirtualizing" data-uid="Telerik.Windows.Controls.RadPropertyGrid.IsVirtualizing"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_IsVirtualizing" class="expander" data-toggle="collapse">IsVirtualizing</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_IsVirtualizing" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this PropertyGrid is virtualized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVirtualizing { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p><code>true</code> if this instance is virtualized; otherwise, <code>false</code>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_Item_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.Item*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_Item" data-uid="Telerik.Windows.Controls.RadPropertyGrid.Item"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_Item" class="expander" data-toggle="collapse">Item</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_Item" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the item to edit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Item { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Object</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_LabelColumnWidth_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.LabelColumnWidth*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_LabelColumnWidth" data-uid="Telerik.Windows.Controls.RadPropertyGrid.LabelColumnWidth"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_LabelColumnWidth" class="expander" data-toggle="collapse">LabelColumnWidth</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_LabelColumnWidth" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or Sets the width of the first column.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GridLength LabelColumnWidth { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.GridLength</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_NestedPropertiesVisibility_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.NestedPropertiesVisibility*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_NestedPropertiesVisibility" data-uid="Telerik.Windows.Controls.RadPropertyGrid.NestedPropertiesVisibility"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_NestedPropertiesVisibility" class="expander" data-toggle="collapse">NestedPropertiesVisibility</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_NestedPropertiesVisibility" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the nested properties&apos; Visibility. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Visibility NestedPropertiesVisibility { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.Visibility</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_PropertyDefinitions_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.PropertyDefinitions*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_PropertyDefinitions" data-uid="Telerik.Windows.Controls.RadPropertyGrid.PropertyDefinitions"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_PropertyDefinitions" class="expander" data-toggle="collapse">PropertyDefinitions</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_PropertyDefinitions" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a collection of PropertyDefinitions describing the properties displayed or edited by RadPropertyGrid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PropertyDefinitionCollection PropertyDefinitions { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Controls.Data.PropertyGrid.PropertyDefinitionCollection.html">PropertyDefinitionCollection</a>
+        <p><p>The collection of PropertyDefinitions.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_PropertySet_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.PropertySet*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_PropertySet" data-uid="Telerik.Windows.Controls.RadPropertyGrid.PropertySet"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_PropertySet" class="expander" data-toggle="collapse">PropertySet</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_PropertySet" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the property set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PropertySet PropertySet { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Controls.Data.PropertyGrid.PropertySet.html">PropertySet</a>
+        <p><p>The property set.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_PropertySetMode_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.PropertySetMode*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_PropertySetMode" data-uid="Telerik.Windows.Controls.RadPropertyGrid.PropertySetMode"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_PropertySetMode" class="expander" data-toggle="collapse">PropertySetMode</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_PropertySetMode" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the property set mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PropertySetOperation PropertySetMode { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Controls.Data.PropertyGrid.PropertySetOperation.html">PropertySetOperation</a>
+        <p><p>The property set mode.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_PropertySetsValidationFunction_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.PropertySetsValidationFunction*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_PropertySetsValidationFunction" data-uid="Telerik.Windows.Controls.RadPropertyGrid.PropertySetsValidationFunction"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_PropertySetsValidationFunction" class="expander" data-toggle="collapse">PropertySetsValidationFunction</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_PropertySetsValidationFunction" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a function that is used to validate PropertySet properties.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;string, object, string&gt; PropertySetsValidationFunction { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Func</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>, <span class="xref">System.String</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_ReadOnlyEditorState_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.ReadOnlyEditorState*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_ReadOnlyEditorState" data-uid="Telerik.Windows.Controls.RadPropertyGrid.ReadOnlyEditorState"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_ReadOnlyEditorState" class="expander" data-toggle="collapse">ReadOnlyEditorState</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_ReadOnlyEditorState" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the state of editors when RadPropertyGrid is ReadOnly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReadOnlyEditorStates ReadOnlyEditorState { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Controls.ReadOnlyEditorStates.html">ReadOnlyEditorStates</a>
+        <p><p>The state of the read only editor.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_RenderMode_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.RenderMode*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_RenderMode" data-uid="Telerik.Windows.Controls.RadPropertyGrid.RenderMode"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_RenderMode" class="expander" data-toggle="collapse">RenderMode</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_RenderMode" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the render mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderMode RenderMode { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Controls.Data.PropertyGrid.RenderMode.html">RenderMode</a>
+        <p><p>The rendering mode.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_SearchBoxVisibility_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.SearchBoxVisibility*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_SearchBoxVisibility" data-uid="Telerik.Windows.Controls.RadPropertyGrid.SearchBoxVisibility"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_SearchBoxVisibility" class="expander" data-toggle="collapse">SearchBoxVisibility</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_SearchBoxVisibility" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the search box visibility.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Visibility SearchBoxVisibility { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.Visibility</span>
+        <p><p>The search box visibility.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_SearchInNestedProperties_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.SearchInNestedProperties*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_SearchInNestedProperties" data-uid="Telerik.Windows.Controls.RadPropertyGrid.SearchInNestedProperties"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_SearchInNestedProperties" class="expander" data-toggle="collapse">SearchInNestedProperties</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_SearchInNestedProperties" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether search should be execute over nested properties.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SearchInNestedProperties { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p><code>true</code> if search in nested properties is enabled; otherwise, <code>false</code>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_SelectedPropertyDefinition_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.SelectedPropertyDefinition*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_SelectedPropertyDefinition" data-uid="Telerik.Windows.Controls.RadPropertyGrid.SelectedPropertyDefinition"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_SelectedPropertyDefinition" class="expander" data-toggle="collapse">SelectedPropertyDefinition</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_SelectedPropertyDefinition" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the selected property definition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PropertyDefinition SelectedPropertyDefinition { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Controls.Data.PropertyGrid.PropertyDefinition.html">PropertyDefinition</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_SelectedPropertyDefinitions_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.SelectedPropertyDefinitions*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_SelectedPropertyDefinitions" data-uid="Telerik.Windows.Controls.RadPropertyGrid.SelectedPropertyDefinitions"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_SelectedPropertyDefinitions" class="expander" data-toggle="collapse">SelectedPropertyDefinitions</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_SelectedPropertyDefinitions" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a collection that contains the selected property definitions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableCollection&lt;PropertyDefinition&gt; SelectedPropertyDefinitions { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Collections.ObjectModel.ObservableCollection</span>&lt;<a class="xref" href="Telerik.Windows.Controls.Data.PropertyGrid.PropertyDefinition.html">PropertyDefinition</a>&gt;
+        <p><p>A collection of the data items corresponding to the selected fields.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  <h5 id="Telerik_Windows_Controls_RadPropertyGrid_SelectedPropertyDefinitions_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the SelectionMode property is set to Single, the SelectedPropertyDefinitions list will contain only the SelectedPropertyDefinition property value.</p>
+</div>
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_SelectionMode_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.SelectionMode*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_SelectionMode" data-uid="Telerik.Windows.Controls.RadPropertyGrid.SelectionMode"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_SelectionMode" class="expander" data-toggle="collapse">SelectionMode</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_SelectionMode" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the SelectionMode. This is a dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SelectionMode SelectionMode { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.Controls.SelectionMode</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_SortAndGroupButtonsVisibility_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.SortAndGroupButtonsVisibility*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_SortAndGroupButtonsVisibility" data-uid="Telerik.Windows.Controls.RadPropertyGrid.SortAndGroupButtonsVisibility"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_SortAndGroupButtonsVisibility" class="expander" data-toggle="collapse">SortAndGroupButtonsVisibility</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_SortAndGroupButtonsVisibility" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the visibility of the sort and group buttons.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Visibility SortAndGroupButtonsVisibility { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.Visibility</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_BeginEdit_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.BeginEdit*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_BeginEdit" data-uid="Telerik.Windows.Controls.RadPropertyGrid.BeginEdit"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_BeginEdit" class="expander" data-toggle="collapse">BeginEdit()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_BeginEdit" class="collapse in">
+  <div class="markdown level1 summary"><p>Begins a new edit operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginEdit()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_BeginEdit_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.BeginEdit*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_BeginEdit_Telerik_Windows_Controls_Data_PropertyGrid_PropertyDefinition_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.BeginEdit(Telerik.Windows.Controls.Data.PropertyGrid.PropertyDefinition)"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_BeginEdit_Telerik_Windows_Controls_Data_PropertyGrid_PropertyDefinition_" class="expander" data-toggle="collapse">BeginEdit(PropertyDefinition)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_BeginEdit_Telerik_Windows_Controls_Data_PropertyGrid_PropertyDefinition_" class="collapse in">
+  <div class="markdown level1 summary"><p>Begins a new edit operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginEdit(PropertyDefinition propertyDefinition)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Telerik.Windows.Controls.Data.PropertyGrid.PropertyDefinition.html">PropertyDefinition</a></span>
+        <span class="parametername">propertyDefinition</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_CancelEdit_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.CancelEdit*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_CancelEdit" data-uid="Telerik.Windows.Controls.RadPropertyGrid.CancelEdit"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_CancelEdit" class="expander" data-toggle="collapse">CancelEdit()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_CancelEdit" class="collapse in">
+  <div class="markdown level1 summary"><p>Cancels the changes from the current edit operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CancelEdit()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_CollapseAllGroups_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.CollapseAllGroups*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_CollapseAllGroups" data-uid="Telerik.Windows.Controls.RadPropertyGrid.CollapseAllGroups"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_CollapseAllGroups" class="expander" data-toggle="collapse">CollapseAllGroups()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_CollapseAllGroups" class="collapse in">
+  <div class="markdown level1 summary"><p>Collapses all groups recursively.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CollapseAllGroups()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 id="Telerik_Windows_Controls_RadPropertyGrid_CollapseAllGroups_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The method will work only when RenderMode=&quot;Flat&quot;.</p>
+</div>
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_CollapseGroup_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.CollapseGroup*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_CollapseGroup_System_Object_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.CollapseGroup(System.Object)"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_CollapseGroup_System_Object_" class="expander" data-toggle="collapse">CollapseGroup(Object)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_CollapseGroup_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Collapses the visual group for the given <a class="xref" href="Telerik.Windows.Controls.Data.PropertyGrid.GroupDefinition.html">GroupDefinition</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CollapseGroup(object groupKey)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">groupKey</span>
+        <p><p>The key for the group to collapse.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 id="Telerik_Windows_Controls_RadPropertyGrid_CollapseGroup_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The method will work only when RenderMode=&quot;Flat&quot;.</p>
+</div>
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_CommitEdit_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.CommitEdit*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_CommitEdit" data-uid="Telerik.Windows.Controls.RadPropertyGrid.CommitEdit"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_CommitEdit" class="expander" data-toggle="collapse">CommitEdit()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_CommitEdit" class="collapse in">
+  <div class="markdown level1 summary"><p>Commits the changes from the current edit operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CommitEdit()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_CommitEdit_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.CommitEdit*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_CommitEdit_Telerik_Windows_Controls_Data_PropertyGrid_PropertyDefinition_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.CommitEdit(Telerik.Windows.Controls.Data.PropertyGrid.PropertyDefinition)"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_CommitEdit_Telerik_Windows_Controls_Data_PropertyGrid_PropertyDefinition_" class="expander" data-toggle="collapse">CommitEdit(PropertyDefinition)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_CommitEdit_Telerik_Windows_Controls_Data_PropertyGrid_PropertyDefinition_" class="collapse in">
+  <div class="markdown level1 summary"><p>Commits the changes from the current edit operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CommitEdit(PropertyDefinition propertyDefinition)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Telerik.Windows.Controls.Data.PropertyGrid.PropertyDefinition.html">PropertyDefinition</a></span>
+        <span class="parametername">propertyDefinition</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_EndInit_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.EndInit*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_EndInit" data-uid="Telerik.Windows.Controls.RadPropertyGrid.EndInit"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_EndInit" class="expander" data-toggle="collapse">EndInit()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_EndInit" class="collapse in">
+  <div class="markdown level1 summary"><p>Indicates that the initialization process for the element is complete.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void EndInit()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_ExpandAllGroups_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.ExpandAllGroups*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_ExpandAllGroups" data-uid="Telerik.Windows.Controls.RadPropertyGrid.ExpandAllGroups"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_ExpandAllGroups" class="expander" data-toggle="collapse">ExpandAllGroups()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_ExpandAllGroups" class="collapse in">
+  <div class="markdown level1 summary"><p>Expands all groups recursively.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExpandAllGroups()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 id="Telerik_Windows_Controls_RadPropertyGrid_ExpandAllGroups_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The method will work only when RenderMode=&quot;Flat&quot;.</p>
+</div>
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_ExpandGroup_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.ExpandGroup*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_ExpandGroup_System_Object_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.ExpandGroup(System.Object)"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_ExpandGroup_System_Object_" class="expander" data-toggle="collapse">ExpandGroup(Object)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_ExpandGroup_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Set expand state for the given <a class="xref" href="Telerik.Windows.Controls.Data.PropertyGrid.GroupDefinition.html">GroupDefinition</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExpandGroup(object groupKey)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">groupKey</span>
+        <p><p>The key for the group to expand.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 id="Telerik_Windows_Controls_RadPropertyGrid_ExpandGroup_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The method will work only when RenderMode=&quot;Flat&quot;.</p>
+</div>
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_Group_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.Group*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_Group" data-uid="Telerik.Windows.Controls.RadPropertyGrid.Group"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_Group" class="expander" data-toggle="collapse">Group()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_Group" class="collapse in">
+  <div class="markdown level1 summary"><p>Groups this RadPropertyGrid instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Group()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_OnApplyTemplate_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.OnApplyTemplate*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_OnApplyTemplate" data-uid="Telerik.Windows.Controls.RadPropertyGrid.OnApplyTemplate"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_OnApplyTemplate" class="expander" data-toggle="collapse">OnApplyTemplate()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_OnApplyTemplate" class="collapse in">
+  <div class="markdown level1 summary"><p>When overridden in a derived class, is invoked whenever application code or internal processes (such as a rebuilding layout pass) call <span class="xref">System.Windows.Controls.Control.ApplyTemplate</span>. In simplest terms, this means the method is called just before a UI element displays in an application. For more information, see Remarks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnApplyTemplate()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_OnBeginningEdit_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.OnBeginningEdit*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_OnBeginningEdit_Telerik_Windows_Controls_Data_PropertyGrid_PropertyGridBeginningEditEventArgs_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.OnBeginningEdit(Telerik.Windows.Controls.Data.PropertyGrid.PropertyGridBeginningEditEventArgs)"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_OnBeginningEdit_Telerik_Windows_Controls_Data_PropertyGrid_PropertyGridBeginningEditEventArgs_" class="expander" data-toggle="collapse">OnBeginningEdit(PropertyGridBeginningEditEventArgs)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_OnBeginningEdit_Telerik_Windows_Controls_Data_PropertyGrid_PropertyGridBeginningEditEventArgs_" class="collapse in">
+  <div class="markdown level1 summary"><p>Raises the BeginningEdit event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnBeginningEdit(PropertyGridBeginningEditEventArgs args)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Telerik.Windows.Controls.Data.PropertyGrid.PropertyGridBeginningEditEventArgs.html">PropertyGridBeginningEditEventArgs</a></span>
+        <span class="parametername">args</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_OnCreateAutomationPeer_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.OnCreateAutomationPeer*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_OnCreateAutomationPeer" data-uid="Telerik.Windows.Controls.RadPropertyGrid.OnCreateAutomationPeer"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_OnCreateAutomationPeer" class="expander" data-toggle="collapse">OnCreateAutomationPeer()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_OnCreateAutomationPeer" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns class-specific <span class="xref">System.Windows.Automation.Peers.AutomationPeer</span> implementations for the Windows Presentation Foundation (WPF) infrastructure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override AutomationPeer OnCreateAutomationPeer()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.Automation.Peers.AutomationPeer</span>
+        <p><p>The type-specific <span class="xref">System.Windows.Automation.Peers.AutomationPeer</span> implementation.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_OnEditEnded_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.OnEditEnded*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_OnEditEnded_Telerik_Windows_Controls_Data_PropertyGrid_PropertyGridEditEndedEventArgs_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.OnEditEnded(Telerik.Windows.Controls.Data.PropertyGrid.PropertyGridEditEndedEventArgs)"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_OnEditEnded_Telerik_Windows_Controls_Data_PropertyGrid_PropertyGridEditEndedEventArgs_" class="expander" data-toggle="collapse">OnEditEnded(PropertyGridEditEndedEventArgs)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_OnEditEnded_Telerik_Windows_Controls_Data_PropertyGrid_PropertyGridEditEndedEventArgs_" class="collapse in">
+  <div class="markdown level1 summary"><p>Raises the EditEnded event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnEditEnded(PropertyGridEditEndedEventArgs args)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Telerik.Windows.Controls.Data.PropertyGrid.PropertyGridEditEndedEventArgs.html">PropertyGridEditEndedEventArgs</a></span>
+        <span class="parametername">args</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_OnFieldLoaded_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.OnFieldLoaded*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_OnFieldLoaded_Telerik_Windows_Controls_Data_PropertyGrid_PropertyGridField_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.OnFieldLoaded(Telerik.Windows.Controls.Data.PropertyGrid.PropertyGridField)"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_OnFieldLoaded_Telerik_Windows_Controls_Data_PropertyGrid_PropertyGridField_" class="expander" data-toggle="collapse">OnFieldLoaded(PropertyGridField)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_OnFieldLoaded_Telerik_Windows_Controls_Data_PropertyGrid_PropertyGridField_" class="collapse in">
+  <div class="markdown level1 summary"><p>Raises the FieldLoaded event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnFieldLoaded(PropertyGridField field)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Telerik.Windows.Controls.Data.PropertyGrid.PropertyGridField.html">PropertyGridField</a></span>
+        <span class="parametername">field</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_OnInitialized_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.OnInitialized*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_OnInitialized_System_EventArgs_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.OnInitialized(System.EventArgs)"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_OnInitialized_System_EventArgs_" class="expander" data-toggle="collapse">OnInitialized(EventArgs)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_OnInitialized_System_EventArgs_" class="collapse in">
+  <div class="markdown level1 summary"><p>Raises the <span class="xref">System.Windows.FrameworkElement.Initialized</span> event. This method is invoked whenever <span class="xref">System.Windows.FrameworkElement.IsInitialized</span> is set to true internally.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnInitialized(EventArgs e)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.EventArgs</span></span>
+        <span class="parametername">e</span>
+        <p><p>The <span class="xref">System.Windows.RoutedEventArgs</span> that contains the event data.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_OnIsReadOnlyPropertyChanged_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.OnIsReadOnlyPropertyChanged*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_OnIsReadOnlyPropertyChanged_System_Windows_DependencyObject_System_Windows_DependencyPropertyChangedEventArgs_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.OnIsReadOnlyPropertyChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_OnIsReadOnlyPropertyChanged_System_Windows_DependencyObject_System_Windows_DependencyPropertyChangedEventArgs_" class="expander" data-toggle="collapse">OnIsReadOnlyPropertyChanged(DependencyObject, DependencyPropertyChangedEventArgs)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_OnIsReadOnlyPropertyChanged_System_Windows_DependencyObject_System_Windows_DependencyPropertyChangedEventArgs_" class="collapse in">
+  <div class="markdown level1 summary"><p>Called when IsReadOnly property is changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void OnIsReadOnlyPropertyChanged(DependencyObject sender, DependencyPropertyChangedEventArgs args)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Windows.DependencyObject</span></span>
+        <span class="parametername">sender</span>
+        <p><p>The sender.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Windows.DependencyPropertyChangedEventArgs</span></span>
+        <span class="parametername">args</span>
+        <p><p>The <span class="xref">System.Windows.DependencyPropertyChangedEventArgs</span> instance containing the event data.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_OnIsVirtualizingPropertyChanged_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.OnIsVirtualizingPropertyChanged*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_OnIsVirtualizingPropertyChanged_System_Windows_DependencyObject_System_Windows_DependencyPropertyChangedEventArgs_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.OnIsVirtualizingPropertyChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_OnIsVirtualizingPropertyChanged_System_Windows_DependencyObject_System_Windows_DependencyPropertyChangedEventArgs_" class="expander" data-toggle="collapse">OnIsVirtualizingPropertyChanged(DependencyObject, DependencyPropertyChangedEventArgs)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_OnIsVirtualizingPropertyChanged_System_Windows_DependencyObject_System_Windows_DependencyPropertyChangedEventArgs_" class="collapse in">
+  <div class="markdown level1 summary"><p>Called when IsVirtualizing property gets changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void OnIsVirtualizingPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs args)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Windows.DependencyObject</span></span>
+        <span class="parametername">d</span>
+        <p><p>The d.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Windows.DependencyPropertyChangedEventArgs</span></span>
+        <span class="parametername">args</span>
+        <p><p>The <span class="xref">System.Windows.DependencyPropertyChangedEventArgs</span> instance containing the event data.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_OnItemChanged_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.OnItemChanged*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_OnItemChanged_Telerik_Windows_Controls_Data_PropertyGrid_PropertyGridItemChangedEventArgs_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.OnItemChanged(Telerik.Windows.Controls.Data.PropertyGrid.PropertyGridItemChangedEventArgs)"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_OnItemChanged_Telerik_Windows_Controls_Data_PropertyGrid_PropertyGridItemChangedEventArgs_" class="expander" data-toggle="collapse">OnItemChanged(PropertyGridItemChangedEventArgs)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_OnItemChanged_Telerik_Windows_Controls_Data_PropertyGrid_PropertyGridItemChangedEventArgs_" class="collapse in">
+  <div class="markdown level1 summary"><p>Raises the ItemChanged event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnItemChanged(PropertyGridItemChangedEventArgs args)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Telerik.Windows.Controls.Data.PropertyGrid.PropertyGridItemChangedEventArgs.html">PropertyGridItemChangedEventArgs</a></span>
+        <span class="parametername">args</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_OnMouseLeftButtonDown_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.OnMouseLeftButtonDown*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_OnMouseLeftButtonDown_System_Object_System_Windows_RoutedEventArgs_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.OnMouseLeftButtonDown(System.Object,System.Windows.RoutedEventArgs)"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_OnMouseLeftButtonDown_System_Object_System_Windows_RoutedEventArgs_" class="expander" data-toggle="collapse">OnMouseLeftButtonDown(Object, RoutedEventArgs)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_OnMouseLeftButtonDown_System_Object_System_Windows_RoutedEventArgs_" class="collapse in">
+  <div class="markdown level1 summary"><p>Called when the MouseLeftButton down event occurs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OnMouseLeftButtonDown(object sender, RoutedEventArgs e)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">sender</span>
+        <p><p>The sender.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Windows.RoutedEventArgs</span></span>
+        <span class="parametername">e</span>
+        <p><p>The <span class="xref">System.Windows.Input.MouseButtonEventArgs</span> instance containing the event data.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_OnPreparedEditor_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.OnPreparedEditor*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_OnPreparedEditor_Telerik_Windows_Controls_Data_PropertyGrid_Editing_PropertyGridPreparedEditorEventArgs_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.OnPreparedEditor(Telerik.Windows.Controls.Data.PropertyGrid.Editing.PropertyGridPreparedEditorEventArgs)"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_OnPreparedEditor_Telerik_Windows_Controls_Data_PropertyGrid_Editing_PropertyGridPreparedEditorEventArgs_" class="expander" data-toggle="collapse">OnPreparedEditor(PropertyGridPreparedEditorEventArgs)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_OnPreparedEditor_Telerik_Windows_Controls_Data_PropertyGrid_Editing_PropertyGridPreparedEditorEventArgs_" class="collapse in">
+  <div class="markdown level1 summary"><p>Raises the PreparedEditor event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnPreparedEditor(PropertyGridPreparedEditorEventArgs args)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Telerik.Windows.Controls.Data.PropertyGrid.Editing.PropertyGridPreparedEditorEventArgs.html">PropertyGridPreparedEditorEventArgs</a></span>
+        <span class="parametername">args</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_OnPropertyDefinitionsCollectionChanged_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.OnPropertyDefinitionsCollectionChanged*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_OnPropertyDefinitionsCollectionChanged_System_Object_System_Collections_Specialized_NotifyCollectionChangedEventArgs_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.OnPropertyDefinitionsCollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_OnPropertyDefinitionsCollectionChanged_System_Object_System_Collections_Specialized_NotifyCollectionChangedEventArgs_" class="expander" data-toggle="collapse">OnPropertyDefinitionsCollectionChanged(Object, NotifyCollectionChangedEventArgs)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_OnPropertyDefinitionsCollectionChanged_System_Object_System_Collections_Specialized_NotifyCollectionChangedEventArgs_" class="collapse in">
+  <div class="markdown level1 summary"><p>Called when PropertyDefinitionCollection&apos;s CollectionChanged event is raised.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnPropertyDefinitionsCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">sender</span>
+        <p><p>The sender.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Collections.Specialized.NotifyCollectionChangedEventArgs</span></span>
+        <span class="parametername">e</span>
+        <p><p>The <span class="xref">System.Collections.Specialized.NotifyCollectionChangedEventArgs</span> instance containing the event data.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_OnValidated_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.OnValidated*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_OnValidated_Telerik_Windows_Controls_Data_PropertyGrid_PropertyGridValidatedEventArgs_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.OnValidated(Telerik.Windows.Controls.Data.PropertyGrid.PropertyGridValidatedEventArgs)"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_OnValidated_Telerik_Windows_Controls_Data_PropertyGrid_PropertyGridValidatedEventArgs_" class="expander" data-toggle="collapse">OnValidated(PropertyGridValidatedEventArgs)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_OnValidated_Telerik_Windows_Controls_Data_PropertyGrid_PropertyGridValidatedEventArgs_" class="collapse in">
+  <div class="markdown level1 summary"><p>Raises the Validating event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnValidated(PropertyGridValidatedEventArgs args)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Telerik.Windows.Controls.Data.PropertyGrid.PropertyGridValidatedEventArgs.html">PropertyGridValidatedEventArgs</a></span>
+        <span class="parametername">args</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_OnValidating_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.OnValidating*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_OnValidating_Telerik_Windows_Controls_Data_PropertyGrid_PropertyGridValidatingEventArgs_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.OnValidating(Telerik.Windows.Controls.Data.PropertyGrid.PropertyGridValidatingEventArgs)"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_OnValidating_Telerik_Windows_Controls_Data_PropertyGrid_PropertyGridValidatingEventArgs_" class="expander" data-toggle="collapse">OnValidating(PropertyGridValidatingEventArgs)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_OnValidating_Telerik_Windows_Controls_Data_PropertyGrid_PropertyGridValidatingEventArgs_" class="collapse in">
+  <div class="markdown level1 summary"><p>Raises the Validating event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnValidating(PropertyGridValidatingEventArgs args)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Telerik.Windows.Controls.Data.PropertyGrid.PropertyGridValidatingEventArgs.html">PropertyGridValidatingEventArgs</a></span>
+        <span class="parametername">args</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_Rebind_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.Rebind*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_Rebind" data-uid="Telerik.Windows.Controls.RadPropertyGrid.Rebind"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_Rebind" class="expander" data-toggle="collapse">Rebind()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_Rebind" class="collapse in">
+  <div class="markdown level1 summary"><p>Rebinds the property grid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Rebind()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_RegisterCommandBindings_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.RegisterCommandBindings*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_RegisterCommandBindings" data-uid="Telerik.Windows.Controls.RadPropertyGrid.RegisterCommandBindings"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_RegisterCommandBindings" class="expander" data-toggle="collapse">RegisterCommandBindings()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_RegisterCommandBindings" class="collapse in">
+  <div class="markdown level1 summary"><p>Registers the command bindings associated with RadPropertyGrid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterCommandBindings()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_ReloadData_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.ReloadData*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_ReloadData" data-uid="Telerik.Windows.Controls.RadPropertyGrid.ReloadData"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_ReloadData" class="expander" data-toggle="collapse">ReloadData()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_ReloadData" class="collapse in">
+  <div class="markdown level1 summary"><p>Reloads the set of PropertyDefinitions, the list of item properties and recreates the PropertySetView model, if PropertySetMode is different from None.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReloadData()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_ResetTheme_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.ResetTheme*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_ResetTheme" data-uid="Telerik.Windows.Controls.RadPropertyGrid.ResetTheme"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_ResetTheme" class="expander" data-toggle="collapse">ResetTheme()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_ResetTheme" class="collapse in">
+  <div class="markdown level1 summary"><p>Resets the theme.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetTheme()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_ScrollIntoViewAsync_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.ScrollIntoViewAsync*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_ScrollIntoViewAsync_Telerik_Windows_Controls_Data_PropertyGrid_PropertyDefinition_System_Action_Telerik_Windows_Controls_Data_PropertyGrid_PropertyGridField__" data-uid="Telerik.Windows.Controls.RadPropertyGrid.ScrollIntoViewAsync(Telerik.Windows.Controls.Data.PropertyGrid.PropertyDefinition,System.Action{Telerik.Windows.Controls.Data.PropertyGrid.PropertyGridField})"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_ScrollIntoViewAsync_Telerik_Windows_Controls_Data_PropertyGrid_PropertyDefinition_System_Action_Telerik_Windows_Controls_Data_PropertyGrid_PropertyGridField__" class="expander" data-toggle="collapse">ScrollIntoViewAsync(PropertyDefinition, Action&lt;PropertyGridField&gt;)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_ScrollIntoViewAsync_Telerik_Windows_Controls_Data_PropertyGrid_PropertyDefinition_System_Action_Telerik_Windows_Controls_Data_PropertyGrid_PropertyGridField__" class="collapse in">
+  <div class="markdown level1 summary"><p>Scrolls a given PropertyDefinition into view in virtualized scenarios.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScrollIntoViewAsync(PropertyDefinition propertyDefinition, Action&lt;PropertyGridField&gt; finishedCallback)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Telerik.Windows.Controls.Data.PropertyGrid.PropertyDefinition.html">PropertyDefinition</a></span>
+        <span class="parametername">propertyDefinition</span>
+        <p><p>The property definition.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Action</span>&lt;<a class="xref" href="Telerik.Windows.Controls.Data.PropertyGrid.PropertyGridField.html">PropertyGridField</a>&gt;</span>
+        <span class="parametername">finishedCallback</span>
+        <p><p>The finished callback.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_Search_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.Search*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_Search_System_String_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.Search(System.String)"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_Search_System_String_" class="expander" data-toggle="collapse">Search(String)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_Search_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Searches for PropertyDefinitions which DisplayName contains the given search parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Search(string searchParameter)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">searchParameter</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_Sort_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.Sort*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_Sort" data-uid="Telerik.Windows.Controls.RadPropertyGrid.Sort"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_Sort" class="expander" data-toggle="collapse">Sort()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_Sort" class="collapse in">
+  <div class="markdown level1 summary"><p>Sorts this RadPropertyGrid instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Sort()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_UpdateLayoutState_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.UpdateLayoutState*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_UpdateLayoutState" data-uid="Telerik.Windows.Controls.RadPropertyGrid.UpdateLayoutState"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_UpdateLayoutState" class="expander" data-toggle="collapse">UpdateLayoutState()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_UpdateLayoutState" class="collapse in">
+  <div class="markdown level1 summary"><p>Updates the layout state of the PropertyGridPresenter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void UpdateLayoutState()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_RadPropertyGrid_UpdatePropertySetValue_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.UpdatePropertySetValue*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_UpdatePropertySetValue_System_String_System_Object_System_Boolean_" data-uid="Telerik.Windows.Controls.RadPropertyGrid.UpdatePropertySetValue(System.String,System.Object,System.Boolean)"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_UpdatePropertySetValue_System_String_System_Object_System_Boolean_" class="expander" data-toggle="collapse">UpdatePropertySetValue(String, Object, Boolean)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_UpdatePropertySetValue_System_String_System_Object_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdatePropertySetValue(string propertyName, object propertyValue, bool shouldUpdateBoundData)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">propertyName</span>
+        <p><p>The name of the updated property.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">propertyValue</span>
+        <p><p>The value of the updated property.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">shouldUpdateBoundData</span>
+        <p><p>Indicates whether the bound data (Item) should be updated.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="events">Events
+  </h3>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_AutoGeneratingPropertyDefinition" data-uid="Telerik.Windows.Controls.RadPropertyGrid.AutoGeneratingPropertyDefinition"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_AutoGeneratingPropertyDefinition" class="expander" data-toggle="collapse">AutoGeneratingPropertyDefinition</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_AutoGeneratingPropertyDefinition" class="collapse in">
+  <div class="markdown level1 summary"><p>Occurs when a property definition is being generated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;AutoGeneratingPropertyDefinitionEventArgs&gt; AutoGeneratingPropertyDefinition</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Telerik.Windows.Controls.Data.PropertyGrid.AutoGeneratingPropertyDefinitionEventArgs.html">AutoGeneratingPropertyDefinitionEventArgs</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_BeginningEdit" data-uid="Telerik.Windows.Controls.RadPropertyGrid.BeginningEdit"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_BeginningEdit" class="expander" data-toggle="collapse">BeginningEdit</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_BeginningEdit" class="collapse in">
+  <div class="markdown level1 summary"><p>Occurs when a new edit operation is initiated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PropertyGridBeginningEditEventArgs&gt; BeginningEdit</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Telerik.Windows.Controls.Data.PropertyGrid.PropertyGridBeginningEditEventArgs.html">PropertyGridBeginningEditEventArgs</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 id="Telerik_Windows_Controls_RadPropertyGrid_BeginningEdit_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This event is fired only when the value of the EditMode property is Single.</p>
+</div>
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_EditEnded" data-uid="Telerik.Windows.Controls.RadPropertyGrid.EditEnded"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_EditEnded" class="expander" data-toggle="collapse">EditEnded</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_EditEnded" class="collapse in">
+  <div class="markdown level1 summary"><p>Occurs when edit operation is finished.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PropertyGridEditEndedEventArgs&gt; EditEnded</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Telerik.Windows.Controls.Data.PropertyGrid.PropertyGridEditEndedEventArgs.html">PropertyGridEditEndedEventArgs</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 id="Telerik_Windows_Controls_RadPropertyGrid_EditEnded_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This event is fired only when the value of the EditMode property is Single.</p>
+</div>
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_FieldLoaded" data-uid="Telerik.Windows.Controls.RadPropertyGrid.FieldLoaded"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_FieldLoaded" class="expander" data-toggle="collapse">FieldLoaded</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_FieldLoaded" class="collapse in">
+  <div class="markdown level1 summary"><p>Occurs when a new field is loaded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;FieldEventArgs&gt; FieldLoaded</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Telerik.Windows.Controls.Data.PropertyGrid.FieldEventArgs.html">FieldEventArgs</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_Filtered" data-uid="Telerik.Windows.Controls.RadPropertyGrid.Filtered"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_Filtered" class="expander" data-toggle="collapse">Filtered</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_Filtered" class="collapse in">
+  <div class="markdown level1 summary"><p>Occurs after filtering is applied to RadPropertyGrid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;EventArgs&gt; Filtered</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.EventHandler</span>&lt;<span class="xref">System.EventArgs</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_Filtering" data-uid="Telerik.Windows.Controls.RadPropertyGrid.Filtering"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_Filtering" class="expander" data-toggle="collapse">Filtering</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_Filtering" class="collapse in">
+  <div class="markdown level1 summary"><p>Occurs when filtering RadPropertyGrid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PropertyGridFilteringEventArgs&gt; Filtering</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Telerik.Windows.Controls.Data.PropertyGrid.PropertyGridFilteringEventArgs.html">PropertyGridFilteringEventArgs</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_Grouped" data-uid="Telerik.Windows.Controls.RadPropertyGrid.Grouped"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_Grouped" class="expander" data-toggle="collapse">Grouped</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_Grouped" class="collapse in">
+  <div class="markdown level1 summary"><p>Occurs after grouping was performed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;RadRoutedEventArgs&gt; Grouped</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Telerik.Windows.RadRoutedEventArgs.html">RadRoutedEventArgs</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_ItemChanged" data-uid="Telerik.Windows.Controls.RadPropertyGrid.ItemChanged"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_ItemChanged" class="expander" data-toggle="collapse">ItemChanged</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_ItemChanged" class="collapse in">
+  <div class="markdown level1 summary"><p>Occurs when RadPropertyGrid&apos;s item gets changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PropertyGridItemChangedEventArgs&gt; ItemChanged</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Telerik.Windows.Controls.Data.PropertyGrid.PropertyGridItemChangedEventArgs.html">PropertyGridItemChangedEventArgs</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_PreparedEditor" data-uid="Telerik.Windows.Controls.RadPropertyGrid.PreparedEditor"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_PreparedEditor" class="expander" data-toggle="collapse">PreparedEditor</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_PreparedEditor" class="collapse in">
+  <div class="markdown level1 summary"><p>Occurs when the field editor gets prepared .</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PropertyGridPreparedEditorEventHandler PreparedEditor</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Controls.Data.PropertyGrid.Editing.PropertyGridPreparedEditorEventHandler.html">PropertyGridPreparedEditorEventHandler</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_SelectionChanged" data-uid="Telerik.Windows.Controls.RadPropertyGrid.SelectionChanged"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_SelectionChanged" class="expander" data-toggle="collapse">SelectionChanged</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_SelectionChanged" class="collapse in">
+  <div class="markdown level1 summary"><p>Occurs when the selected property definition has changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;SelectionChangeEventArgs&gt; SelectionChanged</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Telerik.Windows.Controls.SelectionChangeEventArgs.html">SelectionChangeEventArgs</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_Sorted" data-uid="Telerik.Windows.Controls.RadPropertyGrid.Sorted"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_Sorted" class="expander" data-toggle="collapse">Sorted</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_Sorted" class="collapse in">
+  <div class="markdown level1 summary"><p>Occurs after sorting was performed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;RadRoutedEventArgs&gt; Sorted</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Telerik.Windows.RadRoutedEventArgs.html">RadRoutedEventArgs</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_Validated" data-uid="Telerik.Windows.Controls.RadPropertyGrid.Validated"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_Validated" class="expander" data-toggle="collapse">Validated</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_Validated" class="collapse in">
+  <div class="markdown level1 summary"><p>Occurs after validation of edit changes takes place. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PropertyGridValidatedEventArgs&gt; Validated</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Telerik.Windows.Controls.Data.PropertyGrid.PropertyGridValidatedEventArgs.html">PropertyGridValidatedEventArgs</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_RadPropertyGrid_Validating" data-uid="Telerik.Windows.Controls.RadPropertyGrid.Validating"><a href="#collapsible-Telerik_Windows_Controls_RadPropertyGrid_Validating" class="expander" data-toggle="collapse">Validating</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_RadPropertyGrid_Validating" class="collapse in">
+  <div class="markdown level1 summary"><p>Occurs before validation of edit changes takes place. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PropertyGridValidatingEventArgs&gt; Validating</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Telerik.Windows.Controls.Data.PropertyGrid.PropertyGridValidatingEventArgs.html">PropertyGridValidatingEventArgs</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Telerik.Windows.Controls.CollectionExtensions.html#Telerik_Windows_Controls_CollectionExtensions_ToEnumerable__1___0_">CollectionExtensions.ToEnumerable&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Telerik.Windows.Core.EnumerableExtensions.html#Telerik_Windows_Core_EnumerableExtensions_ToEnumerable__1___0_">EnumerableExtensions.ToEnumerable&lt;T&gt;(T)</a>
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+	  <div id="push"></div>
+    </div>
+      <div id="footer" class="container-fluid pb-40">
+        <div class="row feedback-row mb-60">
+          <div class="col-sm-8 col-sm-offset-4 col-md-offset-3 col-lg-8 col-lg-offset-2">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="row feedback">
+                  <div class="col-xs-8">
+                    <h4>Was this article helpful?</h4>
+                  </div>
+                  <div class="col-xs-4 text-right">
+                    <button data-value="yes" id="yesButton">Yes</button>
+                    &nbsp;/&nbsp;
+                    <button data-value="no" id="noButton">No</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="dialog-overlay">
+          <div class="feedback-dialog dialog dialog-enter">
+            <div id="feedback-container">
+              <div id="feedback-window-container">
+                <div id="feedback-form-window">
+                  <h3 class="mt-0 mb-5">Give article feedback</h3>
+                  <p>Tell us how we can improve this article</p>
+                  <span id="feedback-form-popup-container"></span>
+                  <form id="feedback-form">
+                    <div id="feedback-checkbox-area">
+                      <input id="hidden-sheet-id" type="hidden" value="1toT2XTrYzmmQGUq5xCmXIkMWkwah3QCNZ9Aj5RLaeoo">
+                        <label>
+                          <input type="checkbox" data-bind="checked: outdatedSample"> Code samples are inaccurate / outdated.
+                        </label>
+                        <span class="required-field" data-bind="visible: outdatedSample"></span>
+                        <textarea id="feedback-code-sample-text-input" placeholder="Please, specify more details ..." class="feedback-extw__textarea" data-bind="visible: outdatedSample, value: inaccurateOutdatedCodeSamplesText">
+                        </textarea>
+                        <label>
+                          <input type="checkbox" data-bind="checked: otherMoreInformation"> I expected to find other / more information.
+                        </label>
+                        <span class="required-field" data-bind="visible: otherMoreInformation"></span>
+                        <textarea id="feedback-more-information-text-input" class="feedback-extw__textarea" placeholder="Please, specify what information can be added ..." data-bind="visible: otherMoreInformation, value: otherMoreInformationText">
+                        </textarea>
+                        <label>
+                          <input type="checkbox" data-bind="checked: textErrors"> There are typos / broken links / broken page elements.
+                        </label>
+                        <span class="required-field" data-bind="visible: textErrors"></span>
+                        <textarea id="feedback-text-errors-text-input" class="feedback-extw__textarea" placeholder="Please, specify what needs to be fixed ..." data-bind="visible: textErrors, value: typosLinksElementsText">
+                        </textarea>
+                        <label>
+                          <input type="checkbox" data-bind="checked: inaccurateContent"> Content is inaccurate / outdated.
+                        </label>
+                        <span class="required-field" data-bind="visible: inaccurateContent"></span>
+                        <textarea id="feedback-inaccurate-content-text-input" class="feedback-extw__textarea" placeholder="Please, specify which conent ..." data-bind="visible: inaccurateContent, value: inaccurateOutdatedContentText">
+                        </textarea>
+                        <label>
+                          <input type="checkbox" data-bind="checked: otherFeedback"> Other
+                        </label>
+                        <span class="required-field" data-bind="visible: otherFeedback"></span>
+                        <textarea id="feedback-other-text-input" placeholder="Please, enter more details or not listed feedback ..." class="feedback-extw__textarea" data-bind="visible: otherFeedback, value: textFeedback">
+                        </textarea>
+                        <input id="feedback-email-input" type="email" placeholder="email (optional)" data-email-msg="Email format is not valid." class="feedback-extw__input input" data-bind="value: email">
+                        <label>
+                          <input type="checkbox" data-bind="checked: acceptFeedbackContact"> By checking this box you consent to Progress contacting you by email about your response on this page.
+                        </label>
+                      </div>
+                  </form>
+                  <div class="feedback-extw__foot">
+                    <p class="mt-30 mb-0" style="text-align: right;">
+                      <button class="button ghost dialog-hide">Cancel</button>
+                      <button class="button dialog-hide" type="submit">Submit</button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <script>
+        $(document).ready(function() {
+        initFeedbackForm({
+        dialog: ".dialog-overlay",
+        closeButtons: ".dialog-hide",
+        container: ".feedback"
+        });
+        });
+      </script>
+      
+        <script>
+        $(".read-prev").hover(function() {
+        $(".title-prev").show();
+        }, function() {
+        $(".title-prev").hide();
+        });
+      
+        $(".read-next").hover(function() {
+        $(".title-next").show();
+        }, function() {
+        $(".title-next").hide();
+        });
+      
+        $(".all-components").click(function() {
+        $(".all-components").toggleClass("show-components");
+        $('.sidetoggle').toggleClass("collapse");
+        $('.sidetoc').toggleClass("show-components");
+        $(".sidefilter").toggleClass("show-components");
+        });
+      </script>
+      
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="row">
+              <div class="col-md-12 col-lg-10 col-lg-offset-1">
+                <div class="row">
+      
+      
+                  <div class="col-sm-4 mb-20">
+                    <h6 class="mt-0 mb-10">Getting Started</h6>
+                    <ul class="list-unstyled">
+      
+                      <li>
+                        <a href="https://www.telerik.com/download-login-v2-wpf/thank-you-for-downloading" target="_blank">Install Now</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://demos.telerik.com/wpf/" target="_blank">Demos</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://demos.telerik.com/xaml-sdkbrowser/" target="_blank">SDK Samples Browser</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/wpf/sample-applications" target="_blank">Sample Applications</a>
+                      </li>
+      
+                    </ul>
+                  </div>
+      
+                  <div class="col-sm-4 mb-20">
+                    <h6 class="mt-0 mb-10">Support Resources</h6>
+                    <ul class="list-unstyled">
+      
+                      <li>
+                        <a href="https://www.telerik.com/support/code-library/wpf" target="_blank">Code Library</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/support/kb/wpf" target="_blank">Knowledge Base</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/wpf/mvvm-support-wpf-controls" target="_blank">MVVM Support</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/videos/wpf" target="_blank">Videos</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://github.com/telerik/xaml-sdk" target="_blank">GitHub SDK Repository</a>
+                      </li>
+      
+                    </ul>
+                  </div>
+      
+                  <div class="col-sm-4 mb-20">
+                    <h6 class="mt-0 mb-10">Community</h6>
+                    <ul class="list-unstyled">
+      
+                      <li>
+                        <a href="https://www.telerik.com/forums/wpf" target="_blank">Forums</a>
+                      </li>
+      
+                      <li>
+                        <a href="http://www.telerik.com/blogs/tag/wpf" target="_blank">Blogs</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://feedback.telerik.com/Project/143" target="_blank">XAML Feedback Portal</a>
+                      </li>
+      
+                      <li>
+                        <a href="http://feedback.telerik.com/Project/184" target="_blank">Document Processing Feedback Portal</a>
+                      </li>
+      
+                    </ul>
+                  </div>
+      
+      
+                </div>
+                <div class="row copyright">
+                  <div class="col-sm-4 social-icons">
+                    <span class="sticky">
+                      <a class="social-icon" href="https://www.facebook.com/Telerik/" title=""><?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewbox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+      <path d="M13.766,32.155V17.559H8.854V11.87h4.912V7.675c0-4.869,2.973-7.52,7.316-7.52c2.08,0,3.868,0.155,4.39,0.224v5.088
+      	l-3.013,0.001c-2.362,0-2.819,1.122-2.819,2.769v3.632h5.634l-0.734,5.688H19.64v14.597H13.766z"></path>
+      </svg>
+                      </a>
+                      <a class="social-icon" href="https://twitter.com/Telerik/" title=""><?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewbox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+      <path fill="#231F20" d="M32,6.076c-1.178,0.522-2.442,0.875-3.771,1.034c1.355-0.813,2.396-2.1,2.887-3.632
+      	c-1.269,0.752-2.674,1.298-4.169,1.593c-1.198-1.276-2.904-2.073-4.792-2.073c-3.626,0-6.566,2.939-6.566,6.565
+      	c0,0.515,0.058,1.016,0.17,1.496C10.303,10.785,5.466,8.171,2.228,4.199c-0.565,0.97-0.889,2.097-0.889,3.3
+      	c0,2.278,1.159,4.287,2.92,5.464c-1.076-0.034-2.088-0.329-2.974-0.821c0,0.027,0,0.055,0,0.083c0,3.181,2.263,5.834,5.267,6.438
+      	c-0.551,0.15-1.131,0.23-1.73,0.23c-0.423,0-0.834-0.041-1.235-0.118c0.835,2.608,3.26,4.507,6.133,4.56
+      	c-2.247,1.761-5.078,2.811-8.154,2.811c-0.53,0-1.052-0.031-1.566-0.092c2.905,1.862,6.356,2.949,10.064,2.949
+      	c12.076,0,18.679-10.004,18.679-18.679c0-0.285-0.007-0.568-0.02-0.849C30.007,8.549,31.12,7.393,32,6.076"></path>
+      </svg>
+                      </a>
+                      <a class="social-icon" href="https://www.youtube.com/user/TelerikInc" title=""><?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" xml:space="preserve">
+      <path d="M506.887,153.632c0,0-5.003-35.283-20.354-50.82c-19.469-20.393-41.293-20.494-51.301-21.687
+      c-71.647-5.179-179.121-5.179-179.121-5.179h-0.223c0,0-107.472,0-179.121,5.179c-10.008,1.194-31.824,1.295-51.301,21.687
+      c-15.351,15.537-20.346,50.82-20.346,50.82S0,195.065,0,236.497v38.843c0,41.433,5.12,82.865,5.12,82.865
+      s4.995,35.283,20.346,50.82c19.476,20.393,45.06,19.748,56.455,21.885C122.883,434.839,256,436.054,256,436.054
+      s107.585-0.162,179.232-5.341c10.008-1.194,31.831-1.295,51.301-21.687c15.351-15.537,20.354-50.82,20.354-50.82
+      S512,316.773,512,275.341v-38.843C512,195.065,506.887,153.632,506.887,153.632z M203.87,322.913v-144.36l137.342,72.18 L203.87,322.913z"></path>
+      </svg>
+                      </a>
+                      <a class="social-icon" href="https://www.linkedin.com/showcase/telerik/" title=""><?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewbox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+      <path d="M7.81,29V9.652H1.379V29H7.81z M4.596,7.009c2.243,0,3.638-1.486,3.638-3.342C8.192,1.768,6.838,0.324,4.638,0.324
+      	C2.438,0.324,1,1.768,1,3.667c0,1.856,1.396,3.342,3.554,3.342H4.596L4.596,7.009z M11.37,29h6.43V18.195
+      	c0-0.579,0.042-1.156,0.213-1.569c0.465-1.155,1.521-2.352,3.3-2.352c2.325,0,3.257,1.774,3.257,4.375v10.35H31V17.906
+      	c0-5.943-3.173-8.708-7.404-8.708c-3.469,0-4.992,1.939-5.838,3.259H17.8V9.651h-6.43C11.454,11.467,11.37,28.999,11.37,29L11.37,29
+      	z"></path>
+      </svg>
+                      </a>
+                    </span>
+                  </div>
+                  <div class="col-sm-8">
+                    <p>
+                      Copyright &copy; 2018 Progress Software Corporation and/or its subsidiaries or affiliates.<br> All Rights Reserved.
+                    </p>
+      
+                    <p>
+                      Progress, Telerik, and certain product names used herein are trademarks or registered trademarks of Progress Software Corporation and/or one of its subsidiaries or affiliates in the U.S. and/or other countries. See <a href="https://www.progress.com/legal/trademarks">Trademarks</a> for appropriate markings.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

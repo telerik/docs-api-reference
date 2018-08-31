@@ -1,0 +1,5715 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Telerik UI - API ReferenceClass KnownColors
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="restype" content="api">
+    <meta name="title" content="Class KnownColors
+   ">
+    <meta name="generator" content="docfx 2.36.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="https://d6vtbcy3ong79.cloudfront.net/telerik-navigation/1.0.28/css/index.min.css">
+    <link rel="stylesheet" href="https://d6vtbcy3ong79.cloudfront.net/fonts/1.1.5/css/metric.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,500,700">
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- Google Tag Manager -->
+          <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-6X92');</script>
+          <!-- End Google Tag Manager -->
+          <script>	
+              var e = document.documentElement;	
+              e.className = e.className.replace(/(^|\s)no-js(\s|$)/i, "$2");	
+          </script>
+          
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//kendo.cdn.telerik.com/2017.3.1026/js/kendo.web.min.js"></script>
+    <script src="//cdn.optimizely.com/js/2380340583.js"></script>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        <aside class="TK-Hat">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-8 col-xl-offset-2">
+                <div class="row">
+                  <div class="col-md-12 col-xl-10 col-xl-offset-1">
+                    <figure class="TK-Hat-Brand">
+                      <a href="https://www.progress.com" class="TK-PRGS-Logo" data-gtm-event="top-nav, text, progress-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="94" height="40" viewbox="0 0 512 120">
+                          <path fill="#5ce500" d="M95.52 29.33v51a3.93 3.93 0 0 1-1.78 3.08l-1.67 1-12.72 7.35-8.59 5-1.78 1V42.6L21.23 15 43.91 1.93 46 .74a3.94 3.94 0 0 1 3.56 0L81 18.9l14.51 8.38v2.05zM58.36 48.72l-9.79-5.66-22.91-13.23a4 4 0 0 0-3.56 0L1.77 41.57 0 42.6l34.49 19.91v39.83l20.3-11.73 1.79-1a3.94 3.94 0 0 0 1.78-3.08V48.72zM0 82.43l23.86 13.78V68.63z"></path>
+                          <path fill="#4b4e52" d="M148.09 27.28h-26v70.48h11.55V70.1h14.57c15.77 0 24.45-7.7 24.45-21.69 0-6.35-2.4-21.12-24.55-21.12m12.78 21.31c0 7.95-4.12 11.19-14.24 11.19h-13v-22.1h14.57c8.56 0 12.71 3.57 12.71 10.91M207 46.41l.87.42-2 10.42-1.35-.42a11.32 11.32 0 0 0-3.34-.51c-10.79 0-11.67 8.59-11.67 19v22.44h-10.64V46h10v6.24c2.73-4.2 6-6.37 10.37-6.9a14.55 14.55 0 0 1 7.76 1.07M233.29 45c-8.42 0-15.16 3.2-19.5 9.27-4.56 6.37-5.23 13.85-5.23 17.74 0 16.36 9.7 26.92 24.73 26.92 18.26 0 24.73-14.71 24.73-27.3 0-7.25-2.15-13.82-6-18.51-4.41-5.31-10.87-8.12-18.7-8.12m0 44.38c-8.37 0-13.57-6.66-13.57-17.37s5.2-17.55 13.57-17.55S247 61.23 247 71.78c0 10.83-5.24 17.56-13.66 17.56m114.55-42.93l.87.42-2 10.42-1.35-.42a11.26 11.26 0 0 0-3.33-.51c-10.78 0-11.66 8.59-11.66 19v22.44h-10.66V46h10v6.24c2.73-4.2 6-6.37 10.37-6.9a14.54 14.54 0 0 1 7.73 1.06m38.4 34.76l-.2.57c-2.23 6.36-7.57 7.7-11.65 7.7-8.09 0-13.3-5.37-13.81-14.09h36.59l.13-1a31.26 31.26 0 0 0 .12-4.12v-.93C396.93 54.78 387.48 45 374 45c-7.9 0-14.37 3.1-18.73 9a30.85 30.85 0 0 0-5.54 18c0 16 9.95 26.74 24.74 26.74 11.45 0 19.33-5.82 22.2-16.38l.33-1.2h-10.7zM361 66.05c.9-7.17 5.81-11.73 12.79-11.73 5.33 0 11.64 3.1 12.52 11.73H361zm-60.7-15.71c-3.45-3.58-8.06-5.39-13.76-5.39-15.69 0-22.83 13.81-22.83 26.63 0 13.16 7.06 26.44 22.83 26.44a18.33 18.33 0 0 0 13.35-5.42c0 2.28-.1 4.45-.16 5.38-.58 8.54-4.68 12.51-12.91 12.51-4.47 0-9.61-1.59-10.6-6l-.22-1h-10.54l.17 1.41c1.1 9.12 9.11 14.79 20.9 14.79 10.34 0 17.7-3.9 21.28-11.26 1.73-3.55 2.6-8.72 2.6-15.37V46h-10.13v4.34zm-13.11 38.15c-3.74 0-12.43-1.69-12.43-17.37 0-10.3 4.87-16.7 12.71-16.7 6.06 0 12.52 4.39 12.52 16.7 0 10.87-4.79 17.37-12.81 17.37m159.67-6.31c0 8.23-6.83 16.53-22.09 16.53-13.5 0-21.53-5.85-22.61-16.45l-.15-1.1h10.52l.21.84c1.29 6.38 7.37 7.72 12.24 7.72 5.34 0 11-1.72 11-6.54 0-2.44-1.59-4.18-4.73-5.16-1.86-.55-4.15-1.2-6.56-1.87-4.16-1.16-8.47-2.38-11.12-3.29-6.56-2.35-10.33-6.93-10.33-12.56 0-10.43 10.16-15.11 20.22-15.11 13.46 0 20.42 5.07 21.3 15.49l.09 1.07H434.5l-.14-.82c-1-6-7-6.9-10.48-6.9-3 0-10 .53-10 5.5 0 2.25 1.93 3.91 5.89 5.06 1.18.33 2.94.78 5 1.31 4.22 1.09 9.48 2.46 12.13 3.37 6.59 2.32 9.93 6.67 9.93 13m49.39 0c0 8.23-6.83 16.53-22.09 16.53-13.5 0-21.53-5.85-22.61-16.45l-.11-1.09H462l.12.74c1.29 6.38 7.37 7.72 12.24 7.72 5.34 0 11-1.72 11-6.54 0-2.44-1.59-4.18-4.72-5.16-1.86-.55-4.15-1.2-6.57-1.87-4.16-1.16-8.46-2.38-11.11-3.29-6.57-2.35-10.33-6.93-10.33-12.56 0-10.43 10.16-15.11 20.22-15.11 13.46 0 20.42 5.07 21.29 15.49l.09 1.07H483.9l-.14-.82c-1-6-7-6.9-10.48-6.9-3 0-9.95.53-9.95 5.5 0 2.25 1.93 3.91 5.89 5.06 1.18.33 2.94.78 5 1.31 4.22 1.09 9.48 2.46 12.13 3.37 6.58 2.32 9.93 6.67 9.93 13m8.43-30.78a7.37 7.37 0 1 1 7.29-7.37 7.23 7.23 0 0 1-7.29 7.37m0-13.49a6.12 6.12 0 1 0 6 6.12 5.91 5.91 0 0 0-6-6.12m-.85 7.49v2.46h-2.17v-7.74h3.62a2.58 2.58 0 0 1 2.86 2.7 2.26 2.26 0 0 1-1.49 2.34l1.77 2.7H506l-1.49-2.46h-.68zm1.21-3.49h-1.21v1.73h1.21a.86.86 0 0 0 1-.85.88.88 0 0 0-1-.89"></path>
+                        </svg>
+                      </a>
+                    </figure>
+        
+                    <div class="TK-Hat-Aside TK--Desktop">
+                      <ul class="TK-Hat-Menu">
+                        <li class="TK-Hat-Menu-Item">
+                          <a href="https://www.progress.com/company" class="TK-Hat-Menu-Link" data-gtm-event="top-nav, text, company">Company <i class="TK-Arrow"></i></a>
+                          <ul class="TK-Dropdown TK-Dropdown--Small TK-Dropdown--White">
+                            <li><a href="https://www.progress.com/company" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, company-overview">Company Overview</a></li>
+                            <li><a href="https://www.progress.com/company/leadership#exec" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, leadership">Leadership</a></li>
+                            <li><a href="http://investors.progress.com" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, investor-relations">Investor Relations</a></li>
+                            <li><a href="http://investors.progress.com/releases.cfm" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, press-releases">Press Releases</a></li>
+                            <li><a href="https://www.progress.com/company/press-coverage" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, press-coverage">Press Coverage</a></li>
+                            <li><a href="https://www.progress.com/events" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, events">Events</a></li>
+                            <li><a href="https://www.progress.com/company/awards" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, awards">Awards</a></li>
+                            <li><a href="https://www.progress.com/blogs" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, corporate-blog">Corporate Blog</a></li>
+                            <li><a href="https://www.progress.com/customers" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, customers">Customers</a></li>
+                            <li><a href="https://www.progress.com/company/careers" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, careers">Careers</a></li>
+                            <li><a href="https://www.progress.com/company/offices" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, offices">Offices</a></li>
+                          </ul>
+                        </li>
+        
+                        <li class="TK-Hat-Menu-Item">
+                          <a href="https://www.progress.com/products" class="TK-Hat-Menu-Link" data-gtm-event="technology.track">Technology <i class="TK-Arrow"></i></a>
+                          <ul class="TK-Dropdown TK-Dropdown--Medium TK-Dropdown--White">
+                            <li><a href="https://www.progress.com/app-development-deployment" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, app-dev-deploy">Application Development
+                                and Deployment</a></li>
+                            <li><a href="https://www.progress.com/back-end-as-a-service" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, baas">BaaS Platform</a></li>
+                            <li><a href="https://www.progress.com/data-connectivity-integration" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, dci">Data Connectivity and Integration</a></li>
+                            <li><a href="https://www.progress.com/web-content-management" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, wcm">Web Content Management</a></li>
+                            <li><a href="https://www.progress.com/predictive-analytics" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, predictive-analytics">Predictive Analytics</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+        
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <nav class="navbar navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-8 col-xl-offset-2">
+                <div class="row">
+                  <div class="nav-container col-md-12 col-lg-8 col-lg-offset-2 col-xl-10 col-xl-offset-1">
+                    <div id="navbar" class="nav navbar-collapse">
+                      <a class="button all-components">
+                        <span class="item-expanded"></span>
+                      </a>
+                      <a class="navbar-brand brand-platform-silverlight" href="/devtools/silverlight/">
+                        <span class="sr-only">Telerik UI for Silverlight</span>
+                      </a>
+        
+                      <select id="nav-dropdown">
+                        <option selected="">Navigate to...
+        
+                        <option value="https://demos.telerik.com/silverlight/">Demos
+        
+                        <option value="https://www.telerik.com/support/whats-new/silverlight/release-history">Release History
+        
+                        <option value="http://www.telerik.com/products/silverlight/overview.aspx">About
+        
+                        <option value="http://www.telerik.com/purchase/individual/silverlight.aspx">Pricing
+        
+                      </select>
+        
+                      <ul class="nav navbar-nav main-menu">
+        
+                        <li>
+                          <a href="https://demos.telerik.com/silverlight/" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'Demos')">Demos</a>
+                        </li>
+        
+                        <li>
+                          <a href="https://www.telerik.com/support/whats-new/silverlight/release-history" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'Release History')">Release History</a>
+                        </li>
+        
+                        <li>
+                          <a href="http://www.telerik.com/products/silverlight/overview.aspx" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'About')">About</a>
+                        </li>
+        
+                        <li>
+                          <a href="http://www.telerik.com/purchase/individual/silverlight.aspx" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'Pricing')">Pricing</a>
+                        </li>
+        
+        
+        
+                        <li class="hidden-xs">
+                          <a class="search-icon">
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewbox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+        <path fill="#FFFFFF" d="M6.499,1.985C3.461,1.985,1,4.449,1,7.484c0,3.039,2.461,5.5,5.499,5.5c3.037,0,5.498-2.461,5.498-5.5
+        	C11.996,4.449,9.535,1.985,6.499,1.985z M6.499,11.885c-2.429,0-4.399-1.97-4.399-4.401c0-2.429,1.97-4.399,4.399-4.399
+        	c2.429,0,4.399,1.97,4.399,4.399C10.897,9.915,8.928,11.885,6.499,11.885z M13.828,13.746c0,1.179,0.109,1.067-1.069,1.067
+        	l-1.678-1.678c0-1.177-0.109-1.067,1.069-1.067L13.828,13.746z"></path>
+        </svg>
+        
+                            &nbsp;
+                            <span class="sr-only">Search</span>
+                          </a>
+                          <div class="global-search">
+                            <form action="/devtools/silverlight/search" method="get">
+                              <div class="search-input-container">
+                                <input id="local-search" placeholder="Search for &hellip;" name="q">
+                                <div id='refine-search-container'>
+                                  <div id='refine-search-button' class='unselectable'>
+                                    <span id='refine-search-label' data-bind='text: label'></span>
+                                    <span class='k-icon k-i-arrow-chevron-down'></span>
+                                  </div>
+                                </div>
+                                <div id="refine-search-popup" style="display: none">
+                                  <ul>
+                                    <li>
+                                      <label class="custom-checkbox unselectable">
+                                        <input type="checkbox" data-bind="checked: documentation"><span class="k-icon k-i-check"></span>Search in Documentation
+                                      </label>
+                                    </li>
+        
+                                    <li>
+                                      <label class="custom-checkbox unselectable">
+                                        <input type="checkbox" disabled="true" data-bind="checked: api"><span class="k-icon k-i-check"></span>Search in API Reference
+                                      </label>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </form>
+        
+                            <script>
+                              var gcsInstance = '011354416605164361800:ebfuug7ih7i';
+                              var gcsKey = 'AIzaSyDftzENpfk47-cyaNfxh-exsWmz0ggRARM';
+                              isKbPage =  false ;
+                              siteHasKbPortal = ''
+                            </script>
+        
+                            <script type="text/javascript" src="/devtools/silverlight/assets/search-results.js"></script>
+        
+                          </div>
+                        </li>
+        
+        
+                        <li class="primary-cta">
+                          <a href="http://www.telerik.com/products/silverlight/download.aspx" target="_blank">Try now</a>
+                        </li>
+        
+                      </ul>
+                    </div>
+        
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+        </nav>
+        
+        <script>
+        
+          var searchContainer = $(".global-search");
+        
+          function hideSearch(e){
+          if (!searchContainer.is(e.target) &&
+          searchContainer.has(e.target).length === 0 &&
+          $(e.target).parents("#refine-search-popup").length === 0) {
+          setTimeout(function(e) {
+          searchContainer.removeClass("show-search");
+          $(document).off('click', hideSearch);
+          }, 200)
+          }
+          }
+        
+          function showSearch() {
+        
+          searchContainer.toggleClass("show-search")
+          .one("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(e) {
+          if (searchContainer.hasClass("show-search")) {
+          searchContainer.find("input:first")
+          .focus();
+          $(document).on("click", hideSearch);
+          }
+          });
+          }
+        
+          $(document).off("click", ".search-icon")
+          .on("click", ".search-icon", showSearch);
+        
+        
+          function navigate(e) {
+          trackItemFromCurrentPage('docs-navigation', e.target.children[e.target.selectedIndex].text);
+          window.open(e.target.value, "_blank");
+          }
+        
+          $(document)
+          .off("change", "#nav-dropdown")
+          .on("change", "#nav-dropdown", navigate);
+        </script>
+        
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav side-nav hide-when-search">
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc">
+             
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-9">
+            <article class="content wrap" id="_content" data-uid="Telerik.Windows.Diagrams.Core.KnownColors">
+  <h1 id="Telerik_Windows_Diagrams_Core_KnownColors" data-uid="Telerik.Windows.Diagrams.Core.KnownColors">Class KnownColors
+  </h1>
+  <div class="markdown level0 summary"><p>A collection of color presets.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">KnownColors</span></div>
+  </div>
+  
+  
+  
+  <h5><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h5>
+  <h5><strong>Assembly</strong>: Telerik.Windows.Controls.Diagrams.dll</h5>
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_syntax">Syntax</h4>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class KnownColors : Object</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 id="Telerik_Windows_Diagrams_Core_KnownColors_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>These colors are available under WPF in the Colors class but missing in under Silverlight.</p>
+</div>
+  
+  <h5 id="Telerik_Windows_Diagrams_Core_KnownColors_examples"><strong>Examples</strong></h5>
+  <p>Through the implicit conversion you can use the <a class="xref" href="Telerik.Windows.Diagrams.Core.KnownColors.html">KnownColors</a> directly to define a color, a number or even a brush like so:</p>
+<pre><code>Color color = KnownColors.DarkGreen; 
+Brush brush = KnownColors.CadetBlue;
+int number = KnownColors.Crimson;</code></pre>
+
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_AliceBlue" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.AliceBlue"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_AliceBlue" class="expander" data-toggle="collapse">AliceBlue</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_AliceBlue" class="collapse in">
+  <div class="markdown level1 summary"><p>The AliceBlue color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension AliceBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_AntiqueWhite" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.AntiqueWhite"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_AntiqueWhite" class="expander" data-toggle="collapse">AntiqueWhite</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_AntiqueWhite" class="collapse in">
+  <div class="markdown level1 summary"><p>The AntiqueWhite color preset. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension AntiqueWhite</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Aqua" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Aqua"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Aqua" class="expander" data-toggle="collapse">Aqua</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Aqua" class="collapse in">
+  <div class="markdown level1 summary"><p>The Aqua color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Aqua</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Aquamarine" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Aquamarine"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Aquamarine" class="expander" data-toggle="collapse">Aquamarine</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Aquamarine" class="collapse in">
+  <div class="markdown level1 summary"><p>The Aquamarine color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Aquamarine</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Azure" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Azure"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Azure" class="expander" data-toggle="collapse">Azure</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Azure" class="collapse in">
+  <div class="markdown level1 summary"><p>The Azure color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Azure</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Beige" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Beige"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Beige" class="expander" data-toggle="collapse">Beige</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Beige" class="collapse in">
+  <div class="markdown level1 summary"><p>The Beige color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Beige</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Bisque" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Bisque"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Bisque" class="expander" data-toggle="collapse">Bisque</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Bisque" class="collapse in">
+  <div class="markdown level1 summary"><p>The Bisque color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Bisque</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Black" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Black"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Black" class="expander" data-toggle="collapse">Black</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Black" class="collapse in">
+  <div class="markdown level1 summary"><p>The Black color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Black</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_BlanchedAlmond" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.BlanchedAlmond"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_BlanchedAlmond" class="expander" data-toggle="collapse">BlanchedAlmond</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_BlanchedAlmond" class="collapse in">
+  <div class="markdown level1 summary"><p>The BlanchedAlmond color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension BlanchedAlmond</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Blue" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Blue"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Blue" class="expander" data-toggle="collapse">Blue</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Blue" class="collapse in">
+  <div class="markdown level1 summary"><p>The Blue color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Blue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_BlueViolet" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.BlueViolet"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_BlueViolet" class="expander" data-toggle="collapse">BlueViolet</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_BlueViolet" class="collapse in">
+  <div class="markdown level1 summary"><p>The BlueViolet color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension BlueViolet</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Brown" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Brown"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Brown" class="expander" data-toggle="collapse">Brown</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Brown" class="collapse in">
+  <div class="markdown level1 summary"><p>The Brown color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Brown</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_BurlyWood" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.BurlyWood"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_BurlyWood" class="expander" data-toggle="collapse">BurlyWood</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_BurlyWood" class="collapse in">
+  <div class="markdown level1 summary"><p>The BurlyWood color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension BurlyWood</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_CadetBlue" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.CadetBlue"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_CadetBlue" class="expander" data-toggle="collapse">CadetBlue</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_CadetBlue" class="collapse in">
+  <div class="markdown level1 summary"><p>The CadetBlue color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension CadetBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Chartreuse" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Chartreuse"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Chartreuse" class="expander" data-toggle="collapse">Chartreuse</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Chartreuse" class="collapse in">
+  <div class="markdown level1 summary"><p>The Chartreuse color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Chartreuse</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Chocolate" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Chocolate"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Chocolate" class="expander" data-toggle="collapse">Chocolate</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Chocolate" class="collapse in">
+  <div class="markdown level1 summary"><p>The Chocolate color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Chocolate</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Coral" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Coral"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Coral" class="expander" data-toggle="collapse">Coral</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Coral" class="collapse in">
+  <div class="markdown level1 summary"><p>The Coral color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Coral</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_CornflowerBlue" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.CornflowerBlue"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_CornflowerBlue" class="expander" data-toggle="collapse">CornflowerBlue</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_CornflowerBlue" class="collapse in">
+  <div class="markdown level1 summary"><p>The CornflowerBlue color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension CornflowerBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_CornSilk" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.CornSilk"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_CornSilk" class="expander" data-toggle="collapse">CornSilk</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_CornSilk" class="collapse in">
+  <div class="markdown level1 summary"><p>The CornSilk color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension CornSilk</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Crimson" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Crimson"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Crimson" class="expander" data-toggle="collapse">Crimson</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Crimson" class="collapse in">
+  <div class="markdown level1 summary"><p>The Crimson color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Crimson</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Cyan" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Cyan"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Cyan" class="expander" data-toggle="collapse">Cyan</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Cyan" class="collapse in">
+  <div class="markdown level1 summary"><p>The Cyan color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Cyan</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_DarkBlue" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.DarkBlue"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkBlue" class="expander" data-toggle="collapse">DarkBlue</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkBlue" class="collapse in">
+  <div class="markdown level1 summary"><p>The DarkBlue color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension DarkBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_DarkCyan" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.DarkCyan"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkCyan" class="expander" data-toggle="collapse">DarkCyan</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkCyan" class="collapse in">
+  <div class="markdown level1 summary"><p>The DarkCyan color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension DarkCyan</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_DarkGoldenrod" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.DarkGoldenrod"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkGoldenrod" class="expander" data-toggle="collapse">DarkGoldenrod</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkGoldenrod" class="collapse in">
+  <div class="markdown level1 summary"><p>The DarkGoldenrod color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension DarkGoldenrod</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_DarkGray" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.DarkGray"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkGray" class="expander" data-toggle="collapse">DarkGray</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkGray" class="collapse in">
+  <div class="markdown level1 summary"><p>The DarkGray color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension DarkGray</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_DarkGreen" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.DarkGreen"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkGreen" class="expander" data-toggle="collapse">DarkGreen</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkGreen" class="collapse in">
+  <div class="markdown level1 summary"><p>The DarkGreen color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension DarkGreen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_DarkKhaki" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.DarkKhaki"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkKhaki" class="expander" data-toggle="collapse">DarkKhaki</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkKhaki" class="collapse in">
+  <div class="markdown level1 summary"><p>The DarkKhaki color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension DarkKhaki</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_DarkMagenta" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.DarkMagenta"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkMagenta" class="expander" data-toggle="collapse">DarkMagenta</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkMagenta" class="collapse in">
+  <div class="markdown level1 summary"><p>The DarkMagenta color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension DarkMagenta</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_DarkOliveGreen" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.DarkOliveGreen"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkOliveGreen" class="expander" data-toggle="collapse">DarkOliveGreen</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkOliveGreen" class="collapse in">
+  <div class="markdown level1 summary"><p>The DarkOliveGreen color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension DarkOliveGreen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_DarkOrange" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.DarkOrange"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkOrange" class="expander" data-toggle="collapse">DarkOrange</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkOrange" class="collapse in">
+  <div class="markdown level1 summary"><p>The DarkOrange color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension DarkOrange</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_DarkOrchid" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.DarkOrchid"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkOrchid" class="expander" data-toggle="collapse">DarkOrchid</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkOrchid" class="collapse in">
+  <div class="markdown level1 summary"><p>The DarkOrchid color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension DarkOrchid</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_DarkRed" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.DarkRed"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkRed" class="expander" data-toggle="collapse">DarkRed</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkRed" class="collapse in">
+  <div class="markdown level1 summary"><p>The DarkRed color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension DarkRed</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_DarkSalmon" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.DarkSalmon"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkSalmon" class="expander" data-toggle="collapse">DarkSalmon</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkSalmon" class="collapse in">
+  <div class="markdown level1 summary"><p>The DarkSalmon color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension DarkSalmon</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_DarkSeaGreen" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.DarkSeaGreen"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkSeaGreen" class="expander" data-toggle="collapse">DarkSeaGreen</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkSeaGreen" class="collapse in">
+  <div class="markdown level1 summary"><p>The DarkSeaGreen color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension DarkSeaGreen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_DarkSlateBlue" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.DarkSlateBlue"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkSlateBlue" class="expander" data-toggle="collapse">DarkSlateBlue</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkSlateBlue" class="collapse in">
+  <div class="markdown level1 summary"><p>The DarkSlateBlue color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension DarkSlateBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_DarkSlateGray" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.DarkSlateGray"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkSlateGray" class="expander" data-toggle="collapse">DarkSlateGray</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkSlateGray" class="collapse in">
+  <div class="markdown level1 summary"><p>The DarkSlateGray color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension DarkSlateGray</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_DarkTurquoise" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.DarkTurquoise"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkTurquoise" class="expander" data-toggle="collapse">DarkTurquoise</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkTurquoise" class="collapse in">
+  <div class="markdown level1 summary"><p>The DarkTurquoise color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension DarkTurquoise</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_DarkViolet" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.DarkViolet"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkViolet" class="expander" data-toggle="collapse">DarkViolet</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DarkViolet" class="collapse in">
+  <div class="markdown level1 summary"><p>The DarkViolet color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension DarkViolet</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_DeepPink" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.DeepPink"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DeepPink" class="expander" data-toggle="collapse">DeepPink</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DeepPink" class="collapse in">
+  <div class="markdown level1 summary"><p>The DeepPink color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension DeepPink</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_DeepSkyBlue" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.DeepSkyBlue"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DeepSkyBlue" class="expander" data-toggle="collapse">DeepSkyBlue</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DeepSkyBlue" class="collapse in">
+  <div class="markdown level1 summary"><p>The DeepSkyBlue color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension DeepSkyBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_DimGray" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.DimGray"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DimGray" class="expander" data-toggle="collapse">DimGray</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DimGray" class="collapse in">
+  <div class="markdown level1 summary"><p>The DimGray color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension DimGray</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_DodgerBlue" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.DodgerBlue"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DodgerBlue" class="expander" data-toggle="collapse">DodgerBlue</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_DodgerBlue" class="collapse in">
+  <div class="markdown level1 summary"><p>The DodgerBlue color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension DodgerBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Firebrick" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Firebrick"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Firebrick" class="expander" data-toggle="collapse">Firebrick</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Firebrick" class="collapse in">
+  <div class="markdown level1 summary"><p>The Firebrick color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Firebrick</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_FloralWhite" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.FloralWhite"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_FloralWhite" class="expander" data-toggle="collapse">FloralWhite</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_FloralWhite" class="collapse in">
+  <div class="markdown level1 summary"><p>The FloralWhite color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension FloralWhite</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_ForestGreen" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.ForestGreen"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_ForestGreen" class="expander" data-toggle="collapse">ForestGreen</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_ForestGreen" class="collapse in">
+  <div class="markdown level1 summary"><p>The ForestGreen color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension ForestGreen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Fuchsia" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Fuchsia"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Fuchsia" class="expander" data-toggle="collapse">Fuchsia</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Fuchsia" class="collapse in">
+  <div class="markdown level1 summary"><p>The Fuchsia color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Fuchsia</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Gainsboro" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Gainsboro"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Gainsboro" class="expander" data-toggle="collapse">Gainsboro</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Gainsboro" class="collapse in">
+  <div class="markdown level1 summary"><p>The Gainsboro color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Gainsboro</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_GhostWhite" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.GhostWhite"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_GhostWhite" class="expander" data-toggle="collapse">GhostWhite</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_GhostWhite" class="collapse in">
+  <div class="markdown level1 summary"><p>The GhostWhite color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension GhostWhite</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Gold" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Gold"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Gold" class="expander" data-toggle="collapse">Gold</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Gold" class="collapse in">
+  <div class="markdown level1 summary"><p>The Gold color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Gold</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Goldenrod" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Goldenrod"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Goldenrod" class="expander" data-toggle="collapse">Goldenrod</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Goldenrod" class="collapse in">
+  <div class="markdown level1 summary"><p>The Goldenrod color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Goldenrod</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Gray" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Gray"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Gray" class="expander" data-toggle="collapse">Gray</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Gray" class="collapse in">
+  <div class="markdown level1 summary"><p>The Gray color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Gray</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Green" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Green"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Green" class="expander" data-toggle="collapse">Green</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Green" class="collapse in">
+  <div class="markdown level1 summary"><p>The Green color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Green</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_GreenYellow" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.GreenYellow"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_GreenYellow" class="expander" data-toggle="collapse">GreenYellow</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_GreenYellow" class="collapse in">
+  <div class="markdown level1 summary"><p>The GreenYellow color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension GreenYellow</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Honeydew" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Honeydew"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Honeydew" class="expander" data-toggle="collapse">Honeydew</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Honeydew" class="collapse in">
+  <div class="markdown level1 summary"><p>The Honeydew color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Honeydew</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_HotPink" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.HotPink"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_HotPink" class="expander" data-toggle="collapse">HotPink</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_HotPink" class="collapse in">
+  <div class="markdown level1 summary"><p>The HotPink color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension HotPink</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_IndianRed" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.IndianRed"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_IndianRed" class="expander" data-toggle="collapse">IndianRed</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_IndianRed" class="collapse in">
+  <div class="markdown level1 summary"><p>The IndianRed color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension IndianRed</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Indigo" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Indigo"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Indigo" class="expander" data-toggle="collapse">Indigo</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Indigo" class="collapse in">
+  <div class="markdown level1 summary"><p>The Indigo color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Indigo</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Ivory" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Ivory"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Ivory" class="expander" data-toggle="collapse">Ivory</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Ivory" class="collapse in">
+  <div class="markdown level1 summary"><p>The Ivory color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Ivory</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Khaki" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Khaki"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Khaki" class="expander" data-toggle="collapse">Khaki</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Khaki" class="collapse in">
+  <div class="markdown level1 summary"><p>The Khaki color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Khaki</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Lavender" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Lavender"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Lavender" class="expander" data-toggle="collapse">Lavender</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Lavender" class="collapse in">
+  <div class="markdown level1 summary"><p>The Lavender color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Lavender</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_LavenderBlush" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.LavenderBlush"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LavenderBlush" class="expander" data-toggle="collapse">LavenderBlush</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LavenderBlush" class="collapse in">
+  <div class="markdown level1 summary"><p>The LavenderBlush color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension LavenderBlush</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_LawnGreen" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.LawnGreen"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LawnGreen" class="expander" data-toggle="collapse">LawnGreen</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LawnGreen" class="collapse in">
+  <div class="markdown level1 summary"><p>The LawnGreen color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension LawnGreen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_LemonChiffon" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.LemonChiffon"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LemonChiffon" class="expander" data-toggle="collapse">LemonChiffon</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LemonChiffon" class="collapse in">
+  <div class="markdown level1 summary"><p>The LemonChiffon color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension LemonChiffon</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_LightBlue" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.LightBlue"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LightBlue" class="expander" data-toggle="collapse">LightBlue</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LightBlue" class="collapse in">
+  <div class="markdown level1 summary"><p>The LightBlue color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension LightBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_LightCoral" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.LightCoral"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LightCoral" class="expander" data-toggle="collapse">LightCoral</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LightCoral" class="collapse in">
+  <div class="markdown level1 summary"><p>The LightCoral color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension LightCoral</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_LightCyan" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.LightCyan"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LightCyan" class="expander" data-toggle="collapse">LightCyan</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LightCyan" class="collapse in">
+  <div class="markdown level1 summary"><p>The LightCyan color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension LightCyan</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_LightGoldenrodYellow" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.LightGoldenrodYellow"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LightGoldenrodYellow" class="expander" data-toggle="collapse">LightGoldenrodYellow</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LightGoldenrodYellow" class="collapse in">
+  <div class="markdown level1 summary"><p>The LightGoldenrodYellow color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension LightGoldenrodYellow</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_LightGray" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.LightGray"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LightGray" class="expander" data-toggle="collapse">LightGray</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LightGray" class="collapse in">
+  <div class="markdown level1 summary"><p>The LightGray color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension LightGray</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_LightGreen" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.LightGreen"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LightGreen" class="expander" data-toggle="collapse">LightGreen</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LightGreen" class="collapse in">
+  <div class="markdown level1 summary"><p>The LightGreen color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension LightGreen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_LightLightGray" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.LightLightGray"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LightLightGray" class="expander" data-toggle="collapse">LightLightGray</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LightLightGray" class="collapse in">
+  <div class="markdown level1 summary"><p>The LightLightGray color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension LightLightGray</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_LightPink" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.LightPink"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LightPink" class="expander" data-toggle="collapse">LightPink</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LightPink" class="collapse in">
+  <div class="markdown level1 summary"><p>The LightPink color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension LightPink</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_LightSalmon" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.LightSalmon"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LightSalmon" class="expander" data-toggle="collapse">LightSalmon</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LightSalmon" class="collapse in">
+  <div class="markdown level1 summary"><p>The LightSalmon color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension LightSalmon</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_LightSeaGreen" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.LightSeaGreen"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LightSeaGreen" class="expander" data-toggle="collapse">LightSeaGreen</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LightSeaGreen" class="collapse in">
+  <div class="markdown level1 summary"><p>The LightSeaGreen color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension LightSeaGreen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_LightSkyBlue" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.LightSkyBlue"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LightSkyBlue" class="expander" data-toggle="collapse">LightSkyBlue</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LightSkyBlue" class="collapse in">
+  <div class="markdown level1 summary"><p>The LightSkyBlue color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension LightSkyBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_LightSlateGray" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.LightSlateGray"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LightSlateGray" class="expander" data-toggle="collapse">LightSlateGray</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LightSlateGray" class="collapse in">
+  <div class="markdown level1 summary"><p>The LightSlateGray color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension LightSlateGray</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_LightSteelBlue" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.LightSteelBlue"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LightSteelBlue" class="expander" data-toggle="collapse">LightSteelBlue</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LightSteelBlue" class="collapse in">
+  <div class="markdown level1 summary"><p>The LightSteelBlue color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension LightSteelBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_LightYellow" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.LightYellow"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LightYellow" class="expander" data-toggle="collapse">LightYellow</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LightYellow" class="collapse in">
+  <div class="markdown level1 summary"><p>The LightYellow color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension LightYellow</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Lime" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Lime"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Lime" class="expander" data-toggle="collapse">Lime</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Lime" class="collapse in">
+  <div class="markdown level1 summary"><p>The Lime color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Lime</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_LimeGreen" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.LimeGreen"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LimeGreen" class="expander" data-toggle="collapse">LimeGreen</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_LimeGreen" class="collapse in">
+  <div class="markdown level1 summary"><p>The LimeGreen color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension LimeGreen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Linen" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Linen"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Linen" class="expander" data-toggle="collapse">Linen</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Linen" class="collapse in">
+  <div class="markdown level1 summary"><p>The Linen color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Linen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Magenta" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Magenta"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Magenta" class="expander" data-toggle="collapse">Magenta</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Magenta" class="collapse in">
+  <div class="markdown level1 summary"><p>The Magenta color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Magenta</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Maroon" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Maroon"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Maroon" class="expander" data-toggle="collapse">Maroon</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Maroon" class="collapse in">
+  <div class="markdown level1 summary"><p>The Maroon color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Maroon</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_MediumAquamarine" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.MediumAquamarine"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_MediumAquamarine" class="expander" data-toggle="collapse">MediumAquamarine</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_MediumAquamarine" class="collapse in">
+  <div class="markdown level1 summary"><p>The MediumAquamarine color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension MediumAquamarine</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_MediumBlue" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.MediumBlue"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_MediumBlue" class="expander" data-toggle="collapse">MediumBlue</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_MediumBlue" class="collapse in">
+  <div class="markdown level1 summary"><p>The MediumBlue color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension MediumBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_MediumOrchid" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.MediumOrchid"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_MediumOrchid" class="expander" data-toggle="collapse">MediumOrchid</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_MediumOrchid" class="collapse in">
+  <div class="markdown level1 summary"><p>The MediumOrchid color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension MediumOrchid</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_MediumPurple" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.MediumPurple"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_MediumPurple" class="expander" data-toggle="collapse">MediumPurple</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_MediumPurple" class="collapse in">
+  <div class="markdown level1 summary"><p>The MediumPurple color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension MediumPurple</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_MediumSeaGreen" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.MediumSeaGreen"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_MediumSeaGreen" class="expander" data-toggle="collapse">MediumSeaGreen</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_MediumSeaGreen" class="collapse in">
+  <div class="markdown level1 summary"><p>The MediumSeaGreen color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension MediumSeaGreen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_MediumSlateBlue" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.MediumSlateBlue"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_MediumSlateBlue" class="expander" data-toggle="collapse">MediumSlateBlue</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_MediumSlateBlue" class="collapse in">
+  <div class="markdown level1 summary"><p>The MediumSlateBlue color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension MediumSlateBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_MediumSpringGreen" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.MediumSpringGreen"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_MediumSpringGreen" class="expander" data-toggle="collapse">MediumSpringGreen</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_MediumSpringGreen" class="collapse in">
+  <div class="markdown level1 summary"><p>The MediumSpringGreen color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension MediumSpringGreen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_MediumTurquoise" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.MediumTurquoise"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_MediumTurquoise" class="expander" data-toggle="collapse">MediumTurquoise</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_MediumTurquoise" class="collapse in">
+  <div class="markdown level1 summary"><p>The MediumTurquoise color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension MediumTurquoise</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_MediumVioletRed" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.MediumVioletRed"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_MediumVioletRed" class="expander" data-toggle="collapse">MediumVioletRed</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_MediumVioletRed" class="collapse in">
+  <div class="markdown level1 summary"><p>The MediumVioletRed color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension MediumVioletRed</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_MidnightBlue" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.MidnightBlue"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_MidnightBlue" class="expander" data-toggle="collapse">MidnightBlue</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_MidnightBlue" class="collapse in">
+  <div class="markdown level1 summary"><p>The MidnightBlue color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension MidnightBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_MintCream" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.MintCream"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_MintCream" class="expander" data-toggle="collapse">MintCream</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_MintCream" class="collapse in">
+  <div class="markdown level1 summary"><p>The MintCream color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension MintCream</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_MistyRose" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.MistyRose"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_MistyRose" class="expander" data-toggle="collapse">MistyRose</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_MistyRose" class="collapse in">
+  <div class="markdown level1 summary"><p>The MistyRose color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension MistyRose</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Moccasin" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Moccasin"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Moccasin" class="expander" data-toggle="collapse">Moccasin</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Moccasin" class="collapse in">
+  <div class="markdown level1 summary"><p>The Moccasin color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Moccasin</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_NavajoWhite" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.NavajoWhite"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_NavajoWhite" class="expander" data-toggle="collapse">NavajoWhite</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_NavajoWhite" class="collapse in">
+  <div class="markdown level1 summary"><p>The NavajoWhite color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension NavajoWhite</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Navy" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Navy"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Navy" class="expander" data-toggle="collapse">Navy</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Navy" class="collapse in">
+  <div class="markdown level1 summary"><p>The Navy color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Navy</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_OldLace" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.OldLace"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_OldLace" class="expander" data-toggle="collapse">OldLace</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_OldLace" class="collapse in">
+  <div class="markdown level1 summary"><p>The OldLace color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension OldLace</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Olive" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Olive"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Olive" class="expander" data-toggle="collapse">Olive</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Olive" class="collapse in">
+  <div class="markdown level1 summary"><p>The Olive color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Olive</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_OliveDrab" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.OliveDrab"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_OliveDrab" class="expander" data-toggle="collapse">OliveDrab</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_OliveDrab" class="collapse in">
+  <div class="markdown level1 summary"><p>The OliveDrab color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension OliveDrab</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Orange" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Orange"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Orange" class="expander" data-toggle="collapse">Orange</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Orange" class="collapse in">
+  <div class="markdown level1 summary"><p>The Orange color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Orange</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_OrangeRed" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.OrangeRed"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_OrangeRed" class="expander" data-toggle="collapse">OrangeRed</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_OrangeRed" class="collapse in">
+  <div class="markdown level1 summary"><p>The OrangeRed color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension OrangeRed</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Orchid" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Orchid"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Orchid" class="expander" data-toggle="collapse">Orchid</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Orchid" class="collapse in">
+  <div class="markdown level1 summary"><p>The Orchid color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Orchid</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_PaleGoldenrod" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.PaleGoldenrod"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_PaleGoldenrod" class="expander" data-toggle="collapse">PaleGoldenrod</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_PaleGoldenrod" class="collapse in">
+  <div class="markdown level1 summary"><p>The PaleGoldenrod color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension PaleGoldenrod</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_PaleGreen" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.PaleGreen"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_PaleGreen" class="expander" data-toggle="collapse">PaleGreen</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_PaleGreen" class="collapse in">
+  <div class="markdown level1 summary"><p>The PaleGreen color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension PaleGreen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_PaleTurquoise" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.PaleTurquoise"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_PaleTurquoise" class="expander" data-toggle="collapse">PaleTurquoise</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_PaleTurquoise" class="collapse in">
+  <div class="markdown level1 summary"><p>The PaleTurquoise color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension PaleTurquoise</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_PaleVioletRed" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.PaleVioletRed"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_PaleVioletRed" class="expander" data-toggle="collapse">PaleVioletRed</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_PaleVioletRed" class="collapse in">
+  <div class="markdown level1 summary"><p>The PaleVioletRed color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension PaleVioletRed</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_PapayaWhip" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.PapayaWhip"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_PapayaWhip" class="expander" data-toggle="collapse">PapayaWhip</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_PapayaWhip" class="collapse in">
+  <div class="markdown level1 summary"><p>The PapayaWhip color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension PapayaWhip</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_PeachPuff" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.PeachPuff"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_PeachPuff" class="expander" data-toggle="collapse">PeachPuff</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_PeachPuff" class="collapse in">
+  <div class="markdown level1 summary"><p>The PeachPuff color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension PeachPuff</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Peru" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Peru"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Peru" class="expander" data-toggle="collapse">Peru</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Peru" class="collapse in">
+  <div class="markdown level1 summary"><p>The Peru color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Peru</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Pink" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Pink"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Pink" class="expander" data-toggle="collapse">Pink</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Pink" class="collapse in">
+  <div class="markdown level1 summary"><p>The Pink color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Pink</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Plum" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Plum"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Plum" class="expander" data-toggle="collapse">Plum</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Plum" class="collapse in">
+  <div class="markdown level1 summary"><p>The Plum color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Plum</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_PowderBlue" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.PowderBlue"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_PowderBlue" class="expander" data-toggle="collapse">PowderBlue</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_PowderBlue" class="collapse in">
+  <div class="markdown level1 summary"><p>The PowderBlue color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension PowderBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Purple" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Purple"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Purple" class="expander" data-toggle="collapse">Purple</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Purple" class="collapse in">
+  <div class="markdown level1 summary"><p>The Purple color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Purple</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Red" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Red"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Red" class="expander" data-toggle="collapse">Red</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Red" class="collapse in">
+  <div class="markdown level1 summary"><p>The Red color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Red</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_RosyBrown" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.RosyBrown"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_RosyBrown" class="expander" data-toggle="collapse">RosyBrown</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_RosyBrown" class="collapse in">
+  <div class="markdown level1 summary"><p>The RosyBrown color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension RosyBrown</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_RoyalBlue" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.RoyalBlue"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_RoyalBlue" class="expander" data-toggle="collapse">RoyalBlue</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_RoyalBlue" class="collapse in">
+  <div class="markdown level1 summary"><p>The RoyalBlue color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension RoyalBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_SaddleBrown" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.SaddleBrown"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_SaddleBrown" class="expander" data-toggle="collapse">SaddleBrown</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_SaddleBrown" class="collapse in">
+  <div class="markdown level1 summary"><p>The SaddleBrown color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension SaddleBrown</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Salmon" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Salmon"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Salmon" class="expander" data-toggle="collapse">Salmon</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Salmon" class="collapse in">
+  <div class="markdown level1 summary"><p>The Salmon color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Salmon</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_SandyBrown" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.SandyBrown"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_SandyBrown" class="expander" data-toggle="collapse">SandyBrown</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_SandyBrown" class="collapse in">
+  <div class="markdown level1 summary"><p>The SandyBrown color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension SandyBrown</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_SeaGreen" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.SeaGreen"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_SeaGreen" class="expander" data-toggle="collapse">SeaGreen</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_SeaGreen" class="collapse in">
+  <div class="markdown level1 summary"><p>The SeaGreen color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension SeaGreen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_SeaShell" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.SeaShell"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_SeaShell" class="expander" data-toggle="collapse">SeaShell</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_SeaShell" class="collapse in">
+  <div class="markdown level1 summary"><p>The SeaShell color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension SeaShell</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Sienna" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Sienna"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Sienna" class="expander" data-toggle="collapse">Sienna</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Sienna" class="collapse in">
+  <div class="markdown level1 summary"><p>The Sienna color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Sienna</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Silver" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Silver"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Silver" class="expander" data-toggle="collapse">Silver</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Silver" class="collapse in">
+  <div class="markdown level1 summary"><p>The Silver color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Silver</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_SkyBlue" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.SkyBlue"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_SkyBlue" class="expander" data-toggle="collapse">SkyBlue</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_SkyBlue" class="collapse in">
+  <div class="markdown level1 summary"><p>The SkyBlue color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension SkyBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_SlateBlue" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.SlateBlue"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_SlateBlue" class="expander" data-toggle="collapse">SlateBlue</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_SlateBlue" class="collapse in">
+  <div class="markdown level1 summary"><p>The SlateBlue color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension SlateBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_SlateGray" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.SlateGray"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_SlateGray" class="expander" data-toggle="collapse">SlateGray</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_SlateGray" class="collapse in">
+  <div class="markdown level1 summary"><p>The SlateGray color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension SlateGray</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Snow" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Snow"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Snow" class="expander" data-toggle="collapse">Snow</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Snow" class="collapse in">
+  <div class="markdown level1 summary"><p>The Snow color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Snow</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_SpringGreen" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.SpringGreen"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_SpringGreen" class="expander" data-toggle="collapse">SpringGreen</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_SpringGreen" class="collapse in">
+  <div class="markdown level1 summary"><p>The SpringGreen color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension SpringGreen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_SteelBlue" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.SteelBlue"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_SteelBlue" class="expander" data-toggle="collapse">SteelBlue</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_SteelBlue" class="collapse in">
+  <div class="markdown level1 summary"><p>The SteelBlue color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension SteelBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Tan" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Tan"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Tan" class="expander" data-toggle="collapse">Tan</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Tan" class="collapse in">
+  <div class="markdown level1 summary"><p>The Tan color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Tan</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Teal" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Teal"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Teal" class="expander" data-toggle="collapse">Teal</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Teal" class="collapse in">
+  <div class="markdown level1 summary"><p>The Teal color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Teal</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Thistle" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Thistle"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Thistle" class="expander" data-toggle="collapse">Thistle</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Thistle" class="collapse in">
+  <div class="markdown level1 summary"><p>The Thistle color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Thistle</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Tomato" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Tomato"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Tomato" class="expander" data-toggle="collapse">Tomato</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Tomato" class="collapse in">
+  <div class="markdown level1 summary"><p>The Tomato color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Tomato</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Transparent" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Transparent"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Transparent" class="expander" data-toggle="collapse">Transparent</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Transparent" class="collapse in">
+  <div class="markdown level1 summary"><p>The Transparent color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Transparent</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Turquoise" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Turquoise"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Turquoise" class="expander" data-toggle="collapse">Turquoise</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Turquoise" class="collapse in">
+  <div class="markdown level1 summary"><p>The Turquoise color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Turquoise</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Violet" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Violet"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Violet" class="expander" data-toggle="collapse">Violet</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Violet" class="collapse in">
+  <div class="markdown level1 summary"><p>The Violet color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Violet</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Wheat" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Wheat"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Wheat" class="expander" data-toggle="collapse">Wheat</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Wheat" class="collapse in">
+  <div class="markdown level1 summary"><p>The Wheat color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Wheat</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_White" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.White"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_White" class="expander" data-toggle="collapse">White</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_White" class="collapse in">
+  <div class="markdown level1 summary"><p>The White color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension White</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_WhiteSmoke" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.WhiteSmoke"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_WhiteSmoke" class="expander" data-toggle="collapse">WhiteSmoke</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_WhiteSmoke" class="collapse in">
+  <div class="markdown level1 summary"><p>The WhiteSmoke color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension WhiteSmoke</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_Yellow" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.Yellow"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Yellow" class="expander" data-toggle="collapse">Yellow</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_Yellow" class="collapse in">
+  <div class="markdown level1 summary"><p>The Yellow color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension Yellow</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_KnownColors_YellowGreen" data-uid="Telerik.Windows.Diagrams.Core.KnownColors.YellowGreen"><a href="#collapsible-Telerik_Windows_Diagrams_Core_KnownColors_YellowGreen" class="expander" data-toggle="collapse">YellowGreen</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_KnownColors_YellowGreen" class="collapse in">
+  <div class="markdown level1 summary"><p>The YellowGreen color preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ColorExtension YellowGreen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Diagrams.Core.ColorExtension.html">ColorExtension</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+	  <div id="push"></div>
+    </div>
+      <div id="footer" class="container-fluid pb-40">
+        <div class="row feedback-row mb-60">
+          <div class="col-sm-8 col-sm-offset-4 col-md-offset-3 col-lg-8 col-lg-offset-2">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="row feedback">
+                  <div class="col-xs-8">
+                    <h4>Was this article helpful?</h4>
+                  </div>
+                  <div class="col-xs-4 text-right">
+                    <button data-value="yes" id="yesButton">Yes</button>
+                    &nbsp;/&nbsp;
+                    <button data-value="no" id="noButton">No</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="dialog-overlay">
+          <div class="feedback-dialog dialog dialog-enter">
+            <div id="feedback-container">
+              <div id="feedback-window-container">
+                <div id="feedback-form-window">
+                  <h3 class="mt-0 mb-5">Give article feedback</h3>
+                  <p>Tell us how we can improve this article</p>
+                  <span id="feedback-form-popup-container"></span>
+                  <form id="feedback-form">
+                    <div id="feedback-checkbox-area">
+                      <input id="hidden-sheet-id" type="hidden" value="1toT2XTrYzmmQGUq5xCmXIkMWkwah3QCNZ9Aj5RLaeoo">
+                        <label>
+                          <input type="checkbox" data-bind="checked: outdatedSample"> Code samples are inaccurate / outdated.
+                        </label>
+                        <span class="required-field" data-bind="visible: outdatedSample"></span>
+                        <textarea id="feedback-code-sample-text-input" placeholder="Please, specify more details ..." class="feedback-extw__textarea" data-bind="visible: outdatedSample, value: inaccurateOutdatedCodeSamplesText">
+                        </textarea>
+                        <label>
+                          <input type="checkbox" data-bind="checked: otherMoreInformation"> I expected to find other / more information.
+                        </label>
+                        <span class="required-field" data-bind="visible: otherMoreInformation"></span>
+                        <textarea id="feedback-more-information-text-input" class="feedback-extw__textarea" placeholder="Please, specify what information can be added ..." data-bind="visible: otherMoreInformation, value: otherMoreInformationText">
+                        </textarea>
+                        <label>
+                          <input type="checkbox" data-bind="checked: textErrors"> There are typos / broken links / broken page elements.
+                        </label>
+                        <span class="required-field" data-bind="visible: textErrors"></span>
+                        <textarea id="feedback-text-errors-text-input" class="feedback-extw__textarea" placeholder="Please, specify what needs to be fixed ..." data-bind="visible: textErrors, value: typosLinksElementsText">
+                        </textarea>
+                        <label>
+                          <input type="checkbox" data-bind="checked: inaccurateContent"> Content is inaccurate / outdated.
+                        </label>
+                        <span class="required-field" data-bind="visible: inaccurateContent"></span>
+                        <textarea id="feedback-inaccurate-content-text-input" class="feedback-extw__textarea" placeholder="Please, specify which conent ..." data-bind="visible: inaccurateContent, value: inaccurateOutdatedContentText">
+                        </textarea>
+                        <label>
+                          <input type="checkbox" data-bind="checked: otherFeedback"> Other
+                        </label>
+                        <span class="required-field" data-bind="visible: otherFeedback"></span>
+                        <textarea id="feedback-other-text-input" placeholder="Please, enter more details or not listed feedback ..." class="feedback-extw__textarea" data-bind="visible: otherFeedback, value: textFeedback">
+                        </textarea>
+                        <input id="feedback-email-input" type="email" placeholder="email (optional)" data-email-msg="Email format is not valid." class="feedback-extw__input input" data-bind="value: email">
+                        <label>
+                          <input type="checkbox" data-bind="checked: acceptFeedbackContact"> By checking this box you consent to Progress contacting you by email about your response on this page.
+                        </label>
+                      </div>
+                  </form>
+                  <div class="feedback-extw__foot">
+                    <p class="mt-30 mb-0" style="text-align: right;">
+                      <button class="button ghost dialog-hide">Cancel</button>
+                      <button class="button dialog-hide" type="submit">Submit</button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <script>
+        $(document).ready(function() {
+        initFeedbackForm({
+        dialog: ".dialog-overlay",
+        closeButtons: ".dialog-hide",
+        container: ".feedback"
+        });
+        });
+      </script>
+      
+        <script>
+        $(".read-prev").hover(function() {
+        $(".title-prev").show();
+        }, function() {
+        $(".title-prev").hide();
+        });
+      
+        $(".read-next").hover(function() {
+        $(".title-next").show();
+        }, function() {
+        $(".title-next").hide();
+        });
+      
+        $(".all-components").click(function() {
+        $(".all-components").toggleClass("show-components");
+        $('.sidetoggle').toggleClass("collapse");
+        $('.sidetoc').toggleClass("show-components");
+        $(".sidefilter").toggleClass("show-components");
+        });
+      </script>
+      
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="row">
+              <div class="col-md-12 col-lg-10 col-lg-offset-1">
+                <div class="row">
+      
+      
+                  <div class="col-sm-4 mb-20">
+                    <h6 class="mt-0 mb-10">Getting Started</h6>
+                    <ul class="list-unstyled">
+      
+                      <li>
+                        <a href="https://www.telerik.com/download-trial-file/v2-b/ui-for-silverlight" target="_blank">Install Now</a>
+                      </li>
+      
+                      <li>
+                        <a href="http://demos.telerik.com/silverlight/" target="_blank">Demos</a>
+                      </li>
+      
+                      <li>
+                        <a href="http://demos.telerik.com/xaml-sdkbrowser/" target="_blank">SDK Samples Browser</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/silverlight/sample-applications" target="_blank">Sample Applications</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/wpf/color-theme-generator" target="_blank">Themes Generator</a>
+                      </li>
+      
+                    </ul>
+                  </div>
+      
+                  <div class="col-sm-4 mb-20">
+                    <h6 class="mt-0 mb-10">Support Resources</h6>
+                    <ul class="list-unstyled">
+      
+                      <li>
+                        <a href="https://www.telerik.com/support/code-library/silverlight" target="_blank">Code Library</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/support/kb/silverlight" target="_blank">Knowledge Base</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/silverlight/mvvm-support" target="_blank">MVVM Support</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/videos/silverlight" target="_blank">Videos</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://github.com/telerik/xaml-sdk" target="_blank">GitHub SDK Repository</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/help/silverlight/installation-system-requirements.html" target="_blank">System Requirements</a>
+                      </li>
+      
+                    </ul>
+                  </div>
+      
+                  <div class="col-sm-4 mb-20">
+                    <h6 class="mt-0 mb-10">Community</h6>
+                    <ul class="list-unstyled">
+      
+                      <li>
+                        <a href="https://www.telerik.com/forums/silverlight" target="_blank">Forums</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/blogs/.net" target="_blank">Blogs</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://feedback.telerik.com/Project/143" target="_blank">XAML Feedback Portal</a>
+                      </li>
+      
+                      <li>
+                        <a href="http://feedback.telerik.com/Project/184" target="_blank">Document Processing Feedback Portal</a>
+                      </li>
+      
+                    </ul>
+                  </div>
+      
+      
+                </div>
+                <div class="row copyright">
+                  <div class="col-sm-4 social-icons">
+                    <span class="sticky">
+                      <a class="social-icon" href="https://www.facebook.com/Telerik/" title=""><?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewbox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+      <path d="M13.766,32.155V17.559H8.854V11.87h4.912V7.675c0-4.869,2.973-7.52,7.316-7.52c2.08,0,3.868,0.155,4.39,0.224v5.088
+      	l-3.013,0.001c-2.362,0-2.819,1.122-2.819,2.769v3.632h5.634l-0.734,5.688H19.64v14.597H13.766z"></path>
+      </svg>
+                      </a>
+                      <a class="social-icon" href="https://twitter.com/Telerik/" title=""><?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewbox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+      <path fill="#231F20" d="M32,6.076c-1.178,0.522-2.442,0.875-3.771,1.034c1.355-0.813,2.396-2.1,2.887-3.632
+      	c-1.269,0.752-2.674,1.298-4.169,1.593c-1.198-1.276-2.904-2.073-4.792-2.073c-3.626,0-6.566,2.939-6.566,6.565
+      	c0,0.515,0.058,1.016,0.17,1.496C10.303,10.785,5.466,8.171,2.228,4.199c-0.565,0.97-0.889,2.097-0.889,3.3
+      	c0,2.278,1.159,4.287,2.92,5.464c-1.076-0.034-2.088-0.329-2.974-0.821c0,0.027,0,0.055,0,0.083c0,3.181,2.263,5.834,5.267,6.438
+      	c-0.551,0.15-1.131,0.23-1.73,0.23c-0.423,0-0.834-0.041-1.235-0.118c0.835,2.608,3.26,4.507,6.133,4.56
+      	c-2.247,1.761-5.078,2.811-8.154,2.811c-0.53,0-1.052-0.031-1.566-0.092c2.905,1.862,6.356,2.949,10.064,2.949
+      	c12.076,0,18.679-10.004,18.679-18.679c0-0.285-0.007-0.568-0.02-0.849C30.007,8.549,31.12,7.393,32,6.076"></path>
+      </svg>
+                      </a>
+                      <a class="social-icon" href="https://www.youtube.com/user/TelerikInc" title=""><?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" xml:space="preserve">
+      <path d="M506.887,153.632c0,0-5.003-35.283-20.354-50.82c-19.469-20.393-41.293-20.494-51.301-21.687
+      c-71.647-5.179-179.121-5.179-179.121-5.179h-0.223c0,0-107.472,0-179.121,5.179c-10.008,1.194-31.824,1.295-51.301,21.687
+      c-15.351,15.537-20.346,50.82-20.346,50.82S0,195.065,0,236.497v38.843c0,41.433,5.12,82.865,5.12,82.865
+      s4.995,35.283,20.346,50.82c19.476,20.393,45.06,19.748,56.455,21.885C122.883,434.839,256,436.054,256,436.054
+      s107.585-0.162,179.232-5.341c10.008-1.194,31.831-1.295,51.301-21.687c15.351-15.537,20.354-50.82,20.354-50.82
+      S512,316.773,512,275.341v-38.843C512,195.065,506.887,153.632,506.887,153.632z M203.87,322.913v-144.36l137.342,72.18 L203.87,322.913z"></path>
+      </svg>
+                      </a>
+                      <a class="social-icon" href="https://www.linkedin.com/showcase/telerik/" title=""><?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewbox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+      <path d="M7.81,29V9.652H1.379V29H7.81z M4.596,7.009c2.243,0,3.638-1.486,3.638-3.342C8.192,1.768,6.838,0.324,4.638,0.324
+      	C2.438,0.324,1,1.768,1,3.667c0,1.856,1.396,3.342,3.554,3.342H4.596L4.596,7.009z M11.37,29h6.43V18.195
+      	c0-0.579,0.042-1.156,0.213-1.569c0.465-1.155,1.521-2.352,3.3-2.352c2.325,0,3.257,1.774,3.257,4.375v10.35H31V17.906
+      	c0-5.943-3.173-8.708-7.404-8.708c-3.469,0-4.992,1.939-5.838,3.259H17.8V9.651h-6.43C11.454,11.467,11.37,28.999,11.37,29L11.37,29
+      	z"></path>
+      </svg>
+                      </a>
+                    </span>
+                  </div>
+                  <div class="col-sm-8">
+                    <p>
+                      Copyright &copy; 2018 Progress Software Corporation and/or its subsidiaries or affiliates.<br> All Rights Reserved.
+                    </p>
+      
+                    <p>
+                      Progress, Telerik, and certain product names used herein are trademarks or registered trademarks of Progress Software Corporation and/or one of its subsidiaries or affiliates in the U.S. and/or other countries. See <a href="https://www.progress.com/legal/trademarks">Trademarks</a> for appropriate markings.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

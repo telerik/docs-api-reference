@@ -1,0 +1,4426 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Telerik UI - API ReferenceClass SerializationConstants
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="restype" content="api">
+    <meta name="title" content="Class SerializationConstants
+   ">
+    <meta name="generator" content="docfx 2.36.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="https://d6vtbcy3ong79.cloudfront.net/telerik-navigation/1.0.28/css/index.min.css">
+    <link rel="stylesheet" href="https://d6vtbcy3ong79.cloudfront.net/fonts/1.1.5/css/metric.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,500,700">
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- Google Tag Manager -->
+          <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-6X92');</script>
+          <!-- End Google Tag Manager -->
+          <script>	
+              var e = document.documentElement;	
+              e.className = e.className.replace(/(^|\s)no-js(\s|$)/i, "$2");	
+          </script>
+          
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//kendo.cdn.telerik.com/2017.3.1026/js/kendo.web.min.js"></script>
+    <script src="//cdn.optimizely.com/js/2380340583.js"></script>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        <aside class="TK-Hat">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-8 col-xl-offset-2">
+                <div class="row">
+                  <div class="col-md-12 col-xl-10 col-xl-offset-1">
+                    <figure class="TK-Hat-Brand">
+                      <a href="https://www.progress.com" class="TK-PRGS-Logo" data-gtm-event="top-nav, text, progress-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="94" height="40" viewbox="0 0 512 120">
+                          <path fill="#5ce500" d="M95.52 29.33v51a3.93 3.93 0 0 1-1.78 3.08l-1.67 1-12.72 7.35-8.59 5-1.78 1V42.6L21.23 15 43.91 1.93 46 .74a3.94 3.94 0 0 1 3.56 0L81 18.9l14.51 8.38v2.05zM58.36 48.72l-9.79-5.66-22.91-13.23a4 4 0 0 0-3.56 0L1.77 41.57 0 42.6l34.49 19.91v39.83l20.3-11.73 1.79-1a3.94 3.94 0 0 0 1.78-3.08V48.72zM0 82.43l23.86 13.78V68.63z"></path>
+                          <path fill="#4b4e52" d="M148.09 27.28h-26v70.48h11.55V70.1h14.57c15.77 0 24.45-7.7 24.45-21.69 0-6.35-2.4-21.12-24.55-21.12m12.78 21.31c0 7.95-4.12 11.19-14.24 11.19h-13v-22.1h14.57c8.56 0 12.71 3.57 12.71 10.91M207 46.41l.87.42-2 10.42-1.35-.42a11.32 11.32 0 0 0-3.34-.51c-10.79 0-11.67 8.59-11.67 19v22.44h-10.64V46h10v6.24c2.73-4.2 6-6.37 10.37-6.9a14.55 14.55 0 0 1 7.76 1.07M233.29 45c-8.42 0-15.16 3.2-19.5 9.27-4.56 6.37-5.23 13.85-5.23 17.74 0 16.36 9.7 26.92 24.73 26.92 18.26 0 24.73-14.71 24.73-27.3 0-7.25-2.15-13.82-6-18.51-4.41-5.31-10.87-8.12-18.7-8.12m0 44.38c-8.37 0-13.57-6.66-13.57-17.37s5.2-17.55 13.57-17.55S247 61.23 247 71.78c0 10.83-5.24 17.56-13.66 17.56m114.55-42.93l.87.42-2 10.42-1.35-.42a11.26 11.26 0 0 0-3.33-.51c-10.78 0-11.66 8.59-11.66 19v22.44h-10.66V46h10v6.24c2.73-4.2 6-6.37 10.37-6.9a14.54 14.54 0 0 1 7.73 1.06m38.4 34.76l-.2.57c-2.23 6.36-7.57 7.7-11.65 7.7-8.09 0-13.3-5.37-13.81-14.09h36.59l.13-1a31.26 31.26 0 0 0 .12-4.12v-.93C396.93 54.78 387.48 45 374 45c-7.9 0-14.37 3.1-18.73 9a30.85 30.85 0 0 0-5.54 18c0 16 9.95 26.74 24.74 26.74 11.45 0 19.33-5.82 22.2-16.38l.33-1.2h-10.7zM361 66.05c.9-7.17 5.81-11.73 12.79-11.73 5.33 0 11.64 3.1 12.52 11.73H361zm-60.7-15.71c-3.45-3.58-8.06-5.39-13.76-5.39-15.69 0-22.83 13.81-22.83 26.63 0 13.16 7.06 26.44 22.83 26.44a18.33 18.33 0 0 0 13.35-5.42c0 2.28-.1 4.45-.16 5.38-.58 8.54-4.68 12.51-12.91 12.51-4.47 0-9.61-1.59-10.6-6l-.22-1h-10.54l.17 1.41c1.1 9.12 9.11 14.79 20.9 14.79 10.34 0 17.7-3.9 21.28-11.26 1.73-3.55 2.6-8.72 2.6-15.37V46h-10.13v4.34zm-13.11 38.15c-3.74 0-12.43-1.69-12.43-17.37 0-10.3 4.87-16.7 12.71-16.7 6.06 0 12.52 4.39 12.52 16.7 0 10.87-4.79 17.37-12.81 17.37m159.67-6.31c0 8.23-6.83 16.53-22.09 16.53-13.5 0-21.53-5.85-22.61-16.45l-.15-1.1h10.52l.21.84c1.29 6.38 7.37 7.72 12.24 7.72 5.34 0 11-1.72 11-6.54 0-2.44-1.59-4.18-4.73-5.16-1.86-.55-4.15-1.2-6.56-1.87-4.16-1.16-8.47-2.38-11.12-3.29-6.56-2.35-10.33-6.93-10.33-12.56 0-10.43 10.16-15.11 20.22-15.11 13.46 0 20.42 5.07 21.3 15.49l.09 1.07H434.5l-.14-.82c-1-6-7-6.9-10.48-6.9-3 0-10 .53-10 5.5 0 2.25 1.93 3.91 5.89 5.06 1.18.33 2.94.78 5 1.31 4.22 1.09 9.48 2.46 12.13 3.37 6.59 2.32 9.93 6.67 9.93 13m49.39 0c0 8.23-6.83 16.53-22.09 16.53-13.5 0-21.53-5.85-22.61-16.45l-.11-1.09H462l.12.74c1.29 6.38 7.37 7.72 12.24 7.72 5.34 0 11-1.72 11-6.54 0-2.44-1.59-4.18-4.72-5.16-1.86-.55-4.15-1.2-6.57-1.87-4.16-1.16-8.46-2.38-11.11-3.29-6.57-2.35-10.33-6.93-10.33-12.56 0-10.43 10.16-15.11 20.22-15.11 13.46 0 20.42 5.07 21.29 15.49l.09 1.07H483.9l-.14-.82c-1-6-7-6.9-10.48-6.9-3 0-9.95.53-9.95 5.5 0 2.25 1.93 3.91 5.89 5.06 1.18.33 2.94.78 5 1.31 4.22 1.09 9.48 2.46 12.13 3.37 6.58 2.32 9.93 6.67 9.93 13m8.43-30.78a7.37 7.37 0 1 1 7.29-7.37 7.23 7.23 0 0 1-7.29 7.37m0-13.49a6.12 6.12 0 1 0 6 6.12 5.91 5.91 0 0 0-6-6.12m-.85 7.49v2.46h-2.17v-7.74h3.62a2.58 2.58 0 0 1 2.86 2.7 2.26 2.26 0 0 1-1.49 2.34l1.77 2.7H506l-1.49-2.46h-.68zm1.21-3.49h-1.21v1.73h1.21a.86.86 0 0 0 1-.85.88.88 0 0 0-1-.89"></path>
+                        </svg>
+                      </a>
+                    </figure>
+        
+                    <div class="TK-Hat-Aside TK--Desktop">
+                      <ul class="TK-Hat-Menu">
+                        <li class="TK-Hat-Menu-Item">
+                          <a href="https://www.progress.com/company" class="TK-Hat-Menu-Link" data-gtm-event="top-nav, text, company">Company <i class="TK-Arrow"></i></a>
+                          <ul class="TK-Dropdown TK-Dropdown--Small TK-Dropdown--White">
+                            <li><a href="https://www.progress.com/company" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, company-overview">Company Overview</a></li>
+                            <li><a href="https://www.progress.com/company/leadership#exec" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, leadership">Leadership</a></li>
+                            <li><a href="http://investors.progress.com" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, investor-relations">Investor Relations</a></li>
+                            <li><a href="http://investors.progress.com/releases.cfm" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, press-releases">Press Releases</a></li>
+                            <li><a href="https://www.progress.com/company/press-coverage" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, press-coverage">Press Coverage</a></li>
+                            <li><a href="https://www.progress.com/events" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, events">Events</a></li>
+                            <li><a href="https://www.progress.com/company/awards" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, awards">Awards</a></li>
+                            <li><a href="https://www.progress.com/blogs" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, corporate-blog">Corporate Blog</a></li>
+                            <li><a href="https://www.progress.com/customers" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, customers">Customers</a></li>
+                            <li><a href="https://www.progress.com/company/careers" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, careers">Careers</a></li>
+                            <li><a href="https://www.progress.com/company/offices" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, offices">Offices</a></li>
+                          </ul>
+                        </li>
+        
+                        <li class="TK-Hat-Menu-Item">
+                          <a href="https://www.progress.com/products" class="TK-Hat-Menu-Link" data-gtm-event="technology.track">Technology <i class="TK-Arrow"></i></a>
+                          <ul class="TK-Dropdown TK-Dropdown--Medium TK-Dropdown--White">
+                            <li><a href="https://www.progress.com/app-development-deployment" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, app-dev-deploy">Application Development
+                                and Deployment</a></li>
+                            <li><a href="https://www.progress.com/back-end-as-a-service" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, baas">BaaS Platform</a></li>
+                            <li><a href="https://www.progress.com/data-connectivity-integration" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, dci">Data Connectivity and Integration</a></li>
+                            <li><a href="https://www.progress.com/web-content-management" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, wcm">Web Content Management</a></li>
+                            <li><a href="https://www.progress.com/predictive-analytics" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, predictive-analytics">Predictive Analytics</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+        
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <nav class="navbar navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-8 col-xl-offset-2">
+                <div class="row">
+                  <div class="nav-container col-md-12 col-lg-8 col-lg-offset-2 col-xl-10 col-xl-offset-1">
+                    <div id="navbar" class="nav navbar-collapse">
+                      <a class="button all-components">
+                        <span class="item-expanded"></span>
+                      </a>
+                      <a class="navbar-brand brand-platform-wpf" href="/devtools/wpf/">
+                        <span class="sr-only">Telerik UI for WPF</span>
+                      </a>
+        
+                      <select id="nav-dropdown">
+                        <option selected="">Navigate to...
+        
+                        <option value="https://demos.telerik.com/wpf/">Demos
+        
+                        <option value="https://www.telerik.com/support/whats-new/wpf/release-history">Release History
+        
+                        <option value="http://www.telerik.com/products/wpf/overview.aspx">About
+        
+                        <option value="http://www.telerik.com/purchase/individual/wpf.aspx">Pricing
+        
+                      </select>
+        
+                      <ul class="nav navbar-nav main-menu">
+        
+                        <li>
+                          <a href="https://demos.telerik.com/wpf/" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'Demos')">Demos</a>
+                        </li>
+        
+                        <li>
+                          <a href="https://www.telerik.com/support/whats-new/wpf/release-history" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'Release History')">Release History</a>
+                        </li>
+        
+                        <li>
+                          <a href="http://www.telerik.com/products/wpf/overview.aspx" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'About')">About</a>
+                        </li>
+        
+                        <li>
+                          <a href="http://www.telerik.com/purchase/individual/wpf.aspx" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'Pricing')">Pricing</a>
+                        </li>
+        
+        
+        
+                        <li class="hidden-xs">
+                          <a class="search-icon">
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewbox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+        <path fill="#FFFFFF" d="M6.499,1.985C3.461,1.985,1,4.449,1,7.484c0,3.039,2.461,5.5,5.499,5.5c3.037,0,5.498-2.461,5.498-5.5
+        	C11.996,4.449,9.535,1.985,6.499,1.985z M6.499,11.885c-2.429,0-4.399-1.97-4.399-4.401c0-2.429,1.97-4.399,4.399-4.399
+        	c2.429,0,4.399,1.97,4.399,4.399C10.897,9.915,8.928,11.885,6.499,11.885z M13.828,13.746c0,1.179,0.109,1.067-1.069,1.067
+        	l-1.678-1.678c0-1.177-0.109-1.067,1.069-1.067L13.828,13.746z"></path>
+        </svg>
+        
+                            &nbsp;
+                            <span class="sr-only">Search</span>
+                          </a>
+                          <div class="global-search">
+                            <form action="/devtools/wpf/search" method="get">
+                              <div class="search-input-container">
+                                <input id="local-search" placeholder="Search for &hellip;" name="q">
+                                <div id='refine-search-container'>
+                                  <div id='refine-search-button' class='unselectable'>
+                                    <span id='refine-search-label' data-bind='text: label'></span>
+                                    <span class='k-icon k-i-arrow-chevron-down'></span>
+                                  </div>
+                                </div>
+                                <div id="refine-search-popup" style="display: none">
+                                  <ul>
+                                    <li>
+                                      <label class="custom-checkbox unselectable">
+                                        <input type="checkbox" data-bind="checked: documentation"><span class="k-icon k-i-check"></span>Search in Documentation
+                                      </label>
+                                    </li>
+        
+                                    <li>
+                                      <label class="custom-checkbox unselectable">
+                                        <input type="checkbox" disabled="true" data-bind="checked: api"><span class="k-icon k-i-check"></span>Search in API Reference
+                                      </label>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </form>
+        
+                            <script>
+                              var gcsInstance = '011354416605164361800:ebfuug7ih7i';
+                              var gcsKey = 'AIzaSyDOW6NJLQOTngTI3AXBQaTDaWhrL2tdo_M';
+                              isKbPage =  false ;
+                              siteHasKbPortal = ''
+                            </script>
+        
+                            <script type="text/javascript" src="/devtools/wpf/assets/search-results.js"></script>
+        
+                          </div>
+                        </li>
+        
+        
+                        <li class="primary-cta">
+                          <a href="http://www.telerik.com/products/wpf/download.aspx" target="_blank">Try now</a>
+                        </li>
+        
+                      </ul>
+                    </div>
+        
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+        </nav>
+        
+        <script>
+        
+          var searchContainer = $(".global-search");
+        
+          function hideSearch(e){
+          if (!searchContainer.is(e.target) &&
+          searchContainer.has(e.target).length === 0 &&
+          $(e.target).parents("#refine-search-popup").length === 0) {
+          setTimeout(function(e) {
+          searchContainer.removeClass("show-search");
+          $(document).off('click', hideSearch);
+          }, 200)
+          }
+          }
+        
+          function showSearch() {
+        
+          searchContainer.toggleClass("show-search")
+          .one("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(e) {
+          if (searchContainer.hasClass("show-search")) {
+          searchContainer.find("input:first")
+          .focus();
+          $(document).on("click", hideSearch);
+          }
+          });
+          }
+        
+          $(document).off("click", ".search-icon")
+          .on("click", ".search-icon", showSearch);
+        
+        
+          function navigate(e) {
+          trackItemFromCurrentPage('docs-navigation', e.target.children[e.target.selectedIndex].text);
+          window.open(e.target.value, "_blank");
+          }
+        
+          $(document)
+          .off("change", "#nav-dropdown")
+          .on("change", "#nav-dropdown", navigate);
+        </script>
+        
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav side-nav hide-when-search">
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc">
+             
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-9">
+            <article class="content wrap" id="_content" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants">
+  <h1 id="Telerik_Windows_Diagrams_Core_SerializationConstants" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants">Class SerializationConstants
+  </h1>
+  <div class="markdown level0 summary"><p>Constants used in the (de)serialization.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SerializationConstants</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h5><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h5>
+  <h5><strong>Assembly</strong>: Telerik.Windows.Diagrams.Core.dll</h5>
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_syntax">Syntax</h4>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class SerializationConstants</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_AllowCopy" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.AllowCopy"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_AllowCopy" class="expander" data-toggle="collapse">AllowCopy</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_AllowCopy" class="collapse in">
+  <div class="markdown level1 summary"><p>The AllowCopy constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AllowCopy = &quot;AllowCopy&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_AllowCut" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.AllowCut"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_AllowCut" class="expander" data-toggle="collapse">AllowCut</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_AllowCut" class="collapse in">
+  <div class="markdown level1 summary"><p>The AllowCut constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AllowCut = &quot;AllowCut&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_AllowDelete" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.AllowDelete"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_AllowDelete" class="expander" data-toggle="collapse">AllowDelete</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_AllowDelete" class="collapse in">
+  <div class="markdown level1 summary"><p>The AllowDelete constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AllowDelete = &quot;AllowDelete&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_AllowPaste" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.AllowPaste"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_AllowPaste" class="expander" data-toggle="collapse">AllowPaste</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_AllowPaste" class="collapse in">
+  <div class="markdown level1 summary"><p>The AllowPaste constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AllowPaste = &quot;AllowPaste&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Angle" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Angle"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Angle" class="expander" data-toggle="collapse">Angle</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Angle" class="collapse in">
+  <div class="markdown level1 summary"><p>The Angle constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Angle = &quot;Angle&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Background" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Background"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Background" class="expander" data-toggle="collapse">Background</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Background" class="collapse in">
+  <div class="markdown level1 summary"><p>The Background constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Background = &quot;Background&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_BezierEndPoint" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.BezierEndPoint"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_BezierEndPoint" class="expander" data-toggle="collapse">BezierEndPoint</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_BezierEndPoint" class="collapse in">
+  <div class="markdown level1 summary"><p>The BezierEndPoint constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string BezierEndPoint = &quot;BezierEndPoint&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_BezierStartPoint" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.BezierStartPoint"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_BezierStartPoint" class="expander" data-toggle="collapse">BezierStartPoint</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_BezierStartPoint" class="collapse in">
+  <div class="markdown level1 summary"><p>The BezierStartPoint constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string BezierStartPoint = &quot;BezierStartPoint&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_BezierTension" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.BezierTension"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_BezierTension" class="expander" data-toggle="collapse">BezierTension</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_BezierTension" class="collapse in">
+  <div class="markdown level1 summary"><p>The BezierTension constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string BezierTension = &quot;BezierTension&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_BorderBrush" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.BorderBrush"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_BorderBrush" class="expander" data-toggle="collapse">BorderBrush</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_BorderBrush" class="collapse in">
+  <div class="markdown level1 summary"><p>The BorderBrush constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string BorderBrush = &quot;BorderBrush&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Color" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Color"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Color" class="expander" data-toggle="collapse">Color</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Color" class="collapse in">
+  <div class="markdown level1 summary"><p>The Color constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Color = &quot;Color&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_ConnectionBridges" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.ConnectionBridges"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_ConnectionBridges" class="expander" data-toggle="collapse">ConnectionBridges</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_ConnectionBridges" class="collapse in">
+  <div class="markdown level1 summary"><p>The connection bridges constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ConnectionBridges = &quot;Bridges&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_ConnectionPoints" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.ConnectionPoints"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_ConnectionPoints" class="expander" data-toggle="collapse">ConnectionPoints</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_ConnectionPoints" class="collapse in">
+  <div class="markdown level1 summary"><p>The ConnectionPoints constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ConnectionPoints = &quot;ConnectionPoints&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_ConnectionRoundedCorners" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.ConnectionRoundedCorners"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_ConnectionRoundedCorners" class="expander" data-toggle="collapse">ConnectionRoundedCorners</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_ConnectionRoundedCorners" class="collapse in">
+  <div class="markdown level1 summary"><p>The polyline rounded corners constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ConnectionRoundedCorners = &quot;RoundedCorners&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Connections" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Connections"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Connections" class="expander" data-toggle="collapse">Connections</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Connections" class="collapse in">
+  <div class="markdown level1 summary"><p>The Connections constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Connections = &quot;Connections&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_ConnectionType" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.ConnectionType"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_ConnectionType" class="expander" data-toggle="collapse">ConnectionType</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_ConnectionType" class="collapse in">
+  <div class="markdown level1 summary"><p>The ConnectionType constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ConnectionType = &quot;ConnectionType&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_ConnectorName" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.ConnectorName"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_ConnectorName" class="expander" data-toggle="collapse">ConnectorName</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_ConnectorName" class="collapse in">
+  <div class="markdown level1 summary"><p>ConnectorName.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ConnectorName = &quot;Name&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_ConnectorPoints" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.ConnectorPoints"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_ConnectorPoints" class="expander" data-toggle="collapse">ConnectorPoints</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_ConnectorPoints" class="collapse in">
+  <div class="markdown level1 summary"><p>The Connectors constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ConnectorPoints = &quot;Connectors&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_ConnectorsOffsetSeparator" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.ConnectorsOffsetSeparator"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_ConnectorsOffsetSeparator" class="expander" data-toggle="collapse">ConnectorsOffsetSeparator</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_ConnectorsOffsetSeparator" class="collapse in">
+  <div class="markdown level1 summary"><p>ConnectorsSeparator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ConnectorsOffsetSeparator = &quot;:&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_ConnectorsSeparator" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.ConnectorsSeparator"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_ConnectorsSeparator" class="expander" data-toggle="collapse">ConnectorsSeparator</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_ConnectorsSeparator" class="collapse in">
+  <div class="markdown level1 summary"><p>ConnectorsSeparator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ConnectorsSeparator = &quot;,&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_ContainerItems" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.ContainerItems"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_ContainerItems" class="expander" data-toggle="collapse">ContainerItems</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_ContainerItems" class="collapse in">
+  <div class="markdown level1 summary"><p>The ContainerItems constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ContainerItems = &quot;Items&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Content" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Content"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Content" class="expander" data-toggle="collapse">Content</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Content" class="collapse in">
+  <div class="markdown level1 summary"><p>The Content constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Content = &quot;Content&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Description" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Description"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Description" class="expander" data-toggle="collapse">Description</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Description" class="collapse in">
+  <div class="markdown level1 summary"><p>The Description constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Description = &quot;Description&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Diagram" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Diagram"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Diagram" class="expander" data-toggle="collapse">Diagram</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Diagram" class="collapse in">
+  <div class="markdown level1 summary"><p>The diagram constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Diagram = &quot;RadDiagram&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_EndPoint" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.EndPoint"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_EndPoint" class="expander" data-toggle="collapse">EndPoint</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_EndPoint" class="collapse in">
+  <div class="markdown level1 summary"><p>The EndPoint constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string EndPoint = &quot;EndPoint&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_FontFamily" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.FontFamily"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_FontFamily" class="expander" data-toggle="collapse">FontFamily</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_FontFamily" class="collapse in">
+  <div class="markdown level1 summary"><p>The font family constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string FontFamily = &quot;FontFamily&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_FontSize" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.FontSize"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_FontSize" class="expander" data-toggle="collapse">FontSize</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_FontSize" class="collapse in">
+  <div class="markdown level1 summary"><p>The font size constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string FontSize = &quot;FontSize&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_FontWeight" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.FontWeight"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_FontWeight" class="expander" data-toggle="collapse">FontWeight</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_FontWeight" class="collapse in">
+  <div class="markdown level1 summary"><p>The font weight constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string FontWeight = &quot;FontWeight&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Foreground" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Foreground"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Foreground" class="expander" data-toggle="collapse">Foreground</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Foreground" class="collapse in">
+  <div class="markdown level1 summary"><p>The foreground constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Foreground = &quot;Foreground&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Geometry" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Geometry"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Geometry" class="expander" data-toggle="collapse">Geometry</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Geometry" class="collapse in">
+  <div class="markdown level1 summary"><p>The Geometry constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Geometry = &quot;Geometry&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_GlidingStyle" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.GlidingStyle"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_GlidingStyle" class="expander" data-toggle="collapse">GlidingStyle</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_GlidingStyle" class="collapse in">
+  <div class="markdown level1 summary"><p>GlidingStyle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string GlidingStyle = &quot;GlidingStyle&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_GradientStop" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.GradientStop"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_GradientStop" class="expander" data-toggle="collapse">GradientStop</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_GradientStop" class="collapse in">
+  <div class="markdown level1 summary"><p>The GradientStop constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string GradientStop = &quot;GradientStop&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_GradientStops" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.GradientStops"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_GradientStops" class="expander" data-toggle="collapse">GradientStops</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_GradientStops" class="collapse in">
+  <div class="markdown level1 summary"><p>The GradientStops constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string GradientStops = &quot;GradientStops&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_GraphPaperCellSize" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.GraphPaperCellSize"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_GraphPaperCellSize" class="expander" data-toggle="collapse">GraphPaperCellSize</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_GraphPaperCellSize" class="collapse in">
+  <div class="markdown level1 summary"><p>GraphPaperCellSize.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string GraphPaperCellSize = &quot;GraphPaperCellSize&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_GraphPaperLineStroke" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.GraphPaperLineStroke"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_GraphPaperLineStroke" class="expander" data-toggle="collapse">GraphPaperLineStroke</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_GraphPaperLineStroke" class="collapse in">
+  <div class="markdown level1 summary"><p>GraphPaperLineStroke.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string GraphPaperLineStroke = &quot;GraphPaperLineStroke&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_GraphPaperLineStrokeDashArray" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.GraphPaperLineStrokeDashArray"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_GraphPaperLineStrokeDashArray" class="expander" data-toggle="collapse">GraphPaperLineStrokeDashArray</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_GraphPaperLineStrokeDashArray" class="collapse in">
+  <div class="markdown level1 summary"><p>GraphPaperLineStrokeDashArray.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string GraphPaperLineStrokeDashArray = &quot;GraphPaperLineStrokeDashArray&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_GraphPaperLineStrokeThickness" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.GraphPaperLineStrokeThickness"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_GraphPaperLineStrokeThickness" class="expander" data-toggle="collapse">GraphPaperLineStrokeThickness</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_GraphPaperLineStrokeThickness" class="collapse in">
+  <div class="markdown level1 summary"><p>GraphPaperLineStrokeThickness.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string GraphPaperLineStrokeThickness = &quot;GraphPaperLineThickness&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Group" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Group"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Group" class="expander" data-toggle="collapse">Group</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Group" class="collapse in">
+  <div class="markdown level1 summary"><p>The Group constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Group = &quot;Group&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_GroupName" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.GroupName"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_GroupName" class="expander" data-toggle="collapse">GroupName</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_GroupName" class="collapse in">
+  <div class="markdown level1 summary"><p>GroupName.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string GroupName = &quot;Name&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Groups" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Groups"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Groups" class="expander" data-toggle="collapse">Groups</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Groups" class="collapse in">
+  <div class="markdown level1 summary"><p>The Groups constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Groups = &quot;Groups&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Height" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Height"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Height" class="expander" data-toggle="collapse">Height</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Height" class="collapse in">
+  <div class="markdown level1 summary"><p>Height.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Height = &quot;Height&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Id" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Id"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Id" class="expander" data-toggle="collapse">Id</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Id" class="collapse in">
+  <div class="markdown level1 summary"><p>The Id constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Id = &quot;Id&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Image" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Image"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Image" class="expander" data-toggle="collapse">Image</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Image" class="collapse in">
+  <div class="markdown level1 summary"><p>The Image constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Image = &quot;Image&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_IsBackgroundSurfaceVisible" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.IsBackgroundSurfaceVisible"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_IsBackgroundSurfaceVisible" class="expander" data-toggle="collapse">IsBackgroundSurfaceVisible</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_IsBackgroundSurfaceVisible" class="collapse in">
+  <div class="markdown level1 summary"><p>The IsBackgroundSurfaceVisible constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string IsBackgroundSurfaceVisible = &quot;IsBackgroundSurfaceVisible&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_IsCollapsed" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.IsCollapsed"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_IsCollapsed" class="expander" data-toggle="collapse">IsCollapsed</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_IsCollapsed" class="collapse in">
+  <div class="markdown level1 summary"><p>The IsCollapsible constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string IsCollapsed = &quot;IsCollapsed&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_IsCollapsible" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.IsCollapsible"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_IsCollapsible" class="expander" data-toggle="collapse">IsCollapsible</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_IsCollapsible" class="collapse in">
+  <div class="markdown level1 summary"><p>The IsCollapsible constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string IsCollapsible = &quot;IsCollapsible&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_IsConnectorsManipulationEnabled" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.IsConnectorsManipulationEnabled"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_IsConnectorsManipulationEnabled" class="expander" data-toggle="collapse">IsConnectorsManipulationEnabled</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_IsConnectorsManipulationEnabled" class="collapse in">
+  <div class="markdown level1 summary"><p>The IsConnectorsManipulationEnabled constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string IsConnectorsManipulationEnabled = &quot;IsConnectorsManipulationEnabled&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_IsDraggingEnabled" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.IsDraggingEnabled"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_IsDraggingEnabled" class="expander" data-toggle="collapse">IsDraggingEnabled</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_IsDraggingEnabled" class="collapse in">
+  <div class="markdown level1 summary"><p>The IsDraggingEnabled constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string IsDraggingEnabled = &quot;IsDraggingEnabled&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_IsEditable" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.IsEditable"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_IsEditable" class="expander" data-toggle="collapse">IsEditable</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_IsEditable" class="collapse in">
+  <div class="markdown level1 summary"><p>The IsEditable constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string IsEditable = &quot;IsEditable&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_IsManipulationAdornerVisible" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.IsManipulationAdornerVisible"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_IsManipulationAdornerVisible" class="expander" data-toggle="collapse">IsManipulationAdornerVisible</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_IsManipulationAdornerVisible" class="collapse in">
+  <div class="markdown level1 summary"><p>The IsManipulationAdornerVisible constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string IsManipulationAdornerVisible = &quot;IsManipulationAdornerVisible&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_IsModified" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.IsModified"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_IsModified" class="expander" data-toggle="collapse">IsModified</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_IsModified" class="collapse in">
+  <div class="markdown level1 summary"><p>The IsModified constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string IsModified = &quot;IsModified&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_IsPanEnabled" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.IsPanEnabled"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_IsPanEnabled" class="expander" data-toggle="collapse">IsPanEnabled</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_IsPanEnabled" class="collapse in">
+  <div class="markdown level1 summary"><p>The IsPanEnabled constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string IsPanEnabled = &quot;IsPanEnabled&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_IsResizingEnabled" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.IsResizingEnabled"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_IsResizingEnabled" class="expander" data-toggle="collapse">IsResizingEnabled</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_IsResizingEnabled" class="collapse in">
+  <div class="markdown level1 summary"><p>The IsResizingEnabled constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string IsResizingEnabled = &quot;IsResizingEnabled&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_IsRotationEnabled" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.IsRotationEnabled"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_IsRotationEnabled" class="expander" data-toggle="collapse">IsRotationEnabled</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_IsRotationEnabled" class="collapse in">
+  <div class="markdown level1 summary"><p>The IsRotationEnabled constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string IsRotationEnabled = &quot;IsRotationEnabled&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_IsSnapEnabled" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.IsSnapEnabled"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_IsSnapEnabled" class="expander" data-toggle="collapse">IsSnapEnabled</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_IsSnapEnabled" class="collapse in">
+  <div class="markdown level1 summary"><p>The IsSnapEnabled constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string IsSnapEnabled = &quot;IsSnapEnabled&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_IsZoomEnabled" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.IsZoomEnabled"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_IsZoomEnabled" class="expander" data-toggle="collapse">IsZoomEnabled</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_IsZoomEnabled" class="collapse in">
+  <div class="markdown level1 summary"><p>The IsZoomEnabled constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string IsZoomEnabled = &quot;IsZoomEnabled&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Items" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Items"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Items" class="expander" data-toggle="collapse">Items</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Items" class="collapse in">
+  <div class="markdown level1 summary"><p>The Items constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Items = &quot;Items&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Label" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Label"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Label" class="expander" data-toggle="collapse">Label</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Label" class="collapse in">
+  <div class="markdown level1 summary"><p>The Label constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Label = &quot;Label&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_LinearGradientBrush" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.LinearGradientBrush"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_LinearGradientBrush" class="expander" data-toggle="collapse">LinearGradientBrush</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_LinearGradientBrush" class="collapse in">
+  <div class="markdown level1 summary"><p>The LinearGradientBrush constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string LinearGradientBrush = &quot;LinearGradientBrush&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_MaxHeight" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.MaxHeight"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_MaxHeight" class="expander" data-toggle="collapse">MaxHeight</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_MaxHeight" class="collapse in">
+  <div class="markdown level1 summary"><p>MaxHeight.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string MaxHeight = &quot;MaxHeight&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_MaxWidth" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.MaxWidth"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_MaxWidth" class="expander" data-toggle="collapse">MaxWidth</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_MaxWidth" class="collapse in">
+  <div class="markdown level1 summary"><p>MaxWidth.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string MaxWidth = &quot;MaxWidth&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Metadata" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Metadata"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Metadata" class="expander" data-toggle="collapse">Metadata</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Metadata" class="collapse in">
+  <div class="markdown level1 summary"><p>The Metadata constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Metadata = &quot;Metadata&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_MinHeight" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.MinHeight"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_MinHeight" class="expander" data-toggle="collapse">MinHeight</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_MinHeight" class="collapse in">
+  <div class="markdown level1 summary"><p>MinHeight.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string MinHeight = &quot;MinHeight&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_MinWidth" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.MinWidth"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_MinWidth" class="expander" data-toggle="collapse">MinWidth</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_MinWidth" class="collapse in">
+  <div class="markdown level1 summary"><p>MinWidth.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string MinWidth = &quot;MinWidth&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Offset" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Offset"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Offset" class="expander" data-toggle="collapse">Offset</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Offset" class="collapse in">
+  <div class="markdown level1 summary"><p>The Offset constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Offset = &quot;Offset&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Origin" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Origin"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Origin" class="expander" data-toggle="collapse">Origin</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Origin" class="collapse in">
+  <div class="markdown level1 summary"><p>The Origin constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Origin = &quot;Origin&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_ParentGroup" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.ParentGroup"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_ParentGroup" class="expander" data-toggle="collapse">ParentGroup</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_ParentGroup" class="collapse in">
+  <div class="markdown level1 summary"><p>The Position constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ParentGroup = &quot;ParentGroup&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Position" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Position"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Position" class="expander" data-toggle="collapse">Position</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Position" class="collapse in">
+  <div class="markdown level1 summary"><p>The Position constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Position = &quot;Position&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_PositionX" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.PositionX"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_PositionX" class="expander" data-toggle="collapse">PositionX</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_PositionX" class="collapse in">
+  <div class="markdown level1 summary"><p>The PositionX constant. PositionX is removed and Position should be used instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string PositionX = &quot;PositionX&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_PositionY" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.PositionY"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_PositionY" class="expander" data-toggle="collapse">PositionY</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_PositionY" class="collapse in">
+  <div class="markdown level1 summary"><p>The PositionX constant. PositionY is removed and Position should be used instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string PositionY = &quot;PositionY&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_QualifyingName" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.QualifyingName"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_QualifyingName" class="expander" data-toggle="collapse">QualifyingName</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_QualifyingName" class="collapse in">
+  <div class="markdown level1 summary"><p>The QualifyingName constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string QualifyingName = &quot;QN&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_QualifyingNames" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.QualifyingNames"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_QualifyingNames" class="expander" data-toggle="collapse">QualifyingNames</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_QualifyingNames" class="collapse in">
+  <div class="markdown level1 summary"><p>The QualifyingNames constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string QualifyingNames = &quot;QNs&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_RadialGradientBrush" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.RadialGradientBrush"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_RadialGradientBrush" class="expander" data-toggle="collapse">RadialGradientBrush</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_RadialGradientBrush" class="collapse in">
+  <div class="markdown level1 summary"><p>The RadialGradientBrush constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string RadialGradientBrush = &quot;RadialGradientBrush&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_RadiusX" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.RadiusX"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_RadiusX" class="expander" data-toggle="collapse">RadiusX</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_RadiusX" class="collapse in">
+  <div class="markdown level1 summary"><p>The RadiusX constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string RadiusX = &quot;RadiusX&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_RadiusY" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.RadiusY"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_RadiusY" class="expander" data-toggle="collapse">RadiusY</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_RadiusY" class="collapse in">
+  <div class="markdown level1 summary"><p>The RadiusY constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string RadiusY = &quot;RadiusY&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_RotationAngle" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.RotationAngle"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_RotationAngle" class="expander" data-toggle="collapse">RotationAngle</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_RotationAngle" class="collapse in">
+  <div class="markdown level1 summary"><p>The RotationAngle constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string RotationAngle = &quot;RotationAngle&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_RouteConnections" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.RouteConnections"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_RouteConnections" class="expander" data-toggle="collapse">RouteConnections</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_RouteConnections" class="collapse in">
+  <div class="markdown level1 summary"><p>The connection routing constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string RouteConnections = &quot;Routing&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_SelectionMode" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.SelectionMode"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_SelectionMode" class="expander" data-toggle="collapse">SelectionMode</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_SelectionMode" class="collapse in">
+  <div class="markdown level1 summary"><p>The SelectionMode constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string SelectionMode = &quot;SelectionMode&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Shapes" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Shapes"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Shapes" class="expander" data-toggle="collapse">Shapes</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Shapes" class="collapse in">
+  <div class="markdown level1 summary"><p>The Shapes constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Shapes = &quot;Shapes&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Size" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Size"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Size" class="expander" data-toggle="collapse">Size</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Size" class="collapse in">
+  <div class="markdown level1 summary"><p>The Size constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Size = &quot;Size&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_SnapX" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.SnapX"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_SnapX" class="expander" data-toggle="collapse">SnapX</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_SnapX" class="collapse in">
+  <div class="markdown level1 summary"><p>The SnapX constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string SnapX = &quot;SnapX&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_SnapY" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.SnapY"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_SnapY" class="expander" data-toggle="collapse">SnapY</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_SnapY" class="collapse in">
+  <div class="markdown level1 summary"><p>The SnapY constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string SnapY = &quot;SnapY&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_SolidColorBrush" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.SolidColorBrush"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_SolidColorBrush" class="expander" data-toggle="collapse">SolidColorBrush</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_SolidColorBrush" class="collapse in">
+  <div class="markdown level1 summary"><p>The SolidColorBrush constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string SolidColorBrush = &quot;SolidColorBrush&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Source" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Source"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Source" class="expander" data-toggle="collapse">Source</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Source" class="collapse in">
+  <div class="markdown level1 summary"><p>The Source constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Source = &quot;Source&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_SourceCapSize" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.SourceCapSize"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_SourceCapSize" class="expander" data-toggle="collapse">SourceCapSize</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_SourceCapSize" class="collapse in">
+  <div class="markdown level1 summary"><p>The SourceCapSize constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string SourceCapSize = &quot;SourceCapSize&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_SourceCapType" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.SourceCapType"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_SourceCapType" class="expander" data-toggle="collapse">SourceCapType</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_SourceCapType" class="collapse in">
+  <div class="markdown level1 summary"><p>The SourceCapType constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string SourceCapType = &quot;SourceCapType&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_SourceConnectorPosition" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.SourceConnectorPosition"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_SourceConnectorPosition" class="expander" data-toggle="collapse">SourceConnectorPosition</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_SourceConnectorPosition" class="collapse in">
+  <div class="markdown level1 summary"><p>The SourceConnectorPosition constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string SourceConnectorPosition = &quot;SourceConnectorPosition&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_StartPoint" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.StartPoint"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_StartPoint" class="expander" data-toggle="collapse">StartPoint</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_StartPoint" class="collapse in">
+  <div class="markdown level1 summary"><p>The StartPoint constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string StartPoint = &quot;StartPoint&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Stroke" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Stroke"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Stroke" class="expander" data-toggle="collapse">Stroke</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Stroke" class="collapse in">
+  <div class="markdown level1 summary"><p>The Stroke constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Stroke = &quot;Stroke&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_StrokeDashArray" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.StrokeDashArray"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_StrokeDashArray" class="expander" data-toggle="collapse">StrokeDashArray</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_StrokeDashArray" class="collapse in">
+  <div class="markdown level1 summary"><p>The StrokeDashArray constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string StrokeDashArray = &quot;StrokeDashArray&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_StrokeDashArrayValueSeparator" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.StrokeDashArrayValueSeparator"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_StrokeDashArrayValueSeparator" class="expander" data-toggle="collapse">StrokeDashArrayValueSeparator</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_StrokeDashArrayValueSeparator" class="collapse in">
+  <div class="markdown level1 summary"><p>StrokeDashArrayValueSeparator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string StrokeDashArrayValueSeparator = &quot; &quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_StrokeThickness" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.StrokeThickness"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_StrokeThickness" class="expander" data-toggle="collapse">StrokeThickness</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_StrokeThickness" class="collapse in">
+  <div class="markdown level1 summary"><p>The StrokeThickness constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string StrokeThickness = &quot;StrokeThickness&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Target" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Target"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Target" class="expander" data-toggle="collapse">Target</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Target" class="collapse in">
+  <div class="markdown level1 summary"><p>The Target constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Target = &quot;Target&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_TargetCapSize" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.TargetCapSize"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_TargetCapSize" class="expander" data-toggle="collapse">TargetCapSize</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_TargetCapSize" class="collapse in">
+  <div class="markdown level1 summary"><p>The TargetCapSize constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string TargetCapSize = &quot;TargetCapSize&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_TargetCapType" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.TargetCapType"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_TargetCapType" class="expander" data-toggle="collapse">TargetCapType</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_TargetCapType" class="collapse in">
+  <div class="markdown level1 summary"><p>The TargetCapType constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string TargetCapType = &quot;TargetCapType&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_TargetConnectorPosition" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.TargetConnectorPosition"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_TargetConnectorPosition" class="expander" data-toggle="collapse">TargetConnectorPosition</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_TargetConnectorPosition" class="collapse in">
+  <div class="markdown level1 summary"><p>The TargetConnectorPosition constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string TargetConnectorPosition = &quot;TargetConnectorPosition&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Thickness" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Thickness"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Thickness" class="expander" data-toggle="collapse">Thickness</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Thickness" class="collapse in">
+  <div class="markdown level1 summary"><p>The Thickness constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Thickness = &quot;Thickness&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Title" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Title"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Title" class="expander" data-toggle="collapse">Title</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Title" class="collapse in">
+  <div class="markdown level1 summary"><p>The Title constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Title = &quot;Title&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_TypeName" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.TypeName"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_TypeName" class="expander" data-toggle="collapse">TypeName</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_TypeName" class="collapse in">
+  <div class="markdown level1 summary"><p>The TypeName constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string TypeName = &quot;Type&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_UseDefaultConnectors" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.UseDefaultConnectors"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_UseDefaultConnectors" class="expander" data-toggle="collapse">UseDefaultConnectors</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_UseDefaultConnectors" class="collapse in">
+  <div class="markdown level1 summary"><p>UseDefaultConnectors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string UseDefaultConnectors = &quot;UseDefaultConnectors&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_UseGlidingConnector" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.UseGlidingConnector"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_UseGlidingConnector" class="expander" data-toggle="collapse">UseGlidingConnector</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_UseGlidingConnector" class="collapse in">
+  <div class="markdown level1 summary"><p>UseGlidingConnector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string UseGlidingConnector = &quot;UseGlidingConnector&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Version" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Version"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Version" class="expander" data-toggle="collapse">Version</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Version" class="collapse in">
+  <div class="markdown level1 summary"><p>The Version constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Version = &quot;Version&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Visibility" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Visibility"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Visibility" class="expander" data-toggle="collapse">Visibility</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Visibility" class="collapse in">
+  <div class="markdown level1 summary"><p>The Visibility constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Visibility = &quot;Visibility&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Width" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Width"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Width" class="expander" data-toggle="collapse">Width</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Width" class="collapse in">
+  <div class="markdown level1 summary"><p>Width.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Width = &quot;Width&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_ZIndex" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.ZIndex"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_ZIndex" class="expander" data-toggle="collapse">ZIndex</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_ZIndex" class="collapse in">
+  <div class="markdown level1 summary"><p>The ZIndex constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ZIndex = &quot;ZIndex&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Diagrams_Core_SerializationConstants_Zoom" data-uid="Telerik.Windows.Diagrams.Core.SerializationConstants.Zoom"><a href="#collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Zoom" class="expander" data-toggle="collapse">Zoom</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Diagrams_Core_SerializationConstants_Zoom" class="collapse in">
+  <div class="markdown level1 summary"><p>The Zoom constant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Zoom = &quot;Zoom&quot;</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+	  <div id="push"></div>
+    </div>
+      <div id="footer" class="container-fluid pb-40">
+        <div class="row feedback-row mb-60">
+          <div class="col-sm-8 col-sm-offset-4 col-md-offset-3 col-lg-8 col-lg-offset-2">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="row feedback">
+                  <div class="col-xs-8">
+                    <h4>Was this article helpful?</h4>
+                  </div>
+                  <div class="col-xs-4 text-right">
+                    <button data-value="yes" id="yesButton">Yes</button>
+                    &nbsp;/&nbsp;
+                    <button data-value="no" id="noButton">No</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="dialog-overlay">
+          <div class="feedback-dialog dialog dialog-enter">
+            <div id="feedback-container">
+              <div id="feedback-window-container">
+                <div id="feedback-form-window">
+                  <h3 class="mt-0 mb-5">Give article feedback</h3>
+                  <p>Tell us how we can improve this article</p>
+                  <span id="feedback-form-popup-container"></span>
+                  <form id="feedback-form">
+                    <div id="feedback-checkbox-area">
+                      <input id="hidden-sheet-id" type="hidden" value="1toT2XTrYzmmQGUq5xCmXIkMWkwah3QCNZ9Aj5RLaeoo">
+                        <label>
+                          <input type="checkbox" data-bind="checked: outdatedSample"> Code samples are inaccurate / outdated.
+                        </label>
+                        <span class="required-field" data-bind="visible: outdatedSample"></span>
+                        <textarea id="feedback-code-sample-text-input" placeholder="Please, specify more details ..." class="feedback-extw__textarea" data-bind="visible: outdatedSample, value: inaccurateOutdatedCodeSamplesText">
+                        </textarea>
+                        <label>
+                          <input type="checkbox" data-bind="checked: otherMoreInformation"> I expected to find other / more information.
+                        </label>
+                        <span class="required-field" data-bind="visible: otherMoreInformation"></span>
+                        <textarea id="feedback-more-information-text-input" class="feedback-extw__textarea" placeholder="Please, specify what information can be added ..." data-bind="visible: otherMoreInformation, value: otherMoreInformationText">
+                        </textarea>
+                        <label>
+                          <input type="checkbox" data-bind="checked: textErrors"> There are typos / broken links / broken page elements.
+                        </label>
+                        <span class="required-field" data-bind="visible: textErrors"></span>
+                        <textarea id="feedback-text-errors-text-input" class="feedback-extw__textarea" placeholder="Please, specify what needs to be fixed ..." data-bind="visible: textErrors, value: typosLinksElementsText">
+                        </textarea>
+                        <label>
+                          <input type="checkbox" data-bind="checked: inaccurateContent"> Content is inaccurate / outdated.
+                        </label>
+                        <span class="required-field" data-bind="visible: inaccurateContent"></span>
+                        <textarea id="feedback-inaccurate-content-text-input" class="feedback-extw__textarea" placeholder="Please, specify which conent ..." data-bind="visible: inaccurateContent, value: inaccurateOutdatedContentText">
+                        </textarea>
+                        <label>
+                          <input type="checkbox" data-bind="checked: otherFeedback"> Other
+                        </label>
+                        <span class="required-field" data-bind="visible: otherFeedback"></span>
+                        <textarea id="feedback-other-text-input" placeholder="Please, enter more details or not listed feedback ..." class="feedback-extw__textarea" data-bind="visible: otherFeedback, value: textFeedback">
+                        </textarea>
+                        <input id="feedback-email-input" type="email" placeholder="email (optional)" data-email-msg="Email format is not valid." class="feedback-extw__input input" data-bind="value: email">
+                        <label>
+                          <input type="checkbox" data-bind="checked: acceptFeedbackContact"> By checking this box you consent to Progress contacting you by email about your response on this page.
+                        </label>
+                      </div>
+                  </form>
+                  <div class="feedback-extw__foot">
+                    <p class="mt-30 mb-0" style="text-align: right;">
+                      <button class="button ghost dialog-hide">Cancel</button>
+                      <button class="button dialog-hide" type="submit">Submit</button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <script>
+        $(document).ready(function() {
+        initFeedbackForm({
+        dialog: ".dialog-overlay",
+        closeButtons: ".dialog-hide",
+        container: ".feedback"
+        });
+        });
+      </script>
+      
+        <script>
+        $(".read-prev").hover(function() {
+        $(".title-prev").show();
+        }, function() {
+        $(".title-prev").hide();
+        });
+      
+        $(".read-next").hover(function() {
+        $(".title-next").show();
+        }, function() {
+        $(".title-next").hide();
+        });
+      
+        $(".all-components").click(function() {
+        $(".all-components").toggleClass("show-components");
+        $('.sidetoggle').toggleClass("collapse");
+        $('.sidetoc').toggleClass("show-components");
+        $(".sidefilter").toggleClass("show-components");
+        });
+      </script>
+      
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="row">
+              <div class="col-md-12 col-lg-10 col-lg-offset-1">
+                <div class="row">
+      
+      
+                  <div class="col-sm-4 mb-20">
+                    <h6 class="mt-0 mb-10">Getting Started</h6>
+                    <ul class="list-unstyled">
+      
+                      <li>
+                        <a href="https://www.telerik.com/download-login-v2-wpf/thank-you-for-downloading" target="_blank">Install Now</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://demos.telerik.com/wpf/" target="_blank">Demos</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://demos.telerik.com/xaml-sdkbrowser/" target="_blank">SDK Samples Browser</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/wpf/sample-applications" target="_blank">Sample Applications</a>
+                      </li>
+      
+                    </ul>
+                  </div>
+      
+                  <div class="col-sm-4 mb-20">
+                    <h6 class="mt-0 mb-10">Support Resources</h6>
+                    <ul class="list-unstyled">
+      
+                      <li>
+                        <a href="https://www.telerik.com/support/code-library/wpf" target="_blank">Code Library</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/support/kb/wpf" target="_blank">Knowledge Base</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/wpf/mvvm-support-wpf-controls" target="_blank">MVVM Support</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/videos/wpf" target="_blank">Videos</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://github.com/telerik/xaml-sdk" target="_blank">GitHub SDK Repository</a>
+                      </li>
+      
+                    </ul>
+                  </div>
+      
+                  <div class="col-sm-4 mb-20">
+                    <h6 class="mt-0 mb-10">Community</h6>
+                    <ul class="list-unstyled">
+      
+                      <li>
+                        <a href="https://www.telerik.com/forums/wpf" target="_blank">Forums</a>
+                      </li>
+      
+                      <li>
+                        <a href="http://www.telerik.com/blogs/tag/wpf" target="_blank">Blogs</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://feedback.telerik.com/Project/143" target="_blank">XAML Feedback Portal</a>
+                      </li>
+      
+                      <li>
+                        <a href="http://feedback.telerik.com/Project/184" target="_blank">Document Processing Feedback Portal</a>
+                      </li>
+      
+                    </ul>
+                  </div>
+      
+      
+                </div>
+                <div class="row copyright">
+                  <div class="col-sm-4 social-icons">
+                    <span class="sticky">
+                      <a class="social-icon" href="https://www.facebook.com/Telerik/" title=""><?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewbox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+      <path d="M13.766,32.155V17.559H8.854V11.87h4.912V7.675c0-4.869,2.973-7.52,7.316-7.52c2.08,0,3.868,0.155,4.39,0.224v5.088
+      	l-3.013,0.001c-2.362,0-2.819,1.122-2.819,2.769v3.632h5.634l-0.734,5.688H19.64v14.597H13.766z"></path>
+      </svg>
+                      </a>
+                      <a class="social-icon" href="https://twitter.com/Telerik/" title=""><?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewbox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+      <path fill="#231F20" d="M32,6.076c-1.178,0.522-2.442,0.875-3.771,1.034c1.355-0.813,2.396-2.1,2.887-3.632
+      	c-1.269,0.752-2.674,1.298-4.169,1.593c-1.198-1.276-2.904-2.073-4.792-2.073c-3.626,0-6.566,2.939-6.566,6.565
+      	c0,0.515,0.058,1.016,0.17,1.496C10.303,10.785,5.466,8.171,2.228,4.199c-0.565,0.97-0.889,2.097-0.889,3.3
+      	c0,2.278,1.159,4.287,2.92,5.464c-1.076-0.034-2.088-0.329-2.974-0.821c0,0.027,0,0.055,0,0.083c0,3.181,2.263,5.834,5.267,6.438
+      	c-0.551,0.15-1.131,0.23-1.73,0.23c-0.423,0-0.834-0.041-1.235-0.118c0.835,2.608,3.26,4.507,6.133,4.56
+      	c-2.247,1.761-5.078,2.811-8.154,2.811c-0.53,0-1.052-0.031-1.566-0.092c2.905,1.862,6.356,2.949,10.064,2.949
+      	c12.076,0,18.679-10.004,18.679-18.679c0-0.285-0.007-0.568-0.02-0.849C30.007,8.549,31.12,7.393,32,6.076"></path>
+      </svg>
+                      </a>
+                      <a class="social-icon" href="https://www.youtube.com/user/TelerikInc" title=""><?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" xml:space="preserve">
+      <path d="M506.887,153.632c0,0-5.003-35.283-20.354-50.82c-19.469-20.393-41.293-20.494-51.301-21.687
+      c-71.647-5.179-179.121-5.179-179.121-5.179h-0.223c0,0-107.472,0-179.121,5.179c-10.008,1.194-31.824,1.295-51.301,21.687
+      c-15.351,15.537-20.346,50.82-20.346,50.82S0,195.065,0,236.497v38.843c0,41.433,5.12,82.865,5.12,82.865
+      s4.995,35.283,20.346,50.82c19.476,20.393,45.06,19.748,56.455,21.885C122.883,434.839,256,436.054,256,436.054
+      s107.585-0.162,179.232-5.341c10.008-1.194,31.831-1.295,51.301-21.687c15.351-15.537,20.354-50.82,20.354-50.82
+      S512,316.773,512,275.341v-38.843C512,195.065,506.887,153.632,506.887,153.632z M203.87,322.913v-144.36l137.342,72.18 L203.87,322.913z"></path>
+      </svg>
+                      </a>
+                      <a class="social-icon" href="https://www.linkedin.com/showcase/telerik/" title=""><?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewbox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+      <path d="M7.81,29V9.652H1.379V29H7.81z M4.596,7.009c2.243,0,3.638-1.486,3.638-3.342C8.192,1.768,6.838,0.324,4.638,0.324
+      	C2.438,0.324,1,1.768,1,3.667c0,1.856,1.396,3.342,3.554,3.342H4.596L4.596,7.009z M11.37,29h6.43V18.195
+      	c0-0.579,0.042-1.156,0.213-1.569c0.465-1.155,1.521-2.352,3.3-2.352c2.325,0,3.257,1.774,3.257,4.375v10.35H31V17.906
+      	c0-5.943-3.173-8.708-7.404-8.708c-3.469,0-4.992,1.939-5.838,3.259H17.8V9.651h-6.43C11.454,11.467,11.37,28.999,11.37,29L11.37,29
+      	z"></path>
+      </svg>
+                      </a>
+                    </span>
+                  </div>
+                  <div class="col-sm-8">
+                    <p>
+                      Copyright &copy; 2018 Progress Software Corporation and/or its subsidiaries or affiliates.<br> All Rights Reserved.
+                    </p>
+      
+                    <p>
+                      Progress, Telerik, and certain product names used herein are trademarks or registered trademarks of Progress Software Corporation and/or one of its subsidiaries or affiliates in the U.S. and/or other countries. See <a href="https://www.progress.com/legal/trademarks">Trademarks</a> for appropriate markings.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
