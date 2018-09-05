@@ -278,7 +278,8 @@
             <article class="content wrap" id="_content" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection">
   <h1 id="Telerik_Windows_Documents_Selection_DocumentSelection" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection">Class DocumentSelection
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Represents a selection in a <a class="xref" href="Telerik.Windows.Documents.Model.RadDocument.html">RadDocument</a>.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
 
   <div class="inheritance">
@@ -310,7 +311,8 @@
   <h4 id="Telerik_Windows_Documents_Selection_DocumentSelection__ctor_Telerik_Windows_Documents_Model_RadDocument_" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.#ctor(Telerik.Windows.Documents.Model.RadDocument)"><a href="#collapsible-Telerik_Windows_Documents_Selection_DocumentSelection__ctor_Telerik_Windows_Documents_Model_RadDocument_" class="expander" data-toggle="collapse">DocumentSelection(RadDocument)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_Selection_DocumentSelection__ctor_Telerik_Windows_Documents_Model_RadDocument_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates an instance of the <a class="xref" href="Telerik.Windows.Documents.Selection.DocumentSelection.html">DocumentSelection</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -324,7 +326,8 @@
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.Model.RadDocument.html">RadDocument</a></span>
         <span class="parametername">document</span>
-        <p>
+        <p><p>A <a class="xref" href="Telerik.Windows.Documents.Model.RadDocument.html">RadDocument</a> instance which the selection will be associated to.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -349,7 +352,7 @@
   <h4 id="Telerik_Windows_Documents_Selection_DocumentSelection_CanGetSelectedBoxes" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.CanGetSelectedBoxes"><a href="#collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_CanGetSelectedBoxes" class="expander" data-toggle="collapse">CanGetSelectedBoxes</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_CanGetSelectedBoxes" class="collapse in">
-  <div class="markdown level1 summary"><p>Gets value indicating whether the selected boxes can be enumerated correctly.
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the selected boxes can be enumerated correctly.
 <remarks>
 This method can return false when the selection is not valid during specific operation when the document is being edited.
 </remarks></p>
@@ -389,7 +392,8 @@ This method can return false when the selection is not valid during specific ope
   <h4 id="Telerik_Windows_Documents_Selection_DocumentSelection_IsEmpty" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.IsEmpty"><a href="#collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_IsEmpty" class="expander" data-toggle="collapse">IsEmpty</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_IsEmpty" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a value determining whether the selection is empty.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -425,7 +429,8 @@ This method can return false when the selection is not valid during specific ope
   <h4 id="Telerik_Windows_Documents_Selection_DocumentSelection_Ranges" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.Ranges"><a href="#collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_Ranges" class="expander" data-toggle="collapse">Ranges</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_Ranges" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a collection of all <a class="xref" href="Telerik.Windows.Documents.Selection.SelectionRange.html">SelectionRange</a> instances in the selection.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -458,12 +463,92 @@ This method can return false when the selection is not valid during specific ope
   </h3>
   
   
+  <a id="Telerik_Windows_Documents_Selection_DocumentSelection_AddDocumentElementToSelection_" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.AddDocumentElementToSelection*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_Selection_DocumentSelection_AddDocumentElementToSelection_Telerik_Windows_Documents_Model_DocumentElement_" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.AddDocumentElementToSelection(Telerik.Windows.Documents.Model.DocumentElement)"><a href="#collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_AddDocumentElementToSelection_Telerik_Windows_Documents_Model_DocumentElement_" class="expander" data-toggle="collapse">AddDocumentElementToSelection(DocumentElement)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_AddDocumentElementToSelection_Telerik_Windows_Documents_Model_DocumentElement_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a specified document element to the existing selection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddDocumentElementToSelection(DocumentElement documentElement)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.Model.DocumentElement.html">DocumentElement</a></span>
+        <span class="parametername">documentElement</span>
+        <p><p>The document element that should be added to the selection.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Documents_Selection_DocumentSelection_AddParagraphToSelection_" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.AddParagraphToSelection*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_Selection_DocumentSelection_AddParagraphToSelection_Telerik_Windows_Documents_Model_Paragraph_" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.AddParagraphToSelection(Telerik.Windows.Documents.Model.Paragraph)"><a href="#collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_AddParagraphToSelection_Telerik_Windows_Documents_Model_Paragraph_" class="expander" data-toggle="collapse">AddParagraphToSelection(Paragraph)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_AddParagraphToSelection_Telerik_Windows_Documents_Model_Paragraph_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a paragraph to the existing selection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddParagraphToSelection(Paragraph paragraph)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.Model.Paragraph.html">Paragraph</a></span>
+        <span class="parametername">paragraph</span>
+        <p><p>The paragraph that should be added to the selection.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
   <a id="Telerik_Windows_Documents_Selection_DocumentSelection_AddSelectionEnd_" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.AddSelectionEnd*"></a>
   
   <h4 id="Telerik_Windows_Documents_Selection_DocumentSelection_AddSelectionEnd_Telerik_Windows_Documents_DocumentPosition_" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.AddSelectionEnd(Telerik.Windows.Documents.DocumentPosition)"><a href="#collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_AddSelectionEnd_Telerik_Windows_Documents_DocumentPosition_" class="expander" data-toggle="collapse">AddSelectionEnd(DocumentPosition)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_AddSelectionEnd_Telerik_Windows_Documents_DocumentPosition_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Finishes the started <a class="xref" href="Telerik.Windows.Documents.Selection.SelectionRange.html">SelectionRange</a> by setting its end at the specified <code data-dev-comment-type="paramref" class="paramref">position</code>.
+<p>This method finishes a range started using <a class="xref" href="Telerik.Windows.Documents.Selection.DocumentSelection.html#Telerik_Windows_Documents_Selection_DocumentSelection_AddSelectionStart_Telerik_Windows_Documents_DocumentPosition_">AddSelectionStart(DocumentPosition)</a> or <a class="xref" href="Telerik.Windows.Documents.Selection.DocumentSelection.html#Telerik_Windows_Documents_Selection_DocumentSelection_SetSelectionStart_Telerik_Windows_Documents_DocumentPosition_">SetSelectionStart(DocumentPosition)</a>.</p></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -477,7 +562,8 @@ This method can return false when the selection is not valid during specific ope
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.DocumentPosition.html">DocumentPosition</a></span>
         <span class="parametername">position</span>
-        <p>
+        <p><p>The end position.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -500,7 +586,9 @@ This method can return false when the selection is not valid during specific ope
   <h4 id="Telerik_Windows_Documents_Selection_DocumentSelection_AddSelectionStart_Telerik_Windows_Documents_DocumentPosition_" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.AddSelectionStart(Telerik.Windows.Documents.DocumentPosition)"><a href="#collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_AddSelectionStart_Telerik_Windows_Documents_DocumentPosition_" class="expander" data-toggle="collapse">AddSelectionStart(DocumentPosition)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_AddSelectionStart_Telerik_Windows_Documents_DocumentPosition_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Begins a new <a class="xref" href="Telerik.Windows.Documents.Selection.SelectionRange.html">SelectionRange</a> starting at the specified <code data-dev-comment-type="paramref" class="paramref">position</code>. 
+<p>This method starts the creation of a range, which should be finished with <a class="xref" href="Telerik.Windows.Documents.Selection.DocumentSelection.html#Telerik_Windows_Documents_Selection_DocumentSelection_AddSelectionEnd_Telerik_Windows_Documents_DocumentPosition_">AddSelectionEnd(DocumentPosition)</a>.</p></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -514,7 +602,8 @@ This method can return false when the selection is not valid during specific ope
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.DocumentPosition.html">DocumentPosition</a></span>
         <span class="parametername">position</span>
-        <p>
+        <p><p>The start position.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -537,12 +626,13 @@ This method can return false when the selection is not valid during specific ope
   <h4 id="Telerik_Windows_Documents_Selection_DocumentSelection_AddTableCellToSelection_Telerik_Windows_Documents_Model_TableCell_" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.AddTableCellToSelection(Telerik.Windows.Documents.Model.TableCell)"><a href="#collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_AddTableCellToSelection_Telerik_Windows_Documents_Model_TableCell_" class="expander" data-toggle="collapse">AddTableCellToSelection(TableCell)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_AddTableCellToSelection_Telerik_Windows_Documents_Model_TableCell_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a table cell to the existing selection.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AddTableCellToSelection(TableCell cell)</code></pre>
+    <pre><code class="lang-csharp hljs">public void AddTableCellToSelection(TableCell tableCell)</code></pre>
   </div>
 
   <h5 class="parameters">Parameters</h5>
@@ -550,8 +640,9 @@ This method can return false when the selection is not valid during specific ope
     <tr>
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.Model.TableCell.html">TableCell</a></span>
-        <span class="parametername">cell</span>
-        <p>
+        <span class="parametername">tableCell</span>
+        <p><p>The cell that should be added to the selection.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -665,7 +756,8 @@ This method can return false when the selection is not valid during specific ope
   <h4 id="Telerik_Windows_Documents_Selection_DocumentSelection_Clear" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.Clear"><a href="#collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_Clear" class="expander" data-toggle="collapse">Clear()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_Clear" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Clears the selection.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -708,7 +800,8 @@ This method can return false when the selection is not valid during specific ope
     <tr>
       <td>
         <span class="xref">System.Boolean</span>
-        <p>
+        <p><p><code>True</code> if the selection contains annotation markers of the specified type. Otherwise, <code>false</code>.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -739,7 +832,8 @@ This method can return false when the selection is not valid during specific ope
   <h4 id="Telerik_Windows_Documents_Selection_DocumentSelection_CopySelectedDocumentElements_System_Boolean_" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.CopySelectedDocumentElements(System.Boolean)"><a href="#collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_CopySelectedDocumentElements_System_Boolean_" class="expander" data-toggle="collapse">CopySelectedDocumentElements(Boolean)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_CopySelectedDocumentElements_System_Boolean_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Copies all selected document elements to a <a class="xref" href="Telerik.Windows.Documents.Model.DocumentFragment.html">DocumentFragment</a> instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -753,7 +847,8 @@ This method can return false when the selection is not valid during specific ope
       <td>
         <span class="pull-right"><span class="xref">System.Boolean</span></span>
         <span class="parametername">expandPartialRevisionRanges</span>
-        <p>
+        <p><p>Determines whether the partially selected revision ranges should be preserved by creating pairs for them.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -763,7 +858,8 @@ This method can return false when the selection is not valid during specific ope
     <tr>
       <td>
         <a class="xref" href="Telerik.Windows.Documents.Model.DocumentFragment.html">DocumentFragment</a>
-        <p>
+        <p><p>A <a class="xref" href="Telerik.Windows.Documents.Model.DocumentFragment.html">DocumentFragment</a> object containing the copied elements.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -831,7 +927,8 @@ This method can return false when the selection is not valid during specific ope
   <h4 id="Telerik_Windows_Documents_Selection_DocumentSelection_CreateDocumentFromSelection_System_Boolean_" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.CreateDocumentFromSelection(System.Boolean)"><a href="#collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_CreateDocumentFromSelection_System_Boolean_" class="expander" data-toggle="collapse">CreateDocumentFromSelection(Boolean)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_CreateDocumentFromSelection_System_Boolean_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new document from the selected elements.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -845,7 +942,8 @@ This method can return false when the selection is not valid during specific ope
       <td>
         <span class="pull-right"><span class="xref">System.Boolean</span></span>
         <span class="parametername">replaceFieldsWithResults</span>
-        <p>
+        <p><p>Determines whether the fields in the selection should be replaced with their result values.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -855,7 +953,8 @@ This method can return false when the selection is not valid during specific ope
     <tr>
       <td>
         <a class="xref" href="Telerik.Windows.Documents.Model.RadDocument.html">RadDocument</a>
-        <p>
+        <p><p>A <a class="xref" href="Telerik.Windows.Documents.Model.RadDocument.html">RadDocument</a> instance containing the elements from the selection.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -957,7 +1056,8 @@ This method can return false when the selection is not valid during specific ope
     <tr>
       <td>
         <span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;
-        <p>
+        <p><p>A collection containing the annotation markers of type T in the selection.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -988,7 +1088,8 @@ This method can return false when the selection is not valid during specific ope
   <h4 id="Telerik_Windows_Documents_Selection_DocumentSelection_GetFullSelectionGeometry" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.GetFullSelectionGeometry"><a href="#collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_GetFullSelectionGeometry" class="expander" data-toggle="collapse">GetFullSelectionGeometry()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_GetFullSelectionGeometry" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a <span class="xref">System.Windows.Media.Geometry</span> instance describing the form of the selection.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -1002,7 +1103,8 @@ This method can return false when the selection is not valid during specific ope
     <tr>
       <td>
         <span class="xref">System.Windows.Media.Geometry</span>
-        <p>
+        <p><p>A <span class="xref">System.Windows.Media.Geometry</span> instance descibing the form of the selection.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1024,7 +1126,7 @@ This method can return false when the selection is not valid during specific ope
   <h4 id="Telerik_Windows_Documents_Selection_DocumentSelection_GetSelectedBoxes" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.GetSelectedBoxes"><a href="#collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_GetSelectedBoxes" class="expander" data-toggle="collapse">GetSelectedBoxes()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_GetSelectedBoxes" class="collapse in">
-  <div class="markdown level1 summary"><p>Enumerates through all layout boxes corresponding to currently selected ranges</p>
+  <div class="markdown level1 summary"><p>Enumerates through all inline layout boxes included in the selected ranges.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1039,7 +1141,7 @@ This method can return false when the selection is not valid during specific ope
     <tr>
       <td>
         <span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Telerik.Windows.Documents.Layout.InlineLayoutBox.html">InlineLayoutBox</a>&gt;
-        <p><p>enumerable list of selected layout boxes</p>
+        <p><p>A collection of inline layout boxes.</p>
 </p>
       </td>
     </tr>
@@ -1051,9 +1153,6 @@ This method can return false when the selection is not valid during specific ope
   
   
   
-  <h5 id="Telerik_Windows_Documents_Selection_DocumentSelection_GetSelectedBoxes_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><a class="xref" href="Telerik.Windows.Documents.Selection.DocumentSelection.html#Telerik_Windows_Documents_Selection_DocumentSelection_CanGetSelectedBoxes">CanGetSelectedBoxes</a>
-</div>
   
   
   
@@ -1065,7 +1164,7 @@ This method can return false when the selection is not valid during specific ope
   <h4 id="Telerik_Windows_Documents_Selection_DocumentSelection_GetSelectedBoxes__1" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.GetSelectedBoxes``1"><a href="#collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_GetSelectedBoxes__1" class="expander" data-toggle="collapse">GetSelectedBoxes&lt;T&gt;()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_GetSelectedBoxes__1" class="collapse in">
-  <div class="markdown level1 summary"><p>Enumerates through all layout boxes corresponding to currently selected ranges</p>
+  <div class="markdown level1 summary"><p>Enumerates through all inline layout boxes of type <code data-dev-comment-type="typeparamref" class="typeparamref">T</code> included in the selected ranges.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1081,7 +1180,7 @@ This method can return false when the selection is not valid during specific ope
     <tr>
       <td>
         <span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;
-        <p><p>enumerable list of selected layout boxes</p>
+        <p><p>A collection of inline layout boxes of type <code data-dev-comment-type="typeparamref" class="typeparamref">T</code>.</p>
 </p>
       </td>
     </tr>
@@ -1102,9 +1201,6 @@ This method can return false when the selection is not valid during specific ope
   
   
   
-  <h5 id="Telerik_Windows_Documents_Selection_DocumentSelection_GetSelectedBoxes__1_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><a class="xref" href="Telerik.Windows.Documents.Selection.DocumentSelection.html#Telerik_Windows_Documents_Selection_DocumentSelection_CanGetSelectedBoxes">CanGetSelectedBoxes</a>
-</div>
   
   
   
@@ -1116,7 +1212,8 @@ This method can return false when the selection is not valid during specific ope
   <h4 id="Telerik_Windows_Documents_Selection_DocumentSelection_GetSelectedParagraphs" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.GetSelectedParagraphs"><a href="#collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_GetSelectedParagraphs" class="expander" data-toggle="collapse">GetSelectedParagraphs()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_GetSelectedParagraphs" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the paragraphs included in the selection.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -1130,7 +1227,8 @@ This method can return false when the selection is not valid during specific ope
     <tr>
       <td>
         <span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Telerik.Windows.Documents.Model.Paragraph.html">Paragraph</a>&gt;
-        <p>
+        <p><p>A collection containing the paragraphs in the selection.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1152,7 +1250,8 @@ This method can return false when the selection is not valid during specific ope
   <h4 id="Telerik_Windows_Documents_Selection_DocumentSelection_GetSelectedSingleInline" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.GetSelectedSingleInline"><a href="#collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_GetSelectedSingleInline" class="expander" data-toggle="collapse">GetSelectedSingleInline()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_GetSelectedSingleInline" class="collapse in">
-  <div class="markdown level1 summary"><p>Gets the selected Inline if it is the only inline selected, otherwise returns null. For example it is suitable to check if only an Image is selected.</p>
+  <div class="markdown level1 summary"><p>Gets the selected Inline if it is the only inline selected, otherwise returns <code>null</code>. 
+<p>For example, it is suitable to check if only a <a class="xref" href="Telerik.Windows.Documents.Model.ImageInline.html">ImageInline</a>  is selected.</p></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1167,7 +1266,7 @@ This method can return false when the selection is not valid during specific ope
     <tr>
       <td>
         <a class="xref" href="Telerik.Windows.Documents.Model.Inline.html">Inline</a>
-        <p><p>Returns the selected Inline if it is the only inline selected, otherwise returns null. For example it is suitable to check if only an Image is selected.</p>
+        <p><p>Returns the selected Inline if it is the only inline selected, otherwise returns <code>null</code>.</p>
 </p>
       </td>
     </tr>
@@ -1243,7 +1342,7 @@ This method can return false when the selection is not valid during specific ope
       <td>
         <span class="pull-right"><span class="xref">System.Boolean</span></span>
         <span class="parametername">includeListsText</span>
-        <p><p>If set to <code>true</code> the result will include the bullet or numbering characters in case a paragraph is in list.</p>
+        <p><p>If set to <code>true</code>, the result will include the bullet or numbering characters in case a paragraph is in a list.</p>
 </p>
       </td>
     </tr>
@@ -1277,7 +1376,8 @@ This method can return false when the selection is not valid during specific ope
   <h4 id="Telerik_Windows_Documents_Selection_DocumentSelection_GetVisibleSelectionGeometry_Telerik_Windows_Documents_Model_RectangleF_" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.GetVisibleSelectionGeometry(Telerik.Windows.Documents.Model.RectangleF)"><a href="#collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_GetVisibleSelectionGeometry_Telerik_Windows_Documents_Model_RectangleF_" class="expander" data-toggle="collapse">GetVisibleSelectionGeometry(RectangleF)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_GetVisibleSelectionGeometry_Telerik_Windows_Documents_Model_RectangleF_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a <span class="xref">System.Windows.Media.Geometry</span> instance describing the form of the selection visible in the <code data-dev-comment-type="paramref" class="paramref">visibleRectangle</code>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -1291,7 +1391,8 @@ This method can return false when the selection is not valid during specific ope
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.Model.RectangleF.html">RectangleF</a></span>
         <span class="parametername">visibleRectangle</span>
-        <p>
+        <p><p>The rectangle used to clip the selection.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1301,7 +1402,8 @@ This method can return false when the selection is not valid during specific ope
     <tr>
       <td>
         <span class="xref">System.Windows.Media.Geometry</span>
-        <p>
+        <p><p>A <span class="xref">System.Windows.Media.Geometry</span> instance descibing the form of the selection.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1323,7 +1425,8 @@ This method can return false when the selection is not valid during specific ope
   <h4 id="Telerik_Windows_Documents_Selection_DocumentSelection_OnSelectionChanged" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.OnSelectionChanged"><a href="#collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_OnSelectionChanged" class="expander" data-toggle="collapse">OnSelectionChanged()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_OnSelectionChanged" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called after the selection is changed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -1350,7 +1453,8 @@ This method can return false when the selection is not valid during specific ope
   <h4 id="Telerik_Windows_Documents_Selection_DocumentSelection_OnSelectionChanging" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.OnSelectionChanging"><a href="#collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_OnSelectionChanging" class="expander" data-toggle="collapse">OnSelectionChanging()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_OnSelectionChanging" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called before the selection is changed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -1404,7 +1508,8 @@ This method can return false when the selection is not valid during specific ope
   <h4 id="Telerik_Windows_Documents_Selection_DocumentSelection_SelectAll" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.SelectAll"><a href="#collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_SelectAll" class="expander" data-toggle="collapse">SelectAll()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_SelectAll" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Selects all elements in the document.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -1431,7 +1536,8 @@ This method can return false when the selection is not valid during specific ope
   <h4 id="Telerik_Windows_Documents_Selection_DocumentSelection_SelectAnnotationRange_Telerik_Windows_Documents_Model_AnnotationRangeStart_" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.SelectAnnotationRange(Telerik.Windows.Documents.Model.AnnotationRangeStart)"><a href="#collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_SelectAnnotationRange_Telerik_Windows_Documents_Model_AnnotationRangeStart_" class="expander" data-toggle="collapse">SelectAnnotationRange(AnnotationRangeStart)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_SelectAnnotationRange_Telerik_Windows_Documents_Model_AnnotationRangeStart_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Selects annotation range including the <a class="xref" href="Telerik.Windows.Documents.Model.AnnotationRangeStart.html">AnnotationRangeStart</a> and <a class="xref" href="Telerik.Windows.Documents.Model.AnnotationRangeEnd.html">AnnotationRangeEnd</a> elements.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -1445,7 +1551,8 @@ This method can return false when the selection is not valid during specific ope
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.Model.AnnotationRangeStart.html">AnnotationRangeStart</a></span>
         <span class="parametername">annotationStart</span>
-        <p>
+        <p><p>The <a class="xref" href="Telerik.Windows.Documents.Model.AnnotationRangeStart.html">AnnotationRangeStart</a> of the annotation.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1468,7 +1575,9 @@ This method can return false when the selection is not valid during specific ope
   <h4 id="Telerik_Windows_Documents_Selection_DocumentSelection_SelectTableColumn_Telerik_Windows_Documents_Model_Table_System_Int32_" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.SelectTableColumn(Telerik.Windows.Documents.Model.Table,System.Int32)"><a href="#collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_SelectTableColumn_Telerik_Windows_Documents_Model_Table_System_Int32_" class="expander" data-toggle="collapse">SelectTableColumn(Table, Int32)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_SelectTableColumn_Telerik_Windows_Documents_Model_Table_System_Int32_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new selection containing all the cells at a specified table grid column index.
+<p>The table grid is the set of grid columns which define all of the shared vertical edges of the table.</p></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -1482,14 +1591,16 @@ This method can return false when the selection is not valid during specific ope
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.Model.Table.html">Table</a></span>
         <span class="parametername">table</span>
-        <p>
+        <p><p>The table containing the column that should be selected.</p>
+</p>
       </td>
     </tr>
     <tr>
       <td>
         <span class="pull-right"><span class="xref">System.Int32</span></span>
         <span class="parametername">gridColumnIndex</span>
-        <p>
+        <p><p>The index of the table grid column that should be selected.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1512,12 +1623,13 @@ This method can return false when the selection is not valid during specific ope
   <h4 id="Telerik_Windows_Documents_Selection_DocumentSelection_SelectTableColumn_Telerik_Windows_Documents_Model_TableCell_" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.SelectTableColumn(Telerik.Windows.Documents.Model.TableCell)"><a href="#collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_SelectTableColumn_Telerik_Windows_Documents_Model_TableCell_" class="expander" data-toggle="collapse">SelectTableColumn(TableCell)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_SelectTableColumn_Telerik_Windows_Documents_Model_TableCell_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new selection containing all the cells at the table grid column index of the specified table cell.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SelectTableColumn(TableCell cell)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SelectTableColumn(TableCell tableCell)</code></pre>
   </div>
 
   <h5 class="parameters">Parameters</h5>
@@ -1525,8 +1637,9 @@ This method can return false when the selection is not valid during specific ope
     <tr>
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.Model.TableCell.html">TableCell</a></span>
-        <span class="parametername">cell</span>
-        <p>
+        <span class="parametername">tableCell</span>
+        <p><p>A cell from the column that should be selected.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1549,12 +1662,13 @@ This method can return false when the selection is not valid during specific ope
   <h4 id="Telerik_Windows_Documents_Selection_DocumentSelection_SelectTableRow_Telerik_Windows_Documents_Model_TableRow_" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.SelectTableRow(Telerik.Windows.Documents.Model.TableRow)"><a href="#collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_SelectTableRow_Telerik_Windows_Documents_Model_TableRow_" class="expander" data-toggle="collapse">SelectTableRow(TableRow)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_SelectTableRow_Telerik_Windows_Documents_Model_TableRow_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new selection containing the specific table row.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SelectTableRow(TableRow row)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SelectTableRow(TableRow tableRow)</code></pre>
   </div>
 
   <h5 class="parameters">Parameters</h5>
@@ -1562,8 +1676,9 @@ This method can return false when the selection is not valid during specific ope
     <tr>
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.Model.TableRow.html">TableRow</a></span>
-        <span class="parametername">row</span>
-        <p>
+        <span class="parametername">tableRow</span>
+        <p><p>The table row that should be selected.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1586,7 +1701,9 @@ This method can return false when the selection is not valid during specific ope
   <h4 id="Telerik_Windows_Documents_Selection_DocumentSelection_SetSelectionStart_Telerik_Windows_Documents_DocumentPosition_" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.SetSelectionStart(Telerik.Windows.Documents.DocumentPosition)"><a href="#collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_SetSelectionStart_Telerik_Windows_Documents_DocumentPosition_" class="expander" data-toggle="collapse">SetSelectionStart(DocumentPosition)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_SetSelectionStart_Telerik_Windows_Documents_DocumentPosition_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Empties the selection and begins a new <a class="xref" href="Telerik.Windows.Documents.Selection.SelectionRange.html">SelectionRange</a> starting at the specified <code data-dev-comment-type="paramref" class="paramref">position</code>.
+<p>This method starts the creation of a range, which should be finished with <a class="xref" href="Telerik.Windows.Documents.Selection.DocumentSelection.html#Telerik_Windows_Documents_Selection_DocumentSelection_AddSelectionEnd_Telerik_Windows_Documents_DocumentPosition_">AddSelectionEnd(DocumentPosition)</a>.</p></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -1600,7 +1717,8 @@ This method can return false when the selection is not valid during specific ope
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.DocumentPosition.html">DocumentPosition</a></span>
         <span class="parametername">position</span>
-        <p>
+        <p><p>The start position.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1623,7 +1741,8 @@ This method can return false when the selection is not valid during specific ope
   <h4 id="Telerik_Windows_Documents_Selection_DocumentSelection_ToString" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.ToString"><a href="#collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_ToString" class="expander" data-toggle="collapse">ToString()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_ToString" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the text from the selected document elements.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -1637,7 +1756,8 @@ This method can return false when the selection is not valid during specific ope
     <tr>
       <td>
         <span class="xref">System.String</span>
-        <p>
+        <p><p>A <code>string</code> containing the text in the selection.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1660,7 +1780,8 @@ This method can return false when the selection is not valid during specific ope
   <h4 id="Telerik_Windows_Documents_Selection_DocumentSelection_SelectionChanged" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.SelectionChanged"><a href="#collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_SelectionChanged" class="expander" data-toggle="collapse">SelectionChanged</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_SelectionChanged" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Occurs after the selection is changed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -1695,7 +1816,8 @@ This method can return false when the selection is not valid during specific ope
   <h4 id="Telerik_Windows_Documents_Selection_DocumentSelection_SelectionChanging" data-uid="Telerik.Windows.Documents.Selection.DocumentSelection.SelectionChanging"><a href="#collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_SelectionChanging" class="expander" data-toggle="collapse">SelectionChanging</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_Selection_DocumentSelection_SelectionChanging" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Occurs before the selection is changed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 

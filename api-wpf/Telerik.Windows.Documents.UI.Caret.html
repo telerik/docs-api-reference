@@ -278,7 +278,8 @@
             <article class="content wrap" id="_content" data-uid="Telerik.Windows.Documents.UI.Caret">
   <h1 id="Telerik_Windows_Documents_UI_Caret" data-uid="Telerik.Windows.Documents.UI.Caret">Class Caret
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Represents a special <span class="xref">System.Windows.Controls.TextBox</span> used to insert text in <a class="xref" href="Telerik.Windows.Controls.RadRichTextBox.html">RadRichTextBox</a></p>
+</div>
   <div class="markdown level0 conceptual"></div>
 
   <div class="inheritance">
@@ -310,7 +311,8 @@
   <h4 id="Telerik_Windows_Documents_UI_Caret__ctor" data-uid="Telerik.Windows.Documents.UI.Caret.#ctor"><a href="#collapsible-Telerik_Windows_Documents_UI_Caret__ctor" class="expander" data-toggle="collapse">Caret()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_UI_Caret__ctor" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Telerik.Windows.Documents.UI.Caret.html">Caret</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -370,6 +372,44 @@
   </div>
   
   
+  <a id="Telerik_Windows_Documents_UI_Caret_EnableAsynchronousTextInsertion_" data-uid="Telerik.Windows.Documents.UI.Caret.EnableAsynchronousTextInsertion*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_UI_Caret_EnableAsynchronousTextInsertion" data-uid="Telerik.Windows.Documents.UI.Caret.EnableAsynchronousTextInsertion"><a href="#collapsible-Telerik_Windows_Documents_UI_Caret_EnableAsynchronousTextInsertion" class="expander" data-toggle="collapse">EnableAsynchronousTextInsertion</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_UI_Caret_EnableAsynchronousTextInsertion" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether asynchronous text insertion is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool EnableAsynchronousTextInsertion { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p><code>true</code> if asynchronous text insertion is enabled; otherwise, <code>false</code>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
   <a id="Telerik_Windows_Documents_UI_Caret_InputState_" data-uid="Telerik.Windows.Documents.UI.Caret.InputState*"></a>
   
   <h4 id="Telerik_Windows_Documents_UI_Caret_InputState" data-uid="Telerik.Windows.Documents.UI.Caret.InputState"><a href="#collapsible-Telerik_Windows_Documents_UI_Caret_InputState" class="expander" data-toggle="collapse">InputState</a></h4>
@@ -411,7 +451,8 @@
   <h4 id="Telerik_Windows_Documents_UI_Caret_IsBlinking" data-uid="Telerik.Windows.Documents.UI.Caret.IsBlinking"><a href="#collapsible-Telerik_Windows_Documents_UI_Caret_IsBlinking" class="expander" data-toggle="collapse">IsBlinking</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_UI_Caret_IsBlinking" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the caret is blinking.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -428,7 +469,8 @@
     <tr>
       <td>
         <span class="xref">System.Boolean</span>
-        <p>
+        <p><p><code>true</code> if the caret is blinking; otherwise, <code>false</code>.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -465,6 +507,46 @@
       <td>
         <a class="xref" href="Telerik.Windows.Documents.UI.InputEvents.html">InputEvents</a>
         <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Documents_UI_Caret_MinimumTextInsertedInterval_" data-uid="Telerik.Windows.Documents.UI.Caret.MinimumTextInsertedInterval*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_UI_Caret_MinimumTextInsertedInterval" data-uid="Telerik.Windows.Documents.UI.Caret.MinimumTextInsertedInterval"><a href="#collapsible-Telerik_Windows_Documents_UI_Caret_MinimumTextInsertedInterval" class="expander" data-toggle="collapse">MinimumTextInsertedInterval</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_UI_Caret_MinimumTextInsertedInterval" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the minimum interval (in milliseconds) between two consecutive raises of <a class="xref" href="Telerik.Windows.Documents.UI.Caret.html#Telerik_Windows_Documents_UI_Caret_TextInserted">TextInserted</a> event. 
+The value is respected only when <a class="xref" href="Telerik.Windows.Documents.UI.Caret.html#Telerik_Windows_Documents_UI_Caret_EnableAsynchronousTextInsertion">EnableAsynchronousTextInsertion</a> is <code>true</code>.
+<p>The default value is 15.</p></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int MinimumTextInsertedInterval { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p><p>The minimum interval (in milliseconds) between two consecutive raisings of <a class="xref" href="Telerik.Windows.Documents.UI.Caret.html#Telerik_Windows_Documents_UI_Caret_TextInserted">TextInserted</a> event.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -555,7 +637,8 @@
   <h4 id="Telerik_Windows_Documents_UI_Caret_Text" data-uid="Telerik.Windows.Documents.UI.Caret.Text"><a href="#collapsible-Telerik_Windows_Documents_UI_Caret_Text" class="expander" data-toggle="collapse">Text</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_UI_Caret_Text" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the text contents of the text box, with all new lines removed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -621,7 +704,8 @@
   <h4 id="Telerik_Windows_Documents_UI_Caret_Hide" data-uid="Telerik.Windows.Documents.UI.Caret.Hide"><a href="#collapsible-Telerik_Windows_Documents_UI_Caret_Hide" class="expander" data-toggle="collapse">Hide()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_UI_Caret_Hide" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Hides the caret.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -740,7 +824,8 @@
   <h4 id="Telerik_Windows_Documents_UI_Caret_OnApplyTemplate" data-uid="Telerik.Windows.Documents.UI.Caret.OnApplyTemplate"><a href="#collapsible-Telerik_Windows_Documents_UI_Caret_OnApplyTemplate" class="expander" data-toggle="collapse">OnApplyTemplate()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_UI_Caret_OnApplyTemplate" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Is called when a control template is applied.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -843,7 +928,8 @@
   <h4 id="Telerik_Windows_Documents_UI_Caret_OnKeyDown_System_Windows_Input_KeyEventArgs_" data-uid="Telerik.Windows.Documents.UI.Caret.OnKeyDown(System.Windows.Input.KeyEventArgs)"><a href="#collapsible-Telerik_Windows_Documents_UI_Caret_OnKeyDown_System_Windows_Input_KeyEventArgs_" class="expander" data-toggle="collapse">OnKeyDown(KeyEventArgs)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_UI_Caret_OnKeyDown_System_Windows_Input_KeyEventArgs_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Invoked whenever an unhandled <span class="xref">System.Windows.Input.Keyboard.KeyDown</span> attached routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -857,7 +943,8 @@
       <td>
         <span class="pull-right"><span class="xref">System.Windows.Input.KeyEventArgs</span></span>
         <span class="parametername">e</span>
-        <p>
+        <p><p>Provides data about the event.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -880,7 +967,8 @@
   <h4 id="Telerik_Windows_Documents_UI_Caret_OnMouseLeftButtonUp_System_Windows_Input_MouseButtonEventArgs_" data-uid="Telerik.Windows.Documents.UI.Caret.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)"><a href="#collapsible-Telerik_Windows_Documents_UI_Caret_OnMouseLeftButtonUp_System_Windows_Input_MouseButtonEventArgs_" class="expander" data-toggle="collapse">OnMouseLeftButtonUp(MouseButtonEventArgs)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_UI_Caret_OnMouseLeftButtonUp_System_Windows_Input_MouseButtonEventArgs_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Invoked when an unhandled <span class="xref">System.Windows.UIElement.MouseLeftButtonUp</span> routed event reaches an element in its route that is derived from this class. Implement this method to add class handling for this event.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -894,7 +982,8 @@
       <td>
         <span class="pull-right"><span class="xref">System.Windows.Input.MouseButtonEventArgs</span></span>
         <span class="parametername">e</span>
-        <p>
+        <p><p>The <span class="xref">System.Windows.Input.MouseButtonEventArgs</span> that contains the event data. The event data reports that the left mouse button was released.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -917,7 +1006,8 @@
   <h4 id="Telerik_Windows_Documents_UI_Caret_OnPreviewKeyDown_System_Windows_Input_KeyEventArgs_" data-uid="Telerik.Windows.Documents.UI.Caret.OnPreviewKeyDown(System.Windows.Input.KeyEventArgs)"><a href="#collapsible-Telerik_Windows_Documents_UI_Caret_OnPreviewKeyDown_System_Windows_Input_KeyEventArgs_" class="expander" data-toggle="collapse">OnPreviewKeyDown(KeyEventArgs)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_UI_Caret_OnPreviewKeyDown_System_Windows_Input_KeyEventArgs_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called when the <span class="xref">System.Windows.UIElement.KeyDown</span> occurs.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -931,7 +1021,8 @@
       <td>
         <span class="pull-right"><span class="xref">System.Windows.Input.KeyEventArgs</span></span>
         <span class="parametername">e</span>
-        <p>
+        <p><p>The event data.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -976,12 +1067,52 @@
   </div>
   
   
+  <a id="Telerik_Windows_Documents_UI_Caret_OnTextChanged_" data-uid="Telerik.Windows.Documents.UI.Caret.OnTextChanged*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_UI_Caret_OnTextChanged_System_Windows_Controls_TextChangedEventArgs_" data-uid="Telerik.Windows.Documents.UI.Caret.OnTextChanged(System.Windows.Controls.TextChangedEventArgs)"><a href="#collapsible-Telerik_Windows_Documents_UI_Caret_OnTextChanged_System_Windows_Controls_TextChangedEventArgs_" class="expander" data-toggle="collapse">OnTextChanged(TextChangedEventArgs)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_UI_Caret_OnTextChanged_System_Windows_Controls_TextChangedEventArgs_" class="collapse in">
+  <div class="markdown level1 summary"><p>Is called when content in this editing control changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnTextChanged(TextChangedEventArgs e)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Windows.Controls.TextChangedEventArgs</span></span>
+        <span class="parametername">e</span>
+        <p><p>The arguments that are associated with the <span class="xref">System.Windows.Controls.Primitives.TextBoxBase.TextChanged</span> event.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
   <a id="Telerik_Windows_Documents_UI_Caret_OnTextInput_" data-uid="Telerik.Windows.Documents.UI.Caret.OnTextInput*"></a>
   
   <h4 id="Telerik_Windows_Documents_UI_Caret_OnTextInput_System_Windows_Input_TextCompositionEventArgs_" data-uid="Telerik.Windows.Documents.UI.Caret.OnTextInput(System.Windows.Input.TextCompositionEventArgs)"><a href="#collapsible-Telerik_Windows_Documents_UI_Caret_OnTextInput_System_Windows_Input_TextCompositionEventArgs_" class="expander" data-toggle="collapse">OnTextInput(TextCompositionEventArgs)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_UI_Caret_OnTextInput_System_Windows_Input_TextCompositionEventArgs_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Invoked whenever an unhandled <span class="xref">System.Windows.Input.TextCompositionManager.TextInput</span> attached routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -995,7 +1126,8 @@
       <td>
         <span class="pull-right"><span class="xref">System.Windows.Input.TextCompositionEventArgs</span></span>
         <span class="parametername">e</span>
-        <p>
+        <p><p>Provides data about the event.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1106,7 +1238,8 @@
   <h4 id="Telerik_Windows_Documents_UI_Caret_OnTextInserted_System_Object_Telerik_Windows_Documents_UI_TextInsertedEventArgs_" data-uid="Telerik.Windows.Documents.UI.Caret.OnTextInserted(System.Object,Telerik.Windows.Documents.UI.TextInsertedEventArgs)"><a href="#collapsible-Telerik_Windows_Documents_UI_Caret_OnTextInserted_System_Object_Telerik_Windows_Documents_UI_TextInsertedEventArgs_" class="expander" data-toggle="collapse">OnTextInserted(Object, TextInsertedEventArgs)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_UI_Caret_OnTextInserted_System_Object_Telerik_Windows_Documents_UI_TextInsertedEventArgs_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called when text is inserted in the caret, but not often than <a class="xref" href="Telerik.Windows.Documents.UI.Caret.html#Telerik_Windows_Documents_UI_Caret_MinimumTextInsertedInterval">MinimumTextInsertedInterval</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -1120,14 +1253,16 @@
       <td>
         <span class="pull-right"><span class="xref">System.Object</span></span>
         <span class="parametername">sender</span>
-        <p>
+        <p><p>The sender.</p>
+</p>
       </td>
     </tr>
     <tr>
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.UI.TextInsertedEventArgs.html">TextInsertedEventArgs</a></span>
         <span class="parametername">e</span>
-        <p>
+        <p><p>The <a class="xref" href="Telerik.Windows.Documents.UI.TextInsertedEventArgs.html">TextInsertedEventArgs</a> instance containing the event data.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1201,7 +1336,8 @@
   <h4 id="Telerik_Windows_Documents_UI_Caret_Show" data-uid="Telerik.Windows.Documents.UI.Caret.Show"><a href="#collapsible-Telerik_Windows_Documents_UI_Caret_Show" class="expander" data-toggle="collapse">Show()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_UI_Caret_Show" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Makes the caret visible and blinking.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -1264,7 +1400,8 @@
   <h4 id="Telerik_Windows_Documents_UI_Caret_TextInserted" data-uid="Telerik.Windows.Documents.UI.Caret.TextInserted"><a href="#collapsible-Telerik_Windows_Documents_UI_Caret_TextInserted" class="expander" data-toggle="collapse">TextInserted</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_UI_Caret_TextInserted" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Occurs when text is inserted in the caret, but not more often than <a class="xref" href="Telerik.Windows.Documents.UI.Caret.html#Telerik_Windows_Documents_UI_Caret_MinimumTextInsertedInterval">MinimumTextInsertedInterval</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -1302,6 +1439,10 @@
       <a class="xref" href="Telerik.Windows.Core.EnumerableExtensions.html#Telerik_Windows_Core_EnumerableExtensions_ToEnumerable__1___0_">EnumerableExtensions.ToEnumerable&lt;T&gt;(T)</a>
   </div>
   
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><span class="xref">System.Windows.Controls.TextBox</span></div>
+  </div>
   
 </article>
           </div>

@@ -297,9 +297,9 @@
   
   <h4 id="Telerik_Windows_Controls_RadTreeView_syntax">Syntax</h4>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Themable]
-[TelerikToolboxCategory(&quot;Navigation&quot;)]
+    <pre><code class="lang-csharp hljs">[TelerikToolboxCategory(&quot;Navigation&quot;)]
 [ScriptableType]
+[Themable]
 public class RadTreeView : ItemsControl, IScrollingServiceCore, IScrollingInfo, IThemable</code></pre>
   </div>
 
@@ -5422,8 +5422,8 @@ public event RadTreeViewDragEndedEventHandler DragEnded</code></pre>
   <h5 class="decalaration">Declaration</h5>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[ScriptableMember]
-[Obsolete(&quot;This event will be removed. Use DragDropManager API to customize drag drop operations.&quot;, false)]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This event will be removed. Use DragDropManager API to customize drag drop operations.&quot;, false)]
+[ScriptableMember]
 public event DragOverTreeEventHandler DragOverTree</code></pre>
   </div>
 

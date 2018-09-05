@@ -289,7 +289,7 @@
     <div class="level2"><span class="xref">FileSystemInfoWrapper</span></div>
   </div>
   
-      <div class="level3"><a class="xref" href="Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper.html">DirectoryInfoWrapper</a></div>
+      <div class="level3"><a class="xref" href="Telerik.Windows.Controls.FileDialogs.DirectoryBaseWrapper.html">DirectoryBaseWrapper</a></div>
       <div class="level3"><a class="xref" href="Telerik.Windows.Controls.FileDialogs.FileInfoWrapper.html">FileInfoWrapper</a></div>
   
   <div class="inheritedMembers">
@@ -544,7 +544,7 @@
   <h5 class="decalaration">Declaration</h5>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsInEditMode { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual bool IsInEditMode { get; set; }</code></pre>
   </div>
 
   
@@ -682,6 +682,43 @@ Drives have Hidden but should be always visible in navigation tree.</p>
   </div>
   
   
+  <a id="Telerik_Windows_Controls_FileDialogs_FileSystemInfoWrapper_Label_" data-uid="Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper.Label*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_FileDialogs_FileSystemInfoWrapper_Label" data-uid="Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper.Label"><a href="#collapsible-Telerik_Windows_Controls_FileDialogs_FileSystemInfoWrapper_Label" class="expander" data-toggle="collapse">Label</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_FileDialogs_FileSystemInfoWrapper_Label" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the volume label of a Drive. For non-drives, it returns the Name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Label { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
   <a id="Telerik_Windows_Controls_FileDialogs_FileSystemInfoWrapper_LargeImage_" data-uid="Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper.LargeImage*"></a>
   
   <h4 id="Telerik_Windows_Controls_FileDialogs_FileSystemInfoWrapper_LargeImage" data-uid="Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapper.LargeImage"><a href="#collapsible-Telerik_Windows_Controls_FileDialogs_FileSystemInfoWrapper_LargeImage" class="expander" data-toggle="collapse">LargeImage</a></h4>
@@ -804,7 +841,7 @@ Drives have Hidden but should be always visible in navigation tree.</p>
   <h5 class="decalaration">Declaration</h5>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual string Name { get; set; }</code></pre>
   </div>
 
   
@@ -841,7 +878,7 @@ Drives have Hidden but should be always visible in navigation tree.</p>
   <h5 class="decalaration">Declaration</h5>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Path { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual string Path { get; set; }</code></pre>
   </div>
 
   

@@ -388,7 +388,7 @@
       <td>
         <span class="pull-right"><span class="xref">System.Boolean</span></span>
         <span class="parametername">trackDocumentChangeEvents</span>
-        <p><p>Indicates whether this position should track document change events.</p>
+        <p><p>Indicates whether the position is anchored to the end of the word. If true, the position is kept between the same characters when there is a modification in the content before the position. </p>
 </p>
       </td>
     </tr>
@@ -427,7 +427,8 @@
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.Layout.DocumentLayoutBox.html">DocumentLayoutBox</a></span>
         <span class="parametername">documentBox</span>
-        <p>
+        <p><p>The <a class="xref" href="Telerik.Windows.Documents.Layout.DocumentLayoutBox.html">DocumentLayoutBox</a> of <a class="xref" href="Telerik.Windows.Documents.Model.RadDocument.html">RadDocument</a>. </p>
+</p>
       </td>
     </tr>
   </table>
@@ -465,14 +466,15 @@
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.Layout.DocumentLayoutBox.html">DocumentLayoutBox</a></span>
         <span class="parametername">documentBox</span>
-        <p>
+        <p><p>The <a class="xref" href="Telerik.Windows.Documents.Layout.DocumentLayoutBox.html">DocumentLayoutBox</a> of <a class="xref" href="Telerik.Windows.Documents.Model.RadDocument.html">RadDocument</a> in which the position will be used. </p>
+</p>
       </td>
     </tr>
     <tr>
       <td>
         <span class="pull-right"><span class="xref">System.Boolean</span></span>
         <span class="parametername">trackDocumentChangeEvents</span>
-        <p><p>Indicates whether this position should track document change events.</p>
+        <p><p>Indicates whether the position is anchored to the end of the word. If true, the position is kept between the same characters when there is a modification in the content before the position. </p>
 </p>
       </td>
     </tr>
@@ -563,7 +565,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.Model.RadDocument.html">RadDocument</a></span>
         <span class="parametername">document</span>
-        <p>
+        <p><p>An instance of <a class="xref" href="Telerik.Windows.Documents.Model.RadDocument.html">RadDocument</a> in which the position will be used. </p>
+</p>
       </td>
     </tr>
   </table>
@@ -601,14 +604,15 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.Model.RadDocument.html">RadDocument</a></span>
         <span class="parametername">document</span>
-        <p>
+        <p><p>An instance of <a class="xref" href="Telerik.Windows.Documents.Model.RadDocument.html">RadDocument</a> in which the position will be used. </p>
+</p>
       </td>
     </tr>
     <tr>
       <td>
         <span class="pull-right"><span class="xref">System.Boolean</span></span>
         <span class="parametername">trackDocumentChangeEvents</span>
-        <p><p>Indicates whether this position should track document change events.</p>
+        <p><p>Indicates whether the position is anchored to the end of the word. If true, the position is kept between the same characters when there is a modification in the content before the position. </p>
 </p>
       </td>
     </tr>
@@ -627,6 +631,265 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   </div>
   <h3 id="properties">Properties
   </h3>
+  
+  
+  <a id="Telerik_Windows_Documents_DocumentPosition_IsPositionAtDocumentEnd_" data-uid="Telerik.Windows.Documents.DocumentPosition.IsPositionAtDocumentEnd*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_DocumentPosition_IsPositionAtDocumentEnd" data-uid="Telerik.Windows.Documents.DocumentPosition.IsPositionAtDocumentEnd"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_IsPositionAtDocumentEnd" class="expander" data-toggle="collapse">IsPositionAtDocumentEnd</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_IsPositionAtDocumentEnd" class="collapse in">
+  <div class="markdown level1 summary"><p>Determines whether the DocumentPosition is at the end of the document.  </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPositionAtDocumentEnd { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Documents_DocumentPosition_IsPositionAtDocumentStart_" data-uid="Telerik.Windows.Documents.DocumentPosition.IsPositionAtDocumentStart*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_DocumentPosition_IsPositionAtDocumentStart" data-uid="Telerik.Windows.Documents.DocumentPosition.IsPositionAtDocumentStart"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_IsPositionAtDocumentStart" class="expander" data-toggle="collapse">IsPositionAtDocumentStart</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_IsPositionAtDocumentStart" class="collapse in">
+  <div class="markdown level1 summary"><p>Determines whether the DocumentPosition is at the start of the document.  </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPositionAtDocumentStart { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Documents_DocumentPosition_IsPositionAtParagraphEnd_" data-uid="Telerik.Windows.Documents.DocumentPosition.IsPositionAtParagraphEnd*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_DocumentPosition_IsPositionAtParagraphEnd" data-uid="Telerik.Windows.Documents.DocumentPosition.IsPositionAtParagraphEnd"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_IsPositionAtParagraphEnd" class="expander" data-toggle="collapse">IsPositionAtParagraphEnd</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_IsPositionAtParagraphEnd" class="collapse in">
+  <div class="markdown level1 summary"><p>Determines whether the DocumentPosition is at the end of a <a class="xref" href="Telerik.Windows.Documents.Model.Paragraph.html">Paragraph</a>. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPositionAtParagraphEnd { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Documents_DocumentPosition_IsPositionAtParagraphStart_" data-uid="Telerik.Windows.Documents.DocumentPosition.IsPositionAtParagraphStart*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_DocumentPosition_IsPositionAtParagraphStart" data-uid="Telerik.Windows.Documents.DocumentPosition.IsPositionAtParagraphStart"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_IsPositionAtParagraphStart" class="expander" data-toggle="collapse">IsPositionAtParagraphStart</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_IsPositionAtParagraphStart" class="collapse in">
+  <div class="markdown level1 summary"><p>Determines whether the DocumentPosition is at the start of a <a class="xref" href="Telerik.Windows.Documents.Model.Paragraph.html">Paragraph</a>. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPositionAtParagraphStart { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Documents_DocumentPosition_IsPositionAtTableCellEnd_" data-uid="Telerik.Windows.Documents.DocumentPosition.IsPositionAtTableCellEnd*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_DocumentPosition_IsPositionAtTableCellEnd" data-uid="Telerik.Windows.Documents.DocumentPosition.IsPositionAtTableCellEnd"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_IsPositionAtTableCellEnd" class="expander" data-toggle="collapse">IsPositionAtTableCellEnd</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_IsPositionAtTableCellEnd" class="collapse in">
+  <div class="markdown level1 summary"><p>Determines whether the DocumentPosition is at the end of a <a class="xref" href="Telerik.Windows.Documents.Model.TableCell.html">TableCell</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPositionAtTableCellEnd { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Documents_DocumentPosition_IsPositionAtTableCellStart_" data-uid="Telerik.Windows.Documents.DocumentPosition.IsPositionAtTableCellStart*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_DocumentPosition_IsPositionAtTableCellStart" data-uid="Telerik.Windows.Documents.DocumentPosition.IsPositionAtTableCellStart"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_IsPositionAtTableCellStart" class="expander" data-toggle="collapse">IsPositionAtTableCellStart</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_IsPositionAtTableCellStart" class="collapse in">
+  <div class="markdown level1 summary"><p>Determines whether the DocumentPosition is at the start of a <a class="xref" href="Telerik.Windows.Documents.Model.TableCell.html">TableCell</a>. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPositionAtTableCellStart { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Documents_DocumentPosition_IsPositionAtTableRowStart_" data-uid="Telerik.Windows.Documents.DocumentPosition.IsPositionAtTableRowStart*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_DocumentPosition_IsPositionAtTableRowStart" data-uid="Telerik.Windows.Documents.DocumentPosition.IsPositionAtTableRowStart"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_IsPositionAtTableRowStart" class="expander" data-toggle="collapse">IsPositionAtTableRowStart</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_IsPositionAtTableRowStart" class="collapse in">
+  <div class="markdown level1 summary"><p>Determines whether the DocumentPosition is at the start of a <a class="xref" href="Telerik.Windows.Documents.Model.TableRow.html">TableRow</a>. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPositionAtTableRowStart { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
   
   
   <a id="Telerik_Windows_Documents_DocumentPosition_IsPositionInsideTable_" data-uid="Telerik.Windows.Documents.DocumentPosition.IsPositionInsideTable*"></a>
@@ -767,7 +1030,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_CompareTo_Telerik_Windows_Documents_DocumentPosition_" data-uid="Telerik.Windows.Documents.DocumentPosition.CompareTo(Telerik.Windows.Documents.DocumentPosition)"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_CompareTo_Telerik_Windows_Documents_DocumentPosition_" class="expander" data-toggle="collapse">CompareTo(DocumentPosition)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_CompareTo_Telerik_Windows_Documents_DocumentPosition_" class="collapse in">
-  <div class="markdown level1 summary"><p>Compares this position with another one.</p>
+  <div class="markdown level1 summary"><p>Compares the current object with another object of the same type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -782,7 +1045,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.DocumentPosition.html">DocumentPosition</a></span>
         <span class="parametername">other</span>
-        <p><p>The other position to compare with.</p>
+        <p><p>An object to compare with this object.</p>
 </p>
       </td>
     </tr>
@@ -793,7 +1056,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <span class="xref">System.Int32</span>
-        <p>
+        <p><p>A value that indicates the relative order of the objects being compared. The return value has the following meanings: Value Meaning Less than zero This object is less than the <code data-dev-comment-type="paramref" class="paramref">other</code> parameter.Zero This object is equal to <code data-dev-comment-type="paramref" class="paramref">other</code>. Greater than zero This object is greater than <code data-dev-comment-type="paramref" class="paramref">other</code>.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -817,7 +1081,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_Dispose" data-uid="Telerik.Windows.Documents.DocumentPosition.Dispose"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_Dispose" class="expander" data-toggle="collapse">Dispose()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_Dispose" class="collapse in">
-  <div class="markdown level1 summary"><p>Disposes this DocumentPosition</p>
+  <div class="markdown level1 summary"><p>Disposes this DocumentPosition.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -847,7 +1111,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_Equals_System_Object_" data-uid="Telerik.Windows.Documents.DocumentPosition.Equals(System.Object)"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_Equals_System_Object_" class="expander" data-toggle="collapse">Equals(Object)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_Equals_System_Object_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Determines whether the specified <span class="xref">System.Object</span>, is equal to this instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -861,7 +1126,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
       <td>
         <span class="pull-right"><span class="xref">System.Object</span></span>
         <span class="parametername">obj</span>
-        <p>
+        <p><p>The <span class="xref">System.Object</span> to compare with this instance.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -871,7 +1137,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <span class="xref">System.Boolean</span>
-        <p>
+        <p><p><code>true</code> if the specified <span class="xref">System.Object</span> is equal to this instance; otherwise, <code>false</code>.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1014,7 +1281,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_GetCurrentInline" data-uid="Telerik.Windows.Documents.DocumentPosition.GetCurrentInline"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_GetCurrentInline" class="expander" data-toggle="collapse">GetCurrentInline()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_GetCurrentInline" class="collapse in">
-  <div class="markdown level1 summary"><p>Gets the current Inline.</p>
+  <div class="markdown level1 summary"><p>Gets the current <a class="xref" href="Telerik.Windows.Documents.Model.Inline.html">Inline</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1029,7 +1296,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <a class="xref" href="Telerik.Windows.Documents.Model.Inline.html">Inline</a>
-        <p>
+        <p><p>The current <a class="xref" href="Telerik.Windows.Documents.Model.Inline.html">Inline</a> element if the position is in an <a class="xref" href="Telerik.Windows.Documents.Model.Inline.html">Inline</a>. Otherwise, null.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1051,7 +1319,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_GetCurrentInlineBox" data-uid="Telerik.Windows.Documents.DocumentPosition.GetCurrentInlineBox"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_GetCurrentInlineBox" class="expander" data-toggle="collapse">GetCurrentInlineBox()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_GetCurrentInlineBox" class="collapse in">
-  <div class="markdown level1 summary"><p>Gets the current InlineLayoutBox.</p>
+  <div class="markdown level1 summary"><p>Gets the current <a class="xref" href="Telerik.Windows.Documents.Layout.InlineLayoutBox.html">InlineLayoutBox</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1066,7 +1334,46 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <a class="xref" href="Telerik.Windows.Documents.Layout.InlineLayoutBox.html">InlineLayoutBox</a>
-        <p>
+        <p><p>The current <a class="xref" href="Telerik.Windows.Documents.Layout.InlineLayoutBox.html">InlineLayoutBox</a>. If such cannot be found, the method returns null.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Documents_DocumentPosition_GetCurrentParagraph_" data-uid="Telerik.Windows.Documents.DocumentPosition.GetCurrentParagraph*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_DocumentPosition_GetCurrentParagraph" data-uid="Telerik.Windows.Documents.DocumentPosition.GetCurrentParagraph"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_GetCurrentParagraph" class="expander" data-toggle="collapse">GetCurrentParagraph()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_GetCurrentParagraph" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the current <a class="xref" href="Telerik.Windows.Documents.Model.Paragraph.html">Paragraph</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Paragraph GetCurrentParagraph()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Documents.Model.Paragraph.html">Paragraph</a>
+        <p><p>The current <a class="xref" href="Telerik.Windows.Documents.Model.Paragraph.html">Paragraph</a> element if the position is in a <a class="xref" href="Telerik.Windows.Documents.Model.Paragraph.html">Paragraph</a>. Otherwise, null.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1088,7 +1395,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_GetCurrentParagraphBox" data-uid="Telerik.Windows.Documents.DocumentPosition.GetCurrentParagraphBox"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_GetCurrentParagraphBox" class="expander" data-toggle="collapse">GetCurrentParagraphBox()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_GetCurrentParagraphBox" class="collapse in">
-  <div class="markdown level1 summary"><p>Gets the current ParagraphLayoutBox.</p>
+  <div class="markdown level1 summary"><p>Gets the current <a class="xref" href="Telerik.Windows.Documents.Layout.ParagraphLayoutBox.html">ParagraphLayoutBox</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1103,7 +1410,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <a class="xref" href="Telerik.Windows.Documents.Layout.ParagraphLayoutBox.html">ParagraphLayoutBox</a>
-        <p>
+        <p><p>The current <a class="xref" href="Telerik.Windows.Documents.Layout.ParagraphLayoutBox.html">ParagraphLayoutBox</a>. If such cannot be found, the method returns null.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1131,7 +1439,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h5 class="decalaration">Declaration</h5>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int GetCurrentPositionInSpan()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use GetIndexInCurrentSpanBox() instead.&quot;)]
+public int GetCurrentPositionInSpan()</code></pre>
   </div>
 
   
@@ -1162,7 +1471,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_GetCurrentSectionBox" data-uid="Telerik.Windows.Documents.DocumentPosition.GetCurrentSectionBox"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_GetCurrentSectionBox" class="expander" data-toggle="collapse">GetCurrentSectionBox()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_GetCurrentSectionBox" class="collapse in">
-  <div class="markdown level1 summary"><p>Gets the current SectionLayoutBox.</p>
+  <div class="markdown level1 summary"><p>Gets the current <a class="xref" href="Telerik.Windows.Documents.Layout.SectionLayoutBox.html">SectionLayoutBox</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1177,7 +1486,46 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <a class="xref" href="Telerik.Windows.Documents.Layout.SectionLayoutBox.html">SectionLayoutBox</a>
-        <p>
+        <p><p>The current <a class="xref" href="Telerik.Windows.Documents.Layout.SectionLayoutBox.html">SectionLayoutBox</a>. If such cannot be found, the method returns null.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Documents_DocumentPosition_GetCurrentSpan_" data-uid="Telerik.Windows.Documents.DocumentPosition.GetCurrentSpan*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_DocumentPosition_GetCurrentSpan" data-uid="Telerik.Windows.Documents.DocumentPosition.GetCurrentSpan"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_GetCurrentSpan" class="expander" data-toggle="collapse">GetCurrentSpan()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_GetCurrentSpan" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the current <a class="xref" href="Telerik.Windows.Documents.Model.Span.html">Span</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Span GetCurrentSpan()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Documents.Model.Span.html">Span</a>
+        <p><p>The current <a class="xref" href="Telerik.Windows.Documents.Model.Span.html">Span</a> element if the position is in a <a class="xref" href="Telerik.Windows.Documents.Model.Span.html">Span</a>. Otherwise, null.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1199,7 +1547,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_GetCurrentSpanBox" data-uid="Telerik.Windows.Documents.DocumentPosition.GetCurrentSpanBox"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_GetCurrentSpanBox" class="expander" data-toggle="collapse">GetCurrentSpanBox()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_GetCurrentSpanBox" class="collapse in">
-  <div class="markdown level1 summary"><p>Gets the current SpanLayoutBox.</p>
+  <div class="markdown level1 summary"><p>Gets the current <a class="xref" href="Telerik.Windows.Documents.Layout.SpanLayoutBox.html">SpanLayoutBox</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1214,7 +1562,46 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <a class="xref" href="Telerik.Windows.Documents.Layout.SpanLayoutBox.html">SpanLayoutBox</a>
-        <p>
+        <p><p>The current <a class="xref" href="Telerik.Windows.Documents.Layout.SpanLayoutBox.html">SpanLayoutBox</a>. If such cannot be found, the method returns null.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Documents_DocumentPosition_GetCurrentTable_" data-uid="Telerik.Windows.Documents.DocumentPosition.GetCurrentTable*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_DocumentPosition_GetCurrentTable" data-uid="Telerik.Windows.Documents.DocumentPosition.GetCurrentTable"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_GetCurrentTable" class="expander" data-toggle="collapse">GetCurrentTable()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_GetCurrentTable" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the current <a class="xref" href="Telerik.Windows.Documents.Model.Table.html">Table</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Table GetCurrentTable()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Documents.Model.Table.html">Table</a>
+        <p><p>The current <a class="xref" href="Telerik.Windows.Documents.Model.Table.html">Table</a> element if the position is in a <a class="xref" href="Telerik.Windows.Documents.Model.Table.html">Table</a>. Otherwise, null.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1236,7 +1623,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_GetCurrentTableBox" data-uid="Telerik.Windows.Documents.DocumentPosition.GetCurrentTableBox"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_GetCurrentTableBox" class="expander" data-toggle="collapse">GetCurrentTableBox()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_GetCurrentTableBox" class="collapse in">
-  <div class="markdown level1 summary"><p>Gets the current TableLayoutBox.</p>
+  <div class="markdown level1 summary"><p>Gets the current <a class="xref" href="Telerik.Windows.Documents.Layout.TableLayoutBox.html">TableLayoutBox</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1251,7 +1638,46 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <a class="xref" href="Telerik.Windows.Documents.Layout.TableLayoutBox.html">TableLayoutBox</a>
-        <p>
+        <p><p>The current <a class="xref" href="Telerik.Windows.Documents.Layout.TableLayoutBox.html">TableLayoutBox</a>. If such cannot be found, the method returns null.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Documents_DocumentPosition_GetCurrentTableCell_" data-uid="Telerik.Windows.Documents.DocumentPosition.GetCurrentTableCell*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_DocumentPosition_GetCurrentTableCell" data-uid="Telerik.Windows.Documents.DocumentPosition.GetCurrentTableCell"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_GetCurrentTableCell" class="expander" data-toggle="collapse">GetCurrentTableCell()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_GetCurrentTableCell" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the current <a class="xref" href="Telerik.Windows.Documents.Model.TableCell.html">TableCell</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TableCell GetCurrentTableCell()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Documents.Model.TableCell.html">TableCell</a>
+        <p><p>The current <a class="xref" href="Telerik.Windows.Documents.Model.TableCell.html">TableCell</a> element if the position is in a <a class="xref" href="Telerik.Windows.Documents.Model.TableCell.html">TableCell</a>. Otherwise, null.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1273,7 +1699,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_GetCurrentTableCellBox" data-uid="Telerik.Windows.Documents.DocumentPosition.GetCurrentTableCellBox"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_GetCurrentTableCellBox" class="expander" data-toggle="collapse">GetCurrentTableCellBox()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_GetCurrentTableCellBox" class="collapse in">
-  <div class="markdown level1 summary"><p>Gets the current TableCellLayoutBox.</p>
+  <div class="markdown level1 summary"><p>Gets the current <a class="xref" href="Telerik.Windows.Documents.Layout.TableCellLayoutBox.html">TableCellLayoutBox</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1288,7 +1714,46 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <a class="xref" href="Telerik.Windows.Documents.Layout.TableCellLayoutBox.html">TableCellLayoutBox</a>
-        <p>
+        <p><p>The current <a class="xref" href="Telerik.Windows.Documents.Layout.TableCellLayoutBox.html">TableCellLayoutBox</a>. If such cannot be found, the method returns null.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Documents_DocumentPosition_GetCurrentTableRow_" data-uid="Telerik.Windows.Documents.DocumentPosition.GetCurrentTableRow*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_DocumentPosition_GetCurrentTableRow" data-uid="Telerik.Windows.Documents.DocumentPosition.GetCurrentTableRow"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_GetCurrentTableRow" class="expander" data-toggle="collapse">GetCurrentTableRow()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_GetCurrentTableRow" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the current <a class="xref" href="Telerik.Windows.Documents.Model.TableRow.html">TableRow</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TableRow GetCurrentTableRow()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Documents.Model.TableRow.html">TableRow</a>
+        <p><p>The current <a class="xref" href="Telerik.Windows.Documents.Model.TableRow.html">TableRow</a> element if the position is in a <a class="xref" href="Telerik.Windows.Documents.Model.TableRow.html">TableRow</a>. Otherwise, null.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1310,7 +1775,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_GetCurrentTableRowBox" data-uid="Telerik.Windows.Documents.DocumentPosition.GetCurrentTableRowBox"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_GetCurrentTableRowBox" class="expander" data-toggle="collapse">GetCurrentTableRowBox()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_GetCurrentTableRowBox" class="collapse in">
-  <div class="markdown level1 summary"><p>Gets the current TableRowLayoutBox.</p>
+  <div class="markdown level1 summary"><p>Gets the current <a class="xref" href="Telerik.Windows.Documents.Layout.TableRowLayoutBox.html">TableRowLayoutBox</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1325,7 +1790,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <a class="xref" href="Telerik.Windows.Documents.Layout.TableRowLayoutBox.html">TableRowLayoutBox</a>
-        <p>
+        <p><p>The current <a class="xref" href="Telerik.Windows.Documents.Layout.TableRowLayoutBox.html">TableRowLayoutBox</a>. If such cannot be found, the method returns null.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1362,7 +1828,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <span class="xref">System.String</span>
-        <p>
+        <p><p>The current word.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1384,7 +1851,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_GetHashCode" data-uid="Telerik.Windows.Documents.DocumentPosition.GetHashCode"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_GetHashCode" class="expander" data-toggle="collapse">GetHashCode()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_GetHashCode" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns a hash code for this instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -1398,7 +1866,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <span class="xref">System.Int32</span>
-        <p>
+        <p><p>A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table. </p>
+</p>
       </td>
     </tr>
   </table>
@@ -1417,12 +1886,88 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   </div>
   
   
+  <a id="Telerik_Windows_Documents_DocumentPosition_GetIndexInCurrentSpan_" data-uid="Telerik.Windows.Documents.DocumentPosition.GetIndexInCurrentSpan*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_DocumentPosition_GetIndexInCurrentSpan" data-uid="Telerik.Windows.Documents.DocumentPosition.GetIndexInCurrentSpan"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_GetIndexInCurrentSpan" class="expander" data-toggle="collapse">GetIndexInCurrentSpan()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_GetIndexInCurrentSpan" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the index of the position in the current span.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetIndexInCurrentSpan()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p><p>The index of the position in the current span.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Documents_DocumentPosition_GetIndexInCurrentSpanBox_" data-uid="Telerik.Windows.Documents.DocumentPosition.GetIndexInCurrentSpanBox*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_DocumentPosition_GetIndexInCurrentSpanBox" data-uid="Telerik.Windows.Documents.DocumentPosition.GetIndexInCurrentSpanBox"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_GetIndexInCurrentSpanBox" class="expander" data-toggle="collapse">GetIndexInCurrentSpanBox()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_GetIndexInCurrentSpanBox" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the index of the position in the current <a class="xref" href="Telerik.Windows.Documents.Layout.SpanLayoutBox.html">SpanLayoutBox</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetIndexInCurrentSpanBox()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p><p>The index of the position in the current <a class="xref" href="Telerik.Windows.Documents.Layout.SpanLayoutBox.html">SpanLayoutBox</a>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
   <a id="Telerik_Windows_Documents_DocumentPosition_GetNextInline_" data-uid="Telerik.Windows.Documents.DocumentPosition.GetNextInline*"></a>
   
   <h4 id="Telerik_Windows_Documents_DocumentPosition_GetNextInline" data-uid="Telerik.Windows.Documents.DocumentPosition.GetNextInline"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_GetNextInline" class="expander" data-toggle="collapse">GetNextInline()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_GetNextInline" class="collapse in">
-  <div class="markdown level1 summary"><p>Gets the next InlineLayout.</p>
+  <div class="markdown level1 summary"><p>Gets the next <a class="xref" href="Telerik.Windows.Documents.Model.Inline.html">Inline</a> element.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1437,7 +1982,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <a class="xref" href="Telerik.Windows.Documents.Model.Inline.html">Inline</a>
-        <p>
+        <p><p>The next <a class="xref" href="Telerik.Windows.Documents.Model.Inline.html">Inline</a> element. If such cannot be found, the method returns null.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1459,7 +2005,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_GetNextInlineBox" data-uid="Telerik.Windows.Documents.DocumentPosition.GetNextInlineBox"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_GetNextInlineBox" class="expander" data-toggle="collapse">GetNextInlineBox()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_GetNextInlineBox" class="collapse in">
-  <div class="markdown level1 summary"><p>Gets the next InlineLayoutBox.</p>
+  <div class="markdown level1 summary"><p>Gets the next <a class="xref" href="Telerik.Windows.Documents.Layout.InlineLayoutBox.html">InlineLayoutBox</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1474,7 +2020,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <a class="xref" href="Telerik.Windows.Documents.Layout.InlineLayoutBox.html">InlineLayoutBox</a>
-        <p>
+        <p><p>The next <a class="xref" href="Telerik.Windows.Documents.Layout.InlineLayoutBox.html">InlineLayoutBox</a>. If such cannot be found, the method returns null.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1496,7 +2043,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_GetNextSpan" data-uid="Telerik.Windows.Documents.DocumentPosition.GetNextSpan"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_GetNextSpan" class="expander" data-toggle="collapse">GetNextSpan()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_GetNextSpan" class="collapse in">
-  <div class="markdown level1 summary"><p>Gets the next SpanLayoutBox.</p>
+  <div class="markdown level1 summary"><p>Gets the next <a class="xref" href="Telerik.Windows.Documents.Layout.SpanLayoutBox.html">SpanLayoutBox</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1511,7 +2058,46 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <a class="xref" href="Telerik.Windows.Documents.Layout.SpanLayoutBox.html">SpanLayoutBox</a>
-        <p>
+        <p><p>The next <a class="xref" href="Telerik.Windows.Documents.Layout.SpanLayoutBox.html">SpanLayoutBox</a>. If such cannot be found, the method returns null.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Documents_DocumentPosition_GetNextSpanBox_" data-uid="Telerik.Windows.Documents.DocumentPosition.GetNextSpanBox*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_DocumentPosition_GetNextSpanBox" data-uid="Telerik.Windows.Documents.DocumentPosition.GetNextSpanBox"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_GetNextSpanBox" class="expander" data-toggle="collapse">GetNextSpanBox()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_GetNextSpanBox" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the next <a class="xref" href="Telerik.Windows.Documents.Layout.SpanLayoutBox.html">SpanLayoutBox</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SpanLayoutBox GetNextSpanBox()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Documents.Layout.SpanLayoutBox.html">SpanLayoutBox</a>
+        <p><p>The next <a class="xref" href="Telerik.Windows.Documents.Layout.SpanLayoutBox.html">SpanLayoutBox</a>. If such cannot be found, the method returns null.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1533,7 +2119,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_GetPreviousInline" data-uid="Telerik.Windows.Documents.DocumentPosition.GetPreviousInline"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_GetPreviousInline" class="expander" data-toggle="collapse">GetPreviousInline()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_GetPreviousInline" class="collapse in">
-  <div class="markdown level1 summary"><p>Gets the previous Inline.</p>
+  <div class="markdown level1 summary"><p>Gets the previous <a class="xref" href="Telerik.Windows.Documents.Model.Inline.html">Inline</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1548,7 +2134,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <a class="xref" href="Telerik.Windows.Documents.Model.Inline.html">Inline</a>
-        <p>
+        <p><p>The previous <a class="xref" href="Telerik.Windows.Documents.Model.Inline.html">Inline</a> element. If such cannot be found, the method returns null.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1570,7 +2157,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_GetPreviousInlineBox" data-uid="Telerik.Windows.Documents.DocumentPosition.GetPreviousInlineBox"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_GetPreviousInlineBox" class="expander" data-toggle="collapse">GetPreviousInlineBox()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_GetPreviousInlineBox" class="collapse in">
-  <div class="markdown level1 summary"><p>Gets the previous InlineLayoutBox.</p>
+  <div class="markdown level1 summary"><p>Gets the previous <a class="xref" href="Telerik.Windows.Documents.Layout.InlineLayoutBox.html">InlineLayoutBox</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1585,7 +2172,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <a class="xref" href="Telerik.Windows.Documents.Layout.InlineLayoutBox.html">InlineLayoutBox</a>
-        <p>
+        <p><p>The previous <a class="xref" href="Telerik.Windows.Documents.Layout.InlineLayoutBox.html">InlineLayoutBox</a>. If such cannot be found, the method returns null.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1607,7 +2195,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_GetPreviousSpanBox" data-uid="Telerik.Windows.Documents.DocumentPosition.GetPreviousSpanBox"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_GetPreviousSpanBox" class="expander" data-toggle="collapse">GetPreviousSpanBox()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_GetPreviousSpanBox" class="collapse in">
-  <div class="markdown level1 summary"><p>Gets the previous SpanLayoutBox.</p>
+  <div class="markdown level1 summary"><p>Gets the previous <a class="xref" href="Telerik.Windows.Documents.Layout.SpanLayoutBox.html">SpanLayoutBox</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1622,7 +2210,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <a class="xref" href="Telerik.Windows.Documents.Layout.SpanLayoutBox.html">SpanLayoutBox</a>
-        <p>
+        <p><p>The previous <a class="xref" href="Telerik.Windows.Documents.Layout.SpanLayoutBox.html">SpanLayoutBox</a>. If such cannot be found, the method returns null.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1644,12 +2233,14 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_IsAtCellEnd_Telerik_Windows_Documents_DocumentPosition_" data-uid="Telerik.Windows.Documents.DocumentPosition.IsAtCellEnd(Telerik.Windows.Documents.DocumentPosition)"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_IsAtCellEnd_Telerik_Windows_Documents_DocumentPosition_" class="expander" data-toggle="collapse">IsAtCellEnd(DocumentPosition)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_IsAtCellEnd_Telerik_Windows_Documents_DocumentPosition_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Checks if a position is at the end of a table cell.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsAtCellEnd(DocumentPosition documentPosition)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static bool IsAtCellEnd(DocumentPosition documentPosition)</code></pre>
   </div>
 
   <h5 class="parameters">Parameters</h5>
@@ -1658,7 +2249,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.DocumentPosition.html">DocumentPosition</a></span>
         <span class="parametername">documentPosition</span>
-        <p>
+        <p><p>The position to check.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1690,12 +2282,14 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_IsAtCellStart_Telerik_Windows_Documents_DocumentPosition_" data-uid="Telerik.Windows.Documents.DocumentPosition.IsAtCellStart(Telerik.Windows.Documents.DocumentPosition)"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_IsAtCellStart_Telerik_Windows_Documents_DocumentPosition_" class="expander" data-toggle="collapse">IsAtCellStart(DocumentPosition)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_IsAtCellStart_Telerik_Windows_Documents_DocumentPosition_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Checks if a position is at the start of a table cell.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsAtCellStart(DocumentPosition documentPosition)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static bool IsAtCellStart(DocumentPosition documentPosition)</code></pre>
   </div>
 
   <h5 class="parameters">Parameters</h5>
@@ -1704,7 +2298,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.DocumentPosition.html">DocumentPosition</a></span>
         <span class="parametername">documentPosition</span>
-        <p>
+        <p><p>The position to check.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1736,12 +2331,14 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_IsAtDocumentEnd_Telerik_Windows_Documents_DocumentPosition_" data-uid="Telerik.Windows.Documents.DocumentPosition.IsAtDocumentEnd(Telerik.Windows.Documents.DocumentPosition)"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_IsAtDocumentEnd_Telerik_Windows_Documents_DocumentPosition_" class="expander" data-toggle="collapse">IsAtDocumentEnd(DocumentPosition)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_IsAtDocumentEnd_Telerik_Windows_Documents_DocumentPosition_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Checks if a position is at the end of the document.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsAtDocumentEnd(DocumentPosition documentPosition)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static bool IsAtDocumentEnd(DocumentPosition documentPosition)</code></pre>
   </div>
 
   <h5 class="parameters">Parameters</h5>
@@ -1750,7 +2347,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.DocumentPosition.html">DocumentPosition</a></span>
         <span class="parametername">documentPosition</span>
-        <p>
+        <p><p>The position to check.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1782,12 +2380,14 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_IsAtDocumentStart_Telerik_Windows_Documents_DocumentPosition_" data-uid="Telerik.Windows.Documents.DocumentPosition.IsAtDocumentStart(Telerik.Windows.Documents.DocumentPosition)"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_IsAtDocumentStart_Telerik_Windows_Documents_DocumentPosition_" class="expander" data-toggle="collapse">IsAtDocumentStart(DocumentPosition)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_IsAtDocumentStart_Telerik_Windows_Documents_DocumentPosition_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Checks if a position is at the start of the document.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsAtDocumentStart(DocumentPosition documentPosition)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static bool IsAtDocumentStart(DocumentPosition documentPosition)</code></pre>
   </div>
 
   <h5 class="parameters">Parameters</h5>
@@ -1796,7 +2396,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.DocumentPosition.html">DocumentPosition</a></span>
         <span class="parametername">documentPosition</span>
-        <p>
+        <p><p>The position to check.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1828,12 +2429,14 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_IsAtParagraphEnd_Telerik_Windows_Documents_DocumentPosition_" data-uid="Telerik.Windows.Documents.DocumentPosition.IsAtParagraphEnd(Telerik.Windows.Documents.DocumentPosition)"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_IsAtParagraphEnd_Telerik_Windows_Documents_DocumentPosition_" class="expander" data-toggle="collapse">IsAtParagraphEnd(DocumentPosition)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_IsAtParagraphEnd_Telerik_Windows_Documents_DocumentPosition_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Checks if a position is at the end of a paragraph.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsAtParagraphEnd(DocumentPosition documentPosition)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static bool IsAtParagraphEnd(DocumentPosition documentPosition)</code></pre>
   </div>
 
   <h5 class="parameters">Parameters</h5>
@@ -1842,7 +2445,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.DocumentPosition.html">DocumentPosition</a></span>
         <span class="parametername">documentPosition</span>
-        <p>
+        <p><p>The position to check.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1880,7 +2484,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h5 class="decalaration">Declaration</h5>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsAtParagraphStart(DocumentPosition documentPosition)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static bool IsAtParagraphStart(DocumentPosition documentPosition)</code></pre>
   </div>
 
   <h5 class="parameters">Parameters</h5>
@@ -1922,12 +2527,14 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_IsAtRowStart_Telerik_Windows_Documents_DocumentPosition_" data-uid="Telerik.Windows.Documents.DocumentPosition.IsAtRowStart(Telerik.Windows.Documents.DocumentPosition)"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_IsAtRowStart_Telerik_Windows_Documents_DocumentPosition_" class="expander" data-toggle="collapse">IsAtRowStart(DocumentPosition)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_IsAtRowStart_Telerik_Windows_Documents_DocumentPosition_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Checks if a position is at the start of a table row.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsAtRowStart(DocumentPosition documentPosition)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static bool IsAtRowStart(DocumentPosition documentPosition)</code></pre>
   </div>
 
   <h5 class="parameters">Parameters</h5>
@@ -1936,7 +2543,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.DocumentPosition.html">DocumentPosition</a></span>
         <span class="parametername">documentPosition</span>
-        <p>
+        <p><p>The position to check.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1983,7 +2591,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <span class="xref">System.Boolean</span>
-        <p><p>True if the move was successful, otherwise false.</p>
+        <p><p><code>True</code> if the position is moved successfully. Otherwise, <code>false</code>.</p>
 </p>
       </td>
     </tr>
@@ -2006,7 +2614,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToCurrentLineEnd" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToCurrentLineEnd"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToCurrentLineEnd" class="expander" data-toggle="collapse">MoveToCurrentLineEnd()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToCurrentLineEnd" class="collapse in">
-  <div class="markdown level1 summary"><p>Moves the position to the current line end.</p>
+  <div class="markdown level1 summary"><p>Moves the position to the end of the current line.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2021,7 +2629,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <span class="xref">System.Boolean</span>
-        <p>
+        <p><p><code>True</code> if the position is moved successfully. Otherwise, <code>false</code>.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -2043,7 +2652,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToCurrentLineStart" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToCurrentLineStart"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToCurrentLineStart" class="expander" data-toggle="collapse">MoveToCurrentLineStart()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToCurrentLineStart" class="collapse in">
-  <div class="markdown level1 summary"><p>Moves the position to the current line start.</p>
+  <div class="markdown level1 summary"><p>Moves the position to the start of the current line.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2058,7 +2667,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <span class="xref">System.Boolean</span>
-        <p>
+        <p><p><code>True</code> if the position is moved successfully. Otherwise, <code>false</code>.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -2080,7 +2690,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToCurrentWordEnd" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToCurrentWordEnd"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToCurrentWordEnd" class="expander" data-toggle="collapse">MoveToCurrentWordEnd()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToCurrentWordEnd" class="collapse in">
-  <div class="markdown level1 summary"><p>Moves the position to current word end.</p>
+  <div class="markdown level1 summary"><p>Moves the position to the end of the current word.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2108,7 +2718,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToCurrentWordStart" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToCurrentWordStart"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToCurrentWordStart" class="expander" data-toggle="collapse">MoveToCurrentWordStart()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToCurrentWordStart" class="collapse in">
-  <div class="markdown level1 summary"><p>Moves the position to current word start.</p>
+  <div class="markdown level1 summary"><p>Moves the position to the start of the current word.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2131,12 +2741,146 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   </div>
   
   
+  <a id="Telerik_Windows_Documents_DocumentPosition_MoveToDocumentElementEnd_" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToDocumentElementEnd*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToDocumentElementEnd_Telerik_Windows_Documents_Model_DocumentElement_" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToDocumentElementEnd(Telerik.Windows.Documents.Model.DocumentElement)"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToDocumentElementEnd_Telerik_Windows_Documents_Model_DocumentElement_" class="expander" data-toggle="collapse">MoveToDocumentElementEnd(DocumentElement)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToDocumentElementEnd_Telerik_Windows_Documents_Model_DocumentElement_" class="collapse in">
+  <div class="markdown level1 summary"><p>Moves the position to the end of a document element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveToDocumentElementEnd(DocumentElement element)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.Model.DocumentElement.html">DocumentElement</a></span>
+        <span class="parametername">element</span>
+        <p><p>The document element.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Documents_DocumentPosition_MoveToDocumentElementStart_" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToDocumentElementStart*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToDocumentElementStart_Telerik_Windows_Documents_Model_DocumentElement_" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToDocumentElementStart(Telerik.Windows.Documents.Model.DocumentElement)"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToDocumentElementStart_Telerik_Windows_Documents_Model_DocumentElement_" class="expander" data-toggle="collapse">MoveToDocumentElementStart(DocumentElement)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToDocumentElementStart_Telerik_Windows_Documents_Model_DocumentElement_" class="collapse in">
+  <div class="markdown level1 summary"><p>Moves the position to the start of a document element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveToDocumentElementStart(DocumentElement element)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.Model.DocumentElement.html">DocumentElement</a></span>
+        <span class="parametername">element</span>
+        <p><p>The document element.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Documents_DocumentPosition_MoveToDocumentEnd_" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToDocumentEnd*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToDocumentEnd" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToDocumentEnd"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToDocumentEnd" class="expander" data-toggle="collapse">MoveToDocumentEnd()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToDocumentEnd" class="collapse in">
+  <div class="markdown level1 summary"><p>Moves the position to the last position in the document.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveToDocumentEnd()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Documents_DocumentPosition_MoveToDocumentStart_" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToDocumentStart*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToDocumentStart" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToDocumentStart"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToDocumentStart" class="expander" data-toggle="collapse">MoveToDocumentStart()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToDocumentStart" class="collapse in">
+  <div class="markdown level1 summary"><p>Moves the position to the first position in the document.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveToDocumentStart()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
   <a id="Telerik_Windows_Documents_DocumentPosition_MoveToEndOfDocumentElement_" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToEndOfDocumentElement*"></a>
   
   <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToEndOfDocumentElement_Telerik_Windows_Documents_Model_DocumentElement_" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToEndOfDocumentElement(Telerik.Windows.Documents.Model.DocumentElement)"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToEndOfDocumentElement_Telerik_Windows_Documents_Model_DocumentElement_" class="expander" data-toggle="collapse">MoveToEndOfDocumentElement(DocumentElement)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToEndOfDocumentElement_Telerik_Windows_Documents_Model_DocumentElement_" class="collapse in">
-  <div class="markdown level1 summary"><p>Moves the position to end of document element.</p>
+  <div class="markdown level1 summary"><p>Moves the position to the end of a document element.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2175,7 +2919,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToFirstPositionInDocument" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToFirstPositionInDocument"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToFirstPositionInDocument" class="expander" data-toggle="collapse">MoveToFirstPositionInDocument()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToFirstPositionInDocument" class="collapse in">
-  <div class="markdown level1 summary"><p>Moves the position to first position in document.</p>
+  <div class="markdown level1 summary"><p>Moves the position to the first position in the document.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2203,7 +2947,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToFirstPositionInNextParagraph" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToFirstPositionInNextParagraph"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToFirstPositionInNextParagraph" class="expander" data-toggle="collapse">MoveToFirstPositionInNextParagraph()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToFirstPositionInNextParagraph" class="collapse in">
-  <div class="markdown level1 summary"><p>Moves the position to first position in next paragraph.</p>
+  <div class="markdown level1 summary"><p>Moves the position to the first position in the next paragraph.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2231,7 +2975,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToFirstPositionInParagraph" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToFirstPositionInParagraph"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToFirstPositionInParagraph" class="expander" data-toggle="collapse">MoveToFirstPositionInParagraph()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToFirstPositionInParagraph" class="collapse in">
-  <div class="markdown level1 summary"><p>Moves the position to first position in paragraph.</p>
+  <div class="markdown level1 summary"><p>Moves the position to the first position in the current paragraph.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2259,7 +3003,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToFirstPositionInPreviousParagraph" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToFirstPositionInPreviousParagraph"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToFirstPositionInPreviousParagraph" class="expander" data-toggle="collapse">MoveToFirstPositionInPreviousParagraph()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToFirstPositionInPreviousParagraph" class="collapse in">
-  <div class="markdown level1 summary"><p>Moves the position to first position in previous paragraph.</p>
+  <div class="markdown level1 summary"><p>Moves the position to the first position in the previous paragraph.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2287,7 +3031,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToFirstPositionInTableCell" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToFirstPositionInTableCell"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToFirstPositionInTableCell" class="expander" data-toggle="collapse">MoveToFirstPositionInTableCell()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToFirstPositionInTableCell" class="collapse in">
-  <div class="markdown level1 summary"><p>Moves the position to first position in current table cell.</p>
+  <div class="markdown level1 summary"><p>Moves the position to the first position in the current table cell.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2315,7 +3059,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToFirstPositionOnNextPage" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToFirstPositionOnNextPage"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToFirstPositionOnNextPage" class="expander" data-toggle="collapse">MoveToFirstPositionOnNextPage()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToFirstPositionOnNextPage" class="collapse in">
-  <div class="markdown level1 summary"><p>Moves the position to first position on next page.</p>
+  <div class="markdown level1 summary"><p>Moves the position to the first position on the next page.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2343,7 +3087,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToInline_Telerik_Windows_Documents_Layout_InlineLayoutBox_System_Int32_" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToInline(Telerik.Windows.Documents.Layout.InlineLayoutBox,System.Int32)"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToInline_Telerik_Windows_Documents_Layout_InlineLayoutBox_System_Int32_" class="expander" data-toggle="collapse">MoveToInline(InlineLayoutBox, Int32)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToInline_Telerik_Windows_Documents_Layout_InlineLayoutBox_System_Int32_" class="collapse in">
-  <div class="markdown level1 summary"><p>Moves the position to InlineLayoutBox.</p>
+  <div class="markdown level1 summary"><p>Moves the position to <a class="xref" href="Telerik.Windows.Documents.Layout.InlineLayoutBox.html">InlineLayoutBox</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2358,7 +3102,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.Layout.InlineLayoutBox.html">InlineLayoutBox</a></span>
         <span class="parametername">inlineLayoutBox</span>
-        <p><p>The InlineLayoutBox.</p>
+        <p><p>The <a class="xref" href="Telerik.Windows.Documents.Layout.InlineLayoutBox.html">InlineLayoutBox</a>.</p>
 </p>
       </td>
     </tr>
@@ -2366,7 +3110,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
       <td>
         <span class="pull-right"><span class="xref">System.Int32</span></span>
         <span class="parametername">index</span>
-        <p><p>The index in the InlineLayoutBox.</p>
+        <p><p>The index in the <a class="xref" href="Telerik.Windows.Documents.Layout.InlineLayoutBox.html">InlineLayoutBox</a>.</p>
 </p>
       </td>
     </tr>
@@ -2390,7 +3134,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToInline_Telerik_Windows_Documents_Model_Inline_" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToInline(Telerik.Windows.Documents.Model.Inline)"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToInline_Telerik_Windows_Documents_Model_Inline_" class="expander" data-toggle="collapse">MoveToInline(Inline)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToInline_Telerik_Windows_Documents_Model_Inline_" class="collapse in">
-  <div class="markdown level1 summary"><p>Moves the position to the start of inline.</p>
+  <div class="markdown level1 summary"><p>Moves the position to the start of an <a class="xref" href="Telerik.Windows.Documents.Model.Inline.html">Inline</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2428,7 +3172,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToLastPositionInDocument" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToLastPositionInDocument"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToLastPositionInDocument" class="expander" data-toggle="collapse">MoveToLastPositionInDocument()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToLastPositionInDocument" class="collapse in">
-  <div class="markdown level1 summary"><p>Moves the position to last position in document.</p>
+  <div class="markdown level1 summary"><p>Moves the position to the last position in the document.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2456,7 +3200,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToLastPositionInParagraph" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToLastPositionInParagraph"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToLastPositionInParagraph" class="expander" data-toggle="collapse">MoveToLastPositionInParagraph()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToLastPositionInParagraph" class="collapse in">
-  <div class="markdown level1 summary"><p>Moves the position to last position in paragraph.</p>
+  <div class="markdown level1 summary"><p>Moves the position to the last position in the current paragraph.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2484,7 +3228,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToLastPositionInPreviousParagraph" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToLastPositionInPreviousParagraph"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToLastPositionInPreviousParagraph" class="expander" data-toggle="collapse">MoveToLastPositionInPreviousParagraph()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToLastPositionInPreviousParagraph" class="collapse in">
-  <div class="markdown level1 summary"><p>Moves the position to last position in previous paragraph.</p>
+  <div class="markdown level1 summary"><p>Moves the position to the last position in the previous paragraph.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2512,7 +3256,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToLastPositionInTableCell" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToLastPositionInTableCell"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToLastPositionInTableCell" class="expander" data-toggle="collapse">MoveToLastPositionInTableCell()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToLastPositionInTableCell" class="collapse in">
-  <div class="markdown level1 summary"><p>Moves the position to last position in current table cell.</p>
+  <div class="markdown level1 summary"><p>Moves the position to the last position in the current table cell.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2540,7 +3284,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToLastPositionOnPreviousPage" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToLastPositionOnPreviousPage"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToLastPositionOnPreviousPage" class="expander" data-toggle="collapse">MoveToLastPositionOnPreviousPage()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToLastPositionOnPreviousPage" class="collapse in">
-  <div class="markdown level1 summary"><p>Moves the position to last position on previous page.</p>
+  <div class="markdown level1 summary"><p>Moves the position to the last position on the previous page.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2568,7 +3312,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToNext" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToNext"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToNext" class="expander" data-toggle="collapse">MoveToNext()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToNext" class="collapse in">
-  <div class="markdown level1 summary"><p>Moves the position to next position in document.</p>
+  <div class="markdown level1 summary"><p>Moves the position to the next possible position in the document.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2583,7 +3327,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <span class="xref">System.Boolean</span>
-        <p>
+        <p><p><code>True</code> if the position is moved successfully. Otherwise, <code>false</code>.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -2605,7 +3350,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToNextInline" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToNextInline"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToNextInline" class="expander" data-toggle="collapse">MoveToNextInline()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToNextInline" class="collapse in">
-  <div class="markdown level1 summary"><p>Moves the position to next InlineLayoutBox.</p>
+  <div class="markdown level1 summary"><p>Moves the position to the next InlineLayoutBox.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2620,10 +3365,105 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <span class="xref">System.Boolean</span>
-        <p>
+        <p><p><code>True</code> if the position is moved successfully. Otherwise, <code>false</code>.</p>
+</p>
       </td>
     </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Documents_DocumentPosition_MoveToNextInlineBox_" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToNextInlineBox*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToNextInlineBox" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToNextInlineBox"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToNextInlineBox" class="expander" data-toggle="collapse">MoveToNextInlineBox()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToNextInlineBox" class="collapse in">
+  <div class="markdown level1 summary"><p>Moves the position to the next InlineLayoutBox.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MoveToNextInlineBox()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p><code>True</code> if the position is moved successfully. Otherwise, <code>false</code>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Documents_DocumentPosition_MoveToNextPageStart_" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToNextPageStart*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToNextPageStart" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToNextPageStart"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToNextPageStart" class="expander" data-toggle="collapse">MoveToNextPageStart()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToNextPageStart" class="collapse in">
+  <div class="markdown level1 summary"><p>Moves the position to the first position on the next page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveToNextPageStart()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Documents_DocumentPosition_MoveToNextParagraphStart_" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToNextParagraphStart*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToNextParagraphStart" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToNextParagraphStart"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToNextParagraphStart" class="expander" data-toggle="collapse">MoveToNextParagraphStart()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToNextParagraphStart" class="collapse in">
+  <div class="markdown level1 summary"><p>Moves the position to the first position in the next paragraph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveToNextParagraphStart()</code></pre>
+  </div>
+
+  
   
   
   
@@ -2642,7 +3482,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToNextSpanBox" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToNextSpanBox"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToNextSpanBox" class="expander" data-toggle="collapse">MoveToNextSpanBox()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToNextSpanBox" class="collapse in">
-  <div class="markdown level1 summary"><p>Moves the position to next SpanLayoutBox.</p>
+  <div class="markdown level1 summary"><p>Moves the position to the next SpanLayoutBox.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2657,7 +3497,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <span class="xref">System.Boolean</span>
-        <p>
+        <p><p><code>True</code> if the position is moved successfully. Otherwise, <code>false</code>.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -2679,7 +3520,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToNextWordStart" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToNextWordStart"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToNextWordStart" class="expander" data-toggle="collapse">MoveToNextWordStart()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToNextWordStart" class="collapse in">
-  <div class="markdown level1 summary"><p>Moves the position to next word start.</p>
+  <div class="markdown level1 summary"><p>Moves the position to the start of the next word.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2694,7 +3535,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <span class="xref">System.Boolean</span>
-        <p>
+        <p><p><code>True</code> if the position is moved successfully. Otherwise, <code>false</code>.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -2716,7 +3558,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToPage_System_Int32_" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToPage(System.Int32)"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToPage_System_Int32_" class="expander" data-toggle="collapse">MoveToPage(Int32)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToPage_System_Int32_" class="collapse in">
-  <div class="markdown level1 summary"><p>Moves the position to the beginning of the page with the specified number.</p>
+  <div class="markdown level1 summary"><p>Moves the position to the start of a page.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2731,10 +3573,67 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
       <td>
         <span class="pull-right"><span class="xref">System.Int32</span></span>
         <span class="parametername">pageNumber</span>
-        <p>
+        <p><p>The number of the page the position should be moved to.</p>
+</p>
       </td>
     </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Documents_DocumentPosition_MoveToParagraphEnd_" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToParagraphEnd*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToParagraphEnd" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToParagraphEnd"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToParagraphEnd" class="expander" data-toggle="collapse">MoveToParagraphEnd()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToParagraphEnd" class="collapse in">
+  <div class="markdown level1 summary"><p>Moves the position to the last position in the current paragraph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveToParagraphEnd()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Documents_DocumentPosition_MoveToParagraphStart_" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToParagraphStart*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToParagraphStart" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToParagraphStart"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToParagraphStart" class="expander" data-toggle="collapse">MoveToParagraphStart()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToParagraphStart" class="collapse in">
+  <div class="markdown level1 summary"><p>Moves the position to the first position in the current paragraph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveToParagraphStart()</code></pre>
+  </div>
+
   
   
   
@@ -2754,7 +3653,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToPosition_Telerik_Windows_Documents_DocumentPosition_" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToPosition(Telerik.Windows.Documents.DocumentPosition)"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToPosition_Telerik_Windows_Documents_DocumentPosition_" class="expander" data-toggle="collapse">MoveToPosition(DocumentPosition)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToPosition_Telerik_Windows_Documents_DocumentPosition_" class="collapse in">
-  <div class="markdown level1 summary"><p>Moves the position to specific position in document.</p>
+  <div class="markdown level1 summary"><p>Moves the position to a specific position in the document.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2793,7 +3692,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToPrevious" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToPrevious"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToPrevious" class="expander" data-toggle="collapse">MoveToPrevious()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToPrevious" class="collapse in">
-  <div class="markdown level1 summary"><p>Moves the position to previous  position in document.</p>
+  <div class="markdown level1 summary"><p>Moves the position to the previous possible position in the document.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2808,7 +3707,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <span class="xref">System.Boolean</span>
-        <p>
+        <p><p><code>True</code> if the position is moved successfully. Otherwise, <code>false</code>.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -2830,7 +3730,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToPreviousInline" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToPreviousInline"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToPreviousInline" class="expander" data-toggle="collapse">MoveToPreviousInline()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToPreviousInline" class="collapse in">
-  <div class="markdown level1 summary"><p>Moves the position to previous InlineLayoutBox.</p>
+  <div class="markdown level1 summary"><p>Moves the position to the previous InlineLayoutBox.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2845,10 +3745,133 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <span class="xref">System.Boolean</span>
-        <p>
+        <p><p><code>True</code> if the position is moved successfully. Otherwise, <code>false</code>.</p>
+</p>
       </td>
     </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Documents_DocumentPosition_MoveToPreviousInlineBox_" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToPreviousInlineBox*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToPreviousInlineBox" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToPreviousInlineBox"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToPreviousInlineBox" class="expander" data-toggle="collapse">MoveToPreviousInlineBox()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToPreviousInlineBox" class="collapse in">
+  <div class="markdown level1 summary"><p>Moves the position to the previous <a class="xref" href="Telerik.Windows.Documents.Layout.InlineLayoutBox.html">InlineLayoutBox</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MoveToPreviousInlineBox()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p><code>True</code> if the position is moved successfully. Otherwise, <code>false</code>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Documents_DocumentPosition_MoveToPreviousPageEnd_" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToPreviousPageEnd*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToPreviousPageEnd" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToPreviousPageEnd"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToPreviousPageEnd" class="expander" data-toggle="collapse">MoveToPreviousPageEnd()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToPreviousPageEnd" class="collapse in">
+  <div class="markdown level1 summary"><p>Moves the position to the last position on the previous page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveToPreviousPageEnd()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Documents_DocumentPosition_MoveToPreviousParagraphEnd_" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToPreviousParagraphEnd*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToPreviousParagraphEnd" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToPreviousParagraphEnd"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToPreviousParagraphEnd" class="expander" data-toggle="collapse">MoveToPreviousParagraphEnd()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToPreviousParagraphEnd" class="collapse in">
+  <div class="markdown level1 summary"><p>Moves the position to the last position in the previous paragraph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveToPreviousParagraphEnd()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Documents_DocumentPosition_MoveToPreviousParagraphStart_" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToPreviousParagraphStart*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToPreviousParagraphStart" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToPreviousParagraphStart"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToPreviousParagraphStart" class="expander" data-toggle="collapse">MoveToPreviousParagraphStart()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToPreviousParagraphStart" class="collapse in">
+  <div class="markdown level1 summary"><p>Moves the position to the first position in the previous paragraph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveToPreviousParagraphStart()</code></pre>
+  </div>
+
+  
   
   
   
@@ -2867,7 +3890,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToPreviousSpanBox" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToPreviousSpanBox"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToPreviousSpanBox" class="expander" data-toggle="collapse">MoveToPreviousSpanBox()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToPreviousSpanBox" class="collapse in">
-  <div class="markdown level1 summary"><p>Moves the position to previous SpanLayoutBox.</p>
+  <div class="markdown level1 summary"><p>Moves the position to the previous <a class="xref" href="Telerik.Windows.Documents.Layout.SpanLayoutBox.html">SpanLayoutBox</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2882,7 +3905,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <span class="xref">System.Boolean</span>
-        <p>
+        <p><p><code>True</code> if the position is moved successfully. Otherwise, <code>false</code>.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -2904,7 +3928,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToPreviousWordStart" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToPreviousWordStart"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToPreviousWordStart" class="expander" data-toggle="collapse">MoveToPreviousWordStart()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToPreviousWordStart" class="collapse in">
-  <div class="markdown level1 summary"><p>Moves the position to previous word start.</p>
+  <div class="markdown level1 summary"><p>Moves the position to the start of the previous word.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2919,7 +3943,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <span class="xref">System.Boolean</span>
-        <p>
+        <p><p><code>True</code> if the position is moved successfully. Otherwise, <code>false</code>.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -2941,7 +3966,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToStartOfDocumentElement_Telerik_Windows_Documents_Model_DocumentElement_" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToStartOfDocumentElement(Telerik.Windows.Documents.Model.DocumentElement)"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToStartOfDocumentElement_Telerik_Windows_Documents_Model_DocumentElement_" class="expander" data-toggle="collapse">MoveToStartOfDocumentElement(DocumentElement)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToStartOfDocumentElement_Telerik_Windows_Documents_Model_DocumentElement_" class="collapse in">
-  <div class="markdown level1 summary"><p>Moves the position to start of document element.</p>
+  <div class="markdown level1 summary"><p>Moves the position to the start of a document element.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2961,6 +3986,62 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
       </td>
     </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Documents_DocumentPosition_MoveToTableCellEnd_" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToTableCellEnd*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToTableCellEnd" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToTableCellEnd"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToTableCellEnd" class="expander" data-toggle="collapse">MoveToTableCellEnd()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToTableCellEnd" class="collapse in">
+  <div class="markdown level1 summary"><p>Moves the position to the last position in the current table cell.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveToTableCellEnd()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Documents_DocumentPosition_MoveToTableCellStart_" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToTableCellStart*"></a>
+  
+  <h4 id="Telerik_Windows_Documents_DocumentPosition_MoveToTableCellStart" data-uid="Telerik.Windows.Documents.DocumentPosition.MoveToTableCellStart"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToTableCellStart" class="expander" data-toggle="collapse">MoveToTableCellStart()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_MoveToTableCellStart" class="collapse in">
+  <div class="markdown level1 summary"><p>Moves the position to the first position in the current table cell.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveToTableCellStart()</code></pre>
+  </div>
+
   
   
   
@@ -2995,7 +4076,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <span class="xref">System.Boolean</span>
-        <p><p>True if the move was successful, otherwise false.</p>
+        <p><p><code>True</code> if the position is moved successfully. Otherwise, <code>false</code>.</p>
 </p>
       </td>
     </tr>
@@ -3205,7 +4286,7 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_Reset" data-uid="Telerik.Windows.Documents.DocumentPosition.Reset"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_Reset" class="expander" data-toggle="collapse">Reset()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_Reset" class="collapse in">
-  <div class="markdown level1 summary"><p>Resets the position.</p>
+  <div class="markdown level1 summary"><p>Resets the position to the first position in the document.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -3310,7 +4391,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_ToString" data-uid="Telerik.Windows.Documents.DocumentPosition.ToString"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_ToString" class="expander" data-toggle="collapse">ToString()</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_ToString" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns a <span class="xref">System.String</span> that represents this instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -3324,7 +4406,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <span class="xref">System.String</span>
-        <p>
+        <p><p>A <span class="xref">System.String</span> that represents this instance.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -3349,7 +4432,9 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_LocationChanged" data-uid="Telerik.Windows.Documents.DocumentPosition.LocationChanged"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_LocationChanged" class="expander" data-toggle="collapse">LocationChanged</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_LocationChanged" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Occurs when changing the coordinates of a position. 
+<p>For the caret position, this can be also achieved by typing, using the arrows keys or by clicking somewhere in the document.</p></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -3384,7 +4469,9 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_LocationChanging" data-uid="Telerik.Windows.Documents.DocumentPosition.LocationChanging"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_LocationChanging" class="expander" data-toggle="collapse">LocationChanging</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_LocationChanging" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Occurs before changing the coordinates of a position. 
+<p>For the caret position, this can be also achieved by typing, using the arrows keys or by clicking somewhere in the document.</p></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -3419,7 +4506,9 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_PositionChanged" data-uid="Telerik.Windows.Documents.DocumentPosition.PositionChanged"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_PositionChanged" class="expander" data-toggle="collapse">PositionChanged</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_PositionChanged" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Occurs when the position is moved. 
+<p>For the caret position, this can be also achieved using the arrows keys or by clicking somewhere in the document.</p></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -3454,7 +4543,9 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_PositionChanging" data-uid="Telerik.Windows.Documents.DocumentPosition.PositionChanging"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_PositionChanging" class="expander" data-toggle="collapse">PositionChanging</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_PositionChanging" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Occurs before the position is moved. 
+<p>For the caret position, this can be also achieved using the arrows keys or by clicking somewhere in the document.</p></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -3492,7 +4583,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_op_Equality_Telerik_Windows_Documents_DocumentPosition_Telerik_Windows_Documents_DocumentPosition_" data-uid="Telerik.Windows.Documents.DocumentPosition.op_Equality(Telerik.Windows.Documents.DocumentPosition,Telerik.Windows.Documents.DocumentPosition)"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_op_Equality_Telerik_Windows_Documents_DocumentPosition_Telerik_Windows_Documents_DocumentPosition_" class="expander" data-toggle="collapse">Equality(DocumentPosition, DocumentPosition)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_op_Equality_Telerik_Windows_Documents_DocumentPosition_Telerik_Windows_Documents_DocumentPosition_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Implements the operator ==.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -3506,14 +4598,16 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.DocumentPosition.html">DocumentPosition</a></span>
         <span class="parametername">position1</span>
-        <p>
+        <p><p>The first position.</p>
+</p>
       </td>
     </tr>
     <tr>
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.DocumentPosition.html">DocumentPosition</a></span>
         <span class="parametername">position2</span>
-        <p>
+        <p><p>The second position.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -3523,7 +4617,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <span class="xref">System.Boolean</span>
-        <p>
+        <p><p>The result of the operator.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -3545,7 +4640,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_op_GreaterThan_Telerik_Windows_Documents_DocumentPosition_Telerik_Windows_Documents_DocumentPosition_" data-uid="Telerik.Windows.Documents.DocumentPosition.op_GreaterThan(Telerik.Windows.Documents.DocumentPosition,Telerik.Windows.Documents.DocumentPosition)"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_op_GreaterThan_Telerik_Windows_Documents_DocumentPosition_Telerik_Windows_Documents_DocumentPosition_" class="expander" data-toggle="collapse">GreaterThan(DocumentPosition, DocumentPosition)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_op_GreaterThan_Telerik_Windows_Documents_DocumentPosition_Telerik_Windows_Documents_DocumentPosition_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Implements the operator &gt;.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -3559,14 +4655,16 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.DocumentPosition.html">DocumentPosition</a></span>
         <span class="parametername">position1</span>
-        <p>
+        <p><p>The first position.</p>
+</p>
       </td>
     </tr>
     <tr>
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.DocumentPosition.html">DocumentPosition</a></span>
         <span class="parametername">position2</span>
-        <p>
+        <p><p>The second position.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -3576,7 +4674,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <span class="xref">System.Boolean</span>
-        <p>
+        <p><p>The result of the operator.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -3598,7 +4697,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_op_GreaterThanOrEqual_Telerik_Windows_Documents_DocumentPosition_Telerik_Windows_Documents_DocumentPosition_" data-uid="Telerik.Windows.Documents.DocumentPosition.op_GreaterThanOrEqual(Telerik.Windows.Documents.DocumentPosition,Telerik.Windows.Documents.DocumentPosition)"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_op_GreaterThanOrEqual_Telerik_Windows_Documents_DocumentPosition_Telerik_Windows_Documents_DocumentPosition_" class="expander" data-toggle="collapse">GreaterThanOrEqual(DocumentPosition, DocumentPosition)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_op_GreaterThanOrEqual_Telerik_Windows_Documents_DocumentPosition_Telerik_Windows_Documents_DocumentPosition_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Implements the operator &gt;=.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -3612,14 +4712,16 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.DocumentPosition.html">DocumentPosition</a></span>
         <span class="parametername">position1</span>
-        <p>
+        <p><p>The first position.</p>
+</p>
       </td>
     </tr>
     <tr>
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.DocumentPosition.html">DocumentPosition</a></span>
         <span class="parametername">position2</span>
-        <p>
+        <p><p>The second position.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -3629,7 +4731,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <span class="xref">System.Boolean</span>
-        <p>
+        <p><p>The result of the operator.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -3651,7 +4754,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_op_Inequality_Telerik_Windows_Documents_DocumentPosition_Telerik_Windows_Documents_DocumentPosition_" data-uid="Telerik.Windows.Documents.DocumentPosition.op_Inequality(Telerik.Windows.Documents.DocumentPosition,Telerik.Windows.Documents.DocumentPosition)"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_op_Inequality_Telerik_Windows_Documents_DocumentPosition_Telerik_Windows_Documents_DocumentPosition_" class="expander" data-toggle="collapse">Inequality(DocumentPosition, DocumentPosition)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_op_Inequality_Telerik_Windows_Documents_DocumentPosition_Telerik_Windows_Documents_DocumentPosition_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Implements the operator !=.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -3665,14 +4769,16 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.DocumentPosition.html">DocumentPosition</a></span>
         <span class="parametername">position1</span>
-        <p>
+        <p><p>The first position.</p>
+</p>
       </td>
     </tr>
     <tr>
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.DocumentPosition.html">DocumentPosition</a></span>
         <span class="parametername">position2</span>
-        <p>
+        <p><p>The second position.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -3682,7 +4788,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <span class="xref">System.Boolean</span>
-        <p>
+        <p><p>The result of the operator.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -3704,7 +4811,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_op_LessThan_Telerik_Windows_Documents_DocumentPosition_Telerik_Windows_Documents_DocumentPosition_" data-uid="Telerik.Windows.Documents.DocumentPosition.op_LessThan(Telerik.Windows.Documents.DocumentPosition,Telerik.Windows.Documents.DocumentPosition)"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_op_LessThan_Telerik_Windows_Documents_DocumentPosition_Telerik_Windows_Documents_DocumentPosition_" class="expander" data-toggle="collapse">LessThan(DocumentPosition, DocumentPosition)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_op_LessThan_Telerik_Windows_Documents_DocumentPosition_Telerik_Windows_Documents_DocumentPosition_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Implements the operator &lt;.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -3718,14 +4826,16 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.DocumentPosition.html">DocumentPosition</a></span>
         <span class="parametername">position1</span>
-        <p>
+        <p><p>The first position.</p>
+</p>
       </td>
     </tr>
     <tr>
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.DocumentPosition.html">DocumentPosition</a></span>
         <span class="parametername">position2</span>
-        <p>
+        <p><p>The second position.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -3735,7 +4845,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <span class="xref">System.Boolean</span>
-        <p>
+        <p><p>The result of the operator.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -3757,7 +4868,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
   <h4 id="Telerik_Windows_Documents_DocumentPosition_op_LessThanOrEqual_Telerik_Windows_Documents_DocumentPosition_Telerik_Windows_Documents_DocumentPosition_" data-uid="Telerik.Windows.Documents.DocumentPosition.op_LessThanOrEqual(Telerik.Windows.Documents.DocumentPosition,Telerik.Windows.Documents.DocumentPosition)"><a href="#collapsible-Telerik_Windows_Documents_DocumentPosition_op_LessThanOrEqual_Telerik_Windows_Documents_DocumentPosition_Telerik_Windows_Documents_DocumentPosition_" class="expander" data-toggle="collapse">LessThanOrEqual(DocumentPosition, DocumentPosition)</a></h4>
   
   <div id="collapsible-Telerik_Windows_Documents_DocumentPosition_op_LessThanOrEqual_Telerik_Windows_Documents_DocumentPosition_Telerik_Windows_Documents_DocumentPosition_" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Implements the operator &lt;=.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
@@ -3771,14 +4883,16 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.DocumentPosition.html">DocumentPosition</a></span>
         <span class="parametername">position1</span>
-        <p>
+        <p><p>The first position.</p>
+</p>
       </td>
     </tr>
     <tr>
       <td>
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Documents.DocumentPosition.html">DocumentPosition</a></span>
         <span class="parametername">position2</span>
-        <p>
+        <p><p>The second position.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -3788,7 +4902,8 @@ public DocumentPosition(DocumentLayoutBox documentBox, bool trackDocumentChangeE
     <tr>
       <td>
         <span class="xref">System.Boolean</span>
-        <p>
+        <p><p>The result of the operator.</p>
+</p>
       </td>
     </tr>
   </table>

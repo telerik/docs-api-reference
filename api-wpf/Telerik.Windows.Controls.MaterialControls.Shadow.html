@@ -301,7 +301,7 @@ Avoid setting child element as any text in it would receive the DropShadowEffect
   
   <h4 id="Telerik_Windows_Controls_MaterialControls_Shadow_syntax">Syntax</h4>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Shadow : Border</code></pre>
+    <pre><code class="lang-csharp hljs">public class Shadow : Border, IThemable</code></pre>
   </div>
 
   
@@ -380,6 +380,42 @@ Default Value: 40.0 .</p>
   
   
   
+  <h4 id="Telerik_Windows_Controls_MaterialControls_Shadow_ShadowBrushProperty" data-uid="Telerik.Windows.Controls.MaterialControls.Shadow.ShadowBrushProperty"><a href="#collapsible-Telerik_Windows_Controls_MaterialControls_Shadow_ShadowBrushProperty" class="expander" data-toggle="collapse">ShadowBrushProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_MaterialControls_Shadow_ShadowBrushProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="Telerik.Windows.Controls.MaterialControls.Shadow.html#Telerik_Windows_Controls_MaterialControls_Shadow_ShadowBrush">ShadowBrush</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty ShadowBrushProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
   <h4 id="Telerik_Windows_Controls_MaterialControls_Shadow_ShadowDepthProperty" data-uid="Telerik.Windows.Controls.MaterialControls.Shadow.ShadowDepthProperty"><a href="#collapsible-Telerik_Windows_Controls_MaterialControls_Shadow_ShadowDepthProperty" class="expander" data-toggle="collapse">ShadowDepthProperty</a></h4>
   
   <div id="collapsible-Telerik_Windows_Controls_MaterialControls_Shadow_ShadowDepthProperty" class="collapse in">
@@ -391,6 +427,42 @@ Default Value: <a class="xref" href="Telerik.Windows.Controls.MaterialControls.M
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly DependencyProperty ShadowDepthProperty</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.DependencyProperty</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Controls_MaterialControls_Shadow_ThemeProperty" data-uid="Telerik.Windows.Controls.MaterialControls.Shadow.ThemeProperty"><a href="#collapsible-Telerik_Windows_Controls_MaterialControls_Shadow_ThemeProperty" class="expander" data-toggle="collapse">ThemeProperty</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_MaterialControls_Shadow_ThemeProperty" class="collapse in">
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="Telerik.Windows.Controls.MaterialControls.Shadow.html#Telerik_Windows_Controls_MaterialControls_Shadow_Theme">Theme</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty ThemeProperty</code></pre>
   </div>
 
   
@@ -455,6 +527,43 @@ Default Value: <a class="xref" href="Telerik.Windows.Controls.MaterialControls.M
   </div>
   
   
+  <a id="Telerik_Windows_Controls_MaterialControls_Shadow_ShadowBrush_" data-uid="Telerik.Windows.Controls.MaterialControls.Shadow.ShadowBrush*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_MaterialControls_Shadow_ShadowBrush" data-uid="Telerik.Windows.Controls.MaterialControls.Shadow.ShadowBrush"><a href="#collapsible-Telerik_Windows_Controls_MaterialControls_Shadow_ShadowBrush" class="expander" data-toggle="collapse">ShadowBrush</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_MaterialControls_Shadow_ShadowBrush" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or set the brush used for the drop shadow effect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SolidColorBrush ShadowBrush { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Windows.Media.SolidColorBrush</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
   <a id="Telerik_Windows_Controls_MaterialControls_Shadow_ShadowDepth_" data-uid="Telerik.Windows.Controls.MaterialControls.Shadow.ShadowDepth*"></a>
   
   <h4 id="Telerik_Windows_Controls_MaterialControls_Shadow_ShadowDepth" data-uid="Telerik.Windows.Controls.MaterialControls.Shadow.ShadowDepth"><a href="#collapsible-Telerik_Windows_Controls_MaterialControls_Shadow_ShadowDepth" class="expander" data-toggle="collapse">ShadowDepth</a></h4>
@@ -482,6 +591,183 @@ Default Value: <a class="xref" href="Telerik.Windows.Controls.MaterialControls.M
       </td>
     </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_MaterialControls_Shadow_Theme_" data-uid="Telerik.Windows.Controls.MaterialControls.Shadow.Theme*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_MaterialControls_Shadow_Theme" data-uid="Telerik.Windows.Controls.MaterialControls.Shadow.Theme"><a href="#collapsible-Telerik_Windows_Controls_MaterialControls_Shadow_Theme" class="expander" data-toggle="collapse">Theme</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_MaterialControls_Shadow_Theme" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the <a class="xref" href="Telerik.Windows.Controls.MaterialControls.Shadow.html#Telerik_Windows_Controls_MaterialControls_Shadow_Theme">Theme</a> of the <a class="xref" href="Telerik.Windows.Controls.MaterialControls.Shadow.html">Shadow</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Theme Theme { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Telerik.Windows.Controls.Theme.html">Theme</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Telerik_Windows_Controls_MaterialControls_Shadow_FromShadowResourceDictionary_" data-uid="Telerik.Windows.Controls.MaterialControls.Shadow.FromShadowResourceDictionary*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_MaterialControls_Shadow_FromShadowResourceDictionary_System_Windows_ResourceDictionary_Telerik_Windows_Controls_Theme_" data-uid="Telerik.Windows.Controls.MaterialControls.Shadow.FromShadowResourceDictionary(System.Windows.ResourceDictionary,Telerik.Windows.Controls.Theme)"><a href="#collapsible-Telerik_Windows_Controls_MaterialControls_Shadow_FromShadowResourceDictionary_System_Windows_ResourceDictionary_Telerik_Windows_Controls_Theme_" class="expander" data-toggle="collapse">FromShadowResourceDictionary(ResourceDictionary, Theme)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_MaterialControls_Shadow_FromShadowResourceDictionary_System_Windows_ResourceDictionary_Telerik_Windows_Controls_Theme_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds to the internal shadows array a <span class="xref">System.Windows.ResourceDictionary</span> containing definitions of the required shadow depths.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FromShadowResourceDictionary(ResourceDictionary dictionary, Theme theme)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Windows.ResourceDictionary</span></span>
+        <span class="parametername">dictionary</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Telerik.Windows.Controls.Theme.html">Theme</a></span>
+        <span class="parametername">theme</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_MaterialControls_Shadow_OnInitialized_" data-uid="Telerik.Windows.Controls.MaterialControls.Shadow.OnInitialized*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_MaterialControls_Shadow_OnInitialized_System_EventArgs_" data-uid="Telerik.Windows.Controls.MaterialControls.Shadow.OnInitialized(System.EventArgs)"><a href="#collapsible-Telerik_Windows_Controls_MaterialControls_Shadow_OnInitialized_System_EventArgs_" class="expander" data-toggle="collapse">OnInitialized(EventArgs)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_MaterialControls_Shadow_OnInitialized_System_EventArgs_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnInitialized(EventArgs e)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.EventArgs</span></span>
+        <span class="parametername">e</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_MaterialControls_Shadow_ResetTheme_" data-uid="Telerik.Windows.Controls.MaterialControls.Shadow.ResetTheme*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_MaterialControls_Shadow_ResetTheme" data-uid="Telerik.Windows.Controls.MaterialControls.Shadow.ResetTheme"><a href="#collapsible-Telerik_Windows_Controls_MaterialControls_Shadow_ResetTheme" class="expander" data-toggle="collapse">ResetTheme()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_MaterialControls_Shadow_ResetTheme" class="collapse in">
+  <div class="markdown level1 summary"><p>Resets the theme in StyleManager scenario.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetTheme()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Controls_MaterialControls_Shadow_SetDefaultStyleKey_" data-uid="Telerik.Windows.Controls.MaterialControls.Shadow.SetDefaultStyleKey*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_MaterialControls_Shadow_SetDefaultStyleKey" data-uid="Telerik.Windows.Controls.MaterialControls.Shadow.SetDefaultStyleKey"><a href="#collapsible-Telerik_Windows_Controls_MaterialControls_Shadow_SetDefaultStyleKey" class="expander" data-toggle="collapse">SetDefaultStyleKey()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_MaterialControls_Shadow_SetDefaultStyleKey" class="collapse in">
+  <div class="markdown level1 summary"><p>Sets the default style key for StyleManager based on the current theme.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetDefaultStyleKey()</code></pre>
+  </div>
+
+  
+  
+  
+  
   
   
   
