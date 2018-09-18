@@ -1,0 +1,6739 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Telerik UI - API ReferenceClass KnownColor
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="restype" content="api">
+    <meta name="title" content="Class KnownColor
+   ">
+    <meta name="generator" content="docfx 2.36.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="https://d6vtbcy3ong79.cloudfront.net/telerik-navigation/1.0.28/css/index.min.css">
+    <link rel="stylesheet" href="https://d6vtbcy3ong79.cloudfront.net/fonts/1.1.5/css/metric.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,500,700">
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- Google Tag Manager -->
+          <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-6X92');</script>
+          <!-- End Google Tag Manager -->
+          <script>	
+              var e = document.documentElement;	
+              e.className = e.className.replace(/(^|\s)no-js(\s|$)/i, "$2");	
+          </script>
+          
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//kendo.cdn.telerik.com/2017.3.1026/js/kendo.web.min.js"></script>
+    <script src="//cdn.optimizely.com/js/2380340583.js"></script>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        <aside class="TK-Hat">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-8 col-xl-offset-2">
+                <div class="row">
+                  <div class="col-md-12 col-xl-10 col-xl-offset-1">
+                    <figure class="TK-Hat-Brand">
+                      <a href="https://www.progress.com" class="TK-PRGS-Logo" data-gtm-event="top-nav, text, progress-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="94" height="40" viewbox="0 0 512 120">
+                          <path fill="#5ce500" d="M95.52 29.33v51a3.93 3.93 0 0 1-1.78 3.08l-1.67 1-12.72 7.35-8.59 5-1.78 1V42.6L21.23 15 43.91 1.93 46 .74a3.94 3.94 0 0 1 3.56 0L81 18.9l14.51 8.38v2.05zM58.36 48.72l-9.79-5.66-22.91-13.23a4 4 0 0 0-3.56 0L1.77 41.57 0 42.6l34.49 19.91v39.83l20.3-11.73 1.79-1a3.94 3.94 0 0 0 1.78-3.08V48.72zM0 82.43l23.86 13.78V68.63z"></path>
+                          <path fill="#4b4e52" d="M148.09 27.28h-26v70.48h11.55V70.1h14.57c15.77 0 24.45-7.7 24.45-21.69 0-6.35-2.4-21.12-24.55-21.12m12.78 21.31c0 7.95-4.12 11.19-14.24 11.19h-13v-22.1h14.57c8.56 0 12.71 3.57 12.71 10.91M207 46.41l.87.42-2 10.42-1.35-.42a11.32 11.32 0 0 0-3.34-.51c-10.79 0-11.67 8.59-11.67 19v22.44h-10.64V46h10v6.24c2.73-4.2 6-6.37 10.37-6.9a14.55 14.55 0 0 1 7.76 1.07M233.29 45c-8.42 0-15.16 3.2-19.5 9.27-4.56 6.37-5.23 13.85-5.23 17.74 0 16.36 9.7 26.92 24.73 26.92 18.26 0 24.73-14.71 24.73-27.3 0-7.25-2.15-13.82-6-18.51-4.41-5.31-10.87-8.12-18.7-8.12m0 44.38c-8.37 0-13.57-6.66-13.57-17.37s5.2-17.55 13.57-17.55S247 61.23 247 71.78c0 10.83-5.24 17.56-13.66 17.56m114.55-42.93l.87.42-2 10.42-1.35-.42a11.26 11.26 0 0 0-3.33-.51c-10.78 0-11.66 8.59-11.66 19v22.44h-10.66V46h10v6.24c2.73-4.2 6-6.37 10.37-6.9a14.54 14.54 0 0 1 7.73 1.06m38.4 34.76l-.2.57c-2.23 6.36-7.57 7.7-11.65 7.7-8.09 0-13.3-5.37-13.81-14.09h36.59l.13-1a31.26 31.26 0 0 0 .12-4.12v-.93C396.93 54.78 387.48 45 374 45c-7.9 0-14.37 3.1-18.73 9a30.85 30.85 0 0 0-5.54 18c0 16 9.95 26.74 24.74 26.74 11.45 0 19.33-5.82 22.2-16.38l.33-1.2h-10.7zM361 66.05c.9-7.17 5.81-11.73 12.79-11.73 5.33 0 11.64 3.1 12.52 11.73H361zm-60.7-15.71c-3.45-3.58-8.06-5.39-13.76-5.39-15.69 0-22.83 13.81-22.83 26.63 0 13.16 7.06 26.44 22.83 26.44a18.33 18.33 0 0 0 13.35-5.42c0 2.28-.1 4.45-.16 5.38-.58 8.54-4.68 12.51-12.91 12.51-4.47 0-9.61-1.59-10.6-6l-.22-1h-10.54l.17 1.41c1.1 9.12 9.11 14.79 20.9 14.79 10.34 0 17.7-3.9 21.28-11.26 1.73-3.55 2.6-8.72 2.6-15.37V46h-10.13v4.34zm-13.11 38.15c-3.74 0-12.43-1.69-12.43-17.37 0-10.3 4.87-16.7 12.71-16.7 6.06 0 12.52 4.39 12.52 16.7 0 10.87-4.79 17.37-12.81 17.37m159.67-6.31c0 8.23-6.83 16.53-22.09 16.53-13.5 0-21.53-5.85-22.61-16.45l-.15-1.1h10.52l.21.84c1.29 6.38 7.37 7.72 12.24 7.72 5.34 0 11-1.72 11-6.54 0-2.44-1.59-4.18-4.73-5.16-1.86-.55-4.15-1.2-6.56-1.87-4.16-1.16-8.47-2.38-11.12-3.29-6.56-2.35-10.33-6.93-10.33-12.56 0-10.43 10.16-15.11 20.22-15.11 13.46 0 20.42 5.07 21.3 15.49l.09 1.07H434.5l-.14-.82c-1-6-7-6.9-10.48-6.9-3 0-10 .53-10 5.5 0 2.25 1.93 3.91 5.89 5.06 1.18.33 2.94.78 5 1.31 4.22 1.09 9.48 2.46 12.13 3.37 6.59 2.32 9.93 6.67 9.93 13m49.39 0c0 8.23-6.83 16.53-22.09 16.53-13.5 0-21.53-5.85-22.61-16.45l-.11-1.09H462l.12.74c1.29 6.38 7.37 7.72 12.24 7.72 5.34 0 11-1.72 11-6.54 0-2.44-1.59-4.18-4.72-5.16-1.86-.55-4.15-1.2-6.57-1.87-4.16-1.16-8.46-2.38-11.11-3.29-6.57-2.35-10.33-6.93-10.33-12.56 0-10.43 10.16-15.11 20.22-15.11 13.46 0 20.42 5.07 21.29 15.49l.09 1.07H483.9l-.14-.82c-1-6-7-6.9-10.48-6.9-3 0-9.95.53-9.95 5.5 0 2.25 1.93 3.91 5.89 5.06 1.18.33 2.94.78 5 1.31 4.22 1.09 9.48 2.46 12.13 3.37 6.58 2.32 9.93 6.67 9.93 13m8.43-30.78a7.37 7.37 0 1 1 7.29-7.37 7.23 7.23 0 0 1-7.29 7.37m0-13.49a6.12 6.12 0 1 0 6 6.12 5.91 5.91 0 0 0-6-6.12m-.85 7.49v2.46h-2.17v-7.74h3.62a2.58 2.58 0 0 1 2.86 2.7 2.26 2.26 0 0 1-1.49 2.34l1.77 2.7H506l-1.49-2.46h-.68zm1.21-3.49h-1.21v1.73h1.21a.86.86 0 0 0 1-.85.88.88 0 0 0-1-.89"></path>
+                        </svg>
+                      </a>
+                    </figure>
+        
+                    <div class="TK-Hat-Aside TK--Desktop">
+                      <ul class="TK-Hat-Menu">
+                        <li class="TK-Hat-Menu-Item">
+                          <a href="https://www.progress.com/company" class="TK-Hat-Menu-Link" data-gtm-event="top-nav, text, company">Company <i class="TK-Arrow"></i></a>
+                          <ul class="TK-Dropdown TK-Dropdown--Small TK-Dropdown--White">
+                            <li><a href="https://www.progress.com/company" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, company-overview">Company Overview</a></li>
+                            <li><a href="https://www.progress.com/company/leadership#exec" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, leadership">Leadership</a></li>
+                            <li><a href="http://investors.progress.com" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, investor-relations">Investor Relations</a></li>
+                            <li><a href="http://investors.progress.com/releases.cfm" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, press-releases">Press Releases</a></li>
+                            <li><a href="https://www.progress.com/company/press-coverage" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, press-coverage">Press Coverage</a></li>
+                            <li><a href="https://www.progress.com/events" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, events">Events</a></li>
+                            <li><a href="https://www.progress.com/company/awards" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, awards">Awards</a></li>
+                            <li><a href="https://www.progress.com/blogs" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, corporate-blog">Corporate Blog</a></li>
+                            <li><a href="https://www.progress.com/customers" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, customers">Customers</a></li>
+                            <li><a href="https://www.progress.com/company/careers" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, careers">Careers</a></li>
+                            <li><a href="https://www.progress.com/company/offices" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, offices">Offices</a></li>
+                          </ul>
+                        </li>
+        
+                        <li class="TK-Hat-Menu-Item">
+                          <a href="https://www.progress.com/products" class="TK-Hat-Menu-Link" data-gtm-event="technology.track">Technology <i class="TK-Arrow"></i></a>
+                          <ul class="TK-Dropdown TK-Dropdown--Medium TK-Dropdown--White">
+                            <li><a href="https://www.progress.com/app-development-deployment" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, app-dev-deploy">Application Development
+                                and Deployment</a></li>
+                            <li><a href="https://www.progress.com/back-end-as-a-service" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, baas">BaaS Platform</a></li>
+                            <li><a href="https://www.progress.com/data-connectivity-integration" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, dci">Data Connectivity and Integration</a></li>
+                            <li><a href="https://www.progress.com/web-content-management" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, wcm">Web Content Management</a></li>
+                            <li><a href="https://www.progress.com/predictive-analytics" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, predictive-analytics">Predictive Analytics</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+        
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <nav class="navbar navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-8 col-xl-offset-2">
+                <div class="row">
+                  <div class="nav-container col-md-12 col-lg-8 col-lg-offset-2 col-xl-10 col-xl-offset-1">
+                    <div id="navbar" class="nav navbar-collapse">
+                      <a class="button all-components">
+                        <span class="item-expanded"></span>
+                      </a>
+                      <a class="navbar-brand brand-platform-silverlight" href="/devtools/silverlight/">
+                        <span class="sr-only">Telerik UI for Silverlight</span>
+                      </a>
+        
+                      <select id="nav-dropdown">
+                        <option selected="">Navigate to...
+        
+                        <option value="https://demos.telerik.com/silverlight/" onclick="trackItemFromCurrentPage('docs-navigation', 'Demos')">Demos
+        
+                        <option value="https://www.telerik.com/support/whats-new/silverlight/release-history" onclick="trackItemFromCurrentPage('docs-navigation', 'Release History')">Release History
+        
+                        <option value="http://www.telerik.com/products/silverlight/overview.aspx" onclick="trackItemFromCurrentPage('docs-navigation', 'About')">About
+        
+                        <option value="http://www.telerik.com/purchase/individual/silverlight.aspx" onclick="trackItemFromCurrentPage('docs-navigation', 'Pricing')">Pricing
+        
+                      </select>
+        
+                      <ul class="nav navbar-nav main-menu">
+        
+                        <li>
+                          <a href="https://demos.telerik.com/silverlight/" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'Demos')">Demos</a>
+                        </li>
+        
+                        <li>
+                          <a href="https://www.telerik.com/support/whats-new/silverlight/release-history" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'Release History')">Release History</a>
+                        </li>
+        
+                        <li>
+                          <a href="http://www.telerik.com/products/silverlight/overview.aspx" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'About')">About</a>
+                        </li>
+        
+                        <li>
+                          <a href="http://www.telerik.com/purchase/individual/silverlight.aspx" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'Pricing')">Pricing</a>
+                        </li>
+        
+        
+        
+                        <li class="hidden-xs">
+                          <a class="search-icon">
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewbox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+        <path fill="#FFFFFF" d="M6.499,1.985C3.461,1.985,1,4.449,1,7.484c0,3.039,2.461,5.5,5.499,5.5c3.037,0,5.498-2.461,5.498-5.5
+        	C11.996,4.449,9.535,1.985,6.499,1.985z M6.499,11.885c-2.429,0-4.399-1.97-4.399-4.401c0-2.429,1.97-4.399,4.399-4.399
+        	c2.429,0,4.399,1.97,4.399,4.399C10.897,9.915,8.928,11.885,6.499,11.885z M13.828,13.746c0,1.179,0.109,1.067-1.069,1.067
+        	l-1.678-1.678c0-1.177-0.109-1.067,1.069-1.067L13.828,13.746z"></path>
+        </svg>
+        
+                            &nbsp;
+                            <span class="sr-only">Search</span>
+                          </a>
+                          <div class="global-search">
+                            <form action="/devtools/silverlight/search" method="get">
+                              <div class="search-input-container">
+                                <input id="local-search" placeholder="Search for &hellip;" name="q">
+                                <div id='refine-search-container'>
+                                  <div id='refine-search-button' class='unselectable'>
+                                    <span id='refine-search-label' data-bind='text: label'></span>
+                                    <span class='k-icon k-i-arrow-chevron-down'></span>
+                                  </div>
+                                </div>
+                                <div id="refine-search-popup" style="display: none">
+                                  <ul>
+                                    <li>
+                                      <label class="custom-checkbox unselectable">
+                                        <input type="checkbox" data-bind="checked: documentation"><span class="k-icon k-i-check"></span>Search in Documentation
+                                      </label>
+                                    </li>
+        
+                                    <li>
+                                      <label class="custom-checkbox unselectable">
+                                        <input type="checkbox" disabled="true" data-bind="checked: api"><span class="k-icon k-i-check"></span>Search in API Reference
+                                      </label>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </form>
+        
+                            <script>
+                              var gcsInstance = '011354416605164361800:ebfuug7ih7i';
+                              var gcsKey = 'AIzaSyDftzENpfk47-cyaNfxh-exsWmz0ggRARM';
+                              isKbPage =  false ;
+                              siteHasKbPortal = ''
+                            </script>
+        
+                            <script type="text/javascript" src="/devtools/silverlight/assets/search-results.js"></script>
+        
+                          </div>
+                        </li>
+        
+        
+                        <li class="primary-cta">
+                          <a href="http://www.telerik.com/products/silverlight/download.aspx" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'Try now')">Try now</a>
+                        </li>
+        
+                      </ul>
+                    </div>
+        
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+        </nav>
+        
+        <script>
+        
+          var searchContainer = $(".global-search");
+        
+          function hideSearch(e){
+          if (!searchContainer.is(e.target) &&
+          searchContainer.has(e.target).length === 0 &&
+          $(e.target).parents("#refine-search-popup").length === 0) {
+          setTimeout(function(e) {
+          searchContainer.removeClass("show-search");
+          $(document).off('click', hideSearch);
+          }, 200)
+          }
+          }
+        
+          function showSearch() {
+        
+          searchContainer.toggleClass("show-search")
+          .one("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(e) {
+          if (searchContainer.hasClass("show-search")) {
+          searchContainer.find("input:first")
+          .focus();
+          $(document).on("click", hideSearch);
+          }
+          });
+          }
+        
+          $(document).off("click", ".search-icon")
+          .on("click", ".search-icon", showSearch);
+        
+        
+          function navigate(e) {
+          trackItemFromCurrentPage('docs-navigation', e.target.children[e.target.selectedIndex].text);
+          window.open(e.target.value, "_blank");
+          }
+        
+        
+          var trackItemFromCurrentPage = function (category, action) {
+          trackItem(category, action, window.location.href);
+          };
+        
+          var trackItem = function (category, action, label) {
+          dataLayer.push({
+          'event': 'virtualEvent',
+          'eventCategory': category,
+          'eventAction': action,
+          'eventLabel': label,
+          });
+          };
+          
+          $(document)
+          .off("change", "#nav-dropdown")
+          .on("change", "#nav-dropdown", navigate);
+        </script>
+        
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav side-nav hide-when-search">
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc">
+             
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-9">
+            <article class="content wrap" id="_content" data-uid="System.Drawing.KnownColor">
+  <h1 id="System_Drawing_KnownColor" data-uid="System.Drawing.KnownColor">Class KnownColor
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">KnownColor</span></div>
+  </div>
+  
+  
+  
+  <h5><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h5>
+  <h5><strong>Assembly</strong>: Telerik.Windows.Documents.dll</h5>
+  
+  <h4 id="System_Drawing_KnownColor_syntax">Syntax</h4>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class KnownColor : Enum</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_ActiveBorder" data-uid="System.Drawing.KnownColor.ActiveBorder"><a href="#collapsible-System_Drawing_KnownColor_ActiveBorder" class="expander" data-toggle="collapse">ActiveBorder</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_ActiveBorder" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor ActiveBorder</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_ActiveCaption" data-uid="System.Drawing.KnownColor.ActiveCaption"><a href="#collapsible-System_Drawing_KnownColor_ActiveCaption" class="expander" data-toggle="collapse">ActiveCaption</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_ActiveCaption" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor ActiveCaption</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_ActiveCaptionText" data-uid="System.Drawing.KnownColor.ActiveCaptionText"><a href="#collapsible-System_Drawing_KnownColor_ActiveCaptionText" class="expander" data-toggle="collapse">ActiveCaptionText</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_ActiveCaptionText" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor ActiveCaptionText</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_AliceBlue" data-uid="System.Drawing.KnownColor.AliceBlue"><a href="#collapsible-System_Drawing_KnownColor_AliceBlue" class="expander" data-toggle="collapse">AliceBlue</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_AliceBlue" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor AliceBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_AntiqueWhite" data-uid="System.Drawing.KnownColor.AntiqueWhite"><a href="#collapsible-System_Drawing_KnownColor_AntiqueWhite" class="expander" data-toggle="collapse">AntiqueWhite</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_AntiqueWhite" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor AntiqueWhite</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_AppWorkspace" data-uid="System.Drawing.KnownColor.AppWorkspace"><a href="#collapsible-System_Drawing_KnownColor_AppWorkspace" class="expander" data-toggle="collapse">AppWorkspace</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_AppWorkspace" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor AppWorkspace</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Aqua" data-uid="System.Drawing.KnownColor.Aqua"><a href="#collapsible-System_Drawing_KnownColor_Aqua" class="expander" data-toggle="collapse">Aqua</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Aqua" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Aqua</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Aquamarine" data-uid="System.Drawing.KnownColor.Aquamarine"><a href="#collapsible-System_Drawing_KnownColor_Aquamarine" class="expander" data-toggle="collapse">Aquamarine</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Aquamarine" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Aquamarine</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Azure" data-uid="System.Drawing.KnownColor.Azure"><a href="#collapsible-System_Drawing_KnownColor_Azure" class="expander" data-toggle="collapse">Azure</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Azure" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Azure</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Beige" data-uid="System.Drawing.KnownColor.Beige"><a href="#collapsible-System_Drawing_KnownColor_Beige" class="expander" data-toggle="collapse">Beige</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Beige" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Beige</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Bisque" data-uid="System.Drawing.KnownColor.Bisque"><a href="#collapsible-System_Drawing_KnownColor_Bisque" class="expander" data-toggle="collapse">Bisque</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Bisque" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Bisque</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Black" data-uid="System.Drawing.KnownColor.Black"><a href="#collapsible-System_Drawing_KnownColor_Black" class="expander" data-toggle="collapse">Black</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Black" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Black</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_BlanchedAlmond" data-uid="System.Drawing.KnownColor.BlanchedAlmond"><a href="#collapsible-System_Drawing_KnownColor_BlanchedAlmond" class="expander" data-toggle="collapse">BlanchedAlmond</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_BlanchedAlmond" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor BlanchedAlmond</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Blue" data-uid="System.Drawing.KnownColor.Blue"><a href="#collapsible-System_Drawing_KnownColor_Blue" class="expander" data-toggle="collapse">Blue</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Blue" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Blue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_BlueViolet" data-uid="System.Drawing.KnownColor.BlueViolet"><a href="#collapsible-System_Drawing_KnownColor_BlueViolet" class="expander" data-toggle="collapse">BlueViolet</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_BlueViolet" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor BlueViolet</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Brown" data-uid="System.Drawing.KnownColor.Brown"><a href="#collapsible-System_Drawing_KnownColor_Brown" class="expander" data-toggle="collapse">Brown</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Brown" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Brown</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_BurlyWood" data-uid="System.Drawing.KnownColor.BurlyWood"><a href="#collapsible-System_Drawing_KnownColor_BurlyWood" class="expander" data-toggle="collapse">BurlyWood</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_BurlyWood" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor BurlyWood</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_ButtonFace" data-uid="System.Drawing.KnownColor.ButtonFace"><a href="#collapsible-System_Drawing_KnownColor_ButtonFace" class="expander" data-toggle="collapse">ButtonFace</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_ButtonFace" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor ButtonFace</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_ButtonHighlight" data-uid="System.Drawing.KnownColor.ButtonHighlight"><a href="#collapsible-System_Drawing_KnownColor_ButtonHighlight" class="expander" data-toggle="collapse">ButtonHighlight</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_ButtonHighlight" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor ButtonHighlight</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_ButtonShadow" data-uid="System.Drawing.KnownColor.ButtonShadow"><a href="#collapsible-System_Drawing_KnownColor_ButtonShadow" class="expander" data-toggle="collapse">ButtonShadow</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_ButtonShadow" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor ButtonShadow</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_CadetBlue" data-uid="System.Drawing.KnownColor.CadetBlue"><a href="#collapsible-System_Drawing_KnownColor_CadetBlue" class="expander" data-toggle="collapse">CadetBlue</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_CadetBlue" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor CadetBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Chartreuse" data-uid="System.Drawing.KnownColor.Chartreuse"><a href="#collapsible-System_Drawing_KnownColor_Chartreuse" class="expander" data-toggle="collapse">Chartreuse</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Chartreuse" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Chartreuse</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Chocolate" data-uid="System.Drawing.KnownColor.Chocolate"><a href="#collapsible-System_Drawing_KnownColor_Chocolate" class="expander" data-toggle="collapse">Chocolate</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Chocolate" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Chocolate</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Control" data-uid="System.Drawing.KnownColor.Control"><a href="#collapsible-System_Drawing_KnownColor_Control" class="expander" data-toggle="collapse">Control</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Control" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Control</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_ControlDark" data-uid="System.Drawing.KnownColor.ControlDark"><a href="#collapsible-System_Drawing_KnownColor_ControlDark" class="expander" data-toggle="collapse">ControlDark</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_ControlDark" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor ControlDark</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_ControlDarkDark" data-uid="System.Drawing.KnownColor.ControlDarkDark"><a href="#collapsible-System_Drawing_KnownColor_ControlDarkDark" class="expander" data-toggle="collapse">ControlDarkDark</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_ControlDarkDark" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor ControlDarkDark</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_ControlLight" data-uid="System.Drawing.KnownColor.ControlLight"><a href="#collapsible-System_Drawing_KnownColor_ControlLight" class="expander" data-toggle="collapse">ControlLight</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_ControlLight" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor ControlLight</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_ControlLightLight" data-uid="System.Drawing.KnownColor.ControlLightLight"><a href="#collapsible-System_Drawing_KnownColor_ControlLightLight" class="expander" data-toggle="collapse">ControlLightLight</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_ControlLightLight" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor ControlLightLight</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_ControlText" data-uid="System.Drawing.KnownColor.ControlText"><a href="#collapsible-System_Drawing_KnownColor_ControlText" class="expander" data-toggle="collapse">ControlText</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_ControlText" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor ControlText</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Coral" data-uid="System.Drawing.KnownColor.Coral"><a href="#collapsible-System_Drawing_KnownColor_Coral" class="expander" data-toggle="collapse">Coral</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Coral" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Coral</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_CornflowerBlue" data-uid="System.Drawing.KnownColor.CornflowerBlue"><a href="#collapsible-System_Drawing_KnownColor_CornflowerBlue" class="expander" data-toggle="collapse">CornflowerBlue</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_CornflowerBlue" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor CornflowerBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Cornsilk" data-uid="System.Drawing.KnownColor.Cornsilk"><a href="#collapsible-System_Drawing_KnownColor_Cornsilk" class="expander" data-toggle="collapse">Cornsilk</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Cornsilk" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Cornsilk</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Crimson" data-uid="System.Drawing.KnownColor.Crimson"><a href="#collapsible-System_Drawing_KnownColor_Crimson" class="expander" data-toggle="collapse">Crimson</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Crimson" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Crimson</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Cyan" data-uid="System.Drawing.KnownColor.Cyan"><a href="#collapsible-System_Drawing_KnownColor_Cyan" class="expander" data-toggle="collapse">Cyan</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Cyan" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Cyan</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_DarkBlue" data-uid="System.Drawing.KnownColor.DarkBlue"><a href="#collapsible-System_Drawing_KnownColor_DarkBlue" class="expander" data-toggle="collapse">DarkBlue</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_DarkBlue" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor DarkBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_DarkCyan" data-uid="System.Drawing.KnownColor.DarkCyan"><a href="#collapsible-System_Drawing_KnownColor_DarkCyan" class="expander" data-toggle="collapse">DarkCyan</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_DarkCyan" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor DarkCyan</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_DarkGoldenrod" data-uid="System.Drawing.KnownColor.DarkGoldenrod"><a href="#collapsible-System_Drawing_KnownColor_DarkGoldenrod" class="expander" data-toggle="collapse">DarkGoldenrod</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_DarkGoldenrod" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor DarkGoldenrod</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_DarkGray" data-uid="System.Drawing.KnownColor.DarkGray"><a href="#collapsible-System_Drawing_KnownColor_DarkGray" class="expander" data-toggle="collapse">DarkGray</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_DarkGray" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor DarkGray</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_DarkGreen" data-uid="System.Drawing.KnownColor.DarkGreen"><a href="#collapsible-System_Drawing_KnownColor_DarkGreen" class="expander" data-toggle="collapse">DarkGreen</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_DarkGreen" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor DarkGreen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_DarkKhaki" data-uid="System.Drawing.KnownColor.DarkKhaki"><a href="#collapsible-System_Drawing_KnownColor_DarkKhaki" class="expander" data-toggle="collapse">DarkKhaki</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_DarkKhaki" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor DarkKhaki</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_DarkMagenta" data-uid="System.Drawing.KnownColor.DarkMagenta"><a href="#collapsible-System_Drawing_KnownColor_DarkMagenta" class="expander" data-toggle="collapse">DarkMagenta</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_DarkMagenta" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor DarkMagenta</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_DarkOliveGreen" data-uid="System.Drawing.KnownColor.DarkOliveGreen"><a href="#collapsible-System_Drawing_KnownColor_DarkOliveGreen" class="expander" data-toggle="collapse">DarkOliveGreen</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_DarkOliveGreen" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor DarkOliveGreen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_DarkOrange" data-uid="System.Drawing.KnownColor.DarkOrange"><a href="#collapsible-System_Drawing_KnownColor_DarkOrange" class="expander" data-toggle="collapse">DarkOrange</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_DarkOrange" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor DarkOrange</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_DarkOrchid" data-uid="System.Drawing.KnownColor.DarkOrchid"><a href="#collapsible-System_Drawing_KnownColor_DarkOrchid" class="expander" data-toggle="collapse">DarkOrchid</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_DarkOrchid" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor DarkOrchid</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_DarkRed" data-uid="System.Drawing.KnownColor.DarkRed"><a href="#collapsible-System_Drawing_KnownColor_DarkRed" class="expander" data-toggle="collapse">DarkRed</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_DarkRed" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor DarkRed</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_DarkSalmon" data-uid="System.Drawing.KnownColor.DarkSalmon"><a href="#collapsible-System_Drawing_KnownColor_DarkSalmon" class="expander" data-toggle="collapse">DarkSalmon</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_DarkSalmon" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor DarkSalmon</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_DarkSeaGreen" data-uid="System.Drawing.KnownColor.DarkSeaGreen"><a href="#collapsible-System_Drawing_KnownColor_DarkSeaGreen" class="expander" data-toggle="collapse">DarkSeaGreen</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_DarkSeaGreen" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor DarkSeaGreen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_DarkSlateBlue" data-uid="System.Drawing.KnownColor.DarkSlateBlue"><a href="#collapsible-System_Drawing_KnownColor_DarkSlateBlue" class="expander" data-toggle="collapse">DarkSlateBlue</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_DarkSlateBlue" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor DarkSlateBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_DarkSlateGray" data-uid="System.Drawing.KnownColor.DarkSlateGray"><a href="#collapsible-System_Drawing_KnownColor_DarkSlateGray" class="expander" data-toggle="collapse">DarkSlateGray</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_DarkSlateGray" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor DarkSlateGray</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_DarkTurquoise" data-uid="System.Drawing.KnownColor.DarkTurquoise"><a href="#collapsible-System_Drawing_KnownColor_DarkTurquoise" class="expander" data-toggle="collapse">DarkTurquoise</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_DarkTurquoise" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor DarkTurquoise</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_DarkViolet" data-uid="System.Drawing.KnownColor.DarkViolet"><a href="#collapsible-System_Drawing_KnownColor_DarkViolet" class="expander" data-toggle="collapse">DarkViolet</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_DarkViolet" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor DarkViolet</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_DeepPink" data-uid="System.Drawing.KnownColor.DeepPink"><a href="#collapsible-System_Drawing_KnownColor_DeepPink" class="expander" data-toggle="collapse">DeepPink</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_DeepPink" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor DeepPink</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_DeepSkyBlue" data-uid="System.Drawing.KnownColor.DeepSkyBlue"><a href="#collapsible-System_Drawing_KnownColor_DeepSkyBlue" class="expander" data-toggle="collapse">DeepSkyBlue</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_DeepSkyBlue" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor DeepSkyBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Desktop" data-uid="System.Drawing.KnownColor.Desktop"><a href="#collapsible-System_Drawing_KnownColor_Desktop" class="expander" data-toggle="collapse">Desktop</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Desktop" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Desktop</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_DimGray" data-uid="System.Drawing.KnownColor.DimGray"><a href="#collapsible-System_Drawing_KnownColor_DimGray" class="expander" data-toggle="collapse">DimGray</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_DimGray" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor DimGray</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_DodgerBlue" data-uid="System.Drawing.KnownColor.DodgerBlue"><a href="#collapsible-System_Drawing_KnownColor_DodgerBlue" class="expander" data-toggle="collapse">DodgerBlue</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_DodgerBlue" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor DodgerBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Firebrick" data-uid="System.Drawing.KnownColor.Firebrick"><a href="#collapsible-System_Drawing_KnownColor_Firebrick" class="expander" data-toggle="collapse">Firebrick</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Firebrick" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Firebrick</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_FloralWhite" data-uid="System.Drawing.KnownColor.FloralWhite"><a href="#collapsible-System_Drawing_KnownColor_FloralWhite" class="expander" data-toggle="collapse">FloralWhite</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_FloralWhite" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor FloralWhite</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_ForestGreen" data-uid="System.Drawing.KnownColor.ForestGreen"><a href="#collapsible-System_Drawing_KnownColor_ForestGreen" class="expander" data-toggle="collapse">ForestGreen</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_ForestGreen" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor ForestGreen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Fuchsia" data-uid="System.Drawing.KnownColor.Fuchsia"><a href="#collapsible-System_Drawing_KnownColor_Fuchsia" class="expander" data-toggle="collapse">Fuchsia</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Fuchsia" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Fuchsia</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Gainsboro" data-uid="System.Drawing.KnownColor.Gainsboro"><a href="#collapsible-System_Drawing_KnownColor_Gainsboro" class="expander" data-toggle="collapse">Gainsboro</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Gainsboro" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Gainsboro</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_GhostWhite" data-uid="System.Drawing.KnownColor.GhostWhite"><a href="#collapsible-System_Drawing_KnownColor_GhostWhite" class="expander" data-toggle="collapse">GhostWhite</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_GhostWhite" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor GhostWhite</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Gold" data-uid="System.Drawing.KnownColor.Gold"><a href="#collapsible-System_Drawing_KnownColor_Gold" class="expander" data-toggle="collapse">Gold</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Gold" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Gold</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Goldenrod" data-uid="System.Drawing.KnownColor.Goldenrod"><a href="#collapsible-System_Drawing_KnownColor_Goldenrod" class="expander" data-toggle="collapse">Goldenrod</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Goldenrod" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Goldenrod</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_GradientActiveCaption" data-uid="System.Drawing.KnownColor.GradientActiveCaption"><a href="#collapsible-System_Drawing_KnownColor_GradientActiveCaption" class="expander" data-toggle="collapse">GradientActiveCaption</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_GradientActiveCaption" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor GradientActiveCaption</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_GradientInactiveCaption" data-uid="System.Drawing.KnownColor.GradientInactiveCaption"><a href="#collapsible-System_Drawing_KnownColor_GradientInactiveCaption" class="expander" data-toggle="collapse">GradientInactiveCaption</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_GradientInactiveCaption" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor GradientInactiveCaption</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Gray" data-uid="System.Drawing.KnownColor.Gray"><a href="#collapsible-System_Drawing_KnownColor_Gray" class="expander" data-toggle="collapse">Gray</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Gray" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Gray</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_GrayText" data-uid="System.Drawing.KnownColor.GrayText"><a href="#collapsible-System_Drawing_KnownColor_GrayText" class="expander" data-toggle="collapse">GrayText</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_GrayText" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor GrayText</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Green" data-uid="System.Drawing.KnownColor.Green"><a href="#collapsible-System_Drawing_KnownColor_Green" class="expander" data-toggle="collapse">Green</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Green" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Green</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_GreenYellow" data-uid="System.Drawing.KnownColor.GreenYellow"><a href="#collapsible-System_Drawing_KnownColor_GreenYellow" class="expander" data-toggle="collapse">GreenYellow</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_GreenYellow" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor GreenYellow</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Highlight" data-uid="System.Drawing.KnownColor.Highlight"><a href="#collapsible-System_Drawing_KnownColor_Highlight" class="expander" data-toggle="collapse">Highlight</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Highlight" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Highlight</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_HighlightText" data-uid="System.Drawing.KnownColor.HighlightText"><a href="#collapsible-System_Drawing_KnownColor_HighlightText" class="expander" data-toggle="collapse">HighlightText</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_HighlightText" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor HighlightText</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Honeydew" data-uid="System.Drawing.KnownColor.Honeydew"><a href="#collapsible-System_Drawing_KnownColor_Honeydew" class="expander" data-toggle="collapse">Honeydew</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Honeydew" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Honeydew</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_HotPink" data-uid="System.Drawing.KnownColor.HotPink"><a href="#collapsible-System_Drawing_KnownColor_HotPink" class="expander" data-toggle="collapse">HotPink</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_HotPink" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor HotPink</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_HotTrack" data-uid="System.Drawing.KnownColor.HotTrack"><a href="#collapsible-System_Drawing_KnownColor_HotTrack" class="expander" data-toggle="collapse">HotTrack</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_HotTrack" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor HotTrack</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_InactiveBorder" data-uid="System.Drawing.KnownColor.InactiveBorder"><a href="#collapsible-System_Drawing_KnownColor_InactiveBorder" class="expander" data-toggle="collapse">InactiveBorder</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_InactiveBorder" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor InactiveBorder</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_InactiveCaption" data-uid="System.Drawing.KnownColor.InactiveCaption"><a href="#collapsible-System_Drawing_KnownColor_InactiveCaption" class="expander" data-toggle="collapse">InactiveCaption</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_InactiveCaption" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor InactiveCaption</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_InactiveCaptionText" data-uid="System.Drawing.KnownColor.InactiveCaptionText"><a href="#collapsible-System_Drawing_KnownColor_InactiveCaptionText" class="expander" data-toggle="collapse">InactiveCaptionText</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_InactiveCaptionText" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor InactiveCaptionText</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_IndianRed" data-uid="System.Drawing.KnownColor.IndianRed"><a href="#collapsible-System_Drawing_KnownColor_IndianRed" class="expander" data-toggle="collapse">IndianRed</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_IndianRed" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor IndianRed</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Indigo" data-uid="System.Drawing.KnownColor.Indigo"><a href="#collapsible-System_Drawing_KnownColor_Indigo" class="expander" data-toggle="collapse">Indigo</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Indigo" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Indigo</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Info" data-uid="System.Drawing.KnownColor.Info"><a href="#collapsible-System_Drawing_KnownColor_Info" class="expander" data-toggle="collapse">Info</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Info" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Info</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_InfoText" data-uid="System.Drawing.KnownColor.InfoText"><a href="#collapsible-System_Drawing_KnownColor_InfoText" class="expander" data-toggle="collapse">InfoText</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_InfoText" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor InfoText</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Ivory" data-uid="System.Drawing.KnownColor.Ivory"><a href="#collapsible-System_Drawing_KnownColor_Ivory" class="expander" data-toggle="collapse">Ivory</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Ivory" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Ivory</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Khaki" data-uid="System.Drawing.KnownColor.Khaki"><a href="#collapsible-System_Drawing_KnownColor_Khaki" class="expander" data-toggle="collapse">Khaki</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Khaki" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Khaki</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Lavender" data-uid="System.Drawing.KnownColor.Lavender"><a href="#collapsible-System_Drawing_KnownColor_Lavender" class="expander" data-toggle="collapse">Lavender</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Lavender" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Lavender</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_LavenderBlush" data-uid="System.Drawing.KnownColor.LavenderBlush"><a href="#collapsible-System_Drawing_KnownColor_LavenderBlush" class="expander" data-toggle="collapse">LavenderBlush</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_LavenderBlush" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor LavenderBlush</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_LawnGreen" data-uid="System.Drawing.KnownColor.LawnGreen"><a href="#collapsible-System_Drawing_KnownColor_LawnGreen" class="expander" data-toggle="collapse">LawnGreen</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_LawnGreen" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor LawnGreen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_LemonChiffon" data-uid="System.Drawing.KnownColor.LemonChiffon"><a href="#collapsible-System_Drawing_KnownColor_LemonChiffon" class="expander" data-toggle="collapse">LemonChiffon</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_LemonChiffon" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor LemonChiffon</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_LightBlue" data-uid="System.Drawing.KnownColor.LightBlue"><a href="#collapsible-System_Drawing_KnownColor_LightBlue" class="expander" data-toggle="collapse">LightBlue</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_LightBlue" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor LightBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_LightCoral" data-uid="System.Drawing.KnownColor.LightCoral"><a href="#collapsible-System_Drawing_KnownColor_LightCoral" class="expander" data-toggle="collapse">LightCoral</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_LightCoral" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor LightCoral</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_LightCyan" data-uid="System.Drawing.KnownColor.LightCyan"><a href="#collapsible-System_Drawing_KnownColor_LightCyan" class="expander" data-toggle="collapse">LightCyan</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_LightCyan" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor LightCyan</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_LightGoldenrodYellow" data-uid="System.Drawing.KnownColor.LightGoldenrodYellow"><a href="#collapsible-System_Drawing_KnownColor_LightGoldenrodYellow" class="expander" data-toggle="collapse">LightGoldenrodYellow</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_LightGoldenrodYellow" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor LightGoldenrodYellow</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_LightGray" data-uid="System.Drawing.KnownColor.LightGray"><a href="#collapsible-System_Drawing_KnownColor_LightGray" class="expander" data-toggle="collapse">LightGray</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_LightGray" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor LightGray</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_LightGreen" data-uid="System.Drawing.KnownColor.LightGreen"><a href="#collapsible-System_Drawing_KnownColor_LightGreen" class="expander" data-toggle="collapse">LightGreen</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_LightGreen" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor LightGreen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_LightPink" data-uid="System.Drawing.KnownColor.LightPink"><a href="#collapsible-System_Drawing_KnownColor_LightPink" class="expander" data-toggle="collapse">LightPink</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_LightPink" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor LightPink</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_LightSalmon" data-uid="System.Drawing.KnownColor.LightSalmon"><a href="#collapsible-System_Drawing_KnownColor_LightSalmon" class="expander" data-toggle="collapse">LightSalmon</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_LightSalmon" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor LightSalmon</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_LightSeaGreen" data-uid="System.Drawing.KnownColor.LightSeaGreen"><a href="#collapsible-System_Drawing_KnownColor_LightSeaGreen" class="expander" data-toggle="collapse">LightSeaGreen</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_LightSeaGreen" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor LightSeaGreen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_LightSkyBlue" data-uid="System.Drawing.KnownColor.LightSkyBlue"><a href="#collapsible-System_Drawing_KnownColor_LightSkyBlue" class="expander" data-toggle="collapse">LightSkyBlue</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_LightSkyBlue" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor LightSkyBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_LightSlateGray" data-uid="System.Drawing.KnownColor.LightSlateGray"><a href="#collapsible-System_Drawing_KnownColor_LightSlateGray" class="expander" data-toggle="collapse">LightSlateGray</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_LightSlateGray" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor LightSlateGray</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_LightSteelBlue" data-uid="System.Drawing.KnownColor.LightSteelBlue"><a href="#collapsible-System_Drawing_KnownColor_LightSteelBlue" class="expander" data-toggle="collapse">LightSteelBlue</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_LightSteelBlue" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor LightSteelBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_LightYellow" data-uid="System.Drawing.KnownColor.LightYellow"><a href="#collapsible-System_Drawing_KnownColor_LightYellow" class="expander" data-toggle="collapse">LightYellow</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_LightYellow" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor LightYellow</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Lime" data-uid="System.Drawing.KnownColor.Lime"><a href="#collapsible-System_Drawing_KnownColor_Lime" class="expander" data-toggle="collapse">Lime</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Lime" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Lime</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_LimeGreen" data-uid="System.Drawing.KnownColor.LimeGreen"><a href="#collapsible-System_Drawing_KnownColor_LimeGreen" class="expander" data-toggle="collapse">LimeGreen</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_LimeGreen" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor LimeGreen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Linen" data-uid="System.Drawing.KnownColor.Linen"><a href="#collapsible-System_Drawing_KnownColor_Linen" class="expander" data-toggle="collapse">Linen</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Linen" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Linen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Magenta" data-uid="System.Drawing.KnownColor.Magenta"><a href="#collapsible-System_Drawing_KnownColor_Magenta" class="expander" data-toggle="collapse">Magenta</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Magenta" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Magenta</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Maroon" data-uid="System.Drawing.KnownColor.Maroon"><a href="#collapsible-System_Drawing_KnownColor_Maroon" class="expander" data-toggle="collapse">Maroon</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Maroon" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Maroon</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_MediumAquamarine" data-uid="System.Drawing.KnownColor.MediumAquamarine"><a href="#collapsible-System_Drawing_KnownColor_MediumAquamarine" class="expander" data-toggle="collapse">MediumAquamarine</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_MediumAquamarine" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor MediumAquamarine</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_MediumBlue" data-uid="System.Drawing.KnownColor.MediumBlue"><a href="#collapsible-System_Drawing_KnownColor_MediumBlue" class="expander" data-toggle="collapse">MediumBlue</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_MediumBlue" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor MediumBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_MediumOrchid" data-uid="System.Drawing.KnownColor.MediumOrchid"><a href="#collapsible-System_Drawing_KnownColor_MediumOrchid" class="expander" data-toggle="collapse">MediumOrchid</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_MediumOrchid" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor MediumOrchid</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_MediumPurple" data-uid="System.Drawing.KnownColor.MediumPurple"><a href="#collapsible-System_Drawing_KnownColor_MediumPurple" class="expander" data-toggle="collapse">MediumPurple</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_MediumPurple" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor MediumPurple</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_MediumSeaGreen" data-uid="System.Drawing.KnownColor.MediumSeaGreen"><a href="#collapsible-System_Drawing_KnownColor_MediumSeaGreen" class="expander" data-toggle="collapse">MediumSeaGreen</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_MediumSeaGreen" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor MediumSeaGreen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_MediumSlateBlue" data-uid="System.Drawing.KnownColor.MediumSlateBlue"><a href="#collapsible-System_Drawing_KnownColor_MediumSlateBlue" class="expander" data-toggle="collapse">MediumSlateBlue</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_MediumSlateBlue" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor MediumSlateBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_MediumSpringGreen" data-uid="System.Drawing.KnownColor.MediumSpringGreen"><a href="#collapsible-System_Drawing_KnownColor_MediumSpringGreen" class="expander" data-toggle="collapse">MediumSpringGreen</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_MediumSpringGreen" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor MediumSpringGreen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_MediumTurquoise" data-uid="System.Drawing.KnownColor.MediumTurquoise"><a href="#collapsible-System_Drawing_KnownColor_MediumTurquoise" class="expander" data-toggle="collapse">MediumTurquoise</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_MediumTurquoise" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor MediumTurquoise</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_MediumVioletRed" data-uid="System.Drawing.KnownColor.MediumVioletRed"><a href="#collapsible-System_Drawing_KnownColor_MediumVioletRed" class="expander" data-toggle="collapse">MediumVioletRed</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_MediumVioletRed" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor MediumVioletRed</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Menu" data-uid="System.Drawing.KnownColor.Menu"><a href="#collapsible-System_Drawing_KnownColor_Menu" class="expander" data-toggle="collapse">Menu</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Menu" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Menu</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_MenuBar" data-uid="System.Drawing.KnownColor.MenuBar"><a href="#collapsible-System_Drawing_KnownColor_MenuBar" class="expander" data-toggle="collapse">MenuBar</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_MenuBar" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor MenuBar</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_MenuHighlight" data-uid="System.Drawing.KnownColor.MenuHighlight"><a href="#collapsible-System_Drawing_KnownColor_MenuHighlight" class="expander" data-toggle="collapse">MenuHighlight</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_MenuHighlight" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor MenuHighlight</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_MenuText" data-uid="System.Drawing.KnownColor.MenuText"><a href="#collapsible-System_Drawing_KnownColor_MenuText" class="expander" data-toggle="collapse">MenuText</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_MenuText" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor MenuText</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_MidnightBlue" data-uid="System.Drawing.KnownColor.MidnightBlue"><a href="#collapsible-System_Drawing_KnownColor_MidnightBlue" class="expander" data-toggle="collapse">MidnightBlue</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_MidnightBlue" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor MidnightBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_MintCream" data-uid="System.Drawing.KnownColor.MintCream"><a href="#collapsible-System_Drawing_KnownColor_MintCream" class="expander" data-toggle="collapse">MintCream</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_MintCream" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor MintCream</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_MistyRose" data-uid="System.Drawing.KnownColor.MistyRose"><a href="#collapsible-System_Drawing_KnownColor_MistyRose" class="expander" data-toggle="collapse">MistyRose</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_MistyRose" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor MistyRose</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Moccasin" data-uid="System.Drawing.KnownColor.Moccasin"><a href="#collapsible-System_Drawing_KnownColor_Moccasin" class="expander" data-toggle="collapse">Moccasin</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Moccasin" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Moccasin</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_NavajoWhite" data-uid="System.Drawing.KnownColor.NavajoWhite"><a href="#collapsible-System_Drawing_KnownColor_NavajoWhite" class="expander" data-toggle="collapse">NavajoWhite</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_NavajoWhite" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor NavajoWhite</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Navy" data-uid="System.Drawing.KnownColor.Navy"><a href="#collapsible-System_Drawing_KnownColor_Navy" class="expander" data-toggle="collapse">Navy</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Navy" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Navy</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_OldLace" data-uid="System.Drawing.KnownColor.OldLace"><a href="#collapsible-System_Drawing_KnownColor_OldLace" class="expander" data-toggle="collapse">OldLace</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_OldLace" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor OldLace</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Olive" data-uid="System.Drawing.KnownColor.Olive"><a href="#collapsible-System_Drawing_KnownColor_Olive" class="expander" data-toggle="collapse">Olive</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Olive" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Olive</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_OliveDrab" data-uid="System.Drawing.KnownColor.OliveDrab"><a href="#collapsible-System_Drawing_KnownColor_OliveDrab" class="expander" data-toggle="collapse">OliveDrab</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_OliveDrab" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor OliveDrab</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Orange" data-uid="System.Drawing.KnownColor.Orange"><a href="#collapsible-System_Drawing_KnownColor_Orange" class="expander" data-toggle="collapse">Orange</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Orange" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Orange</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_OrangeRed" data-uid="System.Drawing.KnownColor.OrangeRed"><a href="#collapsible-System_Drawing_KnownColor_OrangeRed" class="expander" data-toggle="collapse">OrangeRed</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_OrangeRed" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor OrangeRed</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Orchid" data-uid="System.Drawing.KnownColor.Orchid"><a href="#collapsible-System_Drawing_KnownColor_Orchid" class="expander" data-toggle="collapse">Orchid</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Orchid" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Orchid</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_PaleGoldenrod" data-uid="System.Drawing.KnownColor.PaleGoldenrod"><a href="#collapsible-System_Drawing_KnownColor_PaleGoldenrod" class="expander" data-toggle="collapse">PaleGoldenrod</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_PaleGoldenrod" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor PaleGoldenrod</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_PaleGreen" data-uid="System.Drawing.KnownColor.PaleGreen"><a href="#collapsible-System_Drawing_KnownColor_PaleGreen" class="expander" data-toggle="collapse">PaleGreen</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_PaleGreen" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor PaleGreen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_PaleTurquoise" data-uid="System.Drawing.KnownColor.PaleTurquoise"><a href="#collapsible-System_Drawing_KnownColor_PaleTurquoise" class="expander" data-toggle="collapse">PaleTurquoise</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_PaleTurquoise" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor PaleTurquoise</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_PaleVioletRed" data-uid="System.Drawing.KnownColor.PaleVioletRed"><a href="#collapsible-System_Drawing_KnownColor_PaleVioletRed" class="expander" data-toggle="collapse">PaleVioletRed</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_PaleVioletRed" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor PaleVioletRed</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_PapayaWhip" data-uid="System.Drawing.KnownColor.PapayaWhip"><a href="#collapsible-System_Drawing_KnownColor_PapayaWhip" class="expander" data-toggle="collapse">PapayaWhip</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_PapayaWhip" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor PapayaWhip</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_PeachPuff" data-uid="System.Drawing.KnownColor.PeachPuff"><a href="#collapsible-System_Drawing_KnownColor_PeachPuff" class="expander" data-toggle="collapse">PeachPuff</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_PeachPuff" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor PeachPuff</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Peru" data-uid="System.Drawing.KnownColor.Peru"><a href="#collapsible-System_Drawing_KnownColor_Peru" class="expander" data-toggle="collapse">Peru</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Peru" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Peru</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Pink" data-uid="System.Drawing.KnownColor.Pink"><a href="#collapsible-System_Drawing_KnownColor_Pink" class="expander" data-toggle="collapse">Pink</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Pink" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Pink</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Plum" data-uid="System.Drawing.KnownColor.Plum"><a href="#collapsible-System_Drawing_KnownColor_Plum" class="expander" data-toggle="collapse">Plum</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Plum" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Plum</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_PowderBlue" data-uid="System.Drawing.KnownColor.PowderBlue"><a href="#collapsible-System_Drawing_KnownColor_PowderBlue" class="expander" data-toggle="collapse">PowderBlue</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_PowderBlue" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor PowderBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Purple" data-uid="System.Drawing.KnownColor.Purple"><a href="#collapsible-System_Drawing_KnownColor_Purple" class="expander" data-toggle="collapse">Purple</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Purple" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Purple</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Red" data-uid="System.Drawing.KnownColor.Red"><a href="#collapsible-System_Drawing_KnownColor_Red" class="expander" data-toggle="collapse">Red</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Red" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Red</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_RosyBrown" data-uid="System.Drawing.KnownColor.RosyBrown"><a href="#collapsible-System_Drawing_KnownColor_RosyBrown" class="expander" data-toggle="collapse">RosyBrown</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_RosyBrown" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor RosyBrown</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_RoyalBlue" data-uid="System.Drawing.KnownColor.RoyalBlue"><a href="#collapsible-System_Drawing_KnownColor_RoyalBlue" class="expander" data-toggle="collapse">RoyalBlue</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_RoyalBlue" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor RoyalBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_SaddleBrown" data-uid="System.Drawing.KnownColor.SaddleBrown"><a href="#collapsible-System_Drawing_KnownColor_SaddleBrown" class="expander" data-toggle="collapse">SaddleBrown</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_SaddleBrown" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor SaddleBrown</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Salmon" data-uid="System.Drawing.KnownColor.Salmon"><a href="#collapsible-System_Drawing_KnownColor_Salmon" class="expander" data-toggle="collapse">Salmon</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Salmon" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Salmon</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_SandyBrown" data-uid="System.Drawing.KnownColor.SandyBrown"><a href="#collapsible-System_Drawing_KnownColor_SandyBrown" class="expander" data-toggle="collapse">SandyBrown</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_SandyBrown" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor SandyBrown</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_ScrollBar" data-uid="System.Drawing.KnownColor.ScrollBar"><a href="#collapsible-System_Drawing_KnownColor_ScrollBar" class="expander" data-toggle="collapse">ScrollBar</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_ScrollBar" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor ScrollBar</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_SeaGreen" data-uid="System.Drawing.KnownColor.SeaGreen"><a href="#collapsible-System_Drawing_KnownColor_SeaGreen" class="expander" data-toggle="collapse">SeaGreen</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_SeaGreen" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor SeaGreen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_SeaShell" data-uid="System.Drawing.KnownColor.SeaShell"><a href="#collapsible-System_Drawing_KnownColor_SeaShell" class="expander" data-toggle="collapse">SeaShell</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_SeaShell" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor SeaShell</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Sienna" data-uid="System.Drawing.KnownColor.Sienna"><a href="#collapsible-System_Drawing_KnownColor_Sienna" class="expander" data-toggle="collapse">Sienna</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Sienna" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Sienna</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Silver" data-uid="System.Drawing.KnownColor.Silver"><a href="#collapsible-System_Drawing_KnownColor_Silver" class="expander" data-toggle="collapse">Silver</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Silver" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Silver</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_SkyBlue" data-uid="System.Drawing.KnownColor.SkyBlue"><a href="#collapsible-System_Drawing_KnownColor_SkyBlue" class="expander" data-toggle="collapse">SkyBlue</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_SkyBlue" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor SkyBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_SlateBlue" data-uid="System.Drawing.KnownColor.SlateBlue"><a href="#collapsible-System_Drawing_KnownColor_SlateBlue" class="expander" data-toggle="collapse">SlateBlue</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_SlateBlue" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor SlateBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_SlateGray" data-uid="System.Drawing.KnownColor.SlateGray"><a href="#collapsible-System_Drawing_KnownColor_SlateGray" class="expander" data-toggle="collapse">SlateGray</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_SlateGray" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor SlateGray</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Snow" data-uid="System.Drawing.KnownColor.Snow"><a href="#collapsible-System_Drawing_KnownColor_Snow" class="expander" data-toggle="collapse">Snow</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Snow" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Snow</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_SpringGreen" data-uid="System.Drawing.KnownColor.SpringGreen"><a href="#collapsible-System_Drawing_KnownColor_SpringGreen" class="expander" data-toggle="collapse">SpringGreen</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_SpringGreen" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor SpringGreen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_SteelBlue" data-uid="System.Drawing.KnownColor.SteelBlue"><a href="#collapsible-System_Drawing_KnownColor_SteelBlue" class="expander" data-toggle="collapse">SteelBlue</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_SteelBlue" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor SteelBlue</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Tan" data-uid="System.Drawing.KnownColor.Tan"><a href="#collapsible-System_Drawing_KnownColor_Tan" class="expander" data-toggle="collapse">Tan</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Tan" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Tan</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Teal" data-uid="System.Drawing.KnownColor.Teal"><a href="#collapsible-System_Drawing_KnownColor_Teal" class="expander" data-toggle="collapse">Teal</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Teal" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Teal</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Thistle" data-uid="System.Drawing.KnownColor.Thistle"><a href="#collapsible-System_Drawing_KnownColor_Thistle" class="expander" data-toggle="collapse">Thistle</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Thistle" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Thistle</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Tomato" data-uid="System.Drawing.KnownColor.Tomato"><a href="#collapsible-System_Drawing_KnownColor_Tomato" class="expander" data-toggle="collapse">Tomato</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Tomato" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Tomato</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Transparent" data-uid="System.Drawing.KnownColor.Transparent"><a href="#collapsible-System_Drawing_KnownColor_Transparent" class="expander" data-toggle="collapse">Transparent</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Transparent" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Transparent</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Turquoise" data-uid="System.Drawing.KnownColor.Turquoise"><a href="#collapsible-System_Drawing_KnownColor_Turquoise" class="expander" data-toggle="collapse">Turquoise</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Turquoise" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Turquoise</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_value__" data-uid="System.Drawing.KnownColor.value__"><a href="#collapsible-System_Drawing_KnownColor_value__" class="expander" data-toggle="collapse">value__</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_value__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int value__</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Violet" data-uid="System.Drawing.KnownColor.Violet"><a href="#collapsible-System_Drawing_KnownColor_Violet" class="expander" data-toggle="collapse">Violet</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Violet" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Violet</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Wheat" data-uid="System.Drawing.KnownColor.Wheat"><a href="#collapsible-System_Drawing_KnownColor_Wheat" class="expander" data-toggle="collapse">Wheat</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Wheat" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Wheat</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_White" data-uid="System.Drawing.KnownColor.White"><a href="#collapsible-System_Drawing_KnownColor_White" class="expander" data-toggle="collapse">White</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_White" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor White</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_WhiteSmoke" data-uid="System.Drawing.KnownColor.WhiteSmoke"><a href="#collapsible-System_Drawing_KnownColor_WhiteSmoke" class="expander" data-toggle="collapse">WhiteSmoke</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_WhiteSmoke" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor WhiteSmoke</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Window" data-uid="System.Drawing.KnownColor.Window"><a href="#collapsible-System_Drawing_KnownColor_Window" class="expander" data-toggle="collapse">Window</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Window" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Window</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_WindowFrame" data-uid="System.Drawing.KnownColor.WindowFrame"><a href="#collapsible-System_Drawing_KnownColor_WindowFrame" class="expander" data-toggle="collapse">WindowFrame</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_WindowFrame" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor WindowFrame</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_WindowText" data-uid="System.Drawing.KnownColor.WindowText"><a href="#collapsible-System_Drawing_KnownColor_WindowText" class="expander" data-toggle="collapse">WindowText</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_WindowText" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor WindowText</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_Yellow" data-uid="System.Drawing.KnownColor.Yellow"><a href="#collapsible-System_Drawing_KnownColor_Yellow" class="expander" data-toggle="collapse">Yellow</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_Yellow" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor Yellow</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="System_Drawing_KnownColor_YellowGreen" data-uid="System.Drawing.KnownColor.YellowGreen"><a href="#collapsible-System_Drawing_KnownColor_YellowGreen" class="expander" data-toggle="collapse">YellowGreen</a></h4>
+  
+  <div id="collapsible-System_Drawing_KnownColor_YellowGreen" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const KnownColor YellowGreen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="System.Drawing.KnownColor.html">KnownColor</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Telerik.Windows.Controls.CollectionExtensions.html#Telerik_Windows_Controls_CollectionExtensions_ToEnumerable__1___0_">CollectionExtensions.ToEnumerable&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Telerik.Windows.Core.EnumerableExtensions.html#Telerik_Windows_Core_EnumerableExtensions_ToEnumerable__1___0_">EnumerableExtensions.ToEnumerable&lt;T&gt;(T)</a>
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+	  <div id="push"></div>
+    </div>
+      <div id="footer" class="container-fluid pb-40">
+        <div class="row feedback-row mb-60">
+          <div class="col-sm-8 col-sm-offset-4 col-md-offset-3 col-lg-8 col-lg-offset-2">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="row feedback">
+                  <div class="col-xs-8">
+                    <h4>Was this article helpful?</h4>
+                  </div>
+                  <div class="col-xs-4 text-right">
+                    <button data-value="yes" id="yesButton">Yes</button>
+                    &nbsp;/&nbsp;
+                    <button data-value="no" id="noButton">No</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="dialog-overlay">
+          <div class="feedback-dialog dialog dialog-enter">
+            <div id="feedback-container">
+              <div id="feedback-window-container">
+                <div id="feedback-form-window">
+                  <h3 class="mt-0 mb-5">Give article feedback</h3>
+                  <p>Tell us how we can improve this article</p>
+                  <span id="feedback-form-popup-container"></span>
+                  <form id="feedback-form">
+                    <div id="feedback-checkbox-area">
+                      <input id="hidden-sheet-id" type="hidden" value="1toT2XTrYzmmQGUq5xCmXIkMWkwah3QCNZ9Aj5RLaeoo">
+                        <label>
+                          <input type="checkbox" data-bind="checked: outdatedSample"> Code samples are inaccurate / outdated.
+                        </label>
+                        <span class="required-field" data-bind="visible: outdatedSample"></span>
+                        <textarea id="feedback-code-sample-text-input" placeholder="Please, specify more details ..." class="feedback-extw__textarea" data-bind="visible: outdatedSample, value: inaccurateOutdatedCodeSamplesText">
+                        </textarea>
+                        <label>
+                          <input type="checkbox" data-bind="checked: otherMoreInformation"> I expected to find other / more information.
+                        </label>
+                        <span class="required-field" data-bind="visible: otherMoreInformation"></span>
+                        <textarea id="feedback-more-information-text-input" class="feedback-extw__textarea" placeholder="Please, specify what information can be added ..." data-bind="visible: otherMoreInformation, value: otherMoreInformationText">
+                        </textarea>
+                        <label>
+                          <input type="checkbox" data-bind="checked: textErrors"> There are typos / broken links / broken page elements.
+                        </label>
+                        <span class="required-field" data-bind="visible: textErrors"></span>
+                        <textarea id="feedback-text-errors-text-input" class="feedback-extw__textarea" placeholder="Please, specify what needs to be fixed ..." data-bind="visible: textErrors, value: typosLinksElementsText">
+                        </textarea>
+                        <label>
+                          <input type="checkbox" data-bind="checked: inaccurateContent"> Content is inaccurate / outdated.
+                        </label>
+                        <span class="required-field" data-bind="visible: inaccurateContent"></span>
+                        <textarea id="feedback-inaccurate-content-text-input" class="feedback-extw__textarea" placeholder="Please, specify which conent ..." data-bind="visible: inaccurateContent, value: inaccurateOutdatedContentText">
+                        </textarea>
+                        <label>
+                          <input type="checkbox" data-bind="checked: otherFeedback"> Other
+                        </label>
+                        <span class="required-field" data-bind="visible: otherFeedback"></span>
+                        <textarea id="feedback-other-text-input" placeholder="Please, enter more details or not listed feedback ..." class="feedback-extw__textarea" data-bind="visible: otherFeedback, value: textFeedback">
+                        </textarea>
+                        <input id="feedback-email-input" type="email" placeholder="email (optional)" data-email-msg="Email format is not valid." class="feedback-extw__input input" data-bind="value: email">
+                        <label>
+                          <input type="checkbox" data-bind="checked: acceptFeedbackContact"> By checking this box you consent to Progress contacting you by email about your response on this page.
+                        </label>
+                      </div>
+                  </form>
+                  <div class="feedback-extw__foot">
+                    <p class="mt-30 mb-0" style="text-align: right;">
+                      <button class="button ghost dialog-hide">Cancel</button>
+                      <button class="button dialog-hide" type="submit">Submit</button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <script>
+        $(document).ready(function() {
+        initFeedbackForm({
+        dialog: ".dialog-overlay",
+        closeButtons: ".dialog-hide",
+        container: ".feedback"
+        });
+        });
+      </script>
+      
+        <script>
+        $(".read-prev").hover(function() {
+        $(".title-prev").show();
+        }, function() {
+        $(".title-prev").hide();
+        });
+      
+        $(".read-next").hover(function() {
+        $(".title-next").show();
+        }, function() {
+        $(".title-next").hide();
+        });
+      
+        $(".all-components").click(function() {
+        $(".all-components").toggleClass("show-components");
+        $('.sidetoggle').toggleClass("collapse");
+        $('.sidetoc').toggleClass("show-components");
+        $(".sidefilter").toggleClass("show-components");
+        });
+      </script>
+      
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="row">
+              <div class="col-md-12 col-lg-10 col-lg-offset-1">
+                <div class="row">
+      
+      
+                  <div class="col-sm-4 mb-20">
+                    <h6 class="mt-0 mb-10">Getting Started</h6>
+                    <ul class="list-unstyled">
+      
+                      <li>
+                        <a href="https://www.telerik.com/download-trial-file/v2-b/ui-for-silverlight" target="_blank">Install Now</a>
+                      </li>
+      
+                      <li>
+                        <a href="http://demos.telerik.com/silverlight/" target="_blank">Demos</a>
+                      </li>
+      
+                      <li>
+                        <a href="http://demos.telerik.com/xaml-sdkbrowser/" target="_blank">SDK Samples Browser</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/silverlight/sample-applications" target="_blank">Sample Applications</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/wpf/color-theme-generator" target="_blank">Themes Generator</a>
+                      </li>
+      
+                    </ul>
+                  </div>
+      
+                  <div class="col-sm-4 mb-20">
+                    <h6 class="mt-0 mb-10">Support Resources</h6>
+                    <ul class="list-unstyled">
+      
+                      <li>
+                        <a href="https://www.telerik.com/support/code-library/silverlight" target="_blank">Code Library</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/support/kb/silverlight" target="_blank">Knowledge Base</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/silverlight/mvvm-support" target="_blank">MVVM Support</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/videos/silverlight" target="_blank">Videos</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://github.com/telerik/xaml-sdk" target="_blank">GitHub SDK Repository</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/help/silverlight/installation-system-requirements.html" target="_blank">System Requirements</a>
+                      </li>
+      
+                    </ul>
+                  </div>
+      
+                  <div class="col-sm-4 mb-20">
+                    <h6 class="mt-0 mb-10">Community</h6>
+                    <ul class="list-unstyled">
+      
+                      <li>
+                        <a href="https://www.telerik.com/forums/silverlight" target="_blank">Forums</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/blogs/.net" target="_blank">Blogs</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://feedback.telerik.com/Project/143" target="_blank">XAML Feedback Portal</a>
+                      </li>
+      
+                      <li>
+                        <a href="http://feedback.telerik.com/Project/184" target="_blank">Document Processing Feedback Portal</a>
+                      </li>
+      
+                    </ul>
+                  </div>
+      
+      
+                </div>
+                <div class="row copyright">
+                  <div class="col-sm-4 social-icons">
+                    <span class="sticky">
+                      <a class="social-icon" href="https://www.facebook.com/Telerik/" title=""><?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewbox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+      <path d="M13.766,32.155V17.559H8.854V11.87h4.912V7.675c0-4.869,2.973-7.52,7.316-7.52c2.08,0,3.868,0.155,4.39,0.224v5.088
+      	l-3.013,0.001c-2.362,0-2.819,1.122-2.819,2.769v3.632h5.634l-0.734,5.688H19.64v14.597H13.766z"></path>
+      </svg>
+                      </a>
+                      <a class="social-icon" href="https://twitter.com/Telerik/" title=""><?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewbox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+      <path fill="#231F20" d="M32,6.076c-1.178,0.522-2.442,0.875-3.771,1.034c1.355-0.813,2.396-2.1,2.887-3.632
+      	c-1.269,0.752-2.674,1.298-4.169,1.593c-1.198-1.276-2.904-2.073-4.792-2.073c-3.626,0-6.566,2.939-6.566,6.565
+      	c0,0.515,0.058,1.016,0.17,1.496C10.303,10.785,5.466,8.171,2.228,4.199c-0.565,0.97-0.889,2.097-0.889,3.3
+      	c0,2.278,1.159,4.287,2.92,5.464c-1.076-0.034-2.088-0.329-2.974-0.821c0,0.027,0,0.055,0,0.083c0,3.181,2.263,5.834,5.267,6.438
+      	c-0.551,0.15-1.131,0.23-1.73,0.23c-0.423,0-0.834-0.041-1.235-0.118c0.835,2.608,3.26,4.507,6.133,4.56
+      	c-2.247,1.761-5.078,2.811-8.154,2.811c-0.53,0-1.052-0.031-1.566-0.092c2.905,1.862,6.356,2.949,10.064,2.949
+      	c12.076,0,18.679-10.004,18.679-18.679c0-0.285-0.007-0.568-0.02-0.849C30.007,8.549,31.12,7.393,32,6.076"></path>
+      </svg>
+                      </a>
+                      <a class="social-icon" href="https://www.youtube.com/user/TelerikInc" title=""><?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" xml:space="preserve">
+      <path d="M506.887,153.632c0,0-5.003-35.283-20.354-50.82c-19.469-20.393-41.293-20.494-51.301-21.687
+      c-71.647-5.179-179.121-5.179-179.121-5.179h-0.223c0,0-107.472,0-179.121,5.179c-10.008,1.194-31.824,1.295-51.301,21.687
+      c-15.351,15.537-20.346,50.82-20.346,50.82S0,195.065,0,236.497v38.843c0,41.433,5.12,82.865,5.12,82.865
+      s4.995,35.283,20.346,50.82c19.476,20.393,45.06,19.748,56.455,21.885C122.883,434.839,256,436.054,256,436.054
+      s107.585-0.162,179.232-5.341c10.008-1.194,31.831-1.295,51.301-21.687c15.351-15.537,20.354-50.82,20.354-50.82
+      S512,316.773,512,275.341v-38.843C512,195.065,506.887,153.632,506.887,153.632z M203.87,322.913v-144.36l137.342,72.18 L203.87,322.913z"></path>
+      </svg>
+                      </a>
+                      <a class="social-icon" href="https://www.linkedin.com/showcase/telerik/" title=""><?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewbox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+      <path d="M7.81,29V9.652H1.379V29H7.81z M4.596,7.009c2.243,0,3.638-1.486,3.638-3.342C8.192,1.768,6.838,0.324,4.638,0.324
+      	C2.438,0.324,1,1.768,1,3.667c0,1.856,1.396,3.342,3.554,3.342H4.596L4.596,7.009z M11.37,29h6.43V18.195
+      	c0-0.579,0.042-1.156,0.213-1.569c0.465-1.155,1.521-2.352,3.3-2.352c2.325,0,3.257,1.774,3.257,4.375v10.35H31V17.906
+      	c0-5.943-3.173-8.708-7.404-8.708c-3.469,0-4.992,1.939-5.838,3.259H17.8V9.651h-6.43C11.454,11.467,11.37,28.999,11.37,29L11.37,29
+      	z"></path>
+      </svg>
+                      </a>
+                    </span>
+                  </div>
+                  <div class="col-sm-8">
+                    <p>
+                      Copyright &copy; 2018 Progress Software Corporation and/or its subsidiaries or affiliates.<br> All Rights Reserved.
+                    </p>
+      
+                    <p>
+                      Progress, Telerik, and certain product names used herein are trademarks or registered trademarks of Progress Software Corporation and/or one of its subsidiaries or affiliates in the U.S. and/or other countries. See <a href="https://www.progress.com/legal/trademarks">Trademarks</a> for appropriate markings.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

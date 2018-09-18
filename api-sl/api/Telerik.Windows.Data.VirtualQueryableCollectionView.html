@@ -1,0 +1,2338 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Telerik UI - API ReferenceClass VirtualQueryableCollectionView
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="restype" content="api">
+    <meta name="title" content="Class VirtualQueryableCollectionView
+   ">
+    <meta name="generator" content="docfx 2.36.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="https://d6vtbcy3ong79.cloudfront.net/telerik-navigation/1.0.28/css/index.min.css">
+    <link rel="stylesheet" href="https://d6vtbcy3ong79.cloudfront.net/fonts/1.1.5/css/metric.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,500,700">
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- Google Tag Manager -->
+          <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-6X92');</script>
+          <!-- End Google Tag Manager -->
+          <script>	
+              var e = document.documentElement;	
+              e.className = e.className.replace(/(^|\s)no-js(\s|$)/i, "$2");	
+          </script>
+          
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//kendo.cdn.telerik.com/2017.3.1026/js/kendo.web.min.js"></script>
+    <script src="//cdn.optimizely.com/js/2380340583.js"></script>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        <aside class="TK-Hat">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-8 col-xl-offset-2">
+                <div class="row">
+                  <div class="col-md-12 col-xl-10 col-xl-offset-1">
+                    <figure class="TK-Hat-Brand">
+                      <a href="https://www.progress.com" class="TK-PRGS-Logo" data-gtm-event="top-nav, text, progress-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="94" height="40" viewbox="0 0 512 120">
+                          <path fill="#5ce500" d="M95.52 29.33v51a3.93 3.93 0 0 1-1.78 3.08l-1.67 1-12.72 7.35-8.59 5-1.78 1V42.6L21.23 15 43.91 1.93 46 .74a3.94 3.94 0 0 1 3.56 0L81 18.9l14.51 8.38v2.05zM58.36 48.72l-9.79-5.66-22.91-13.23a4 4 0 0 0-3.56 0L1.77 41.57 0 42.6l34.49 19.91v39.83l20.3-11.73 1.79-1a3.94 3.94 0 0 0 1.78-3.08V48.72zM0 82.43l23.86 13.78V68.63z"></path>
+                          <path fill="#4b4e52" d="M148.09 27.28h-26v70.48h11.55V70.1h14.57c15.77 0 24.45-7.7 24.45-21.69 0-6.35-2.4-21.12-24.55-21.12m12.78 21.31c0 7.95-4.12 11.19-14.24 11.19h-13v-22.1h14.57c8.56 0 12.71 3.57 12.71 10.91M207 46.41l.87.42-2 10.42-1.35-.42a11.32 11.32 0 0 0-3.34-.51c-10.79 0-11.67 8.59-11.67 19v22.44h-10.64V46h10v6.24c2.73-4.2 6-6.37 10.37-6.9a14.55 14.55 0 0 1 7.76 1.07M233.29 45c-8.42 0-15.16 3.2-19.5 9.27-4.56 6.37-5.23 13.85-5.23 17.74 0 16.36 9.7 26.92 24.73 26.92 18.26 0 24.73-14.71 24.73-27.3 0-7.25-2.15-13.82-6-18.51-4.41-5.31-10.87-8.12-18.7-8.12m0 44.38c-8.37 0-13.57-6.66-13.57-17.37s5.2-17.55 13.57-17.55S247 61.23 247 71.78c0 10.83-5.24 17.56-13.66 17.56m114.55-42.93l.87.42-2 10.42-1.35-.42a11.26 11.26 0 0 0-3.33-.51c-10.78 0-11.66 8.59-11.66 19v22.44h-10.66V46h10v6.24c2.73-4.2 6-6.37 10.37-6.9a14.54 14.54 0 0 1 7.73 1.06m38.4 34.76l-.2.57c-2.23 6.36-7.57 7.7-11.65 7.7-8.09 0-13.3-5.37-13.81-14.09h36.59l.13-1a31.26 31.26 0 0 0 .12-4.12v-.93C396.93 54.78 387.48 45 374 45c-7.9 0-14.37 3.1-18.73 9a30.85 30.85 0 0 0-5.54 18c0 16 9.95 26.74 24.74 26.74 11.45 0 19.33-5.82 22.2-16.38l.33-1.2h-10.7zM361 66.05c.9-7.17 5.81-11.73 12.79-11.73 5.33 0 11.64 3.1 12.52 11.73H361zm-60.7-15.71c-3.45-3.58-8.06-5.39-13.76-5.39-15.69 0-22.83 13.81-22.83 26.63 0 13.16 7.06 26.44 22.83 26.44a18.33 18.33 0 0 0 13.35-5.42c0 2.28-.1 4.45-.16 5.38-.58 8.54-4.68 12.51-12.91 12.51-4.47 0-9.61-1.59-10.6-6l-.22-1h-10.54l.17 1.41c1.1 9.12 9.11 14.79 20.9 14.79 10.34 0 17.7-3.9 21.28-11.26 1.73-3.55 2.6-8.72 2.6-15.37V46h-10.13v4.34zm-13.11 38.15c-3.74 0-12.43-1.69-12.43-17.37 0-10.3 4.87-16.7 12.71-16.7 6.06 0 12.52 4.39 12.52 16.7 0 10.87-4.79 17.37-12.81 17.37m159.67-6.31c0 8.23-6.83 16.53-22.09 16.53-13.5 0-21.53-5.85-22.61-16.45l-.15-1.1h10.52l.21.84c1.29 6.38 7.37 7.72 12.24 7.72 5.34 0 11-1.72 11-6.54 0-2.44-1.59-4.18-4.73-5.16-1.86-.55-4.15-1.2-6.56-1.87-4.16-1.16-8.47-2.38-11.12-3.29-6.56-2.35-10.33-6.93-10.33-12.56 0-10.43 10.16-15.11 20.22-15.11 13.46 0 20.42 5.07 21.3 15.49l.09 1.07H434.5l-.14-.82c-1-6-7-6.9-10.48-6.9-3 0-10 .53-10 5.5 0 2.25 1.93 3.91 5.89 5.06 1.18.33 2.94.78 5 1.31 4.22 1.09 9.48 2.46 12.13 3.37 6.59 2.32 9.93 6.67 9.93 13m49.39 0c0 8.23-6.83 16.53-22.09 16.53-13.5 0-21.53-5.85-22.61-16.45l-.11-1.09H462l.12.74c1.29 6.38 7.37 7.72 12.24 7.72 5.34 0 11-1.72 11-6.54 0-2.44-1.59-4.18-4.72-5.16-1.86-.55-4.15-1.2-6.57-1.87-4.16-1.16-8.46-2.38-11.11-3.29-6.57-2.35-10.33-6.93-10.33-12.56 0-10.43 10.16-15.11 20.22-15.11 13.46 0 20.42 5.07 21.29 15.49l.09 1.07H483.9l-.14-.82c-1-6-7-6.9-10.48-6.9-3 0-9.95.53-9.95 5.5 0 2.25 1.93 3.91 5.89 5.06 1.18.33 2.94.78 5 1.31 4.22 1.09 9.48 2.46 12.13 3.37 6.58 2.32 9.93 6.67 9.93 13m8.43-30.78a7.37 7.37 0 1 1 7.29-7.37 7.23 7.23 0 0 1-7.29 7.37m0-13.49a6.12 6.12 0 1 0 6 6.12 5.91 5.91 0 0 0-6-6.12m-.85 7.49v2.46h-2.17v-7.74h3.62a2.58 2.58 0 0 1 2.86 2.7 2.26 2.26 0 0 1-1.49 2.34l1.77 2.7H506l-1.49-2.46h-.68zm1.21-3.49h-1.21v1.73h1.21a.86.86 0 0 0 1-.85.88.88 0 0 0-1-.89"></path>
+                        </svg>
+                      </a>
+                    </figure>
+        
+                    <div class="TK-Hat-Aside TK--Desktop">
+                      <ul class="TK-Hat-Menu">
+                        <li class="TK-Hat-Menu-Item">
+                          <a href="https://www.progress.com/company" class="TK-Hat-Menu-Link" data-gtm-event="top-nav, text, company">Company <i class="TK-Arrow"></i></a>
+                          <ul class="TK-Dropdown TK-Dropdown--Small TK-Dropdown--White">
+                            <li><a href="https://www.progress.com/company" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, company-overview">Company Overview</a></li>
+                            <li><a href="https://www.progress.com/company/leadership#exec" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, leadership">Leadership</a></li>
+                            <li><a href="http://investors.progress.com" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, investor-relations">Investor Relations</a></li>
+                            <li><a href="http://investors.progress.com/releases.cfm" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, press-releases">Press Releases</a></li>
+                            <li><a href="https://www.progress.com/company/press-coverage" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, press-coverage">Press Coverage</a></li>
+                            <li><a href="https://www.progress.com/events" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, events">Events</a></li>
+                            <li><a href="https://www.progress.com/company/awards" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, awards">Awards</a></li>
+                            <li><a href="https://www.progress.com/blogs" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, corporate-blog">Corporate Blog</a></li>
+                            <li><a href="https://www.progress.com/customers" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, customers">Customers</a></li>
+                            <li><a href="https://www.progress.com/company/careers" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, careers">Careers</a></li>
+                            <li><a href="https://www.progress.com/company/offices" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, offices">Offices</a></li>
+                          </ul>
+                        </li>
+        
+                        <li class="TK-Hat-Menu-Item">
+                          <a href="https://www.progress.com/products" class="TK-Hat-Menu-Link" data-gtm-event="technology.track">Technology <i class="TK-Arrow"></i></a>
+                          <ul class="TK-Dropdown TK-Dropdown--Medium TK-Dropdown--White">
+                            <li><a href="https://www.progress.com/app-development-deployment" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, app-dev-deploy">Application Development
+                                and Deployment</a></li>
+                            <li><a href="https://www.progress.com/back-end-as-a-service" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, baas">BaaS Platform</a></li>
+                            <li><a href="https://www.progress.com/data-connectivity-integration" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, dci">Data Connectivity and Integration</a></li>
+                            <li><a href="https://www.progress.com/web-content-management" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, wcm">Web Content Management</a></li>
+                            <li><a href="https://www.progress.com/predictive-analytics" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, predictive-analytics">Predictive Analytics</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+        
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <nav class="navbar navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-8 col-xl-offset-2">
+                <div class="row">
+                  <div class="nav-container col-md-12 col-lg-8 col-lg-offset-2 col-xl-10 col-xl-offset-1">
+                    <div id="navbar" class="nav navbar-collapse">
+                      <a class="button all-components">
+                        <span class="item-expanded"></span>
+                      </a>
+                      <a class="navbar-brand brand-platform-silverlight" href="/devtools/silverlight/">
+                        <span class="sr-only">Telerik UI for Silverlight</span>
+                      </a>
+        
+                      <select id="nav-dropdown">
+                        <option selected="">Navigate to...
+        
+                        <option value="https://demos.telerik.com/silverlight/" onclick="trackItemFromCurrentPage('docs-navigation', 'Demos')">Demos
+        
+                        <option value="https://www.telerik.com/support/whats-new/silverlight/release-history" onclick="trackItemFromCurrentPage('docs-navigation', 'Release History')">Release History
+        
+                        <option value="http://www.telerik.com/products/silverlight/overview.aspx" onclick="trackItemFromCurrentPage('docs-navigation', 'About')">About
+        
+                        <option value="http://www.telerik.com/purchase/individual/silverlight.aspx" onclick="trackItemFromCurrentPage('docs-navigation', 'Pricing')">Pricing
+        
+                      </select>
+        
+                      <ul class="nav navbar-nav main-menu">
+        
+                        <li>
+                          <a href="https://demos.telerik.com/silverlight/" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'Demos')">Demos</a>
+                        </li>
+        
+                        <li>
+                          <a href="https://www.telerik.com/support/whats-new/silverlight/release-history" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'Release History')">Release History</a>
+                        </li>
+        
+                        <li>
+                          <a href="http://www.telerik.com/products/silverlight/overview.aspx" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'About')">About</a>
+                        </li>
+        
+                        <li>
+                          <a href="http://www.telerik.com/purchase/individual/silverlight.aspx" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'Pricing')">Pricing</a>
+                        </li>
+        
+        
+        
+                        <li class="hidden-xs">
+                          <a class="search-icon">
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewbox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+        <path fill="#FFFFFF" d="M6.499,1.985C3.461,1.985,1,4.449,1,7.484c0,3.039,2.461,5.5,5.499,5.5c3.037,0,5.498-2.461,5.498-5.5
+        	C11.996,4.449,9.535,1.985,6.499,1.985z M6.499,11.885c-2.429,0-4.399-1.97-4.399-4.401c0-2.429,1.97-4.399,4.399-4.399
+        	c2.429,0,4.399,1.97,4.399,4.399C10.897,9.915,8.928,11.885,6.499,11.885z M13.828,13.746c0,1.179,0.109,1.067-1.069,1.067
+        	l-1.678-1.678c0-1.177-0.109-1.067,1.069-1.067L13.828,13.746z"></path>
+        </svg>
+        
+                            &nbsp;
+                            <span class="sr-only">Search</span>
+                          </a>
+                          <div class="global-search">
+                            <form action="/devtools/silverlight/search" method="get">
+                              <div class="search-input-container">
+                                <input id="local-search" placeholder="Search for &hellip;" name="q">
+                                <div id='refine-search-container'>
+                                  <div id='refine-search-button' class='unselectable'>
+                                    <span id='refine-search-label' data-bind='text: label'></span>
+                                    <span class='k-icon k-i-arrow-chevron-down'></span>
+                                  </div>
+                                </div>
+                                <div id="refine-search-popup" style="display: none">
+                                  <ul>
+                                    <li>
+                                      <label class="custom-checkbox unselectable">
+                                        <input type="checkbox" data-bind="checked: documentation"><span class="k-icon k-i-check"></span>Search in Documentation
+                                      </label>
+                                    </li>
+        
+                                    <li>
+                                      <label class="custom-checkbox unselectable">
+                                        <input type="checkbox" disabled="true" data-bind="checked: api"><span class="k-icon k-i-check"></span>Search in API Reference
+                                      </label>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </form>
+        
+                            <script>
+                              var gcsInstance = '011354416605164361800:ebfuug7ih7i';
+                              var gcsKey = 'AIzaSyDftzENpfk47-cyaNfxh-exsWmz0ggRARM';
+                              isKbPage =  false ;
+                              siteHasKbPortal = ''
+                            </script>
+        
+                            <script type="text/javascript" src="/devtools/silverlight/assets/search-results.js"></script>
+        
+                          </div>
+                        </li>
+        
+        
+                        <li class="primary-cta">
+                          <a href="http://www.telerik.com/products/silverlight/download.aspx" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'Try now')">Try now</a>
+                        </li>
+        
+                      </ul>
+                    </div>
+        
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+        </nav>
+        
+        <script>
+        
+          var searchContainer = $(".global-search");
+        
+          function hideSearch(e){
+          if (!searchContainer.is(e.target) &&
+          searchContainer.has(e.target).length === 0 &&
+          $(e.target).parents("#refine-search-popup").length === 0) {
+          setTimeout(function(e) {
+          searchContainer.removeClass("show-search");
+          $(document).off('click', hideSearch);
+          }, 200)
+          }
+          }
+        
+          function showSearch() {
+        
+          searchContainer.toggleClass("show-search")
+          .one("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(e) {
+          if (searchContainer.hasClass("show-search")) {
+          searchContainer.find("input:first")
+          .focus();
+          $(document).on("click", hideSearch);
+          }
+          });
+          }
+        
+          $(document).off("click", ".search-icon")
+          .on("click", ".search-icon", showSearch);
+        
+        
+          function navigate(e) {
+          trackItemFromCurrentPage('docs-navigation', e.target.children[e.target.selectedIndex].text);
+          window.open(e.target.value, "_blank");
+          }
+        
+        
+          var trackItemFromCurrentPage = function (category, action) {
+          trackItem(category, action, window.location.href);
+          };
+        
+          var trackItem = function (category, action, label) {
+          dataLayer.push({
+          'event': 'virtualEvent',
+          'eventCategory': category,
+          'eventAction': action,
+          'eventLabel': label,
+          });
+          };
+          
+          $(document)
+          .off("change", "#nav-dropdown")
+          .on("change", "#nav-dropdown", navigate);
+        </script>
+        
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav side-nav hide-when-search">
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc">
+             
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-9">
+            <article class="content wrap" id="_content" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView">
+  <h1 id="Telerik_Windows_Data_VirtualQueryableCollectionView" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView">Class VirtualQueryableCollectionView
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a view for grouping, sorting, filtering and paging data collection virtually.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html">QueryableCollectionView</a></div>
+    <div class="level2"><span class="xref">VirtualQueryableCollectionView</span></div>
+  </div>
+  
+      <div class="level3"><a class="xref" href="Telerik.Windows.Data.VirtualQueryableCollectionView-1.html">VirtualQueryableCollectionView&lt;T&gt;</a></div>
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_MoveCurrentTo_System_Object_">QueryableCollectionView.MoveCurrentTo(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_MoveCurrentToFirst">QueryableCollectionView.MoveCurrentToFirst()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_MoveCurrentToLast">QueryableCollectionView.MoveCurrentToLast()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_MoveCurrentToNext">QueryableCollectionView.MoveCurrentToNext()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_MoveCurrentToPosition_System_Int32_">QueryableCollectionView.MoveCurrentToPosition(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_MoveCurrentToPrevious">QueryableCollectionView.MoveCurrentToPrevious()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_OnCurrentChanged_System_EventArgs_">QueryableCollectionView.OnCurrentChanged(EventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_OnCurrentChanging_System_ComponentModel_CurrentChangingEventArgs_">QueryableCollectionView.OnCurrentChanging(CurrentChangingEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_OnCurrentChanging">QueryableCollectionView.OnCurrentChanging()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_SetCurrentPosition_System_Int32_">QueryableCollectionView.SetCurrentPosition(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_SetCurrent_System_Object_System_Int32_">QueryableCollectionView.SetCurrent(Object, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_DeferRefresh">QueryableCollectionView.DeferRefresh()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_AddNewItem_System_Object_">QueryableCollectionView.AddNewItem(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_AddNew_System_Object_">QueryableCollectionView.AddNew(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_CommitNew">QueryableCollectionView.CommitNew()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_EditItem_System_Object_">QueryableCollectionView.EditItem(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_CommitEdit">QueryableCollectionView.CommitEdit()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_CancelEdit">QueryableCollectionView.CancelEdit()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_ConstructNewItem">QueryableCollectionView.ConstructNewItem()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_RaisePageChanged">QueryableCollectionView.RaisePageChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_CompletePageMove_System_Int32_">QueryableCollectionView.CompletePageMove(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_MoveToFirstPage">QueryableCollectionView.MoveToFirstPage()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_MoveToLastPage">QueryableCollectionView.MoveToLastPage()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_MoveToNextPage">QueryableCollectionView.MoveToNextPage()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_MoveToPage_System_Int32_">QueryableCollectionView.MoveToPage(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_MoveToPageCore_System_Int32_">QueryableCollectionView.MoveToPageCore(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_MoveToPreviousPage">QueryableCollectionView.MoveToPreviousPage()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_UpdateItemCount">QueryableCollectionView.UpdateItemCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_GetEffectiveItemCount">QueryableCollectionView.GetEffectiveItemCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_GetPagingDeterminativeItemCount">QueryableCollectionView.GetPagingDeterminativeItemCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_InvalidatePagingDeterminativeItemCount">QueryableCollectionView.InvalidatePagingDeterminativeItemCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_InitializeCurrentItem">QueryableCollectionView.InitializeCurrentItem()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_Contains_System_Object_">QueryableCollectionView.Contains(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_Refresh">QueryableCollectionView.Refresh()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_GetEnumerator">QueryableCollectionView.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_OnSortDescriptorsItemChanged_System_Object_Telerik_Windows_Data_ItemChangedEventArgs_Telerik_Windows_Data_ISortDescriptor__">QueryableCollectionView.OnSortDescriptorsItemChanged(Object, ItemChangedEventArgs&lt;ISortDescriptor&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_OnSortDescriptorsCollectionChanged_System_Object_System_Collections_Specialized_NotifyCollectionChangedEventArgs_">QueryableCollectionView.OnSortDescriptorsCollectionChanged(Object, NotifyCollectionChangedEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_OnGroupDescriptorsItemChanged_System_Object_Telerik_Windows_Data_ItemChangedEventArgs_Telerik_Windows_Data_IGroupDescriptor__">QueryableCollectionView.OnGroupDescriptorsItemChanged(Object, ItemChangedEventArgs&lt;IGroupDescriptor&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_OnGroupDescriptorsCollectionChanged_System_Object_System_Collections_Specialized_NotifyCollectionChangedEventArgs_">QueryableCollectionView.OnGroupDescriptorsCollectionChanged(Object, NotifyCollectionChangedEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_OnFilterDescriptorsItemChanged_System_Object_Telerik_Windows_Data_ItemChangedEventArgs_Telerik_Windows_Data_IFilterDescriptor__">QueryableCollectionView.OnFilterDescriptorsItemChanged(Object, ItemChangedEventArgs&lt;IFilterDescriptor&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_OnFilterDescriptorsCollectionChanged_System_Object_System_Collections_Specialized_NotifyCollectionChangedEventArgs_">QueryableCollectionView.OnFilterDescriptorsCollectionChanged(Object, NotifyCollectionChangedEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_OnFilterDescriptorsChanged">QueryableCollectionView.OnFilterDescriptorsChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_OnFilterDescriptorsLogicalOperatorChanged">QueryableCollectionView.OnFilterDescriptorsLogicalOperatorChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_ApplySelectDescriptors_System_Linq_IQueryable_">QueryableCollectionView.ApplySelectDescriptors(IQueryable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_Sort_System_Linq_IQueryable_">QueryableCollectionView.Sort(IQueryable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_SetInternalList_System_Collections_IList_">QueryableCollectionView.SetInternalList(IList)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_GetInternalList">QueryableCollectionView.GetInternalList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_InitializeInternalList_System_Linq_IQueryable_">QueryableCollectionView.InitializeInternalList(IQueryable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_CreateInternalList">QueryableCollectionView.CreateInternalList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_PopulateInternalList_System_Linq_IQueryable_">QueryableCollectionView.PopulateInternalList(IQueryable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_OnInternalListCreated">QueryableCollectionView.OnInternalListCreated()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_OnPropertyChanged_System_ComponentModel_PropertyChangedEventArgs_">QueryableCollectionView.OnPropertyChanged(PropertyChangedEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_RefreshOverrideCore">QueryableCollectionView.RefreshOverrideCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_RefreshOverride">QueryableCollectionView.RefreshOverride()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_InitializeCurrencyOnRefresh_Telerik_Windows_Data_QueryableCollectionView_CurrencyRefreshInfo_">QueryableCollectionView.InitializeCurrencyOnRefresh(QueryableCollectionView.CurrencyRefreshInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_RefreshGroupsOnItemAction_System_Object_Telerik_Windows_Data_ItemAction_">QueryableCollectionView.RefreshGroupsOnItemAction(Object, ItemAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_RefreshOnItemAction_System_Object_Telerik_Windows_Data_ItemAction_">QueryableCollectionView.RefreshOnItemAction(Object, ItemAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_RefreshOnItemActionWithoutPaging_System_Object_Telerik_Windows_Data_ItemAction_">QueryableCollectionView.RefreshOnItemActionWithoutPaging(Object, ItemAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_OnPropertyChanged_System_String_">QueryableCollectionView.OnPropertyChanged(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_UpdateTotalItemCount">QueryableCollectionView.UpdateTotalItemCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_Dispose">QueryableCollectionView.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_Dispose_System_Boolean_">QueryableCollectionView.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_CurrentPosition">QueryableCollectionView.CurrentPosition</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_IsCurrentAfterLast">QueryableCollectionView.IsCurrentAfterLast</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_IsCurrentBeforeFirst">QueryableCollectionView.IsCurrentBeforeFirst</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_CurrentItem">QueryableCollectionView.CurrentItem</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_PendingCurrencyRefresh">QueryableCollectionView.PendingCurrencyRefresh</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_ShouldRespectIEditableObject">QueryableCollectionView.ShouldRespectIEditableObject</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_CanAddNewItem">QueryableCollectionView.CanAddNewItem</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_CurrentAddItem">QueryableCollectionView.CurrentAddItem</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_CanCancelEdit">QueryableCollectionView.CanCancelEdit</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_CurrentEditItem">QueryableCollectionView.CurrentEditItem</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_IsAddingNew">QueryableCollectionView.IsAddingNew</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_IsEditingItem">QueryableCollectionView.IsEditingItem</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_NewItemPlaceholderPosition">QueryableCollectionView.NewItemPlaceholderPosition</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_ItemProperties">QueryableCollectionView.ItemProperties</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_ItemPropertiesByPropertyName">QueryableCollectionView.ItemPropertiesByPropertyName</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_Filter">QueryableCollectionView.Filter</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_SortDescriptions">QueryableCollectionView.SortDescriptions</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_GroupDescriptions">QueryableCollectionView.GroupDescriptions</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_CanChangePage">QueryableCollectionView.CanChangePage</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_IsPageChanging">QueryableCollectionView.IsPageChanging</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_PageIndex">QueryableCollectionView.PageIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_PageSize">QueryableCollectionView.PageSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_ShouldRefreshOrDeferOnPageSizeChange">QueryableCollectionView.ShouldRefreshOrDeferOnPageSizeChange</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_IsPaged">QueryableCollectionView.IsPaged</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_Count">QueryableCollectionView.Count</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_TotalItemCount">QueryableCollectionView.TotalItemCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_NeedsRefresh">QueryableCollectionView.NeedsRefresh</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_SourceCollection">QueryableCollectionView.SourceCollection</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_CanFilter">QueryableCollectionView.CanFilter</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_CanGroup">QueryableCollectionView.CanGroup</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_CanSort">QueryableCollectionView.CanSort</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_Culture">QueryableCollectionView.Culture</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_Groups">QueryableCollectionView.Groups</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_Item_System_Int32_">QueryableCollectionView.Item[Int32]</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_IsEmpty">QueryableCollectionView.IsEmpty</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_SortDescriptors">QueryableCollectionView.SortDescriptors</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_FilterDescriptors">QueryableCollectionView.FilterDescriptors</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_GroupDescriptors">QueryableCollectionView.GroupDescriptors</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_ItemType">QueryableCollectionView.ItemType</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_IsLoading">QueryableCollectionView.IsLoading</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_IsGrouped">QueryableCollectionView.IsGrouped</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_ShouldInitializeGroupProxy">QueryableCollectionView.ShouldInitializeGroupProxy</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_CollectionChanged">QueryableCollectionView.CollectionChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_CurrentChanged">QueryableCollectionView.CurrentChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_CurrentChanging">QueryableCollectionView.CurrentChanging</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_PropertyChanged">QueryableCollectionView.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_PageChanged">QueryableCollectionView.PageChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_PageChanging">QueryableCollectionView.PageChanging</a>
+    </div>
+    <div>
+      <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_GroupCollectionChanged">QueryableCollectionView.GroupCollectionChanged</a>
+    </div>
+  </div>
+  
+  <h5><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h5>
+  <h5><strong>Assembly</strong>: Telerik.Windows.Data.dll</h5>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_syntax">Syntax</h4>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class VirtualQueryableCollectionView : QueryableCollectionView, IEditableCollectionViewAddNewItem, IEditableCollectionView, ICollectionView, INotifyCollectionChanged, INotifyPropertyChanged, IPagedCollectionView, IWeakEventListener&lt;NotifyCollectionChangedEventArgs&gt;, IWeakEventListener&lt;CurrentChangingEventArgs&gt;, IQueryableCollectionView, IItemProperties, IDisposable, IList, ICollection, IEnumerable</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView__ctor_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.#ctor*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView__ctor" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.#ctor"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView__ctor" class="expander" data-toggle="collapse">VirtualQueryableCollectionView()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView__ctor" class="collapse in">
+  <div class="markdown level1 summary"><p>Initializes a new instance of the VirtualQueryableCollectionView class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VirtualQueryableCollectionView()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView__ctor_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.#ctor*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView__ctor_System_Collections_IEnumerable_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.#ctor(System.Collections.IEnumerable)"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView__ctor_System_Collections_IEnumerable_" class="expander" data-toggle="collapse">VirtualQueryableCollectionView(IEnumerable)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView__ctor_System_Collections_IEnumerable_" class="collapse in">
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Telerik.Windows.Data.VirtualQueryableCollectionView.html">VirtualQueryableCollectionView</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VirtualQueryableCollectionView(IEnumerable source)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Collections.IEnumerable</span></span>
+        <span class="parametername">source</span>
+        <p><p>The source collection.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView__ctor_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.#ctor*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView__ctor_System_Collections_IEnumerable_System_Type_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.#ctor(System.Collections.IEnumerable,System.Type)"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView__ctor_System_Collections_IEnumerable_System_Type_" class="expander" data-toggle="collapse">VirtualQueryableCollectionView(IEnumerable, Type)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView__ctor_System_Collections_IEnumerable_System_Type_" class="collapse in">
+  <div class="markdown level1 summary"><p>Initializes a new instance of the VirtualQueryableCollectionView class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VirtualQueryableCollectionView(IEnumerable source, Type itemType)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Collections.IEnumerable</span></span>
+        <span class="parametername">source</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Type</span></span>
+        <span class="parametername">itemType</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView_CanAddNew_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.CanAddNew*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_CanAddNew" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.CanAddNew"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_CanAddNew" class="expander" data-toggle="collapse">CanAddNew</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_CanAddNew" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a value that indicates whether a new item can be added to the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool CanAddNew { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p>true if <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_SourceCollection">SourceCollection</a> is not <span class="xref">System.Collections.IList.IsFixedSize</span> or Add method is available and 
+collection element has a default constructor; otherwise, false.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_CanAddNew">QueryableCollectionView.CanAddNew</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView_CanRemove_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.CanRemove*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_CanRemove" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.CanRemove"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_CanRemove" class="expander" data-toggle="collapse">CanRemove</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_CanRemove" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a value that indicates whether an item can be removed from the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool CanRemove { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p>true if an item can be removed from the collection; otherwise, false.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_CanRemove">QueryableCollectionView.CanRemove</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView_InternalCount_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.InternalCount*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_InternalCount" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.InternalCount"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_InternalCount" class="expander" data-toggle="collapse">InternalCount</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_InternalCount" class="collapse in">
+  <div class="markdown level1 summary"><p>Protected accessor to private count.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override int InternalCount { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_InternalCount">QueryableCollectionView.InternalCount</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView_InternalList_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.InternalList*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_InternalList" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.InternalList"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_InternalList" class="expander" data-toggle="collapse">InternalList</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_InternalList" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the list created from resulting query 
+after applying filtering, sorting, grouping and paging.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override IList InternalList { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Collections.IList</span>
+        <p><p>The internal list for the current view.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_InternalList">QueryableCollectionView.InternalList</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView_IsFixedSize_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.IsFixedSize*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_IsFixedSize" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.IsFixedSize"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_IsFixedSize" class="expander" data-toggle="collapse">IsFixedSize</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_IsFixedSize" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFixedSize { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView_IsReadOnly_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.IsReadOnly*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_IsReadOnly" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.IsReadOnly"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_IsReadOnly" class="expander" data-toggle="collapse">IsReadOnly</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_IsReadOnly" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadOnly { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView_IsRequestingItems_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.IsRequestingItems*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_IsRequestingItems" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.IsRequestingItems"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_IsRequestingItems" class="expander" data-toggle="collapse">IsRequestingItems</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_IsRequestingItems" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a value that indicates whether this view is loading items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsRequestingItems { get; protected set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView_IsSynchronized_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.IsSynchronized*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_IsSynchronized" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.IsSynchronized"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_IsSynchronized" class="expander" data-toggle="collapse">IsSynchronized</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_IsSynchronized" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSynchronized { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView_ItemCount_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.ItemCount*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_ItemCount" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.ItemCount"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_ItemCount" class="expander" data-toggle="collapse">ItemCount</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_ItemCount" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the minimum number of items known to be in the source collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int ItemCount { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p><p>The minimum number of items known to be in the source collection.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_ItemCount">QueryableCollectionView.ItemCount</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView_LoadSize_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.LoadSize*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_LoadSize" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.LoadSize"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_LoadSize" class="expander" data-toggle="collapse">LoadSize</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_LoadSize" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the total number of items to retrieve.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LoadSize { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p><p>The total number of items to retrieve.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView_QueryableSourceCollection_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.QueryableSourceCollection*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_QueryableSourceCollection" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.QueryableSourceCollection"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_QueryableSourceCollection" class="expander" data-toggle="collapse">QueryableSourceCollection</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_QueryableSourceCollection" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the queryable collection, constructed from <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_SourceCollection">SourceCollection</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IQueryable QueryableSourceCollection { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Linq.IQueryable</span>
+        <p><p>An <span class="xref">System.Linq.IQueryable</span> object that is constructed from the underlying collection.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_QueryableSourceCollection">QueryableCollectionView.QueryableSourceCollection</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView_SyncRoot_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.SyncRoot*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_SyncRoot" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.SyncRoot"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_SyncRoot" class="expander" data-toggle="collapse">SyncRoot</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_SyncRoot" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object SyncRoot { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Object</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView_VirtualItemCount_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.VirtualItemCount*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_VirtualItemCount" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.VirtualItemCount"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_VirtualItemCount" class="expander" data-toggle="collapse">VirtualItemCount</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_VirtualItemCount" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the total number of all items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int VirtualItemCount { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p><p>The total number of all items.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView_Add_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.Add*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_Add_System_Object_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.Add(System.Object)"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_Add_System_Object_" class="expander" data-toggle="collapse">Add(Object)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_Add_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Add(object value)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView_AddNew_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.AddNew*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_AddNew" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.AddNew"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_AddNew" class="expander" data-toggle="collapse">AddNew()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_AddNew" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a new item to the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object AddNew()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Object</span>
+        <p><p>The new item that is added to the collection.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_AddNew">QueryableCollectionView.AddNew()</a></div>
+  
+  
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.InvalidOperationException</span>
+        <p><p><a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_CanAddNew">CanAddNew</a> is false.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView_CancelNew_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.CancelNew*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_CancelNew" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.CancelNew"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_CancelNew" class="expander" data-toggle="collapse">CancelNew()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_CancelNew" class="collapse in">
+  <div class="markdown level1 summary"><p>Ends the add transaction and discards the pending new item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void CancelNew()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_CancelNew">QueryableCollectionView.CancelNew()</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView_Clear_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.Clear*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_Clear" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.Clear"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_Clear" class="expander" data-toggle="collapse">Clear()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_Clear" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView_CopyTo_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.CopyTo*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_CopyTo_System_Array_System_Int32_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.CopyTo(System.Array,System.Int32)"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_CopyTo_System_Array_System_Int32_" class="expander" data-toggle="collapse">CopyTo(Array, Int32)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_CopyTo_System_Array_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(Array array, int index)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Array</span></span>
+        <span class="parametername">array</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">index</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView_CreateView_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.CreateView*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_CreateView" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.CreateView"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_CreateView" class="expander" data-toggle="collapse">CreateView()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_CreateView" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns <span class="xref">System.Linq.IQueryable</span> with applied filtering, sorting, grouping and paging.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override IQueryable CreateView()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Linq.IQueryable</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_CreateView">QueryableCollectionView.CreateView()</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView_GetItemAt_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.GetItemAt*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_GetItemAt_System_Int32_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.GetItemAt(System.Int32)"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_GetItemAt_System_Int32_" class="expander" data-toggle="collapse">GetItemAt(Int32)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_GetItemAt_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Retrieves the item at the specified zero-based index in the view.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object GetItemAt(int index)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">index</span>
+        <p><p>The zero-based index of the item to retrieve.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Object</span>
+        <p><p>The item at the specified zero-based index in the view.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_GetItemAt_System_Int32_">QueryableCollectionView.GetItemAt(Int32)</a></div>
+  
+  
+  <h5 id="Telerik_Windows_Data_VirtualQueryableCollectionView_GetItemAt_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the item at this index is not loaded will raise ItemsLoading event. 
+The returned item will be null or temporary dynamic item until the real item is loaded.</p>
+</div>
+  
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.ArgumentOutOfRangeException</span>
+        <p><p><code data-dev-comment-type="paramref" class="paramref">index</code> is less than 0 or greater than <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_ItemCount">ItemCount</a>. </p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView_IndexOf_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.IndexOf*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_IndexOf_System_Object_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.IndexOf(System.Object)"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_IndexOf_System_Object_" class="expander" data-toggle="collapse">IndexOf(Object)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_IndexOf_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the zero-based index at which the specified item is located.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int IndexOf(object item)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">item</span>
+        <p><p>The item to locate.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p><p>The index at which the specified item is located, or –1 if the item is unknown.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_IndexOf_System_Object_">QueryableCollectionView.IndexOf(Object)</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView_Insert_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.Insert*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_Insert_System_Int32_System_Object_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.Insert(System.Int32,System.Object)"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_Insert_System_Int32_System_Object_" class="expander" data-toggle="collapse">Insert(Int32, Object)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_Insert_System_Int32_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Insert(int index, object value)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">index</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView_InvalidatePagingAndRefresh_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.InvalidatePagingAndRefresh*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_InvalidatePagingAndRefresh" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.InvalidatePagingAndRefresh"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_InvalidatePagingAndRefresh" class="expander" data-toggle="collapse">InvalidatePagingAndRefresh()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_InvalidatePagingAndRefresh" class="collapse in">
+  <div class="markdown level1 summary"><p>Invalidates the paging and refreshes the view.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void InvalidatePagingAndRefresh()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_InvalidatePagingAndRefresh">QueryableCollectionView.InvalidatePagingAndRefresh()</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView_Load_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.Load*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_Load_System_Int32_System_Collections_IEnumerable_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.Load(System.Int32,System.Collections.IEnumerable)"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_Load_System_Int32_System_Collections_IEnumerable_" class="expander" data-toggle="collapse">Load(Int32, IEnumerable)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_Load_System_Int32_System_Collections_IEnumerable_" class="collapse in">
+  <div class="markdown level1 summary"><p>Loads new data in the view.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Load(int startIndex, IEnumerable items)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">startIndex</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Collections.IEnumerable</span></span>
+        <span class="parametername">items</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView_OnCollectionChanged_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.OnCollectionChanged*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_OnCollectionChanged_System_Collections_Specialized_NotifyCollectionChangedEventArgs_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_OnCollectionChanged_System_Collections_Specialized_NotifyCollectionChangedEventArgs_" class="expander" data-toggle="collapse">OnCollectionChanged(NotifyCollectionChangedEventArgs)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_OnCollectionChanged_System_Collections_Specialized_NotifyCollectionChangedEventArgs_" class="collapse in">
+  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_CollectionChanged">CollectionChanged</a> event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnCollectionChanged(NotifyCollectionChangedEventArgs args)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Collections.Specialized.NotifyCollectionChangedEventArgs</span></span>
+        <span class="parametername">args</span>
+        <p><p>The <span class="xref">System.Collections.Specialized.NotifyCollectionChangedEventArgs</span> instance containing the event data.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_OnCollectionChanged_System_Collections_Specialized_NotifyCollectionChangedEventArgs_">QueryableCollectionView.OnCollectionChanged(NotifyCollectionChangedEventArgs)</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView_OnRefresh_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.OnRefresh*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_OnRefresh" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.OnRefresh"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_OnRefresh" class="expander" data-toggle="collapse">OnRefresh()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_OnRefresh" class="collapse in">
+  <div class="markdown level1 summary"><p>Invoked when the instance should be refreshed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnRefresh()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_OnRefresh">QueryableCollectionView.OnRefresh()</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView_Remove_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.Remove*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_Remove_System_Object_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.Remove(System.Object)"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_Remove_System_Object_" class="expander" data-toggle="collapse">Remove(Object)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_Remove_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Removes the specified item from the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Remove(object item)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">item</span>
+        <p><p>The item to remove.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_Remove_System_Object_">QueryableCollectionView.Remove(Object)</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView_RemoveAt_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.RemoveAt*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_RemoveAt_System_Int32_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.RemoveAt(System.Int32)"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_RemoveAt_System_Int32_" class="expander" data-toggle="collapse">RemoveAt(Int32)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_RemoveAt_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Removes the item at the specified position from the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RemoveAt(int index)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">index</span>
+        <p><p>The position of the item to remove.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Telerik.Windows.Data.QueryableCollectionView.html#Telerik_Windows_Data_QueryableCollectionView_RemoveAt_System_Int32_">QueryableCollectionView.RemoveAt(Int32)</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView_ResetItems_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.ResetItems*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_ResetItems" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.ResetItems"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_ResetItems" class="expander" data-toggle="collapse">ResetItems()</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_ResetItems" class="collapse in">
+  <div class="markdown level1 summary"><p>Reset all items to default value (null) in the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetItems()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Telerik_Windows_Data_VirtualQueryableCollectionView_ResetItems_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.ResetItems*"></a>
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_ResetItems_System_Int32_System_Int32_" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.ResetItems(System.Int32,System.Int32)"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_ResetItems_System_Int32_System_Int32_" class="expander" data-toggle="collapse">ResetItems(Int32, Int32)</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_ResetItems_System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Reset number of items starting from given index to default value (null) in the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetItems(int startIndex, int count)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">startIndex</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">count</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="events">Events
+  </h3>
+  
+  
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_ItemsLoaded" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.ItemsLoaded"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_ItemsLoaded" class="expander" data-toggle="collapse">ItemsLoaded</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_ItemsLoaded" class="collapse in">
+  <div class="markdown level1 summary"><p>Occurs when the items are loaded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;VirtualQueryableCollectionViewItemsLoadedEventArgs&gt; ItemsLoaded</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Telerik.Windows.Data.VirtualQueryableCollectionViewItemsLoadedEventArgs.html">VirtualQueryableCollectionViewItemsLoadedEventArgs</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="Telerik_Windows_Data_VirtualQueryableCollectionView_ItemsLoading" data-uid="Telerik.Windows.Data.VirtualQueryableCollectionView.ItemsLoading"><a href="#collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_ItemsLoading" class="expander" data-toggle="collapse">ItemsLoading</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Data_VirtualQueryableCollectionView_ItemsLoading" class="collapse in">
+  <div class="markdown level1 summary"><p>Occurs when the collection is about to load items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;VirtualQueryableCollectionViewItemsLoadingEventArgs&gt; ItemsLoading</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Telerik.Windows.Data.VirtualQueryableCollectionViewItemsLoadingEventArgs.html">VirtualQueryableCollectionViewItemsLoadingEventArgs</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Telerik.Windows.Controls.CollectionExtensions.html#Telerik_Windows_Controls_CollectionExtensions_ToEnumerable__1___0_">CollectionExtensions.ToEnumerable&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Telerik.Windows.Core.EnumerableExtensions.html#Telerik_Windows_Core_EnumerableExtensions_ToEnumerable__1___0_">EnumerableExtensions.ToEnumerable&lt;T&gt;(T)</a>
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+	  <div id="push"></div>
+    </div>
+      <div id="footer" class="container-fluid pb-40">
+        <div class="row feedback-row mb-60">
+          <div class="col-sm-8 col-sm-offset-4 col-md-offset-3 col-lg-8 col-lg-offset-2">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="row feedback">
+                  <div class="col-xs-8">
+                    <h4>Was this article helpful?</h4>
+                  </div>
+                  <div class="col-xs-4 text-right">
+                    <button data-value="yes" id="yesButton">Yes</button>
+                    &nbsp;/&nbsp;
+                    <button data-value="no" id="noButton">No</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="dialog-overlay">
+          <div class="feedback-dialog dialog dialog-enter">
+            <div id="feedback-container">
+              <div id="feedback-window-container">
+                <div id="feedback-form-window">
+                  <h3 class="mt-0 mb-5">Give article feedback</h3>
+                  <p>Tell us how we can improve this article</p>
+                  <span id="feedback-form-popup-container"></span>
+                  <form id="feedback-form">
+                    <div id="feedback-checkbox-area">
+                      <input id="hidden-sheet-id" type="hidden" value="1toT2XTrYzmmQGUq5xCmXIkMWkwah3QCNZ9Aj5RLaeoo">
+                        <label>
+                          <input type="checkbox" data-bind="checked: outdatedSample"> Code samples are inaccurate / outdated.
+                        </label>
+                        <span class="required-field" data-bind="visible: outdatedSample"></span>
+                        <textarea id="feedback-code-sample-text-input" placeholder="Please, specify more details ..." class="feedback-extw__textarea" data-bind="visible: outdatedSample, value: inaccurateOutdatedCodeSamplesText">
+                        </textarea>
+                        <label>
+                          <input type="checkbox" data-bind="checked: otherMoreInformation"> I expected to find other / more information.
+                        </label>
+                        <span class="required-field" data-bind="visible: otherMoreInformation"></span>
+                        <textarea id="feedback-more-information-text-input" class="feedback-extw__textarea" placeholder="Please, specify what information can be added ..." data-bind="visible: otherMoreInformation, value: otherMoreInformationText">
+                        </textarea>
+                        <label>
+                          <input type="checkbox" data-bind="checked: textErrors"> There are typos / broken links / broken page elements.
+                        </label>
+                        <span class="required-field" data-bind="visible: textErrors"></span>
+                        <textarea id="feedback-text-errors-text-input" class="feedback-extw__textarea" placeholder="Please, specify what needs to be fixed ..." data-bind="visible: textErrors, value: typosLinksElementsText">
+                        </textarea>
+                        <label>
+                          <input type="checkbox" data-bind="checked: inaccurateContent"> Content is inaccurate / outdated.
+                        </label>
+                        <span class="required-field" data-bind="visible: inaccurateContent"></span>
+                        <textarea id="feedback-inaccurate-content-text-input" class="feedback-extw__textarea" placeholder="Please, specify which conent ..." data-bind="visible: inaccurateContent, value: inaccurateOutdatedContentText">
+                        </textarea>
+                        <label>
+                          <input type="checkbox" data-bind="checked: otherFeedback"> Other
+                        </label>
+                        <span class="required-field" data-bind="visible: otherFeedback"></span>
+                        <textarea id="feedback-other-text-input" placeholder="Please, enter more details or not listed feedback ..." class="feedback-extw__textarea" data-bind="visible: otherFeedback, value: textFeedback">
+                        </textarea>
+                        <input id="feedback-email-input" type="email" placeholder="email (optional)" data-email-msg="Email format is not valid." class="feedback-extw__input input" data-bind="value: email">
+                        <label>
+                          <input type="checkbox" data-bind="checked: acceptFeedbackContact"> By checking this box you consent to Progress contacting you by email about your response on this page.
+                        </label>
+                      </div>
+                  </form>
+                  <div class="feedback-extw__foot">
+                    <p class="mt-30 mb-0" style="text-align: right;">
+                      <button class="button ghost dialog-hide">Cancel</button>
+                      <button class="button dialog-hide" type="submit">Submit</button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <script>
+        $(document).ready(function() {
+        initFeedbackForm({
+        dialog: ".dialog-overlay",
+        closeButtons: ".dialog-hide",
+        container: ".feedback"
+        });
+        });
+      </script>
+      
+        <script>
+        $(".read-prev").hover(function() {
+        $(".title-prev").show();
+        }, function() {
+        $(".title-prev").hide();
+        });
+      
+        $(".read-next").hover(function() {
+        $(".title-next").show();
+        }, function() {
+        $(".title-next").hide();
+        });
+      
+        $(".all-components").click(function() {
+        $(".all-components").toggleClass("show-components");
+        $('.sidetoggle').toggleClass("collapse");
+        $('.sidetoc').toggleClass("show-components");
+        $(".sidefilter").toggleClass("show-components");
+        });
+      </script>
+      
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="row">
+              <div class="col-md-12 col-lg-10 col-lg-offset-1">
+                <div class="row">
+      
+      
+                  <div class="col-sm-4 mb-20">
+                    <h6 class="mt-0 mb-10">Getting Started</h6>
+                    <ul class="list-unstyled">
+      
+                      <li>
+                        <a href="https://www.telerik.com/download-trial-file/v2-b/ui-for-silverlight" target="_blank">Install Now</a>
+                      </li>
+      
+                      <li>
+                        <a href="http://demos.telerik.com/silverlight/" target="_blank">Demos</a>
+                      </li>
+      
+                      <li>
+                        <a href="http://demos.telerik.com/xaml-sdkbrowser/" target="_blank">SDK Samples Browser</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/silverlight/sample-applications" target="_blank">Sample Applications</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/wpf/color-theme-generator" target="_blank">Themes Generator</a>
+                      </li>
+      
+                    </ul>
+                  </div>
+      
+                  <div class="col-sm-4 mb-20">
+                    <h6 class="mt-0 mb-10">Support Resources</h6>
+                    <ul class="list-unstyled">
+      
+                      <li>
+                        <a href="https://www.telerik.com/support/code-library/silverlight" target="_blank">Code Library</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/support/kb/silverlight" target="_blank">Knowledge Base</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/silverlight/mvvm-support" target="_blank">MVVM Support</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/videos/silverlight" target="_blank">Videos</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://github.com/telerik/xaml-sdk" target="_blank">GitHub SDK Repository</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/help/silverlight/installation-system-requirements.html" target="_blank">System Requirements</a>
+                      </li>
+      
+                    </ul>
+                  </div>
+      
+                  <div class="col-sm-4 mb-20">
+                    <h6 class="mt-0 mb-10">Community</h6>
+                    <ul class="list-unstyled">
+      
+                      <li>
+                        <a href="https://www.telerik.com/forums/silverlight" target="_blank">Forums</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/blogs/.net" target="_blank">Blogs</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://feedback.telerik.com/Project/143" target="_blank">XAML Feedback Portal</a>
+                      </li>
+      
+                      <li>
+                        <a href="http://feedback.telerik.com/Project/184" target="_blank">Document Processing Feedback Portal</a>
+                      </li>
+      
+                    </ul>
+                  </div>
+      
+      
+                </div>
+                <div class="row copyright">
+                  <div class="col-sm-4 social-icons">
+                    <span class="sticky">
+                      <a class="social-icon" href="https://www.facebook.com/Telerik/" title=""><?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewbox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+      <path d="M13.766,32.155V17.559H8.854V11.87h4.912V7.675c0-4.869,2.973-7.52,7.316-7.52c2.08,0,3.868,0.155,4.39,0.224v5.088
+      	l-3.013,0.001c-2.362,0-2.819,1.122-2.819,2.769v3.632h5.634l-0.734,5.688H19.64v14.597H13.766z"></path>
+      </svg>
+                      </a>
+                      <a class="social-icon" href="https://twitter.com/Telerik/" title=""><?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewbox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+      <path fill="#231F20" d="M32,6.076c-1.178,0.522-2.442,0.875-3.771,1.034c1.355-0.813,2.396-2.1,2.887-3.632
+      	c-1.269,0.752-2.674,1.298-4.169,1.593c-1.198-1.276-2.904-2.073-4.792-2.073c-3.626,0-6.566,2.939-6.566,6.565
+      	c0,0.515,0.058,1.016,0.17,1.496C10.303,10.785,5.466,8.171,2.228,4.199c-0.565,0.97-0.889,2.097-0.889,3.3
+      	c0,2.278,1.159,4.287,2.92,5.464c-1.076-0.034-2.088-0.329-2.974-0.821c0,0.027,0,0.055,0,0.083c0,3.181,2.263,5.834,5.267,6.438
+      	c-0.551,0.15-1.131,0.23-1.73,0.23c-0.423,0-0.834-0.041-1.235-0.118c0.835,2.608,3.26,4.507,6.133,4.56
+      	c-2.247,1.761-5.078,2.811-8.154,2.811c-0.53,0-1.052-0.031-1.566-0.092c2.905,1.862,6.356,2.949,10.064,2.949
+      	c12.076,0,18.679-10.004,18.679-18.679c0-0.285-0.007-0.568-0.02-0.849C30.007,8.549,31.12,7.393,32,6.076"></path>
+      </svg>
+                      </a>
+                      <a class="social-icon" href="https://www.youtube.com/user/TelerikInc" title=""><?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" xml:space="preserve">
+      <path d="M506.887,153.632c0,0-5.003-35.283-20.354-50.82c-19.469-20.393-41.293-20.494-51.301-21.687
+      c-71.647-5.179-179.121-5.179-179.121-5.179h-0.223c0,0-107.472,0-179.121,5.179c-10.008,1.194-31.824,1.295-51.301,21.687
+      c-15.351,15.537-20.346,50.82-20.346,50.82S0,195.065,0,236.497v38.843c0,41.433,5.12,82.865,5.12,82.865
+      s4.995,35.283,20.346,50.82c19.476,20.393,45.06,19.748,56.455,21.885C122.883,434.839,256,436.054,256,436.054
+      s107.585-0.162,179.232-5.341c10.008-1.194,31.831-1.295,51.301-21.687c15.351-15.537,20.354-50.82,20.354-50.82
+      S512,316.773,512,275.341v-38.843C512,195.065,506.887,153.632,506.887,153.632z M203.87,322.913v-144.36l137.342,72.18 L203.87,322.913z"></path>
+      </svg>
+                      </a>
+                      <a class="social-icon" href="https://www.linkedin.com/showcase/telerik/" title=""><?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewbox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+      <path d="M7.81,29V9.652H1.379V29H7.81z M4.596,7.009c2.243,0,3.638-1.486,3.638-3.342C8.192,1.768,6.838,0.324,4.638,0.324
+      	C2.438,0.324,1,1.768,1,3.667c0,1.856,1.396,3.342,3.554,3.342H4.596L4.596,7.009z M11.37,29h6.43V18.195
+      	c0-0.579,0.042-1.156,0.213-1.569c0.465-1.155,1.521-2.352,3.3-2.352c2.325,0,3.257,1.774,3.257,4.375v10.35H31V17.906
+      	c0-5.943-3.173-8.708-7.404-8.708c-3.469,0-4.992,1.939-5.838,3.259H17.8V9.651h-6.43C11.454,11.467,11.37,28.999,11.37,29L11.37,29
+      	z"></path>
+      </svg>
+                      </a>
+                    </span>
+                  </div>
+                  <div class="col-sm-8">
+                    <p>
+                      Copyright &copy; 2018 Progress Software Corporation and/or its subsidiaries or affiliates.<br> All Rights Reserved.
+                    </p>
+      
+                    <p>
+                      Progress, Telerik, and certain product names used herein are trademarks or registered trademarks of Progress Software Corporation and/or one of its subsidiaries or affiliates in the U.S. and/or other countries. See <a href="https://www.progress.com/legal/trademarks">Trademarks</a> for appropriate markings.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,2186 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Telerik UI - API ReferenceNamespace Telerik.Windows.Controls.Spreadsheet.Dialogs
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="restype" content="api">
+    <meta name="title" content="Namespace Telerik.Windows.Controls.Spreadsheet.Dialogs
+   ">
+    <meta name="generator" content="docfx 2.36.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="https://d6vtbcy3ong79.cloudfront.net/telerik-navigation/1.0.28/css/index.min.css">
+    <link rel="stylesheet" href="https://d6vtbcy3ong79.cloudfront.net/fonts/1.1.5/css/metric.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,500,700">
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- Google Tag Manager -->
+          <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-6X92');</script>
+          <!-- End Google Tag Manager -->
+          <script>	
+              var e = document.documentElement;	
+              e.className = e.className.replace(/(^|\s)no-js(\s|$)/i, "$2");	
+          </script>
+          
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//kendo.cdn.telerik.com/2017.3.1026/js/kendo.web.min.js"></script>
+    <script src="//cdn.optimizely.com/js/2380340583.js"></script>
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        <aside class="TK-Hat">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-8 col-xl-offset-2">
+                <div class="row">
+                  <div class="col-md-12 col-xl-10 col-xl-offset-1">
+                    <figure class="TK-Hat-Brand">
+                      <a href="https://www.progress.com" class="TK-PRGS-Logo" data-gtm-event="top-nav, text, progress-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="94" height="40" viewbox="0 0 512 120">
+                          <path fill="#5ce500" d="M95.52 29.33v51a3.93 3.93 0 0 1-1.78 3.08l-1.67 1-12.72 7.35-8.59 5-1.78 1V42.6L21.23 15 43.91 1.93 46 .74a3.94 3.94 0 0 1 3.56 0L81 18.9l14.51 8.38v2.05zM58.36 48.72l-9.79-5.66-22.91-13.23a4 4 0 0 0-3.56 0L1.77 41.57 0 42.6l34.49 19.91v39.83l20.3-11.73 1.79-1a3.94 3.94 0 0 0 1.78-3.08V48.72zM0 82.43l23.86 13.78V68.63z"></path>
+                          <path fill="#4b4e52" d="M148.09 27.28h-26v70.48h11.55V70.1h14.57c15.77 0 24.45-7.7 24.45-21.69 0-6.35-2.4-21.12-24.55-21.12m12.78 21.31c0 7.95-4.12 11.19-14.24 11.19h-13v-22.1h14.57c8.56 0 12.71 3.57 12.71 10.91M207 46.41l.87.42-2 10.42-1.35-.42a11.32 11.32 0 0 0-3.34-.51c-10.79 0-11.67 8.59-11.67 19v22.44h-10.64V46h10v6.24c2.73-4.2 6-6.37 10.37-6.9a14.55 14.55 0 0 1 7.76 1.07M233.29 45c-8.42 0-15.16 3.2-19.5 9.27-4.56 6.37-5.23 13.85-5.23 17.74 0 16.36 9.7 26.92 24.73 26.92 18.26 0 24.73-14.71 24.73-27.3 0-7.25-2.15-13.82-6-18.51-4.41-5.31-10.87-8.12-18.7-8.12m0 44.38c-8.37 0-13.57-6.66-13.57-17.37s5.2-17.55 13.57-17.55S247 61.23 247 71.78c0 10.83-5.24 17.56-13.66 17.56m114.55-42.93l.87.42-2 10.42-1.35-.42a11.26 11.26 0 0 0-3.33-.51c-10.78 0-11.66 8.59-11.66 19v22.44h-10.66V46h10v6.24c2.73-4.2 6-6.37 10.37-6.9a14.54 14.54 0 0 1 7.73 1.06m38.4 34.76l-.2.57c-2.23 6.36-7.57 7.7-11.65 7.7-8.09 0-13.3-5.37-13.81-14.09h36.59l.13-1a31.26 31.26 0 0 0 .12-4.12v-.93C396.93 54.78 387.48 45 374 45c-7.9 0-14.37 3.1-18.73 9a30.85 30.85 0 0 0-5.54 18c0 16 9.95 26.74 24.74 26.74 11.45 0 19.33-5.82 22.2-16.38l.33-1.2h-10.7zM361 66.05c.9-7.17 5.81-11.73 12.79-11.73 5.33 0 11.64 3.1 12.52 11.73H361zm-60.7-15.71c-3.45-3.58-8.06-5.39-13.76-5.39-15.69 0-22.83 13.81-22.83 26.63 0 13.16 7.06 26.44 22.83 26.44a18.33 18.33 0 0 0 13.35-5.42c0 2.28-.1 4.45-.16 5.38-.58 8.54-4.68 12.51-12.91 12.51-4.47 0-9.61-1.59-10.6-6l-.22-1h-10.54l.17 1.41c1.1 9.12 9.11 14.79 20.9 14.79 10.34 0 17.7-3.9 21.28-11.26 1.73-3.55 2.6-8.72 2.6-15.37V46h-10.13v4.34zm-13.11 38.15c-3.74 0-12.43-1.69-12.43-17.37 0-10.3 4.87-16.7 12.71-16.7 6.06 0 12.52 4.39 12.52 16.7 0 10.87-4.79 17.37-12.81 17.37m159.67-6.31c0 8.23-6.83 16.53-22.09 16.53-13.5 0-21.53-5.85-22.61-16.45l-.15-1.1h10.52l.21.84c1.29 6.38 7.37 7.72 12.24 7.72 5.34 0 11-1.72 11-6.54 0-2.44-1.59-4.18-4.73-5.16-1.86-.55-4.15-1.2-6.56-1.87-4.16-1.16-8.47-2.38-11.12-3.29-6.56-2.35-10.33-6.93-10.33-12.56 0-10.43 10.16-15.11 20.22-15.11 13.46 0 20.42 5.07 21.3 15.49l.09 1.07H434.5l-.14-.82c-1-6-7-6.9-10.48-6.9-3 0-10 .53-10 5.5 0 2.25 1.93 3.91 5.89 5.06 1.18.33 2.94.78 5 1.31 4.22 1.09 9.48 2.46 12.13 3.37 6.59 2.32 9.93 6.67 9.93 13m49.39 0c0 8.23-6.83 16.53-22.09 16.53-13.5 0-21.53-5.85-22.61-16.45l-.11-1.09H462l.12.74c1.29 6.38 7.37 7.72 12.24 7.72 5.34 0 11-1.72 11-6.54 0-2.44-1.59-4.18-4.72-5.16-1.86-.55-4.15-1.2-6.57-1.87-4.16-1.16-8.46-2.38-11.11-3.29-6.57-2.35-10.33-6.93-10.33-12.56 0-10.43 10.16-15.11 20.22-15.11 13.46 0 20.42 5.07 21.29 15.49l.09 1.07H483.9l-.14-.82c-1-6-7-6.9-10.48-6.9-3 0-9.95.53-9.95 5.5 0 2.25 1.93 3.91 5.89 5.06 1.18.33 2.94.78 5 1.31 4.22 1.09 9.48 2.46 12.13 3.37 6.58 2.32 9.93 6.67 9.93 13m8.43-30.78a7.37 7.37 0 1 1 7.29-7.37 7.23 7.23 0 0 1-7.29 7.37m0-13.49a6.12 6.12 0 1 0 6 6.12 5.91 5.91 0 0 0-6-6.12m-.85 7.49v2.46h-2.17v-7.74h3.62a2.58 2.58 0 0 1 2.86 2.7 2.26 2.26 0 0 1-1.49 2.34l1.77 2.7H506l-1.49-2.46h-.68zm1.21-3.49h-1.21v1.73h1.21a.86.86 0 0 0 1-.85.88.88 0 0 0-1-.89"></path>
+                        </svg>
+                      </a>
+                    </figure>
+        
+                    <div class="TK-Hat-Aside TK--Desktop">
+                      <ul class="TK-Hat-Menu">
+                        <li class="TK-Hat-Menu-Item">
+                          <a href="https://www.progress.com/company" class="TK-Hat-Menu-Link" data-gtm-event="top-nav, text, company">Company <i class="TK-Arrow"></i></a>
+                          <ul class="TK-Dropdown TK-Dropdown--Small TK-Dropdown--White">
+                            <li><a href="https://www.progress.com/company" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, company-overview">Company Overview</a></li>
+                            <li><a href="https://www.progress.com/company/leadership#exec" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, leadership">Leadership</a></li>
+                            <li><a href="http://investors.progress.com" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, investor-relations">Investor Relations</a></li>
+                            <li><a href="http://investors.progress.com/releases.cfm" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, press-releases">Press Releases</a></li>
+                            <li><a href="https://www.progress.com/company/press-coverage" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, press-coverage">Press Coverage</a></li>
+                            <li><a href="https://www.progress.com/events" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, events">Events</a></li>
+                            <li><a href="https://www.progress.com/company/awards" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, awards">Awards</a></li>
+                            <li><a href="https://www.progress.com/blogs" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, corporate-blog">Corporate Blog</a></li>
+                            <li><a href="https://www.progress.com/customers" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, customers">Customers</a></li>
+                            <li><a href="https://www.progress.com/company/careers" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, careers">Careers</a></li>
+                            <li><a href="https://www.progress.com/company/offices" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, offices">Offices</a></li>
+                          </ul>
+                        </li>
+        
+                        <li class="TK-Hat-Menu-Item">
+                          <a href="https://www.progress.com/products" class="TK-Hat-Menu-Link" data-gtm-event="technology.track">Technology <i class="TK-Arrow"></i></a>
+                          <ul class="TK-Dropdown TK-Dropdown--Medium TK-Dropdown--White">
+                            <li><a href="https://www.progress.com/app-development-deployment" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, app-dev-deploy">Application Development
+                                and Deployment</a></li>
+                            <li><a href="https://www.progress.com/back-end-as-a-service" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, baas">BaaS Platform</a></li>
+                            <li><a href="https://www.progress.com/data-connectivity-integration" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, dci">Data Connectivity and Integration</a></li>
+                            <li><a href="https://www.progress.com/web-content-management" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, wcm">Web Content Management</a></li>
+                            <li><a href="https://www.progress.com/predictive-analytics" class="TK-Dropdown-Link" data-gtm-event="top-nav, text, predictive-analytics">Predictive Analytics</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+        
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <nav class="navbar navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-8 col-xl-offset-2">
+                <div class="row">
+                  <div class="nav-container col-md-12 col-lg-8 col-lg-offset-2 col-xl-10 col-xl-offset-1">
+                    <div id="navbar" class="nav navbar-collapse">
+                      <a class="button all-components">
+                        <span class="item-expanded"></span>
+                      </a>
+                      <a class="navbar-brand brand-platform-silverlight" href="/devtools/silverlight/">
+                        <span class="sr-only">Telerik UI for Silverlight</span>
+                      </a>
+        
+                      <select id="nav-dropdown">
+                        <option selected="">Navigate to...
+        
+                        <option value="https://demos.telerik.com/silverlight/" onclick="trackItemFromCurrentPage('docs-navigation', 'Demos')">Demos
+        
+                        <option value="https://www.telerik.com/support/whats-new/silverlight/release-history" onclick="trackItemFromCurrentPage('docs-navigation', 'Release History')">Release History
+        
+                        <option value="http://www.telerik.com/products/silverlight/overview.aspx" onclick="trackItemFromCurrentPage('docs-navigation', 'About')">About
+        
+                        <option value="http://www.telerik.com/purchase/individual/silverlight.aspx" onclick="trackItemFromCurrentPage('docs-navigation', 'Pricing')">Pricing
+        
+                      </select>
+        
+                      <ul class="nav navbar-nav main-menu">
+        
+                        <li>
+                          <a href="https://demos.telerik.com/silverlight/" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'Demos')">Demos</a>
+                        </li>
+        
+                        <li>
+                          <a href="https://www.telerik.com/support/whats-new/silverlight/release-history" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'Release History')">Release History</a>
+                        </li>
+        
+                        <li>
+                          <a href="http://www.telerik.com/products/silverlight/overview.aspx" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'About')">About</a>
+                        </li>
+        
+                        <li>
+                          <a href="http://www.telerik.com/purchase/individual/silverlight.aspx" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'Pricing')">Pricing</a>
+                        </li>
+        
+        
+        
+                        <li class="hidden-xs">
+                          <a class="search-icon">
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewbox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+        <path fill="#FFFFFF" d="M6.499,1.985C3.461,1.985,1,4.449,1,7.484c0,3.039,2.461,5.5,5.499,5.5c3.037,0,5.498-2.461,5.498-5.5
+        	C11.996,4.449,9.535,1.985,6.499,1.985z M6.499,11.885c-2.429,0-4.399-1.97-4.399-4.401c0-2.429,1.97-4.399,4.399-4.399
+        	c2.429,0,4.399,1.97,4.399,4.399C10.897,9.915,8.928,11.885,6.499,11.885z M13.828,13.746c0,1.179,0.109,1.067-1.069,1.067
+        	l-1.678-1.678c0-1.177-0.109-1.067,1.069-1.067L13.828,13.746z"></path>
+        </svg>
+        
+                            &nbsp;
+                            <span class="sr-only">Search</span>
+                          </a>
+                          <div class="global-search">
+                            <form action="/devtools/silverlight/search" method="get">
+                              <div class="search-input-container">
+                                <input id="local-search" placeholder="Search for &hellip;" name="q">
+                                <div id='refine-search-container'>
+                                  <div id='refine-search-button' class='unselectable'>
+                                    <span id='refine-search-label' data-bind='text: label'></span>
+                                    <span class='k-icon k-i-arrow-chevron-down'></span>
+                                  </div>
+                                </div>
+                                <div id="refine-search-popup" style="display: none">
+                                  <ul>
+                                    <li>
+                                      <label class="custom-checkbox unselectable">
+                                        <input type="checkbox" data-bind="checked: documentation"><span class="k-icon k-i-check"></span>Search in Documentation
+                                      </label>
+                                    </li>
+        
+                                    <li>
+                                      <label class="custom-checkbox unselectable">
+                                        <input type="checkbox" disabled="true" data-bind="checked: api"><span class="k-icon k-i-check"></span>Search in API Reference
+                                      </label>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </form>
+        
+                            <script>
+                              var gcsInstance = '011354416605164361800:ebfuug7ih7i';
+                              var gcsKey = 'AIzaSyDftzENpfk47-cyaNfxh-exsWmz0ggRARM';
+                              isKbPage =  false ;
+                              siteHasKbPortal = ''
+                            </script>
+        
+                            <script type="text/javascript" src="/devtools/silverlight/assets/search-results.js"></script>
+        
+                          </div>
+                        </li>
+        
+        
+                        <li class="primary-cta">
+                          <a href="http://www.telerik.com/products/silverlight/download.aspx" target="_blank" onclick="trackItemFromCurrentPage('docs-navigation', 'Try now')">Try now</a>
+                        </li>
+        
+                      </ul>
+                    </div>
+        
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+        </nav>
+        
+        <script>
+        
+          var searchContainer = $(".global-search");
+        
+          function hideSearch(e){
+          if (!searchContainer.is(e.target) &&
+          searchContainer.has(e.target).length === 0 &&
+          $(e.target).parents("#refine-search-popup").length === 0) {
+          setTimeout(function(e) {
+          searchContainer.removeClass("show-search");
+          $(document).off('click', hideSearch);
+          }, 200)
+          }
+          }
+        
+          function showSearch() {
+        
+          searchContainer.toggleClass("show-search")
+          .one("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(e) {
+          if (searchContainer.hasClass("show-search")) {
+          searchContainer.find("input:first")
+          .focus();
+          $(document).on("click", hideSearch);
+          }
+          });
+          }
+        
+          $(document).off("click", ".search-icon")
+          .on("click", ".search-icon", showSearch);
+        
+        
+          function navigate(e) {
+          trackItemFromCurrentPage('docs-navigation', e.target.children[e.target.selectedIndex].text);
+          window.open(e.target.value, "_blank");
+          }
+        
+        
+          var trackItemFromCurrentPage = function (category, action) {
+          trackItem(category, action, window.location.href);
+          };
+        
+          var trackItem = function (category, action, label) {
+          dataLayer.push({
+          'event': 'virtualEvent',
+          'eventCategory': category,
+          'eventAction': action,
+          'eventLabel': label,
+          });
+          };
+          
+          $(document)
+          .off("change", "#nav-dropdown")
+          .on("change", "#nav-dropdown", navigate);
+        </script>
+        
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav side-nav hide-when-search">
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc">
+             
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-9">
+            <article class="content wrap" id="_content" data-uid="Telerik.Windows.Controls.Spreadsheet.Dialogs">
+  <h1 id="Telerik_Windows_Controls_Spreadsheet_Dialogs" data-uid="Telerik.Windows.Controls.Spreadsheet.Dialogs">Namespace Telerik.Windows.Controls.Spreadsheet.Dialogs
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.AccountingCategoryContent.html">AccountingCategoryContent</a></p>
+          <p><p>Represents the content of the accounting category of the number tab of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.AlertDialogContent.html">AlertDialogContent</a></p>
+          <p><p>Represents alert dialog content.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.AlertDialogContentBase.html">AlertDialogContentBase</a></p>
+          <p><p>Represents a base class for the alert dialog content.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.AlertDialogContext.html">AlertDialogContext</a></p>
+          <p><p>Represents a context for the alert dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.AlertDialogViewModel.html">AlertDialogViewModel</a></p>
+          <p><p>Represents a view model for the alert dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.AlignmentTabContent.html">AlignmentTabContent</a></p>
+          <p><p>Represents the content of the alignment tab of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.AlignmentTabContext.html">AlignmentTabContext</a></p>
+          <p><p>Represents context for the alignment tab of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.AlignmentTabContextBase.html">AlignmentTabContextBase</a></p>
+          <p><p>Represents base for the alignment tab context classes.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.AlignmentTabContextForStyle.html">AlignmentTabContextForStyle</a></p>
+          <p><p>Represents context for style for the alignment tab of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.BorderSelector.html">BorderSelector</a></p>
+          <p><p>Represents the BorderSelector control.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.BordersPreview.html">BordersPreview</a></p>
+          <p><p>Represents the BordersPreview control.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.BorderStyleSelector.html">BorderStyleSelector</a></p>
+          <p><p>Represents the Border style selector control.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.BorderTabContent.html">BorderTabContent</a></p>
+          <p><p>Represents the content of the border tab of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.BorderTabContext.html">BorderTabContext</a></p>
+          <p><p>Represents context for the border tab of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.BorderTabContextBase.html">BorderTabContextBase</a></p>
+          <p><p>Represents base for the border tab context classes.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.BorderTabContextForStyle.html">BorderTabContextForStyle</a></p>
+          <p><p>Represents context for style for the border tab of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.CategoryContentBase.html">CategoryContentBase</a></p>
+          <p><p>Represents base for the category content classes.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.CellPreview.html">CellPreview</a></p>
+          <p><p>Represents the Cellpreview control.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.CellsLayout.html">CellsLayout</a></p>
+          <p><p>Represents the type of cell layout as presented in the borders preview control.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.ComparisonOperatorItem.html">ComparisonOperatorItem</a></p>
+          <p><p>Describes the options for the comparison operator of the Custom Filter dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.ConfirmDialogContent.html">ConfirmDialogContent</a></p>
+          <p><p>Represents a confirm dialog content.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.ConfirmDialogContentBase.html">ConfirmDialogContentBase</a></p>
+          <p><p>Represents a base class for confirm dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.ConfirmDialogContext.html">ConfirmDialogContext</a></p>
+          <p><p>Represents a context for the confirm dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.ConfirmDialogViewModel.html">ConfirmDialogViewModel</a></p>
+          <p><p>Represents a view model for the confirm dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.CornerPath.html">CornerPath</a></p>
+          <p><p>Represents a corner path control.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.CreateNewThemeColorSampleControl.html">CreateNewThemeColorSampleControl</a></p>
+          <p><p>Represents the control containing the Sample in the create new theme dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.CreateNewThemeColorsDialogContent.html">CreateNewThemeColorsDialogContent</a></p>
+          <p><p>Represents the content of the CreateNewThemeColorsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.CreateNewThemeColorsDialogContentBase.html">CreateNewThemeColorsDialogContentBase</a></p>
+          <p><p>Represents base for the CreateNewThemeColorsDialogContent class.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.CreateNewThemeColorsDialogContext.html">CreateNewThemeColorsDialogContext</a></p>
+          <p><p>Represents context for the CreateNewThemeColorsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.CreateNewThemeFontsDialogContent.html">CreateNewThemeFontsDialogContent</a></p>
+          <p><p>Represents the content of the CreateNewThemeFontsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.CreateNewThemeFontsDialogContentBase.html">CreateNewThemeFontsDialogContentBase</a></p>
+          <p><p>Represents base for the CreateNewThemeFontsDialogContent class.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.CreateNewThemeFontsDialogContext.html">CreateNewThemeFontsDialogContext</a></p>
+          <p><p>Represents context for the CreateNewThemeFontsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.CreateNewThemeItemDialogContextBase-1.html">CreateNewThemeItemDialogContextBase&lt;T&gt;</a></p>
+          <p><p>Represents base for the context of the create new theme colors and fonts dialogs.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.CreateUpdateSpreadsheetNameDialogContent.html">CreateUpdateSpreadsheetNameDialogContent</a></p>
+          <p><p>Represents the content of the CreateUpdateSpreadsheetNameDialog</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.CreateUpdateSpreadsheetNameDialogContentBase.html">CreateUpdateSpreadsheetNameDialogContentBase</a></p>
+          <p><p>Represents base for the CreateUpdateSpreadsheetNameDialogContent class.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.CreateUpdateSpreadsheetNameDialogContext.html">CreateUpdateSpreadsheetNameDialogContext</a></p>
+          <p><p>Represents context for the CreateUpdateSpreadsheetNameDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.CreateUpdateSpreadsheetNameDialogViewModel.html">CreateUpdateSpreadsheetNameDialogViewModel</a></p>
+          <p><p>View model of the CreateUpdateSpreadsheetNameDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.CurrencyCategoryContent.html">CurrencyCategoryContent</a></p>
+          <p><p>Represents the content of the currency category of the number tab of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.CustomCategoryContent.html">CustomCategoryContent</a></p>
+          <p><p>Represents the content of the Custom category of the Number tab.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.CustomFilterDialogContent.html">CustomFilterDialogContent</a></p>
+          <p><p>Represents the content of the custom filter dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.CustomFilterDialogContentBase.html">CustomFilterDialogContentBase</a></p>
+          <p><p>Represents a base for the custom filter dialog content.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.CustomFilterDialogContext.html">CustomFilterDialogContext</a></p>
+          <p><p>Represents the context of the custom filter dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.CustomFilterDialogViewModel.html">CustomFilterDialogViewModel</a></p>
+          <p><p>Represents the view model of the custom filter dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.CustomSortListsDialogContent.html">CustomSortListsDialogContent</a></p>
+          <p><p>Represents custom sort condition dialog content.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.CustomSortListsDialogContentBase.html">CustomSortListsDialogContentBase</a></p>
+          <p><p>Represents a base class for custom sort condition dialog content.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.CustomSortListsDialogContext.html">CustomSortListsDialogContext</a></p>
+          <p><p>Represents custom sort list dialog context.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.CustomSortListsDialogViewModel.html">CustomSortListsDialogViewModel</a></p>
+          <p><p>Represents custom sort list dialog view model.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.DataValidationDialogContent.html">DataValidationDialogContent</a></p>
+          <p><p>Represents clss for data validation dialog content.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.DataValidationDialogContentBase.html">DataValidationDialogContentBase</a></p>
+          <p><p>Represents a base class for data validation dialog content.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.DataValidationDialogContext.html">DataValidationDialogContext</a></p>
+          <p><p>Represents data validation dialog context.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.DataValidationDialogViewModel.html">DataValidationDialogViewModel</a></p>
+          <p><p>Represents a view model for data validation dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.DateCategoryContent.html">DateCategoryContent</a></p>
+          <p><p>Represents the content of the date category of the number tab of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.DateTimeItem.html">DateTimeItem</a></p>
+          <p><p>Represents a date / time item.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.DecimalNumberPromptDialogContent.html">DecimalNumberPromptDialogContent</a></p>
+          <p><p>Represents the content of the DecimalNumberPromptDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.DecimalNumberPromptDialogContentBase.html">DecimalNumberPromptDialogContentBase</a></p>
+          <p><p>Represents base for the DecimalNumberPromptDialogContent class.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.DecimalNumberPromptDialogContext.html">DecimalNumberPromptDialogContext</a></p>
+          <p><p>Represents context for the DecimalNumberPromptDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.DialogViewModelBase-1.html">DialogViewModelBase&lt;T&gt;</a></p>
+          <p><p>Represents base for the view models of the dialogs.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FillEffectsDialogContent.html">FillEffectsDialogContent</a></p>
+          <p><p>Represents the content of the FillEffectsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FillEffectsDialogContentBase.html">FillEffectsDialogContentBase</a></p>
+          <p><p>Represents base for the FillEffectsDialogContent class.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FillEffectsDialogContext.html">FillEffectsDialogContext</a></p>
+          <p><p>Represents context for the FillEffects dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FillTabContent.html">FillTabContent</a></p>
+          <p><p>Represents the content of the fill tab of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FillTabContext.html">FillTabContext</a></p>
+          <p><p>Represents context for the fill tab of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FillTabContextBase.html">FillTabContextBase</a></p>
+          <p><p>Represents base for the fill tab context classes.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FillTabContextForStyle.html">FillTabContextForStyle</a></p>
+          <p><p>Represents context for style for the fill tab of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FillTabState.html">FillTabState</a></p>
+          <p><p>Describes the FillTab state.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FindAndReplaceDialogContent.html">FindAndReplaceDialogContent</a></p>
+          <p><p>Represents the content of the FindAndReplaceDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FindAndReplaceDialogContentBase.html">FindAndReplaceDialogContentBase</a></p>
+          <p><p>Base for the FindAndReplaceDialogContent class.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FindAndReplaceDialogContext.html">FindAndReplaceDialogContext</a></p>
+          <p><p>Represents context for FindAndReplaceDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FindAndReplaceTab.html">FindAndReplaceTab</a></p>
+          <p><p>Represents the tabs of the FindAndReplaceDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FontTabContent.html">FontTabContent</a></p>
+          <p><p>Represents the content of the font tab of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FontTabContext.html">FontTabContext</a></p>
+          <p><p>Represents context for the font tab of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FontTabContextBase.html">FontTabContextBase</a></p>
+          <p><p>Represents base for the font tab context classes.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FontTabContextForStyle.html">FontTabContextForStyle</a></p>
+          <p><p>Represents context for style for the font tab of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FormatCellsDialogContent.html">FormatCellsDialogContent</a></p>
+          <p><p>Represents the content of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FormatCellsDialogContentBase.html">FormatCellsDialogContentBase</a></p>
+          <p><p>Represents base for the FormatCellsDialogContent class.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FormatCellsDialogContext.html">FormatCellsDialogContext</a></p>
+          <p><p>Represents context for the the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FormatCellsTabContentBase-1.html">FormatCellsTabContentBase&lt;TContext&gt;</a></p>
+          <p><p>Represents base for the FormatCellsDialog tab content classes.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FormatCellsTabContextBase.html">FormatCellsTabContextBase</a></p>
+          <p><p>Represents base for the format tab context classes.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FormatCellsTabType.html">FormatCellsTabType</a></p>
+          <p><p>Defines the Format cells tab types.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FormatFontDialogContent.html">FormatFontDialogContent</a></p>
+          <p><p>Represents the FormatFontDialog content.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FormatFontDialogContext.html">FormatFontDialogContext</a></p>
+          <p><p>Represents the context of the FormatFontDialog</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FormatFontDialogViewModel.html">FormatFontDialogViewModel</a></p>
+          <p><p>Represents the FormatFontDialog view model.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FormatShapesDialogContent.html">FormatShapesDialogContent</a></p>
+          <p><p>Represents a format shapes dialog content.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FormatShapesDialogContentBase.html">FormatShapesDialogContentBase</a></p>
+          <p><p>Represents a base class for format shapes dialog content.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FormatShapesDialogContext.html">FormatShapesDialogContext</a></p>
+          <p><p>Represents format shapes dialog context.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FormatShapesDialogViewModel.html">FormatShapesDialogViewModel</a></p>
+          <p><p>Represents format shapes dialog view model.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FractionCategoryContent.html">FractionCategoryContent</a></p>
+          <p><p>Represents the content of the fraction category of the number tab of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FunctionArgumentsDialogContent.html">FunctionArgumentsDialogContent</a></p>
+          <p><p>Represents the content of the FunctionArgumentsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FunctionArgumentsDialogContentBase.html">FunctionArgumentsDialogContentBase</a></p>
+          <p><p>Represents base for the FunctionArgumentsDialogContent class.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.FunctionArgumentsDialogContext.html">FunctionArgumentsDialogContext</a></p>
+          <p><p>Represents context for the FunctionArgumentsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.GeneralCategoryContent.html">GeneralCategoryContent</a></p>
+          <p><p>Represents the content of the general category of the number tab of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.HeaderFooterDialogContent.html">HeaderFooterDialogContent</a></p>
+          <p><p>Represents the HeaderFooter dialog content.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.HeaderFooterDialogContext.html">HeaderFooterDialogContext</a></p>
+          <p><p>Represents the HeaderFooter dialog context.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.HeaderFooterDialogTabContent.html">HeaderFooterDialogTabContent</a></p>
+          <p><p>Represents the HeaderFooter dialog tab content.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.HeaderFooterDialogTabContext.html">HeaderFooterDialogTabContext</a></p>
+          <p><p>Represents the HeaderFooter dialog tab context.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.HeaderFooterDialogTabViewModel.html">HeaderFooterDialogTabViewModel</a></p>
+          <p><p>Represents the HeaderFooter dialog tab view model.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.HeaderFooterDialogViewModel.html">HeaderFooterDialogViewModel</a></p>
+          <p><p>Represents the HeaderFooter dialog view model.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.HeaderFooterTabContent.html">HeaderFooterTabContent</a></p>
+          <p><p>Represents the HeaderFooter tab content.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.HeaderFooterTabViewModel.html">HeaderFooterTabViewModel</a></p>
+          <p><p>Represents the HeaderFooter tab view model.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.HeaderFooterTemplate.html">HeaderFooterTemplate</a></p>
+          <p><p>HeaderFooter template.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.HyperlinkDialogCategoryContentBase.html">HyperlinkDialogCategoryContentBase</a></p>
+          <p><p>Represents base for the hyperlink dialog categories.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.HyperlinkDialogCategoryContext.html">HyperlinkDialogCategoryContext</a></p>
+          <p><p>Represents context for the the categories of the HyperlinkDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.HyperlinkDialogContent.html">HyperlinkDialogContent</a></p>
+          <p><p>Represents the content of the HyperlinkDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.HyperlinkDialogContentBase.html">HyperlinkDialogContentBase</a></p>
+          <p><p>Represents base for the HyperlinkDialogContent class.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.HyperlinkDialogContext.html">HyperlinkDialogContext</a></p>
+          <p><p>Represents context for the the HyperlinkDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.HyperlinkDialogStateChangedEventArgs.html">HyperlinkDialogStateChangedEventArgs</a></p>
+          <p><p>The arguments for the StateChanged event.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.HyperlinkEmailCategoryContent.html">HyperlinkEmailCategoryContent</a></p>
+          <p><p>Represents the content of the email category in the HyperlinkDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.HyperlinkInDocumentCategoryContent.html">HyperlinkInDocumentCategoryContent</a></p>
+          <p><p>Represents the content of the in document category in the HyperlinkDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.HyperlinkWebPageCategoryContent.html">HyperlinkWebPageCategoryContent</a></p>
+          <p><p>Represents the content of the web page category in the HyperlinkDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.InformationDialogContent.html">InformationDialogContent</a></p>
+          <p><p>Represents information dialog content.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.InformationDialogContentBase.html">InformationDialogContentBase</a></p>
+          <p><p>Represents a base class for the information dialog content.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.InformationDialogContext.html">InformationDialogContext</a></p>
+          <p><p>Represents a context for the information dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.InformationDialogViewModel.html">InformationDialogViewModel</a></p>
+          <p><p>Represents a view model for the information dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.InsertCellsDialogContent.html">InsertCellsDialogContent</a></p>
+          <p><p>Represents the content of the IncertCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.InsertCellsDialogContentBase.html">InsertCellsDialogContentBase</a></p>
+          <p><p>Represents base for the IncertCellsDialogContent class.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.InsertCellsDialogContext.html">InsertCellsDialogContext</a></p>
+          <p><p>Represents context for the the InsertCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.InsertCellsType.html">InsertCellsType</a></p>
+          <p><p>Describes the types of cell insertion.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.InsertFunctionArgumentControl.html">InsertFunctionArgumentControl</a></p>
+          <p><p>Represents the insert function argument control.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.InsertFunctionDialogCategory.html">InsertFunctionDialogCategory</a></p>
+          <p><p>Describes the functions categories in the insert function dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.InsertFunctionDialogContent.html">InsertFunctionDialogContent</a></p>
+          <p><p>Represents the insert function dialog content.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.InsertFunctionDialogContentBase.html">InsertFunctionDialogContentBase</a></p>
+          <p><p>Represents base for the insert function dialog content.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.InsertFunctionDialogContext.html">InsertFunctionDialogContext</a></p>
+          <p><p>Represents context for the InsertFunctionDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.InsidePath.html">InsidePath</a></p>
+          <p><p>Represents an inside path control.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.ItemsPercentFilterType.html">ItemsPercentFilterType</a></p>
+          <p><p>Describes the options for the items / percent drop down menu of the top filter dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.Line.html">Line</a></p>
+          <p><p>Represents a line.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.MarginsTabContent.html">MarginsTabContent</a></p>
+          <p><p>Represents the margins tab content.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.MarginsTabViewModel.html">MarginsTabViewModel</a></p>
+          <p><p>Represents the margins tab view model.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.MessageBoxNotificationType.html">MessageBoxNotificationType</a></p>
+          <p><p>Represents message box notification type.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.MessageDialogContextBase.html">MessageDialogContextBase</a></p>
+          <p><p>Represents a base class for the message dialogs.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.MessageDialogViewModelBase-1.html">MessageDialogViewModelBase&lt;TContext&gt;</a></p>
+          <p><p>Represents a view model for the </p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.NameManagerDialogContent.html">NameManagerDialogContent</a></p>
+          <p><p>Represents the content of the NameManagerDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.NameManagerDialogContentBase.html">NameManagerDialogContentBase</a></p>
+          <p><p>Represents base for the NameManagerDialogContent class.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.NameManagerDialogContext.html">NameManagerDialogContext</a></p>
+          <p><p>Represents context for the NameManagerDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.NameManagerDialogViewModel.html">NameManagerDialogViewModel</a></p>
+          <p><p>Represents the view model of the name manager dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.NumberCategoryContent.html">NumberCategoryContent</a></p>
+          <p><p>Represents the content of the number category of the number tab of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.NumberItem.html">NumberItem</a></p>
+          <p><p>Represents a number item.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.NumberTabContent.html">NumberTabContent</a></p>
+          <p><p>Represents the content of the number tab of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.NumberTabContext.html">NumberTabContext</a></p>
+          <p><p>Represents context for the number tab of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.NumberTabContextBase.html">NumberTabContextBase</a></p>
+          <p><p>Represents base for the number tab context classes.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.NumberTabContextForStyle.html">NumberTabContextForStyle</a></p>
+          <p><p>Represents context for style for the number tab of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.PageSetupDialogContent.html">PageSetupDialogContent</a></p>
+          <p><p>Represents the page setup dialog content.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.PageSetupDialogContentBase.html">PageSetupDialogContentBase</a></p>
+          <p><p>Represents base for the PageSetupDialogContent class.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.PageSetupDialogContext.html">PageSetupDialogContext</a></p>
+          <p><p>Represents the page setup dialog context.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.PageSetupDialogTabType.html">PageSetupDialogTabType</a></p>
+          <p><p>Represents the page setup dialog tab type.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.PageSetupDialogViewModel.html">PageSetupDialogViewModel</a></p>
+          <p><p>Provides a view model for the page setup dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.PageSetupTabViewModelBase.html">PageSetupTabViewModelBase</a></p>
+          <p><p>Represents the base class for page setup tab view model.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.PageTabContent.html">PageTabContent</a></p>
+          <p><p>Represents the page tab content.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.PageTabViewModel.html">PageTabViewModel</a></p>
+          <p><p>Represents the page tab view model.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.PasswordHelper.html">PasswordHelper</a></p>
+          <p><p>Provides methods for management of protection passwords.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.PercentageCategoryContent.html">PercentageCategoryContent</a></p>
+          <p><p>Represents the content of the percentage category of the number tab of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.ProtectDialogContent.html">ProtectDialogContent</a></p>
+          <p><p>Represents the content of the ProtectDialogContent.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.ProtectDialogContentContentBase.html">ProtectDialogContentContentBase</a></p>
+          <p><p>Represents base for the ProtectDialogContent class.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.ProtectDialogContext.html">ProtectDialogContext</a></p>
+          <p><p>Provides context for the protection dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.ProtectDialogContextBase.html">ProtectDialogContextBase</a></p>
+          <p><p>Provides a base for the protection dialog context.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.ProtectDialogOption.html">ProtectDialogOption</a></p>
+          <p><p>Represents an option of the protection dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.ProtectDialogViewModel.html">ProtectDialogViewModel</a></p>
+          <p><p>Provides a view model for the protection dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.ProtectionTabContent.html">ProtectionTabContent</a></p>
+          <p><p>Represents the content of the protection tab of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.ProtectionTabContext.html">ProtectionTabContext</a></p>
+          <p><p>Represents context for the protection tab of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.ProtectionTabContextBase.html">ProtectionTabContextBase</a></p>
+          <p><p>Represents base context for the protection tab of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.ProtectionTabContextForStyle.html">ProtectionTabContextForStyle</a></p>
+          <p><p>Represents context for style for the protection tab of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.RadFontStyle.html">RadFontStyle</a></p>
+          <p><p>Describes the font styles.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.RadSpreadsheetDialogContentBase.html">RadSpreadsheetDialogContentBase</a></p>
+          <p><p>Represents base for the dialogs content classes.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.RadSpreadsheetDialogContentBase-1.html">RadSpreadsheetDialogContentBase&lt;TContext&gt;</a></p>
+          <p><p>Represents base for the dialogs content classes.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.RadSpreadsheetDialogContext.html">RadSpreadsheetDialogContext</a></p>
+          <p><p>A base class for the RadSpreadsheet dialog context classes.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.RemoveCellsDialogContent.html">RemoveCellsDialogContent</a></p>
+          <p><p>Represents the content of the RemoveCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.RemoveCellsDialogContentBase.html">RemoveCellsDialogContentBase</a></p>
+          <p><p>Represents base for the RemoveCellsDialogContent class.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.RemoveCellsDialogContext.html">RemoveCellsDialogContext</a></p>
+          <p><p>Represents context for the RemoveCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.RemoveCellsType.html">RemoveCellsType</a></p>
+          <p><p>Describes the types of remove cells modes.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.ScaleFactorDialogContent.html">ScaleFactorDialogContent</a></p>
+          <p><p>Represents the content of the ScaleFactorDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.ScaleFactorDialogContentBase.html">ScaleFactorDialogContentBase</a></p>
+          <p><p>Represents base for the ScaleFactorDialogContent class.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.ScaleFactorDialogContext.html">ScaleFactorDialogContext</a></p>
+          <p><p>Represents context for the ScaleFactorDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.ScalingMethod.html">ScalingMethod</a></p>
+          <p><p>Enumerates the scaling method options for printing.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.ScientificCategoryContent.html">ScientificCategoryContent</a></p>
+          <p><p>Represents the content of the scientific category of the number tab of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.SearchLocationName-1.html">SearchLocationName&lt;T&gt;</a></p>
+          <p><p>Represents a tuple between a search location and the string representation of its name.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.SelectColorDialogContent.html">SelectColorDialogContent</a></p>
+          <p><p>Represents the content of the SelectColorDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.SelectColorDialogContentBase.html">SelectColorDialogContentBase</a></p>
+          <p><p>Represents base for the SelectColorDialogContent class.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.SelectColorDialogContext.html">SelectColorDialogContext</a></p>
+          <p><p>Represents context for the SelectColorDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.SeriesDialogContent.html">SeriesDialogContent</a></p>
+          <p><p>Represents the content of the SeriesDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.SeriesDialogContentBase.html">SeriesDialogContentBase</a></p>
+          <p><p>Represents base for the SeriesDialogContent class.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.SeriesDialogContext.html">SeriesDialogContext</a></p>
+          <p><p>Represents context for the SeriesDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.SeriesType.html">SeriesType</a></p>
+          <p><p>Describes the possible types of series.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.ShadingStyle.html">ShadingStyle</a></p>
+          <p><p>Describes the shading styles of the gradients.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.SheetTabContent.html">SheetTabContent</a></p>
+          <p><p>Represents the sheet tab content.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.SheetTabViewModel.html">SheetTabViewModel</a></p>
+          <p><p>Represents the sheet tab view model.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.SortConditionViewModel.html">SortConditionViewModel</a></p>
+          <p><p>Represents sort condition view model.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.SortingDialogContent.html">SortingDialogContent</a></p>
+          <p><p>Represents sorting dialog content.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.SortingDialogContentBase.html">SortingDialogContentBase</a></p>
+          <p><p>Represents a base class for sorting dialog content.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.SortingDialogContext.html">SortingDialogContext</a></p>
+          <p><p>Represents sorting dialog context</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.SortingDialogViewModel.html">SortingDialogViewModel</a></p>
+          <p><p>Represents sort dialog view model.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.SortType.html">SortType</a></p>
+          <p><p>Represents the sort type.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.SpecialCategoryContent.html">SpecialCategoryContent</a></p>
+          <p><p>Represents the content of the special category of the number tab of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.SpreadsheetNameView.html">SpreadsheetNameView</a></p>
+          <p><p>The class exposes information about spreadsheet name used in UI.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.StopDialogContent.html">StopDialogContent</a></p>
+          <p><p>Represents stop dialog content.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.StopDialogContentBase.html">StopDialogContentBase</a></p>
+          <p><p>Represents a base class for the stop dialog content.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.StopDialogContext.html">StopDialogContext</a></p>
+          <p><p>Represents a context for the warning dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.StopDialogViewModel.html">StopDialogViewModel</a></p>
+          <p><p>Represents a view model for the stop dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.StyleDialogContent.html">StyleDialogContent</a></p>
+          <p><p>Represents the content of the StyleDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.StyleDialogContentBase.html">StyleDialogContentBase</a></p>
+          <p><p>Represents base for the StyleDialogContent class.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.StyleDialogContext.html">StyleDialogContext</a></p>
+          <p><p>Represents context for the StyleDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.TextCategoryContent.html">TextCategoryContent</a></p>
+          <p><p>Represents the content of the text category of the number tab of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.TextOrientationRotateControl.html">TextOrientationRotateControl</a></p>
+          <p><p>Represents the TextOrientationRotateControl.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.TimeCategoryContent.html">TimeCategoryContent</a></p>
+          <p><p>Represents the content of the time category of the number tab of the FormatCellsDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.TopBottomFilterType.html">TopBottomFilterType</a></p>
+          <p><p>Describes the options for the top / bottom drop down menu of the top filter dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.TopFilterDialogContent.html">TopFilterDialogContent</a></p>
+          <p><p>Represents the content of the top filter dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.TopFilterDialogContentBase.html">TopFilterDialogContentBase</a></p>
+          <p><p>Represents a base for the top filter dialog content.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.TopFilterDialogContext.html">TopFilterDialogContext</a></p>
+          <p><p>Represents the context of the top filter dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.TopFilterDialogViewModel.html">TopFilterDialogViewModel</a></p>
+          <p><p>Represents the view model of the top filter dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.UnprotectDialogContent.html">UnprotectDialogContent</a></p>
+          <p><p>Represents the content of the UnprotectDialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.UnprotectDialogContentBase.html">UnprotectDialogContentBase</a></p>
+          <p><p>Represents base for the UnprotectDialogContent class.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.UnprotectDialogContext.html">UnprotectDialogContext</a></p>
+          <p><p>Provides context for the unprotect dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.UnprotectDialogViewModel.html">UnprotectDialogViewModel</a></p>
+          <p><p>Provides a view model for the unprotect dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.WarningDialogContent.html">WarningDialogContent</a></p>
+          <p><p>Represents a warning dialog content.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.WarningDialogContentBase.html">WarningDialogContentBase</a></p>
+          <p><p>Represents a base class for the warning dialog content.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.WarningDialogContext.html">WarningDialogContext</a></p>
+          <p><p>Represents a context for the warning dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.WarningDialogViewModel.html">WarningDialogViewModel</a></p>
+          <p><p>Represents a view model for the warning dialog.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.WorksheetEditorDialogs.html">WorksheetEditorDialogs</a></p>
+          <p><p>Represents a collection of the radSpreadsheet dialogs.</p>
+</p>
+        </td>
+      </tr>
+    </table>
+    <h3 id="interfaces">Interfaces
+  </h3>
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.IAlignmentTabContext.html">IAlignmentTabContext</a></p>
+          <p><p>Defines members of the alignment tab context classes.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.IBorderTabContext.html">IBorderTabContext</a></p>
+          <p><p>Defines members for the border tab context classes.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.IFillTabContext.html">IFillTabContext</a></p>
+          <p><p>Defines members for the fill tab context classes.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.IFontPropertiesEditor.html">IFontPropertiesEditor</a></p>
+          <p><p>Provides methods for getting and setting font properties.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.IFontTabContext.html">IFontTabContext</a></p>
+          <p><p>Defines members for the font tab context classes.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.IFormatCellsTabContent.html">IFormatCellsTabContent</a></p>
+          <p><p>Defines members for the FormatCellsDialog tabs content classes.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.IFormatCellsTabContent-1.html">IFormatCellsTabContent&lt;TContext&gt;</a></p>
+          <p><p>Defines members for the format cells tabs content classes.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.IFormatCellsTabContext.html">IFormatCellsTabContext</a></p>
+          <p><p>Defines members for the format cells tabs classes.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.INumberTabContext.html">INumberTabContext</a></p>
+          <p><p>Defines members for the number tab context classes.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.IProtectionTabContext.html">IProtectionTabContext</a></p>
+          <p><p>Represents interface for the Protection Tab Context.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.IRadSpreadsheetDialogContent.html">IRadSpreadsheetDialogContent</a></p>
+          <p><p>Defines the members of the RadSpreadsheet dialog content classes.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Telerik.Windows.Controls.Spreadsheet.Dialogs.IRadSpreadsheetDialogContent-1.html">IRadSpreadsheetDialogContent&lt;TContext&gt;</a></p>
+          <p><p>Defines the members which process the context of the RadSpreadsheet dialog content classes.</p>
+</p>
+        </td>
+      </tr>
+    </table>
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+	  <div id="push"></div>
+    </div>
+      <div id="footer" class="container-fluid pb-40">
+        <div class="row feedback-row mb-60">
+          <div class="col-sm-8 col-sm-offset-4 col-md-offset-3 col-lg-8 col-lg-offset-2">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="row feedback">
+                  <div class="col-xs-8">
+                    <h4>Was this article helpful?</h4>
+                  </div>
+                  <div class="col-xs-4 text-right">
+                    <button data-value="yes" id="yesButton">Yes</button>
+                    &nbsp;/&nbsp;
+                    <button data-value="no" id="noButton">No</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="dialog-overlay">
+          <div class="feedback-dialog dialog dialog-enter">
+            <div id="feedback-container">
+              <div id="feedback-window-container">
+                <div id="feedback-form-window">
+                  <h3 class="mt-0 mb-5">Give article feedback</h3>
+                  <p>Tell us how we can improve this article</p>
+                  <span id="feedback-form-popup-container"></span>
+                  <form id="feedback-form">
+                    <div id="feedback-checkbox-area">
+                      <input id="hidden-sheet-id" type="hidden" value="1toT2XTrYzmmQGUq5xCmXIkMWkwah3QCNZ9Aj5RLaeoo">
+                        <label>
+                          <input type="checkbox" data-bind="checked: outdatedSample"> Code samples are inaccurate / outdated.
+                        </label>
+                        <span class="required-field" data-bind="visible: outdatedSample"></span>
+                        <textarea id="feedback-code-sample-text-input" placeholder="Please, specify more details ..." class="feedback-extw__textarea" data-bind="visible: outdatedSample, value: inaccurateOutdatedCodeSamplesText">
+                        </textarea>
+                        <label>
+                          <input type="checkbox" data-bind="checked: otherMoreInformation"> I expected to find other / more information.
+                        </label>
+                        <span class="required-field" data-bind="visible: otherMoreInformation"></span>
+                        <textarea id="feedback-more-information-text-input" class="feedback-extw__textarea" placeholder="Please, specify what information can be added ..." data-bind="visible: otherMoreInformation, value: otherMoreInformationText">
+                        </textarea>
+                        <label>
+                          <input type="checkbox" data-bind="checked: textErrors"> There are typos / broken links / broken page elements.
+                        </label>
+                        <span class="required-field" data-bind="visible: textErrors"></span>
+                        <textarea id="feedback-text-errors-text-input" class="feedback-extw__textarea" placeholder="Please, specify what needs to be fixed ..." data-bind="visible: textErrors, value: typosLinksElementsText">
+                        </textarea>
+                        <label>
+                          <input type="checkbox" data-bind="checked: inaccurateContent"> Content is inaccurate / outdated.
+                        </label>
+                        <span class="required-field" data-bind="visible: inaccurateContent"></span>
+                        <textarea id="feedback-inaccurate-content-text-input" class="feedback-extw__textarea" placeholder="Please, specify which conent ..." data-bind="visible: inaccurateContent, value: inaccurateOutdatedContentText">
+                        </textarea>
+                        <label>
+                          <input type="checkbox" data-bind="checked: otherFeedback"> Other
+                        </label>
+                        <span class="required-field" data-bind="visible: otherFeedback"></span>
+                        <textarea id="feedback-other-text-input" placeholder="Please, enter more details or not listed feedback ..." class="feedback-extw__textarea" data-bind="visible: otherFeedback, value: textFeedback">
+                        </textarea>
+                        <input id="feedback-email-input" type="email" placeholder="email (optional)" data-email-msg="Email format is not valid." class="feedback-extw__input input" data-bind="value: email">
+                        <label>
+                          <input type="checkbox" data-bind="checked: acceptFeedbackContact"> By checking this box you consent to Progress contacting you by email about your response on this page.
+                        </label>
+                      </div>
+                  </form>
+                  <div class="feedback-extw__foot">
+                    <p class="mt-30 mb-0" style="text-align: right;">
+                      <button class="button ghost dialog-hide">Cancel</button>
+                      <button class="button dialog-hide" type="submit">Submit</button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <script>
+        $(document).ready(function() {
+        initFeedbackForm({
+        dialog: ".dialog-overlay",
+        closeButtons: ".dialog-hide",
+        container: ".feedback"
+        });
+        });
+      </script>
+      
+        <script>
+        $(".read-prev").hover(function() {
+        $(".title-prev").show();
+        }, function() {
+        $(".title-prev").hide();
+        });
+      
+        $(".read-next").hover(function() {
+        $(".title-next").show();
+        }, function() {
+        $(".title-next").hide();
+        });
+      
+        $(".all-components").click(function() {
+        $(".all-components").toggleClass("show-components");
+        $('.sidetoggle').toggleClass("collapse");
+        $('.sidetoc').toggleClass("show-components");
+        $(".sidefilter").toggleClass("show-components");
+        });
+      </script>
+      
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="row">
+              <div class="col-md-12 col-lg-10 col-lg-offset-1">
+                <div class="row">
+      
+      
+                  <div class="col-sm-4 mb-20">
+                    <h6 class="mt-0 mb-10">Getting Started</h6>
+                    <ul class="list-unstyled">
+      
+                      <li>
+                        <a href="https://www.telerik.com/download-trial-file/v2-b/ui-for-silverlight" target="_blank">Install Now</a>
+                      </li>
+      
+                      <li>
+                        <a href="http://demos.telerik.com/silverlight/" target="_blank">Demos</a>
+                      </li>
+      
+                      <li>
+                        <a href="http://demos.telerik.com/xaml-sdkbrowser/" target="_blank">SDK Samples Browser</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/silverlight/sample-applications" target="_blank">Sample Applications</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/wpf/color-theme-generator" target="_blank">Themes Generator</a>
+                      </li>
+      
+                    </ul>
+                  </div>
+      
+                  <div class="col-sm-4 mb-20">
+                    <h6 class="mt-0 mb-10">Support Resources</h6>
+                    <ul class="list-unstyled">
+      
+                      <li>
+                        <a href="https://www.telerik.com/support/code-library/silverlight" target="_blank">Code Library</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/support/kb/silverlight" target="_blank">Knowledge Base</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/silverlight/mvvm-support" target="_blank">MVVM Support</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/videos/silverlight" target="_blank">Videos</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://github.com/telerik/xaml-sdk" target="_blank">GitHub SDK Repository</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/help/silverlight/installation-system-requirements.html" target="_blank">System Requirements</a>
+                      </li>
+      
+                    </ul>
+                  </div>
+      
+                  <div class="col-sm-4 mb-20">
+                    <h6 class="mt-0 mb-10">Community</h6>
+                    <ul class="list-unstyled">
+      
+                      <li>
+                        <a href="https://www.telerik.com/forums/silverlight" target="_blank">Forums</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://www.telerik.com/blogs/.net" target="_blank">Blogs</a>
+                      </li>
+      
+                      <li>
+                        <a href="https://feedback.telerik.com/Project/143" target="_blank">XAML Feedback Portal</a>
+                      </li>
+      
+                      <li>
+                        <a href="http://feedback.telerik.com/Project/184" target="_blank">Document Processing Feedback Portal</a>
+                      </li>
+      
+                    </ul>
+                  </div>
+      
+      
+                </div>
+                <div class="row copyright">
+                  <div class="col-sm-4 social-icons">
+                    <span class="sticky">
+                      <a class="social-icon" href="https://www.facebook.com/Telerik/" title=""><?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewbox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+      <path d="M13.766,32.155V17.559H8.854V11.87h4.912V7.675c0-4.869,2.973-7.52,7.316-7.52c2.08,0,3.868,0.155,4.39,0.224v5.088
+      	l-3.013,0.001c-2.362,0-2.819,1.122-2.819,2.769v3.632h5.634l-0.734,5.688H19.64v14.597H13.766z"></path>
+      </svg>
+                      </a>
+                      <a class="social-icon" href="https://twitter.com/Telerik/" title=""><?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewbox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+      <path fill="#231F20" d="M32,6.076c-1.178,0.522-2.442,0.875-3.771,1.034c1.355-0.813,2.396-2.1,2.887-3.632
+      	c-1.269,0.752-2.674,1.298-4.169,1.593c-1.198-1.276-2.904-2.073-4.792-2.073c-3.626,0-6.566,2.939-6.566,6.565
+      	c0,0.515,0.058,1.016,0.17,1.496C10.303,10.785,5.466,8.171,2.228,4.199c-0.565,0.97-0.889,2.097-0.889,3.3
+      	c0,2.278,1.159,4.287,2.92,5.464c-1.076-0.034-2.088-0.329-2.974-0.821c0,0.027,0,0.055,0,0.083c0,3.181,2.263,5.834,5.267,6.438
+      	c-0.551,0.15-1.131,0.23-1.73,0.23c-0.423,0-0.834-0.041-1.235-0.118c0.835,2.608,3.26,4.507,6.133,4.56
+      	c-2.247,1.761-5.078,2.811-8.154,2.811c-0.53,0-1.052-0.031-1.566-0.092c2.905,1.862,6.356,2.949,10.064,2.949
+      	c12.076,0,18.679-10.004,18.679-18.679c0-0.285-0.007-0.568-0.02-0.849C30.007,8.549,31.12,7.393,32,6.076"></path>
+      </svg>
+                      </a>
+                      <a class="social-icon" href="https://www.youtube.com/user/TelerikInc" title=""><?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" xml:space="preserve">
+      <path d="M506.887,153.632c0,0-5.003-35.283-20.354-50.82c-19.469-20.393-41.293-20.494-51.301-21.687
+      c-71.647-5.179-179.121-5.179-179.121-5.179h-0.223c0,0-107.472,0-179.121,5.179c-10.008,1.194-31.824,1.295-51.301,21.687
+      c-15.351,15.537-20.346,50.82-20.346,50.82S0,195.065,0,236.497v38.843c0,41.433,5.12,82.865,5.12,82.865
+      s4.995,35.283,20.346,50.82c19.476,20.393,45.06,19.748,56.455,21.885C122.883,434.839,256,436.054,256,436.054
+      s107.585-0.162,179.232-5.341c10.008-1.194,31.831-1.295,51.301-21.687c15.351-15.537,20.354-50.82,20.354-50.82
+      S512,316.773,512,275.341v-38.843C512,195.065,506.887,153.632,506.887,153.632z M203.87,322.913v-144.36l137.342,72.18 L203.87,322.913z"></path>
+      </svg>
+                      </a>
+                      <a class="social-icon" href="https://www.linkedin.com/showcase/telerik/" title=""><?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewbox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+      <path d="M7.81,29V9.652H1.379V29H7.81z M4.596,7.009c2.243,0,3.638-1.486,3.638-3.342C8.192,1.768,6.838,0.324,4.638,0.324
+      	C2.438,0.324,1,1.768,1,3.667c0,1.856,1.396,3.342,3.554,3.342H4.596L4.596,7.009z M11.37,29h6.43V18.195
+      	c0-0.579,0.042-1.156,0.213-1.569c0.465-1.155,1.521-2.352,3.3-2.352c2.325,0,3.257,1.774,3.257,4.375v10.35H31V17.906
+      	c0-5.943-3.173-8.708-7.404-8.708c-3.469,0-4.992,1.939-5.838,3.259H17.8V9.651h-6.43C11.454,11.467,11.37,28.999,11.37,29L11.37,29
+      	z"></path>
+      </svg>
+                      </a>
+                    </span>
+                  </div>
+                  <div class="col-sm-8">
+                    <p>
+                      Copyright &copy; 2018 Progress Software Corporation and/or its subsidiaries or affiliates.<br> All Rights Reserved.
+                    </p>
+      
+                    <p>
+                      Progress, Telerik, and certain product names used herein are trademarks or registered trademarks of Progress Software Corporation and/or one of its subsidiaries or affiliates in the U.S. and/or other countries. See <a href="https://www.progress.com/legal/trademarks">Trademarks</a> for appropriate markings.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
