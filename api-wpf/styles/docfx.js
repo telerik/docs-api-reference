@@ -16,7 +16,7 @@ $(function () {
     renderAlerts();
     renderLinks();
     renderNavbar();
-    renderSidebar();
+    renderSidebar(true);
     renderAffix();
     renderFooter();
     renderLogo();
@@ -400,9 +400,16 @@ $(function () {
         }
     }
 
-    function renderSidebar() {
-        var sidetoc = $('#sidetoggle .sidetoc')[0];
-        if (typeof (sidetoc) === 'undefined') {
+    function showLoading(elementSelector) {
+        kendo.ui.progress($(elementSelector), true);
+    }
+    
+    function hideLoading(elementSelector) {
+        kendo.ui.progress($(elementSelector), false);
+    }
+
+    function renderSidebar(init) {
+        if (init) {
             loadToc();
         } else {
             registerTocEvents();
@@ -490,6 +497,7 @@ $(function () {
                 return;
             }
             tocPath = tocPath.replace(/\\/g, '/');
+            showLoading('.sidetoc');
             $('#sidetoc').load(tocPath + " #sidetoggle > div", function () {
                 var index = tocPath.lastIndexOf('/');
                 var tocrel = '';
@@ -514,7 +522,10 @@ $(function () {
                 $('#sidetoc .sidetoc').prepend(" <span style='text-transform:  uppercase;text-transform: uppercase;transition: background-color .1s, padding .1s, font-weight .1s;font-weight: 500;color: #4b4e52 !important;font-size: 15px;font-family: &quot;Roboto&quot;, Helvetica, Arial, sans-serif;line-height: 1.4em;text-overflow:  ellipsis;'><a href='/devtools/wpf/introduction.html' style='margin-left: 10px; color: #4b4e52 !important;'>Documentation</a></span>")
 
                 renderSidebar();
-                $('input#toc_filter_input').attr('placeholder', 'Search')
+                $('input#toc_filter_input').attr('placeholder', 'Search');
+                $('#sidetoc .sidetoc').ready(function() {
+                  hideLoading();
+                });
             });
         }
     }
