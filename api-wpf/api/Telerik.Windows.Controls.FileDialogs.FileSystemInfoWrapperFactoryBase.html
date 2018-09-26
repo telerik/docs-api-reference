@@ -188,7 +188,7 @@
                             </form>
         
                             <script>
-                              var gcsInstance = '011354416605164361800:ebfuug7ih7i';
+                              var gcsInstance = '001595215763381649090:jt1stbj813w';
                               var gcsKey = 'AIzaSyDOW6NJLQOTngTI3AXBQaTDaWhrL2tdo_M';
                               isKbPage =  false ;
                               siteHasKbPortal = ''
@@ -282,7 +282,7 @@
         <div class="sidenav side-nav hide-when-search">
           <div class="sidetoggle collapse" id="sidetoggle">
             <div id="sidetoc">
-             
+              <div class="sidetoc"></div>
             </div>
           </div>
         </div>
@@ -374,16 +374,16 @@
   
   <a id="Telerik_Windows_Controls_FileDialogs_FileSystemInfoWrapperFactoryBase_CleanupPath_" data-uid="Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapperFactoryBase.CleanupPath*"></a>
   
-  <h4 id="Telerik_Windows_Controls_FileDialogs_FileSystemInfoWrapperFactoryBase_CleanupPath_System_String_Telerik_Windows_Controls_FileDialogs_DirectoryInfoWrapper_" data-uid="Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapperFactoryBase.CleanupPath(System.String,Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper)"><a href="#collapsible-Telerik_Windows_Controls_FileDialogs_FileSystemInfoWrapperFactoryBase_CleanupPath_System_String_Telerik_Windows_Controls_FileDialogs_DirectoryInfoWrapper_" class="expander" data-toggle="collapse">CleanupPath(String, DirectoryInfoWrapper)</a></h4>
+  <h4 id="Telerik_Windows_Controls_FileDialogs_FileSystemInfoWrapperFactoryBase_CleanupPath_System_String_Telerik_Windows_Controls_FileDialogs_DirectoryInfoWrapper_System_Boolean_" data-uid="Telerik.Windows.Controls.FileDialogs.FileSystemInfoWrapperFactoryBase.CleanupPath(System.String,Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper,System.Boolean)"><a href="#collapsible-Telerik_Windows_Controls_FileDialogs_FileSystemInfoWrapperFactoryBase_CleanupPath_System_String_Telerik_Windows_Controls_FileDialogs_DirectoryInfoWrapper_System_Boolean_" class="expander" data-toggle="collapse">CleanupPath(String, DirectoryInfoWrapper, Boolean)</a></h4>
   
-  <div id="collapsible-Telerik_Windows_Controls_FileDialogs_FileSystemInfoWrapperFactoryBase_CleanupPath_System_String_Telerik_Windows_Controls_FileDialogs_DirectoryInfoWrapper_" class="collapse in">
+  <div id="collapsible-Telerik_Windows_Controls_FileDialogs_FileSystemInfoWrapperFactoryBase_CleanupPath_System_String_Telerik_Windows_Controls_FileDialogs_DirectoryInfoWrapper_System_Boolean_" class="collapse in">
   <div class="markdown level1 summary"><p>Called when a file path no longer exists (for example when a file is moved, renamed or deleted).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract void CleanupPath(string filePath, DirectoryInfoWrapper parentWrapper)</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract void CleanupPath(string filePath, DirectoryInfoWrapper parentWrapper, bool isRename = false)</code></pre>
   </div>
 
   <h5 class="parameters">Parameters</h5>
@@ -401,6 +401,14 @@
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper.html">DirectoryInfoWrapper</a></span>
         <span class="parametername">parentWrapper</span>
         <p><p>The DirectoryInfoWrapper of the parent folder.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">isRename</span>
+        <p><p>Indicates whether the file is being renamed causing deleted event.</p>
 </p>
       </td>
     </tr>

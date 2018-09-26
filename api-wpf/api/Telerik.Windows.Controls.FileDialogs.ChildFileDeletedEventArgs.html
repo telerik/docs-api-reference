@@ -188,7 +188,7 @@
                             </form>
         
                             <script>
-                              var gcsInstance = '011354416605164361800:ebfuug7ih7i';
+                              var gcsInstance = '001595215763381649090:jt1stbj813w';
                               var gcsKey = 'AIzaSyDOW6NJLQOTngTI3AXBQaTDaWhrL2tdo_M';
                               isKbPage =  false ;
                               siteHasKbPortal = ''
@@ -282,7 +282,7 @@
         <div class="sidenav side-nav hide-when-search">
           <div class="sidetoggle collapse" id="sidetoggle">
             <div id="sidetoc">
-             
+              <div class="sidetoc"></div>
             </div>
           </div>
         </div>
@@ -349,16 +349,16 @@
   
   <a id="Telerik_Windows_Controls_FileDialogs_ChildFileDeletedEventArgs__ctor_" data-uid="Telerik.Windows.Controls.FileDialogs.ChildFileDeletedEventArgs.#ctor*"></a>
   
-  <h4 id="Telerik_Windows_Controls_FileDialogs_ChildFileDeletedEventArgs__ctor_System_String_Telerik_Windows_Controls_FileDialogs_DirectoryInfoWrapper_" data-uid="Telerik.Windows.Controls.FileDialogs.ChildFileDeletedEventArgs.#ctor(System.String,Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper)"><a href="#collapsible-Telerik_Windows_Controls_FileDialogs_ChildFileDeletedEventArgs__ctor_System_String_Telerik_Windows_Controls_FileDialogs_DirectoryInfoWrapper_" class="expander" data-toggle="collapse">ChildFileDeletedEventArgs(String, DirectoryInfoWrapper)</a></h4>
+  <h4 id="Telerik_Windows_Controls_FileDialogs_ChildFileDeletedEventArgs__ctor_System_String_Telerik_Windows_Controls_FileDialogs_DirectoryInfoWrapper_System_Boolean_" data-uid="Telerik.Windows.Controls.FileDialogs.ChildFileDeletedEventArgs.#ctor(System.String,Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper,System.Boolean)"><a href="#collapsible-Telerik_Windows_Controls_FileDialogs_ChildFileDeletedEventArgs__ctor_System_String_Telerik_Windows_Controls_FileDialogs_DirectoryInfoWrapper_System_Boolean_" class="expander" data-toggle="collapse">ChildFileDeletedEventArgs(String, DirectoryInfoWrapper, Boolean)</a></h4>
   
-  <div id="collapsible-Telerik_Windows_Controls_FileDialogs_ChildFileDeletedEventArgs__ctor_System_String_Telerik_Windows_Controls_FileDialogs_DirectoryInfoWrapper_" class="collapse in">
+  <div id="collapsible-Telerik_Windows_Controls_FileDialogs_ChildFileDeletedEventArgs__ctor_System_String_Telerik_Windows_Controls_FileDialogs_DirectoryInfoWrapper_System_Boolean_" class="collapse in">
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Telerik.Windows.Controls.FileDialogs.ChildFileDeletedEventArgs.html">ChildFileDeletedEventArgs</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ChildFileDeletedEventArgs(string filePath, DirectoryInfoWrapper parentWrapper)</code></pre>
+    <pre><code class="lang-csharp hljs">public ChildFileDeletedEventArgs(string filePath, DirectoryInfoWrapper parentWrapper, bool isRename = false)</code></pre>
   </div>
 
   <h5 class="parameters">Parameters</h5>
@@ -376,6 +376,14 @@
         <span class="pull-right"><a class="xref" href="Telerik.Windows.Controls.FileDialogs.DirectoryInfoWrapper.html">DirectoryInfoWrapper</a></span>
         <span class="parametername">parentWrapper</span>
         <p><p>The DirectoryInfoWrapper of the parent folder.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">isRename</span>
+        <p><p>Indicates whether the file is being renamed causing deleted event.</p>
 </p>
       </td>
     </tr>
@@ -401,7 +409,7 @@
   <h4 id="Telerik_Windows_Controls_FileDialogs_ChildFileDeletedEventArgs_FilePath" data-uid="Telerik.Windows.Controls.FileDialogs.ChildFileDeletedEventArgs.FilePath"><a href="#collapsible-Telerik_Windows_Controls_FileDialogs_ChildFileDeletedEventArgs_FilePath" class="expander" data-toggle="collapse">FilePath</a></h4>
   
   <div id="collapsible-Telerik_Windows_Controls_FileDialogs_ChildFileDeletedEventArgs_FilePath" class="collapse in">
-  <div class="markdown level1 summary"><p>Gets the DirectoryInfoWrapper of the parent folder.</p>
+  <div class="markdown level1 summary"><p>Gets the path that no longer exists.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -433,12 +441,49 @@
   </div>
   
   
+  <a id="Telerik_Windows_Controls_FileDialogs_ChildFileDeletedEventArgs_IsRenamed_" data-uid="Telerik.Windows.Controls.FileDialogs.ChildFileDeletedEventArgs.IsRenamed*"></a>
+  
+  <h4 id="Telerik_Windows_Controls_FileDialogs_ChildFileDeletedEventArgs_IsRenamed" data-uid="Telerik.Windows.Controls.FileDialogs.ChildFileDeletedEventArgs.IsRenamed"><a href="#collapsible-Telerik_Windows_Controls_FileDialogs_ChildFileDeletedEventArgs_IsRenamed" class="expander" data-toggle="collapse">IsRenamed</a></h4>
+  
+  <div id="collapsible-Telerik_Windows_Controls_FileDialogs_ChildFileDeletedEventArgs_IsRenamed" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the deleted file is a result of rename operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRenamed { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
   <a id="Telerik_Windows_Controls_FileDialogs_ChildFileDeletedEventArgs_ParentWrapper_" data-uid="Telerik.Windows.Controls.FileDialogs.ChildFileDeletedEventArgs.ParentWrapper*"></a>
   
   <h4 id="Telerik_Windows_Controls_FileDialogs_ChildFileDeletedEventArgs_ParentWrapper" data-uid="Telerik.Windows.Controls.FileDialogs.ChildFileDeletedEventArgs.ParentWrapper"><a href="#collapsible-Telerik_Windows_Controls_FileDialogs_ChildFileDeletedEventArgs_ParentWrapper" class="expander" data-toggle="collapse">ParentWrapper</a></h4>
   
   <div id="collapsible-Telerik_Windows_Controls_FileDialogs_ChildFileDeletedEventArgs_ParentWrapper" class="collapse in">
-  <div class="markdown level1 summary"><p>Gets the path that no longer exists.</p>
+  <div class="markdown level1 summary"><p>Gets the DirectoryInfoWrapper of the parent folder.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
