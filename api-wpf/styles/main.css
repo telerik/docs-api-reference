@@ -5088,3 +5088,15 @@ p.lead {
 .k-i-file-horizontal::before {
   content: "\e922";
 }
+
+.k-loading-mask {
+  background-image: url("../assets/loading-image.gif");
+  background-repeat: no-repeat;
+  z-index: 10000;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.k-loading-text {
+  display: none;
+}
