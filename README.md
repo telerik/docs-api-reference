@@ -1,2 +1,2 @@
-# xaml-docs-api
-API reference for WPF and Silverlight controls
+# docs-api-reference
+API references for the Telerik UI documentations.
